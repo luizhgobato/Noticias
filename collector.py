@@ -160,8 +160,9 @@ def classificar(titulo: str, resumo: str, modo: str):
 
     melhor = max(scores, key=lambda s: (scores[s], PRIORIDADE[s]))
     if scores[melhor] == 0:
-        # sem nenhum sinal temático: descarta (mantém as seções focadas)
-        return None
+        if modo == "estrito":
+            return None
+        return "Ações BR"  # fallback p/ fontes financeiras sem keyword específica
     return melhor
 
 

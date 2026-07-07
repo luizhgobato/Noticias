@@ -111,7 +111,7 @@ def classificar(titulo: str, resumo: str, fonte_restrita: bool):
         if kw in txt:
             return None
 
-    if CARTEIRA_RE.search(txt):
+    if CARTEIRA_RE.search(normalizar(titulo)):
         return "Carteira"
 
     scores = {s: len(KW_RE[s].findall(txt)) for s in SECOES}

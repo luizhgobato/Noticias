@@ -28,6 +28,14 @@ MAX_POR_SECAO = 25
 LIMIAR_DEDUP = 0.72
 
 SECOES = ["Macro Brasil", "Ações BR", "Internacional", "Cripto"]
+SECOES_TODAS = ["Carteira"] + SECOES
+
+# carteira do usuário: prioridade máxima, seção própria
+CARTEIRA_RE = re.compile(
+    r"\b(irbr\d|bbse\d|cxse\d|bbas\d|itub\d|gmat\d|rani\d|also\d"
+    r"|irb|bb seguridade|caixa seguridade|banco do brasil|itau"
+    r"|grupo mateus|irani|allos)\b"
+)
 
 # '*' no fim = casa prefixo (treasur* pega treasury/treasuries)
 KW = {
@@ -102,6 +110,9 @@ def classificar(titulo: str, resumo: str, fonte_restrita: bool):
     for kw in EXCLUIR:
         if kw in txt:
             return None
+
+    if CARTEIRA_RE.search(txt):
+        return "Carteira"
 
     scores = {s: len(KW_RE[s].findall(txt)) for s in SECOES}
     if TICKER_RE.search(titulo or ""):
@@ -191,13 +202,13 @@ def coletar():
         vistos.append(it["tnorm"])
         finais.append(it)
 
-    por_secao = {s: [i for i in finais if i["secao"] == s][:MAX_POR_SECAO] for s in SECOES}
+    por_secao = {s: [i for i in finais if i["secao"] == s][:MAX_POR_SECAO] for s in SECOES_TODAS}
     return por_secao
 
 
 CSS = """
 :root{--bg:#0f1115;--card:#181b22;--txt:#e8eaf0;--mut:#8b93a7;--acc:#4f9cf9;
---macro:#4f9cf9;--acoes:#34c98e;--intl:#f2a13c;--cripto:#b57bf0}
+--macro:#4f9cf9;--acoes:#34c98e;--intl:#f2a13c;--cripto:#b57bf0;--cart:#ffd166}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--txt);font-family:-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.45}
 header{padding:calc(18px + env(safe-area-inset-top)) 16px 10px;position:sticky;top:0;background:rgba(15,17,21,.95);backdrop-filter:blur(8px);z-index:9;border-bottom:1px solid #232733}
@@ -218,7 +229,7 @@ h2 .n{color:var(--mut);font-weight:500;font-size:.8rem}
 footer{text-align:center;color:var(--mut);font-size:.7rem;padding:20px 20px calc(20px + env(safe-area-inset-bottom))}
 """
 
-CORES = {"Macro Brasil": "--macro", "Ações BR": "--acoes",
+CORES = {"Carteira": "--cart", "Macro Brasil": "--macro", "Ações BR": "--acoes",
          "Internacional": "--intl", "Cripto": "--cripto"}
 
 
@@ -229,9 +240,10 @@ def render(por_secao) -> str:
     except Exception:
         agora_br = datetime.now(timezone(timedelta(hours=-3)))
 
-    nav = "".join(f'<a href="#{s.replace(" ", "-")}">{s}</a>' for s in SECOES)
+    visiveis = [s for s in SECOES_TODAS if not (s == "Carteira" and not por_secao.get(s))]
+    nav = "".join(f'<a href="#{s.replace(" ", "-")}">{s}</a>' for s in visiveis)
     corpo = []
-    for s in SECOES:
+    for s in visiveis:
         itens = por_secao.get(s, [])
         cards = []
         for it in itens:

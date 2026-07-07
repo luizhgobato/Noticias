@@ -4,6 +4,7 @@ Consolidador de Notícias Financeiras
 Coleta feeds RSS, deduplica, classifica por tema e gera index.html.
 Roda 3x/dia via GitHub Actions.
 """
+import json
 import re
 import html
 import unicodedata
@@ -21,6 +22,7 @@ FEEDS = [
     ("Money Times",     "https://www.moneytimes.com.br/feed/",                               "geral"),
     ("InvestNews",      "https://investnews.com.br/feed/",                                   "geral"),
     ("Bloomberg Línea", "https://www.bloomberglinea.com.br/arc/outboundfeeds/rss/?outputType=xml", "geral"),
+    ("Brazil Journal",  "https://braziljournal.com/feed/",                                   "geral"),
     ("Exame",           "https://exame.com/feed/",                                           "estrito"),
 ]
 
@@ -28,7 +30,7 @@ JANELA_HORAS = 24
 MAX_POR_SECAO = 25
 LIMIAR_DEDUP = 0.72
 
-SECOES = ["Macro Brasil", "Ações BR", "Internacional", "Política", "IA", "Cripto"]
+SECOES = ["Macro Brasil", "Ações BR", "Internacional", "Empresas EUA", "Política", "IA", "Cripto"]
 SECOES_TODAS = ["Carteira"] + SECOES
 
 # carteira do usuário: prioridade máxima, seção própria
@@ -49,8 +51,16 @@ KW = {
         "treasur*", "bce", "boj", "fmi", "opep", "brent", "petroleo", "ouro",
         "eua", "estados unidos", "europa", "china", "japao", "argentina",
         "mexico", "tarifa*", "trump", "bolsas globais", "mercados globais",
-        "zona do euro", "recessao global", "apple", "microsoft",
-        "tesla", "amazon", "big tech*", "america latina",
+        "zona do euro", "recessao global", "america latina",
+    ],
+    "Empresas EUA": [
+        "apple", "microsoft", "google", "alphabet", "amazon", "meta platforms",
+        "zuckerberg", "instagram", "whatsapp", "tesla", "netflix", "walmart",
+        "jpmorgan", "goldman sachs", "berkshire", "boeing", "disney", "intel",
+        "amd", "qualcomm", "oracle", "salesforce", "uber", "spacex", "palantir",
+        "broadcom", "morgan stanley", "bank of america", "citigroup", "visa",
+        "mastercard", "coca-cola", "nike", "general motors", "exxon", "chevron",
+        "big tech*", "wall street journal",
     ],
     "Macro Brasil": [
         "selic", "copom", "banco central", "ipca*", "igp-m", "inflacao", "pib",
@@ -77,6 +87,7 @@ KW = {
         "fato relevante", "ipo", "follow-on", "recompra", "petrobras", "vale",
         "itau", "itausa", "bradesco", "ambev", "weg", "embraer", "magalu", "fii*",
         "fundo* imobiliario*", "small cap*", "bolsa brasileira", "pregao",
+        "aquisicao*", "fusao*", "controlador*", "minoritario*",
     ],
 }
 
@@ -95,13 +106,16 @@ def _compilar(lista):
 KW_RE = {s: _compilar(kws) for s, kws in KW.items()}
 
 # desempate: temas mais específicos vencem os genéricos
-PRIORIDADE = {"Cripto": 6, "IA": 5, "Internacional": 4, "Política": 3,
-              "Ações BR": 2, "Macro Brasil": 1}
+PRIORIDADE = {"Cripto": 7, "IA": 6, "Empresas EUA": 5, "Internacional": 4,
+              "Política": 3, "Ações BR": 2, "Macro Brasil": 1}
 
 EXCLUIR = [
     "copa do mundo", "futebol", "selecao brasileira", "neymar", "onde assistir",
     "horoscopo", "bbb", "enem", "mega-sena", "loteria", "celebridade",
-    "jogos de hoje", "novela", "receita de",
+    "jogos de hoje", "novela", "receita de", "day trade", "daytrade",
+    "mini indice", "mini dolar", "loteria federal", "videogame", "playstation",
+    "xbox", "nintendo", "esports", "e-sports", "jogos olimpicos", "cassino",
+    "apostas esportivas", "efeito vozinha", "viralizou", "viral no",
 ]
 
 CATEGORIAS_EXCLUIR = {"esporte", "pop", "casual", "mundo", "carreira", "marketing"}
@@ -138,16 +152,15 @@ def classificar(titulo: str, resumo: str, modo: str):
         scores["IA"] += 1
 
     if modo == "internacional":
-        # feed 100% internacional: só IA/Cripto escapam da seção Internacional
-        sub = {s: scores[s] for s in ("IA", "Cripto")}
+        # feed 100% internacional: só IA/Cripto/Empresas EUA escapam
+        sub = {s: scores[s] for s in ("IA", "Cripto", "Empresas EUA")}
         melhor = max(sub, key=lambda s: (sub[s], PRIORIDADE[s]))
         return melhor if sub[melhor] > 0 else "Internacional"
 
     melhor = max(scores, key=lambda s: (scores[s], PRIORIDADE[s]))
     if scores[melhor] == 0:
-        # sem sinal temático: notícia de empresa/mercado vai p/ Ações BR;
-        # fontes generalistas descartam
-        return None if modo == "estrito" else "Ações BR"
+        # sem nenhum sinal temático: descarta (mantém as seções focadas)
+        return None
     return melhor
 
 
@@ -195,6 +208,27 @@ def extrair_imagem(e) -> str:
     blob += getattr(e, "summary", "") or ""
     m = IMG_RE.search(blob)
     return m.group(1) if m and m.group(1).startswith("http") else ""
+
+
+OG_RE1 = re.compile(r'property=["\']og:image["\'][^>]*?content=["\']([^"\']+)', re.I)
+OG_RE2 = re.compile(r'content=["\']([^"\']+)["\'][^>]*?property=["\']og:image["\']', re.I)
+
+
+def preencher_imagens(por_secao, max_busca=30):
+    """Busca og:image na página da matéria para itens sem imagem no feed."""
+    n = 0
+    for itens in por_secao.values():
+        for it in itens:
+            if it.get("img") or n >= max_busca:
+                continue
+            n += 1
+            try:
+                r = requests.get(it["link"], headers=UA, timeout=8)
+                m = OG_RE1.search(r.text) or OG_RE2.search(r.text)
+                if m and m.group(1).startswith("http"):
+                    it["img"] = html.unescape(m.group(1))
+            except Exception:
+                pass
 
 
 def coletar():
@@ -261,40 +295,41 @@ def coletar():
 
 
 CSS = """
-:root{--bg:#0f1115;--card:#181b22;--txt:#e8eaf0;--mut:#8b93a7;--acc:#4f9cf9;
---macro:#4f9cf9;--acoes:#34c98e;--intl:#f2a13c;--cripto:#b57bf0;--cart:#ffd166;--pol:#ef6b6b;--ia:#4dd0c9}
+:root{--bg:#f4f5f8;--card:#ffffff;--txt:#1c2230;--mut:#68738a;--acc:#2f6fd6;
+--macro:#2f6fd6;--acoes:#178a5c;--intl:#d97c06;--cripto:#8a4fd3;--cart:#c99400;--pol:#d64545;--ia:#0e9d93;--eua:#d6538a}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--txt);font-family:-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.45}
-header{padding:calc(18px + env(safe-area-inset-top)) 16px 10px;position:sticky;top:0;background:rgba(15,17,21,.95);backdrop-filter:blur(8px);z-index:9;border-bottom:1px solid #232733}
+header{padding:calc(18px + env(safe-area-inset-top)) 16px 10px;position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);z-index:9;border-bottom:1px solid #e3e6ee}
 h1{font-size:1.15rem;font-weight:700}
 .atualizado{color:var(--mut);font-size:.75rem;margin-top:2px}
-nav{display:flex;gap:8px;overflow-x:auto;padding:10px 0 4px;-webkit-overflow-scrolling:touch}
-nav a{flex:0 0 auto;font-size:.78rem;font-weight:600;padding:5px 12px;border-radius:20px;text-decoration:none;color:var(--txt);background:var(--card);border:1px solid #2a2f3d}
+nav{display:flex;flex-wrap:wrap;gap:8px;padding:10px 0 6px}
+nav a{flex:0 0 auto;font-size:.78rem;font-weight:600;padding:5px 12px;border-radius:20px;text-decoration:none;color:var(--txt);background:var(--card);border:1px solid #d9dee9}
 main{padding:10px 14px 44px;max-width:560px;margin:0 auto}
 section{margin-top:28px}
 h2{font-size:.95rem;font-weight:700;display:flex;align-items:center;gap:8px;padding-bottom:8px}
 h2 .dot{width:9px;height:9px;border-radius:50%}
 h2 .n{color:var(--mut);font-weight:500;font-size:.8rem}
-.item{background:var(--card);border-radius:16px;margin-bottom:18px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.3);touch-action:pan-y;position:relative}
+.item{background:var(--card);border-radius:16px;margin-bottom:18px;overflow:hidden;box-shadow:0 1px 8px rgba(25,35,60,.09);border:1px solid #e7eaf1;touch-action:pan-y;position:relative}
 .item.saindo{transition:transform .22s ease-out,opacity .22s ease-out}
 .item.sumindo{transition:height .2s ease-out,margin .2s ease-out,padding .2s ease-out}
-.dica{background:#1c2130;color:var(--mut);font-size:.75rem;text-align:center;padding:8px 12px;border-radius:10px;margin:2px 0 12px}
-.capa{position:relative;width:100%;height:190px;background:#12141a;overflow:hidden}
+.recarregar{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom));width:54px;height:54px;border-radius:50%;background:var(--acc);color:#fff;border:none;font-size:1.5rem;box-shadow:0 4px 14px rgba(25,35,60,.3);z-index:99;cursor:pointer}
+.dica{background:#e9edf5;color:var(--mut);font-size:.75rem;text-align:center;padding:8px 12px;border-radius:10px;margin:2px 0 12px}
+.capa{position:relative;width:100%;height:190px;background:#e9edf4;overflow:hidden}
 .capa img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1c2130,#12141a)}
-.ph span{font-size:1.25rem;font-weight:800;letter-spacing:2px;color:var(--mut);opacity:.55;text-transform:uppercase}
+.ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#eef1f7,#e0e5ee)}
+.ph span{font-size:1.25rem;font-weight:800;letter-spacing:2px;color:#9aa4b8;text-transform:uppercase}
 .corpo{padding:14px 16px 15px}
 .item a{color:var(--txt);text-decoration:none;font-size:1.02rem;font-weight:600;line-height:1.35;display:block}
 .meta{margin-top:8px;font-size:.75rem;color:var(--mut);display:flex;align-items:center;gap:6px}
 .meta b{color:var(--acc);font-weight:600}
-.meta .tag{margin-left:auto;font-size:.68rem;font-weight:700;padding:2px 9px;border-radius:12px;color:#0f1115}
+.meta .tag{margin-left:auto;font-size:.68rem;font-weight:700;padding:2px 9px;border-radius:12px}
 .vazio{color:var(--mut);font-size:.85rem;padding:8px 2px}
 footer{text-align:center;color:var(--mut);font-size:.7rem;padding:20px 20px calc(20px + env(safe-area-inset-bottom))}
 """
 
 CORES = {"Carteira": "--cart", "Macro Brasil": "--macro", "Ações BR": "--acoes",
-         "Internacional": "--intl", "Política": "--pol", "IA": "--ia",
-         "Cripto": "--cripto"}
+         "Internacional": "--intl", "Empresas EUA": "--eua", "Política": "--pol",
+         "IA": "--ia", "Cripto": "--cripto"}
 
 
 def render(por_secao) -> str:
@@ -321,16 +356,16 @@ def render(por_secao) -> str:
                 f'<a href="{html.escape(it["link"])}" target="_blank" rel="noopener">'
                 f'{html.escape(it["titulo"])}</a>'
                 f'<div class="meta"><b>{it["fonte"]}</b> · {hora}'
-                f'<span class="tag" style="background:var({CORES[s]})">{s}</span>'
+                f'<span class="tag" style="background:var({CORES[s]});color:#fff">{s}</span>'
                 f'</div></div></div>'
             )
-        vazio_msg = ("Nenhuma notícia das ações da sua carteira nas últimas 24h."
+        vazio_msg = ("Nenhuma notícia das ações da sua carteira nos últimos 7 dias."
                      if s == "Carteira" else "Sem notícias nas últimas 24h.")
         conteudo = "".join(cards) or f'<div class="vazio">{vazio_msg}</div>'
         corpo.append(
             f'<section id="{s.replace(" ", "-")}">'
             f'<h2><span class="dot" style="background:var({CORES[s]})"></span>{s} '
-            f'<span class="n">{len(itens)}</span></h2>{conteudo}</section>'
+            f'<span class="n">{len(itens)}{" · 7 dias" if s == "Carteira" else ""}</span></h2>{conteudo}</section>'
         )
 
     return f"""<!DOCTYPE html>
@@ -338,10 +373,10 @@ def render(por_secao) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#0f1115">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f4f5f8">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Mercado">
 <title>Notícias do Mercado</title>
 <style>{CSS}</style>
@@ -353,7 +388,8 @@ def render(por_secao) -> str:
 <nav>{nav}</nav>
 </header>
 <main>{"".join(corpo)}</main>
-<footer>InfoMoney · Money Times · InvestNews · Bloomberg Línea · Exame</footer>
+<footer>InfoMoney · Money Times · InvestNews · Bloomberg Línea · Brazil Journal · Exame</footer>
+<button class="recarregar" onclick="location.href=location.pathname+'?r='+Date.now()" aria-label="Buscar novas notícias">&#8635;</button>
 {SCRIPT}
 </body>
 </html>"""
@@ -437,8 +473,42 @@ SCRIPT = """
 </script>"""
 
 
+HIST_ARQ = "carteira_historico.json"
+HIST_DIAS = 7
+CARTEIRA_MAX = 10
+
+
+def atualizar_carteira_com_historico(dados):
+    """Acumula notícias da carteira em arquivo e exibe as dos últimos 7 dias."""
+    try:
+        with open(HIST_ARQ, encoding="utf-8") as f:
+            hist = json.load(f)
+    except Exception:
+        hist = {}
+
+    for it in dados.get("Carteira", []):
+        hist[it["link"]] = {"titulo": it["titulo"], "fonte": it["fonte"],
+                            "dt": it["dt"].isoformat(), "img": it.get("img", "")}
+
+    limite = datetime.now(timezone.utc) - timedelta(days=HIST_DIAS)
+    hist = {k: v for k, v in hist.items()
+            if datetime.fromisoformat(v["dt"]) >= limite}
+
+    with open(HIST_ARQ, "w", encoding="utf-8") as f:
+        json.dump(hist, f, ensure_ascii=False, indent=1)
+
+    itens = [{"titulo": v["titulo"], "link": k, "fonte": v["fonte"],
+              "dt": datetime.fromisoformat(v["dt"]), "secao": "Carteira",
+              "img": v.get("img", ""), "tnorm": normalizar(v["titulo"])}
+             for k, v in hist.items()]
+    itens.sort(key=lambda i: i["dt"], reverse=True)
+    dados["Carteira"] = itens[:CARTEIRA_MAX]
+
+
 if __name__ == "__main__":
     dados = coletar()
+    atualizar_carteira_com_historico(dados)
+    preencher_imagens(dados)
     total = sum(len(v) for v in dados.values())
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(render(dados))

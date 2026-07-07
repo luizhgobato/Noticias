@@ -28,6 +28,7 @@ FEEDS = [
 
 JANELA_HORAS = 24
 MAX_POR_SECAO = 25
+VISIVEIS_PADRAO = 7
 LIMIAR_DEDUP = 0.72
 
 SECOES = ["Macro Brasil", "Ações BR", "Internacional", "Empresas EUA", "Política", "IA", "Cripto"]
@@ -313,6 +314,9 @@ h2 .n{color:var(--mut);font-weight:500;font-size:.8rem}
 .item.saindo{transition:transform .22s ease-out,opacity .22s ease-out}
 .item.sumindo{transition:height .2s ease-out,margin .2s ease-out,padding .2s ease-out}
 .recarregar{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom));width:54px;height:54px;border-radius:50%;background:var(--acc);color:#fff;border:none;font-size:1.5rem;box-shadow:0 4px 14px rgba(25,35,60,.3);z-index:99;cursor:pointer}
+.item.oculto{display:none}
+.btn-sec{background:none;border:1px solid #d9dee9;color:var(--mut);font-size:.82rem;border-radius:14px;padding:2px 9px;cursor:pointer;margin-left:auto;line-height:1.5}
+.btn-sec:active{background:#e9edf5}
 .dica{background:#e9edf5;color:var(--mut);font-size:.75rem;text-align:center;padding:8px 12px;border-radius:10px;margin:2px 0 12px}
 .capa{position:relative;width:100%;height:190px;background:#e9edf4;overflow:hidden}
 .capa img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -345,14 +349,15 @@ def render(por_secao) -> str:
     for s in visiveis:
         itens = por_secao.get(s, [])
         cards = []
-        for it in itens:
+        for idx, it in enumerate(itens):
+            extra_cls = ' oculto' if idx >= VISIVEIS_PADRAO else ''
             hora = it["dt"].astimezone(agora_br.tzinfo).strftime("%d/%m %H:%M")
             img_tag = (f'<img src="{html.escape(it["img"])}" alt="" '
                        f'loading="lazy" onerror="this.remove()">') if it.get("img") else ""
             capa = (f'<div class="capa"><div class="ph"><span>{it["fonte"]}</span></div>'
                     f'{img_tag}</div>')
             cards.append(
-                f'<div class="item" data-id="{html.escape(it["link"])}">{capa}<div class="corpo">'
+                f'<div class="item{extra_cls}" data-id="{html.escape(it["link"])}">{capa}<div class="corpo">'
                 f'<a href="{html.escape(it["link"])}" target="_blank" rel="noopener">'
                 f'{html.escape(it["titulo"])}</a>'
                 f'<div class="meta"><b>{it["fonte"]}</b> · {hora}'
@@ -362,10 +367,14 @@ def render(por_secao) -> str:
         vazio_msg = ("Nenhuma notícia das ações da sua carteira nos últimos 7 dias."
                      if s == "Carteira" else "Sem notícias nas últimas 24h.")
         conteudo = "".join(cards) or f'<div class="vazio">{vazio_msg}</div>'
+        vis_count = min(len(itens), VISIVEIS_PADRAO)
+        sufixo = " · 7 dias" if s == "Carteira" else ""
         corpo.append(
             f'<section id="{s.replace(" ", "-")}">'
             f'<h2><span class="dot" style="background:var({CORES[s]})"></span>{s} '
-            f'<span class="n">{len(itens)}{" · 7 dias" if s == "Carteira" else ""}</span></h2>{conteudo}</section>'
+            f'<span class="n">{vis_count}{sufixo}</span>'
+            f'<button class="btn-sec" onclick="refreshSec(this)" aria-label="Atualizar {s}">&#8635;</button></h2>'
+            f'{conteudo}</section>'
         )
 
     return f"""<!DOCTYPE html>
@@ -408,11 +417,28 @@ SCRIPT = """
 
   function atualizar(){
     document.querySelectorAll('section').forEach(function(sec){
-      var n=sec.querySelectorAll('.item').length;
-      var b=sec.querySelector('h2 .n'); if(b) b.textContent=n;
+      var n=sec.querySelectorAll('.item:not(.oculto)').length;
+      var b=sec.querySelector('h2 .n');
+      if(b) b.textContent=n+(sec.id==='Carteira'?' · 7 dias':'');
       if(n===0 && sec.id!=='Carteira') sec.style.display='none';
     });
   }
+
+  window.refreshSec=function(btn){
+    var sec=btn.closest('section');
+    var todos=Array.from(sec.querySelectorAll('.item'));
+    var vis=todos.filter(function(el){return !el.classList.contains('oculto');});
+    var lastIdx=vis.length ? todos.indexOf(vis[vis.length-1]) : -1;
+    vis.forEach(function(el){el.classList.add('oculto');});
+    var prox=todos.slice(lastIdx+1, lastIdx+8);
+    if(!prox.length){
+      location.href=location.pathname+'?r='+Date.now();
+      return;
+    }
+    prox.forEach(function(el){el.classList.remove('oculto');});
+    var b=sec.querySelector('.n');
+    if(b) b.textContent=prox.length+(sec.id==='Carteira'?' · 7 dias':'');
+  };
 
   document.querySelectorAll('.item[data-id]').forEach(function(el){
     if(desc[el.getAttribute('data-id')]) el.remove();

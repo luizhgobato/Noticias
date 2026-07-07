@@ -13,21 +13,23 @@ from difflib import SequenceMatcher
 import requests
 import feedparser
 
+# modo: "geral" = sem tema vai p/ Macro; "estrito" = sem tema descarta;
+# "internacional" = tudo vai p/ Internacional (exceto carteira/exclusões)
 FEEDS = [
-    ("InfoMoney",       "https://www.infomoney.com.br/feed/",                                False),
-    ("Money Times",     "https://www.moneytimes.com.br/feed/",                               False),
-    ("InvestNews",      "https://investnews.com.br/feed/",                                   False),
-    ("Bloomberg Línea", "https://www.bloomberglinea.com.br/arc/outboundfeeds/rss/?outputType=xml", False),
-    ("Valor",           "https://pox.globo.com/rss/valor",                                   False),
-    ("Exame",           "https://exame.com/feed/",                                           True),
-    ("Google News",     "https://news.google.com/rss/search?q=(Fed%20OR%20%22Wall%20Street%22%20OR%20Nasdaq%20OR%20%22S%26P%20500%22)%20when:1d&hl=pt-BR&gl=BR&ceid=BR:pt-419", True),
+    ("InfoMoney",       "https://www.infomoney.com.br/feed/",                                "geral"),
+    ("Money Times",     "https://www.moneytimes.com.br/internacional/feed/",                 "internacional"),
+    ("Money Times",     "https://www.moneytimes.com.br/feed/",                               "geral"),
+    ("InvestNews",      "https://investnews.com.br/feed/",                                   "geral"),
+    ("Bloomberg Línea", "https://www.bloomberglinea.com.br/arc/outboundfeeds/rss/?outputType=xml", "geral"),
+    ("Valor",           "https://pox.globo.com/rss/valor",                                   "geral"),
+    ("Exame",           "https://exame.com/feed/",                                           "estrito"),
 ]
 
 JANELA_HORAS = 24
 MAX_POR_SECAO = 25
 LIMIAR_DEDUP = 0.72
 
-SECOES = ["Macro Brasil", "Ações BR", "Internacional", "Cripto"]
+SECOES = ["Macro Brasil", "Ações BR", "Internacional", "Política", "IA", "Cripto"]
 SECOES_TODAS = ["Carteira"] + SECOES
 
 # carteira do usuário: prioridade máxima, seção própria
@@ -48,16 +50,27 @@ KW = {
         "treasur*", "bce", "boj", "fmi", "opep", "brent", "petroleo", "ouro",
         "eua", "estados unidos", "europa", "china", "japao", "argentina",
         "mexico", "tarifa*", "trump", "bolsas globais", "mercados globais",
-        "zona do euro", "recessao global", "nvidia", "apple", "microsoft",
+        "zona do euro", "recessao global", "apple", "microsoft",
         "tesla", "amazon", "big tech*",
     ],
     "Macro Brasil": [
         "selic", "copom", "banco central", "ipca*", "igp-m", "inflacao", "pib",
         "fiscal", "arcabouco", "divida publica", "tesouro nacional", "cambio",
         "dolar", "juros", "boletim focus", "cdi", "arrecadacao", "orcamento",
-        "fazenda", "haddad", "galipolo", "lula", "congresso", "reforma tributaria",
+        "fazenda", "haddad", "galipolo", "reforma tributaria",
         "imposto*", "caged", "desemprego", "atividade economica", "varejo",
         "industria", "credito",
+    ],
+    "Política": [
+        "eleicao*", "eleitoral", "candidat*", "lula", "bolsonaro", "congresso",
+        "senado", "camara dos deputados", "stf", "tse", "ministro*", "partido*",
+        "campanha eleitoral", "cpi", "impeachment", "planalto", "datafolha",
+        "pesquisa eleitoral", "oposicao", "presidenciavel*", "governo federal",
+    ],
+    "IA": [
+        "inteligencia artificial", "openai", "chatgpt", "anthropic", "claude",
+        "gemini", "copilot", "deepseek", "nvidia", "llm*", "machine learning",
+        "data center*", "semicondutor*",
     ],
     "Ações BR": [
         "ibovespa", "b3", "acoes", "acao", "dividendo*", "jcp",
@@ -83,7 +96,8 @@ def _compilar(lista):
 KW_RE = {s: _compilar(kws) for s, kws in KW.items()}
 
 # desempate: temas mais específicos vencem os genéricos
-PRIORIDADE = {"Cripto": 3, "Internacional": 2, "Ações BR": 1, "Macro Brasil": 0}
+PRIORIDADE = {"Cripto": 6, "IA": 5, "Internacional": 4, "Política": 3,
+              "Ações BR": 2, "Macro Brasil": 1}
 
 EXCLUIR = [
     "copa do mundo", "futebol", "selecao brasileira", "neymar", "onde assistir",
@@ -104,7 +118,7 @@ def normalizar(texto: str) -> str:
     return "".join(c for c in nfkd if not unicodedata.combining(c)).lower()
 
 
-def classificar(titulo: str, resumo: str, fonte_restrita: bool):
+def classificar(titulo: str, resumo: str, modo: str):
     txt = normalizar(f"{titulo} {resumo}")
 
     for kw in EXCLUIR:
@@ -117,11 +131,19 @@ def classificar(titulo: str, resumo: str, fonte_restrita: bool):
     scores = {s: len(KW_RE[s].findall(txt)) for s in SECOES}
     if TICKER_RE.search(titulo or ""):
         scores["Ações BR"] += 2
+    if re.search(r"\bIA\b", f"{titulo} {resumo}"):
+        scores["IA"] += 1
+
+    if modo == "internacional":
+        # feed 100% internacional: só IA/Cripto escapam da seção Internacional
+        sub = {s: scores[s] for s in ("IA", "Cripto")}
+        melhor = max(sub, key=lambda s: (sub[s], PRIORIDADE[s]))
+        return melhor if sub[melhor] > 0 else "Internacional"
 
     melhor = max(scores, key=lambda s: (scores[s], PRIORIDADE[s]))
     if scores[melhor] == 0:
-        # sem sinal temático: mantém em Macro Brasil se a fonte é 100% finanças
-        return None if fonte_restrita else "Macro Brasil"
+        # sem sinal temático: descarta fontes generalistas, mantém as de finanças
+        return None if modo == "estrito" else "Macro Brasil"
     return melhor
 
 
@@ -153,7 +175,7 @@ def coletar():
     limite = agora - timedelta(hours=JANELA_HORAS)
     itens = []
 
-    for nome, url, restrita in FEEDS:
+    for nome, url, modo in FEEDS:
         try:
             resp = requests.get(url, headers=UA, timeout=25)
             resp.raise_for_status()
@@ -180,7 +202,7 @@ def coletar():
                 continue
 
             resumo = re.sub(r"<[^>]+>", " ", getattr(e, "summary", ""))[:400]
-            secao = classificar(titulo, resumo, restrita)
+            secao = classificar(titulo, resumo, modo)
             if secao is None:
                 continue
 
@@ -208,7 +230,7 @@ def coletar():
 
 CSS = """
 :root{--bg:#0f1115;--card:#181b22;--txt:#e8eaf0;--mut:#8b93a7;--acc:#4f9cf9;
---macro:#4f9cf9;--acoes:#34c98e;--intl:#f2a13c;--cripto:#b57bf0;--cart:#ffd166}
+--macro:#4f9cf9;--acoes:#34c98e;--intl:#f2a13c;--cripto:#b57bf0;--cart:#ffd166;--pol:#ef6b6b;--ia:#4dd0c9}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--txt);font-family:-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.45}
 header{padding:calc(18px + env(safe-area-inset-top)) 16px 10px;position:sticky;top:0;background:rgba(15,17,21,.95);backdrop-filter:blur(8px);z-index:9;border-bottom:1px solid #232733}
@@ -230,7 +252,8 @@ footer{text-align:center;color:var(--mut);font-size:.7rem;padding:20px 20px calc
 """
 
 CORES = {"Carteira": "--cart", "Macro Brasil": "--macro", "Ações BR": "--acoes",
-         "Internacional": "--intl", "Cripto": "--cripto"}
+         "Internacional": "--intl", "Política": "--pol", "IA": "--ia",
+         "Cripto": "--cripto"}
 
 
 def render(por_secao) -> str:
@@ -240,7 +263,7 @@ def render(por_secao) -> str:
     except Exception:
         agora_br = datetime.now(timezone(timedelta(hours=-3)))
 
-    visiveis = [s for s in SECOES_TODAS if not (s == "Carteira" and not por_secao.get(s))]
+    visiveis = [s for s in SECOES_TODAS if por_secao.get(s)]
     nav = "".join(f'<a href="#{s.replace(" ", "-")}">{s}</a>' for s in visiveis)
     corpo = []
     for s in visiveis:
@@ -280,7 +303,7 @@ def render(por_secao) -> str:
 <nav>{nav}</nav>
 </header>
 <main>{"".join(corpo)}</main>
-<footer>InfoMoney · Money Times · InvestNews · Bloomberg Línea · Valor · Exame · Google News</footer>
+<footer>InfoMoney · Money Times · InvestNews · Bloomberg Línea · Valor · Exame</footer>
 </body>
 </html>"""
 

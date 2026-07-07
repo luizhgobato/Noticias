@@ -21,7 +21,6 @@ FEEDS = [
     ("Money Times",     "https://www.moneytimes.com.br/feed/",                               "geral"),
     ("InvestNews",      "https://investnews.com.br/feed/",                                   "geral"),
     ("Bloomberg Línea", "https://www.bloomberglinea.com.br/arc/outboundfeeds/rss/?outputType=xml", "geral"),
-    ("Valor",           "https://pox.globo.com/rss/valor",                                   "geral"),
     ("Exame",           "https://exame.com/feed/",                                           "estrito"),
 ]
 
@@ -277,7 +276,10 @@ h2{font-size:.95rem;font-weight:700;display:flex;align-items:center;gap:8px;padd
 h2 .dot{width:9px;height:9px;border-radius:50%}
 h2 .n{color:var(--mut);font-weight:500;font-size:.8rem}
 .item{background:var(--card);border-radius:16px;margin-bottom:18px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.3)}
-.capa{width:100%;height:190px;object-fit:cover;display:block;background:#12141a}
+.capa{position:relative;width:100%;height:190px;background:#12141a;overflow:hidden}
+.capa img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1c2130,#12141a)}
+.ph span{font-size:1.25rem;font-weight:800;letter-spacing:2px;color:var(--mut);opacity:.55;text-transform:uppercase}
 .corpo{padding:14px 16px 15px}
 .item a{color:var(--txt);text-decoration:none;font-size:1.02rem;font-weight:600;line-height:1.35;display:block}
 .meta{margin-top:8px;font-size:.75rem;color:var(--mut);display:flex;align-items:center;gap:6px}
@@ -307,8 +309,10 @@ def render(por_secao) -> str:
         cards = []
         for it in itens:
             hora = it["dt"].astimezone(agora_br.tzinfo).strftime("%d/%m %H:%M")
-            capa = (f'<img class="capa" src="{html.escape(it["img"])}" alt="" '
-                    f'loading="lazy" onerror="this.remove()">') if it.get("img") else ""
+            img_tag = (f'<img src="{html.escape(it["img"])}" alt="" '
+                       f'loading="lazy" onerror="this.remove()">') if it.get("img") else ""
+            capa = (f'<div class="capa"><div class="ph"><span>{it["fonte"]}</span></div>'
+                    f'{img_tag}</div>')
             cards.append(
                 f'<div class="item">{capa}<div class="corpo">'
                 f'<a href="{html.escape(it["link"])}" target="_blank" rel="noopener">'
@@ -346,7 +350,7 @@ def render(por_secao) -> str:
 <nav>{nav}</nav>
 </header>
 <main>{"".join(corpo)}</main>
-<footer>InfoMoney · Money Times · InvestNews · Bloomberg Línea · Valor · Exame</footer>
+<footer>InfoMoney · Money Times · InvestNews · Bloomberg Línea · Exame</footer>
 </body>
 </html>"""
 

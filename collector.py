@@ -275,7 +275,10 @@ section{margin-top:28px}
 h2{font-size:.95rem;font-weight:700;display:flex;align-items:center;gap:8px;padding-bottom:8px}
 h2 .dot{width:9px;height:9px;border-radius:50%}
 h2 .n{color:var(--mut);font-weight:500;font-size:.8rem}
-.item{background:var(--card);border-radius:16px;margin-bottom:18px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.3)}
+.item{background:var(--card);border-radius:16px;margin-bottom:18px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.3);touch-action:pan-y;position:relative}
+.item.saindo{transition:transform .22s ease-out,opacity .22s ease-out}
+.item.sumindo{transition:height .2s ease-out,margin .2s ease-out,padding .2s ease-out}
+.dica{background:#1c2130;color:var(--mut);font-size:.75rem;text-align:center;padding:8px 12px;border-radius:10px;margin:2px 0 12px}
 .capa{position:relative;width:100%;height:190px;background:#12141a;overflow:hidden}
 .capa img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1c2130,#12141a)}
@@ -314,7 +317,7 @@ def render(por_secao) -> str:
             capa = (f'<div class="capa"><div class="ph"><span>{it["fonte"]}</span></div>'
                     f'{img_tag}</div>')
             cards.append(
-                f'<div class="item">{capa}<div class="corpo">'
+                f'<div class="item" data-id="{html.escape(it["link"])}">{capa}<div class="corpo">'
                 f'<a href="{html.escape(it["link"])}" target="_blank" rel="noopener">'
                 f'{html.escape(it["titulo"])}</a>'
                 f'<div class="meta"><b>{it["fonte"]}</b> · {hora}'
@@ -351,8 +354,87 @@ def render(por_secao) -> str:
 </header>
 <main>{"".join(corpo)}</main>
 <footer>InfoMoney · Money Times · InvestNews · Bloomberg Línea · Exame</footer>
+{SCRIPT}
 </body>
 </html>"""
+
+
+SCRIPT = """
+<script>
+(function(){
+  var KEY='noticiasDescartadas', HINT='dicaSwipeVista';
+  var desc={};
+  try{desc=JSON.parse(localStorage.getItem(KEY))||{};}catch(e){}
+  var agora=Date.now(), mudou=false;
+  for(var k in desc){ if(agora-desc[k]>3*864e5){ delete desc[k]; mudou=true; } }
+  function salvar(){ try{localStorage.setItem(KEY,JSON.stringify(desc));}catch(e){} }
+  if(mudou) salvar();
+
+  function atualizar(){
+    document.querySelectorAll('section').forEach(function(sec){
+      var n=sec.querySelectorAll('.item').length;
+      var b=sec.querySelector('h2 .n'); if(b) b.textContent=n;
+      if(n===0 && sec.id!=='Carteira') sec.style.display='none';
+    });
+  }
+
+  document.querySelectorAll('.item[data-id]').forEach(function(el){
+    if(desc[el.getAttribute('data-id')]) el.remove();
+  });
+  atualizar();
+
+  if(!localStorage.getItem(HINT) && document.querySelector('.item')){
+    var d=document.createElement('div');
+    d.className='dica'; d.textContent='Deslize a notícia para a esquerda para descartá-la';
+    var main=document.querySelector('main'); main.insertBefore(d,main.firstChild);
+    try{localStorage.setItem(HINT,'1');}catch(e){}
+  }
+
+  function descartar(el){
+    desc[el.getAttribute('data-id')]=Date.now(); salvar();
+    el.classList.add('saindo');
+    el.style.transform='translateX(-110%)'; el.style.opacity='0';
+    setTimeout(function(){
+      el.style.height=el.offsetHeight+'px';
+      el.offsetHeight;
+      el.classList.add('sumindo');
+      el.style.height='0'; el.style.marginBottom='0';
+      setTimeout(function(){ el.remove(); atualizar(); },210);
+    },230);
+  }
+
+  document.querySelectorAll('.item[data-id]').forEach(function(el){
+    var sx=0, sy=0, dx=0, ativo=false, horizontal=false;
+    el.addEventListener('touchstart',function(e){
+      sx=e.touches[0].clientX; sy=e.touches[0].clientY;
+      dx=0; ativo=true; horizontal=false; el.style.transition='none';
+    },{passive:true});
+    el.addEventListener('touchmove',function(e){
+      if(!ativo) return;
+      dx=e.touches[0].clientX-sx;
+      var dy=e.touches[0].clientY-sy;
+      if(!horizontal){
+        if(Math.abs(dx)>12 && Math.abs(dx)>Math.abs(dy)*1.4) horizontal=true;
+        else if(Math.abs(dy)>14){ ativo=false; el.style.transform=''; el.style.opacity=''; return; }
+      }
+      if(horizontal && dx<0){
+        el.style.transform='translateX('+dx+'px)';
+        el.style.opacity=String(Math.max(0.25,1+dx/320));
+      }
+    },{passive:true});
+    el.addEventListener('touchend',function(){
+      if(!ativo) return; ativo=false;
+      el.style.transition='';
+      if(horizontal && dx<-90){ descartar(el); }
+      else{
+        el.classList.add('saindo');
+        el.style.transform=''; el.style.opacity='';
+        setTimeout(function(){ el.classList.remove('saindo'); },250);
+      }
+    });
+  });
+})();
+</script>"""
 
 
 if __name__ == "__main__":

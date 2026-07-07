@@ -51,7 +51,7 @@ KW = {
         "eua", "estados unidos", "europa", "china", "japao", "argentina",
         "mexico", "tarifa*", "trump", "bolsas globais", "mercados globais",
         "zona do euro", "recessao global", "apple", "microsoft",
-        "tesla", "amazon", "big tech*",
+        "tesla", "amazon", "big tech*", "america latina",
     ],
     "Macro Brasil": [
         "selic", "copom", "banco central", "ipca*", "igp-m", "inflacao", "pib",
@@ -76,7 +76,7 @@ KW = {
         "ibovespa", "b3", "acoes", "acao", "dividendo*", "jcp",
         "juros sobre capital", "balanco*", "lucro", "receita liquida",
         "fato relevante", "ipo", "follow-on", "recompra", "petrobras", "vale",
-        "itau", "bradesco", "ambev", "weg", "embraer", "magalu", "fii*",
+        "itau", "itausa", "bradesco", "ambev", "weg", "embraer", "magalu", "fii*",
         "fundo* imobiliario*", "small cap*", "bolsa brasileira", "pregao",
     ],
 }
@@ -106,6 +106,10 @@ EXCLUIR = [
 ]
 
 CATEGORIAS_EXCLUIR = {"esporte", "pop", "casual", "mundo", "carreira", "marketing"}
+
+URLS_EXCLUIR = ("/eu-e/", "/patrocinado/")
+
+TITULOS_LIXO = {"correcao", "cartas de leitores", "errata"}
 
 TICKER_RE = re.compile(r"\b[A-Z]{4}\d{1,2}\b")
 
@@ -142,8 +146,9 @@ def classificar(titulo: str, resumo: str, modo: str):
 
     melhor = max(scores, key=lambda s: (scores[s], PRIORIDADE[s]))
     if scores[melhor] == 0:
-        # sem sinal temático: descarta fontes generalistas, mantém as de finanças
-        return None if modo == "estrito" else "Macro Brasil"
+        # sem sinal temático: notícia de empresa/mercado vai p/ Ações BR;
+        # fontes generalistas descartam
+        return None if modo == "estrito" else "Ações BR"
     return melhor
 
 
@@ -188,6 +193,10 @@ def coletar():
             titulo = html.unescape(getattr(e, "title", "")).strip()
             link = getattr(e, "link", "")
             if not titulo or not link:
+                continue
+            if any(p in link for p in URLS_EXCLUIR):
+                continue
+            if normalizar(titulo) in TITULOS_LIXO:
                 continue
 
             cats = {normalizar(t.get("term", "")) for t in getattr(e, "tags", [])}
@@ -263,7 +272,7 @@ def render(por_secao) -> str:
     except Exception:
         agora_br = datetime.now(timezone(timedelta(hours=-3)))
 
-    visiveis = [s for s in SECOES_TODAS if por_secao.get(s)]
+    visiveis = [s for s in SECOES_TODAS if s == "Carteira" or por_secao.get(s)]
     nav = "".join(f'<a href="#{s.replace(" ", "-")}">{s}</a>' for s in visiveis)
     corpo = []
     for s in visiveis:
@@ -276,7 +285,9 @@ def render(por_secao) -> str:
                 f'{html.escape(it["titulo"])}</a>'
                 f'<div class="meta"><b>{it["fonte"]}</b> · {hora}</div></div>'
             )
-        conteudo = "".join(cards) or '<div class="vazio">Sem notícias nas últimas 24h.</div>'
+        vazio_msg = ("Nenhuma notícia das ações da sua carteira nas últimas 24h."
+                     if s == "Carteira" else "Sem notícias nas últimas 24h.")
+        conteudo = "".join(cards) or f'<div class="vazio">{vazio_msg}</div>'
         corpo.append(
             f'<section id="{s.replace(" ", "-")}">'
             f'<h2><span class="dot" style="background:var({CORES[s]})"></span>{s} '

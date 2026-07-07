@@ -175,6 +175,29 @@ def duplicada(titulo_norm: str, vistos: list) -> bool:
     return False
 
 
+IMG_RE = re.compile(r'<img[^>]+src=["\']([^"\']+)', re.I)
+
+
+def extrair_imagem(e) -> str:
+    """Pega a imagem da matéria: media:content > media:thumbnail > enclosure > <img> no conteúdo."""
+    for attr in ("media_content", "media_thumbnail"):
+        for m in getattr(e, attr, None) or []:
+            u = (m or {}).get("url", "")
+            if u.startswith("http"):
+                return u
+    for enc in getattr(e, "enclosures", None) or []:
+        u = enc.get("href") or enc.get("url") or ""
+        if u.startswith("http") and (enc.get("type", "").startswith("image")
+                                     or re.search(r"\.(jpe?g|png|webp|gif)", u, re.I)):
+            return u
+    blob = ""
+    for c in getattr(e, "content", None) or []:
+        blob += (c or {}).get("value", "")
+    blob += getattr(e, "summary", "") or ""
+    m = IMG_RE.search(blob)
+    return m.group(1) if m and m.group(1).startswith("http") else ""
+
+
 def coletar():
     agora = datetime.now(timezone.utc)
     limite = agora - timedelta(hours=JANELA_HORAS)
@@ -221,6 +244,7 @@ def coletar():
                 "fonte": nome,
                 "dt": dt,
                 "secao": secao,
+                "img": extrair_imagem(e),
                 "tnorm": normalizar(titulo),
             })
         print(f"[OK] {nome}: {len(feed.entries)} entradas no feed")
@@ -247,15 +271,18 @@ h1{font-size:1.15rem;font-weight:700}
 .atualizado{color:var(--mut);font-size:.75rem;margin-top:2px}
 nav{display:flex;gap:8px;overflow-x:auto;padding:10px 0 4px;-webkit-overflow-scrolling:touch}
 nav a{flex:0 0 auto;font-size:.78rem;font-weight:600;padding:5px 12px;border-radius:20px;text-decoration:none;color:var(--txt);background:var(--card);border:1px solid #2a2f3d}
-main{padding:8px 16px 40px;max-width:640px;margin:0 auto}
-section{margin-top:22px}
+main{padding:10px 14px 44px;max-width:560px;margin:0 auto}
+section{margin-top:28px}
 h2{font-size:.95rem;font-weight:700;display:flex;align-items:center;gap:8px;padding-bottom:8px}
 h2 .dot{width:9px;height:9px;border-radius:50%}
 h2 .n{color:var(--mut);font-weight:500;font-size:.8rem}
-.item{background:var(--card);border-radius:10px;padding:11px 13px;margin-bottom:8px}
-.item a{color:var(--txt);text-decoration:none;font-size:.9rem;font-weight:500;display:block}
-.meta{margin-top:5px;font-size:.72rem;color:var(--mut)}
+.item{background:var(--card);border-radius:16px;margin-bottom:18px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.3)}
+.capa{width:100%;height:190px;object-fit:cover;display:block;background:#12141a}
+.corpo{padding:14px 16px 15px}
+.item a{color:var(--txt);text-decoration:none;font-size:1.02rem;font-weight:600;line-height:1.35;display:block}
+.meta{margin-top:8px;font-size:.75rem;color:var(--mut);display:flex;align-items:center;gap:6px}
 .meta b{color:var(--acc);font-weight:600}
+.meta .tag{margin-left:auto;font-size:.68rem;font-weight:700;padding:2px 9px;border-radius:12px;color:#0f1115}
 .vazio{color:var(--mut);font-size:.85rem;padding:8px 2px}
 footer{text-align:center;color:var(--mut);font-size:.7rem;padding:20px 20px calc(20px + env(safe-area-inset-bottom))}
 """
@@ -280,10 +307,15 @@ def render(por_secao) -> str:
         cards = []
         for it in itens:
             hora = it["dt"].astimezone(agora_br.tzinfo).strftime("%d/%m %H:%M")
+            capa = (f'<img class="capa" src="{html.escape(it["img"])}" alt="" '
+                    f'loading="lazy" onerror="this.remove()">') if it.get("img") else ""
             cards.append(
-                f'<div class="item"><a href="{html.escape(it["link"])}" target="_blank" rel="noopener">'
+                f'<div class="item">{capa}<div class="corpo">'
+                f'<a href="{html.escape(it["link"])}" target="_blank" rel="noopener">'
                 f'{html.escape(it["titulo"])}</a>'
-                f'<div class="meta"><b>{it["fonte"]}</b> · {hora}</div></div>'
+                f'<div class="meta"><b>{it["fonte"]}</b> · {hora}'
+                f'<span class="tag" style="background:var({CORES[s]})">{s}</span>'
+                f'</div></div></div>'
             )
         vazio_msg = ("Nenhuma notícia das ações da sua carteira nas últimas 24h."
                      if s == "Carteira" else "Sem notícias nas últimas 24h.")

@@ -149,6 +149,18 @@ def normalizar(texto: str) -> str:
     return "".join(c for c in nfkd if not unicodedata.combining(c)).lower()
 
 
+# Sinal financeiro mínimo para aceitar artigos "geral" sem keyword temática.
+# Rejeita esportes, ciência, estilo de vida, etc. do feed geral do InfoMoney.
+_SINAL_FIN_RE = re.compile(
+    r"\b(lucro|prejuizo|receita|faturamento|dividendo|jcp|jscp|balanco|resultado|"
+    r"ebitda|margem|ibovespa|acoes|acao|bolsa|b3|ipo|follow.on|oferta publica|"
+    r"fusao|aquisicao|acionista|controlador|conselho|ceo|cfo|diretor|gestao|"
+    r"banco|seguro|varejo|industria|energia|petroleo|gas|mineracao|siderurgia|"
+    r"exportacao|importacao|producao|vendas|faturou|investimento|capital|credito|"
+    r"juros|taxa|inflacao|pib|fiscal|cambio|dolar|real|r\$)\b"
+)
+
+
 def classificar(titulo: str, resumo: str, modo: str):
     txt = normalizar(f"{titulo} {resumo}")
 
@@ -175,7 +187,11 @@ def classificar(titulo: str, resumo: str, modo: str):
     if scores[melhor] == 0:
         if modo == "estrito":
             return None
-        return "Ações BR"  # fallback p/ fontes financeiras sem keyword específica
+        # Para fontes "geral": só inclui se tiver sinal financeiro mínimo no texto.
+        # Evita trazer esportes, ciência, lifestyle do feed geral de sites como InfoMoney.
+        if not _SINAL_FIN_RE.search(txt):
+            return None
+        return "Ações BR"
     return melhor
 
 

@@ -4,13 +4,10 @@ Consolidador de Notícias Financeiras
 Coleta feeds RSS, deduplica, classifica por tema e gera index.html.
 Roda 3x/dia via GitHub Actions.
 """
-import csv
-import io
 import json
 import re
 import html
 import unicodedata
-import zipfile
 from datetime import datetime, timedelta, timezone
 from difflib import SequenceMatcher
 
@@ -583,67 +580,53 @@ def atualizar_carteira_com_historico(dados):
     dados["Carteira"] = itens[:CARTEIRA_MAX]
 
 
+_FR_ROW_RE = re.compile(
+    r'<td class="dth-entrega"><span>(\d{2}/\d{2}/\d{4})[^<]*</span></td>'
+    r'\s*<td class="col-tipo">(\w+)</td>'
+    r'\s*<td class="descricao">([^<]+)</td>'
+    r'\s*<td class="download"><a[^>]+href="([^"]+)"',
+    re.DOTALL,
+)
+
+
 def coletar_fatos_relevantes(janela_dias: int = 30) -> list:
-    """Busca Fatos Relevantes oficiais das empresas da carteira via dados.cvm.gov.br (CVM IPE)."""
-    CVM_CODES = {
-        1023:  ("BBAS3", "Banco do Brasil"),
-        19348: ("ITUB3", "Itaú Unibanco"),
-        24180: ("IRBR3", "IRB Brasil Re"),
-        23159: ("BBSE3", "BB Seguridade"),
-        23795: ("CXSE3", "Caixa Seguridade"),
-        25186: ("GMAT3", "Grupo Mateus"),
-        2429:  ("RANI3", "Irani"),
-        22357: ("ALSO3", "Allos"),
-    }
+    """Busca Fatos Relevantes e Comunicados das empresas via Fundamentus (fonte: páginas de RI/CVM)."""
     agora = datetime.now(timezone.utc)
     limite = agora - timedelta(days=janela_dias)
     itens, vistos = [], set()
-    anos = {agora.year}
-    if limite.year < agora.year:
-        anos.add(limite.year)
-    for ano in sorted(anos, reverse=True):
-        url = f"https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_{ano}.zip"
+    for ticker, nome in CARTEIRA_TICKERS:
+        url = f"http://fundamentus.com.br/fatos_relevantes.php?papel={ticker}"
         try:
-            resp = requests.get(url, headers=UA, timeout=60)
+            resp = requests.get(url, headers=UA, timeout=15)
             resp.raise_for_status()
-            zf = zipfile.ZipFile(io.BytesIO(resp.content))
-            with zf.open(f"ipe_cia_aberta_{ano}.csv") as f:
-                reader = csv.DictReader(io.TextIOWrapper(f, encoding="latin-1"), delimiter=";")
-                for row in reader:
-                    if row.get("Categoria") != "Fato Relevante":
-                        continue
-                    try:
-                        cod = int(row.get("Codigo_CVM", 0))
-                    except ValueError:
-                        continue
-                    if cod not in CVM_CODES:
-                        continue
-                    dt_str = (row.get("Data_Entrega") or row.get("Data_Referencia") or "")[:10]
-                    try:
-                        dt = datetime.strptime(dt_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-                    except ValueError:
-                        continue
-                    if dt < limite:
-                        continue
-                    link = row.get("Link_Download", "").strip()
-                    assunto = row.get("Assunto", "").strip()
-                    if not link or not assunto or link in vistos:
-                        continue
-                    vistos.add(link)
-                    ticker, nome = CVM_CODES[cod]
-                    itens.append({
-                        "titulo": assunto,
-                        "link": link,
-                        "fonte": f"{nome} ({ticker})",
-                        "dt": dt,
-                        "secao": "Fatos Relevantes",
-                        "img": "",
-                        "tnorm": normalizar(assunto),
-                    })
+            text = resp.content.decode("latin-1")
         except Exception as e:
-            print(f"[AVISO] CVM IPE {ano}: {e}")
+            print(f"[AVISO] Fundamentus {ticker}: {e}")
+            continue
+        count = 0
+        for m in _FR_ROW_RE.finditer(text):
+            dt_str, tipo, desc, link = m.group(1), m.group(2), m.group(3).strip(), m.group(4).strip()
+            if tipo not in ("FR", "CO"):
+                continue
+            try:
+                dt = datetime.strptime(dt_str, "%d/%m/%Y").replace(tzinfo=timezone.utc)
+            except ValueError:
+                continue
+            if dt < limite or link in vistos:
+                continue
+            vistos.add(link)
+            itens.append({
+                "titulo": html.unescape(desc),
+                "link": link,
+                "fonte": f"{nome} ({ticker})",
+                "dt": dt,
+                "secao": "Fatos Relevantes",
+                "img": "",
+                "tnorm": normalizar(desc),
+            })
+            count += 1
+        print(f"[OK] Fundamentus {ticker}: {count} documentos")
     itens.sort(key=lambda i: i["dt"], reverse=True)
-    print(f"[OK] CVM Fatos Relevantes: {len(itens)} documentos nos últimos {janela_dias} dias")
     return itens[:MAX_POR_SECAO]
 
 

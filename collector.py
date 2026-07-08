@@ -4,10 +4,13 @@ Consolidador de Notícias Financeiras
 Coleta feeds RSS, deduplica, classifica por tema e gera index.html.
 Roda 3x/dia via GitHub Actions.
 """
+import csv
+import io
 import json
 import re
 import html
 import unicodedata
+import zipfile
 from datetime import datetime, timedelta, timezone
 from difflib import SequenceMatcher
 
@@ -409,7 +412,12 @@ def render(por_secao) -> str:
             vazio_msg = "Sem notícias nas últimas 24h."
         conteudo = "".join(cards) or f'<div class="vazio">{vazio_msg}</div>'
         vis_count = min(len(itens), VISIVEIS_PADRAO)
-        sufixo = " · 7 dias" if s == "Carteira" else ""
+        if s == "Carteira":
+            sufixo = " · 7 dias"
+        elif s == "Fatos Relevantes":
+            sufixo = " · 30 dias"
+        else:
+            sufixo = ""
         corpo.append(
             f'<section id="{s.replace(" ", "-")}">'
             f'<h2><span class="dot" style="background:var({CORES[s]})"></span>{s} '
@@ -460,8 +468,9 @@ SCRIPT = """
     document.querySelectorAll('section').forEach(function(sec){
       var n=sec.querySelectorAll('.item:not(.oculto)').length;
       var b=sec.querySelector('h2 .n');
-      if(b) b.textContent=n+(sec.id==='Carteira'?' · 7 dias':'');
-      if(n===0 && sec.id!=='Carteira') sec.style.display='none';
+      var sfx=sec.id==='Carteira'?' · 7 dias':sec.id==='Fatos-Relevantes'?' · 30 dias':'';
+      if(b) b.textContent=n+sfx;
+      if(n===0 && sec.id!=='Carteira' && sec.id!=='Fatos-Relevantes') sec.style.display='none';
     });
   }
 
@@ -478,7 +487,8 @@ SCRIPT = """
     }
     prox.forEach(function(el){el.classList.remove('oculto');});
     var b=sec.querySelector('.n');
-    if(b) b.textContent=prox.length+(sec.id==='Carteira'?' · 7 dias':'');
+    var sfx=sec.id==='Carteira'?' · 7 dias':sec.id==='Fatos-Relevantes'?' · 30 dias':'';
+    if(b) b.textContent=prox.length+sfx;
   };
 
   document.querySelectorAll('.item[data-id]').forEach(function(el){
@@ -572,42 +582,68 @@ def atualizar_carteira_com_historico(dados):
     dados["Carteira"] = itens[:CARTEIRA_MAX]
 
 
-def coletar_fatos_relevantes(top_por_ticker: int = 4) -> list:
-    """Coleta as notícias mais recentes de cada ação da carteira via Yahoo Finance RSS."""
+def coletar_fatos_relevantes(janela_dias: int = 30) -> list:
+    """Busca Fatos Relevantes oficiais das empresas da carteira via dados.cvm.gov.br (CVM IPE)."""
+    CVM_CODES = {
+        1023:  ("BBAS3", "Banco do Brasil"),
+        19348: ("ITUB3", "Itaú Unibanco"),
+        24180: ("IRBR3", "IRB Brasil Re"),
+        23159: ("BBSE3", "BB Seguridade"),
+        23795: ("CXSE3", "Caixa Seguridade"),
+        25186: ("GMAT3", "Grupo Mateus"),
+        2429:  ("RANI3", "Irani"),
+        22357: ("ALSO3", "Allos"),
+    }
+    agora = datetime.now(timezone.utc)
+    limite = agora - timedelta(days=janela_dias)
     itens, vistos = [], set()
-    for ticker, nome in CARTEIRA_TICKERS:
-        url = f"https://finance.yahoo.com/rss/headline?s={ticker}.SA"
+    anos = {agora.year}
+    if limite.year < agora.year:
+        anos.add(limite.year)
+    for ano in sorted(anos, reverse=True):
+        url = f"https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_{ano}.zip"
         try:
-            resp = requests.get(url, headers=UA, timeout=15)
+            resp = requests.get(url, headers=UA, timeout=60)
             resp.raise_for_status()
-            feed = feedparser.parse(resp.content)
+            zf = zipfile.ZipFile(io.BytesIO(resp.content))
+            with zf.open(f"ipe_cia_aberta_{ano}.csv") as f:
+                reader = csv.DictReader(io.TextIOWrapper(f, encoding="latin-1"), delimiter=";")
+                for row in reader:
+                    if row.get("Categoria") != "Fato Relevante":
+                        continue
+                    try:
+                        cod = int(row.get("Codigo_CVM", 0))
+                    except ValueError:
+                        continue
+                    if cod not in CVM_CODES:
+                        continue
+                    dt_str = (row.get("Data_Entrega") or row.get("Data_Referencia") or "")[:10]
+                    try:
+                        dt = datetime.strptime(dt_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+                    except ValueError:
+                        continue
+                    if dt < limite:
+                        continue
+                    link = row.get("Link_Download", "").strip()
+                    assunto = row.get("Assunto", "").strip()
+                    if not link or not assunto or link in vistos:
+                        continue
+                    vistos.add(link)
+                    ticker, nome = CVM_CODES[cod]
+                    itens.append({
+                        "titulo": assunto,
+                        "link": link,
+                        "fonte": f"{nome} ({ticker})",
+                        "dt": dt,
+                        "secao": "Fatos Relevantes",
+                        "img": "",
+                        "tnorm": normalizar(assunto),
+                    })
         except Exception as e:
-            print(f"[AVISO] fatos {ticker}: {e}")
-            continue
-        count = 0
-        for e in feed.entries:
-            link = getattr(e, "link", "")
-            titulo = html.unescape(getattr(e, "title", "")).strip()
-            if not link or not titulo or link in vistos:
-                continue
-            tm = getattr(e, "published_parsed", None) or getattr(e, "updated_parsed", None)
-            dt = datetime(*tm[:6], tzinfo=timezone.utc) if tm else datetime.now(timezone.utc)
-            vistos.add(link)
-            itens.append({
-                "titulo": titulo,
-                "link": link,
-                "fonte": f"{nome} ({ticker})",
-                "dt": dt,
-                "secao": "Fatos Relevantes",
-                "img": "",
-                "tnorm": normalizar(titulo),
-            })
-            count += 1
-            if count >= top_por_ticker:
-                break
-        print(f"[OK] Yahoo {ticker}: {count} notícias")
+            print(f"[AVISO] CVM IPE {ano}: {e}")
     itens.sort(key=lambda i: i["dt"], reverse=True)
-    return itens
+    print(f"[OK] CVM Fatos Relevantes: {len(itens)} documentos nos últimos {janela_dias} dias")
+    return itens[:MAX_POR_SECAO]
 
 
 if __name__ == "__main__":

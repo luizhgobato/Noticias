@@ -9,6 +9,7 @@ import re
 import html
 import unicodedata
 from datetime import datetime, timedelta, timezone
+from urllib.parse import quote as _url_quote
 from difflib import SequenceMatcher
 
 import requests
@@ -615,9 +616,10 @@ def coletar_fatos_relevantes(janela_dias: int = 30) -> list:
             if dt < limite or link in vistos:
                 continue
             vistos.add(link)
+            viewer = f"https://docs.google.com/viewer?url={_url_quote(link, safe='')}"
             itens.append({
                 "titulo": html.unescape(desc),
-                "link": link,
+                "link": viewer,
                 "fonte": f"{nome} ({ticker})",
                 "dt": dt,
                 "secao": "Fatos Relevantes",

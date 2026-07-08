@@ -33,7 +33,19 @@ LIMIAR_DEDUP = 0.72
 TOP_POR_FONTE = 5  # top N de cada fonte sempre incluídos, ignorando janela de 24h
 
 SECOES = ["Macro Brasil", "Ações BR", "Internacional", "Empresas EUA", "Política", "IA", "Cripto"]
-SECOES_TODAS = ["Carteira"] + SECOES
+SECOES_TODAS = ["Carteira", "Fatos Relevantes"] + SECOES
+
+# ações da carteira e seus nomes para o Yahoo Finance RSS
+CARTEIRA_TICKERS = [
+    ("IRBR3", "IRB Brasil Re"),
+    ("BBSE3", "BB Seguridade"),
+    ("CXSE3", "Caixa Seguridade"),
+    ("BBAS3", "Banco do Brasil"),
+    ("ITUB3", "Itaú Unibanco"),
+    ("GMAT3", "Grupo Mateus"),
+    ("RANI3", "Irani"),
+    ("ALSO3", "Allos"),
+]
 
 # carteira do usuário: prioridade máxima, seção própria
 CARTEIRA_RE = re.compile(
@@ -303,7 +315,7 @@ def coletar():
 
 CSS = """
 :root{--bg:#f4f5f8;--card:#ffffff;--txt:#1c2230;--mut:#68738a;--acc:#2f6fd6;
---macro:#2f6fd6;--acoes:#178a5c;--intl:#d97c06;--cripto:#8a4fd3;--cart:#c99400;--pol:#d64545;--ia:#0e9d93;--eua:#d6538a}
+--macro:#2f6fd6;--acoes:#178a5c;--intl:#d97c06;--cripto:#8a4fd3;--cart:#c99400;--pol:#d64545;--ia:#0e9d93;--eua:#d6538a;--fatos:#0e7a7a}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--txt);font-family:-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.45}
 header{padding:calc(18px + env(safe-area-inset-top)) 16px 10px;position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);z-index:9;border-bottom:1px solid #e3e6ee}
@@ -337,7 +349,8 @@ h2 .n{color:var(--mut);font-weight:500;font-size:.8rem}
 footer{text-align:center;color:var(--mut);font-size:.7rem;padding:20px 20px calc(20px + env(safe-area-inset-bottom))}
 """
 
-CORES = {"Carteira": "--cart", "Macro Brasil": "--macro", "Ações BR": "--acoes",
+CORES = {"Carteira": "--cart", "Fatos Relevantes": "--fatos",
+         "Macro Brasil": "--macro", "Ações BR": "--acoes",
          "Internacional": "--intl", "Empresas EUA": "--eua", "Política": "--pol",
          "IA": "--ia", "Cripto": "--cripto"}
 
@@ -349,7 +362,8 @@ def render(por_secao) -> str:
     except Exception:
         agora_br = datetime.now(timezone(timedelta(hours=-3)))
 
-    visiveis = [s for s in SECOES_TODAS if s == "Carteira" or por_secao.get(s)]
+    sempre_visiveis = {"Carteira", "Fatos Relevantes"}
+    visiveis = [s for s in SECOES_TODAS if s in sempre_visiveis or por_secao.get(s)]
     nav = "".join(f'<a href="#{s.replace(" ", "-")}">{s}</a>' for s in visiveis)
     corpo = []
     for s in visiveis:
@@ -370,8 +384,12 @@ def render(por_secao) -> str:
                 f'<span class="tag" style="background:var({CORES[s]});color:#fff">{s}</span>'
                 f'</div></div></div>'
             )
-        vazio_msg = ("Nenhuma notícia das ações da sua carteira nos últimos 7 dias."
-                     if s == "Carteira" else "Sem notícias nas últimas 24h.")
+        if s == "Carteira":
+            vazio_msg = "Nenhuma notícia das ações da sua carteira nos últimos 7 dias."
+        elif s == "Fatos Relevantes":
+            vazio_msg = "Sem notícias recentes das empresas da carteira."
+        else:
+            vazio_msg = "Sem notícias nas últimas 24h."
         conteudo = "".join(cards) or f'<div class="vazio">{vazio_msg}</div>'
         vis_count = min(len(itens), VISIVEIS_PADRAO)
         sufixo = " · 7 dias" if s == "Carteira" else ""
@@ -537,9 +555,48 @@ def atualizar_carteira_com_historico(dados):
     dados["Carteira"] = itens[:CARTEIRA_MAX]
 
 
+def coletar_fatos_relevantes(top_por_ticker: int = 4) -> list:
+    """Coleta as notícias mais recentes de cada ação da carteira via Yahoo Finance RSS."""
+    itens, vistos = [], set()
+    for ticker, nome in CARTEIRA_TICKERS:
+        url = f"https://finance.yahoo.com/rss/headline?s={ticker}.SA"
+        try:
+            resp = requests.get(url, headers=UA, timeout=15)
+            resp.raise_for_status()
+            feed = feedparser.parse(resp.content)
+        except Exception as e:
+            print(f"[AVISO] fatos {ticker}: {e}")
+            continue
+        count = 0
+        for e in feed.entries:
+            link = getattr(e, "link", "")
+            titulo = html.unescape(getattr(e, "title", "")).strip()
+            if not link or not titulo or link in vistos:
+                continue
+            tm = getattr(e, "published_parsed", None) or getattr(e, "updated_parsed", None)
+            dt = datetime(*tm[:6], tzinfo=timezone.utc) if tm else datetime.now(timezone.utc)
+            vistos.add(link)
+            itens.append({
+                "titulo": titulo,
+                "link": link,
+                "fonte": f"{nome} ({ticker})",
+                "dt": dt,
+                "secao": "Fatos Relevantes",
+                "img": "",
+                "tnorm": normalizar(titulo),
+            })
+            count += 1
+            if count >= top_por_ticker:
+                break
+        print(f"[OK] Yahoo {ticker}: {count} notícias")
+    itens.sort(key=lambda i: i["dt"], reverse=True)
+    return itens
+
+
 if __name__ == "__main__":
     dados = coletar()
     atualizar_carteira_com_historico(dados)
+    dados["Fatos Relevantes"] = coletar_fatos_relevantes()[:MAX_POR_SECAO]
     preencher_imagens(dados)
     total = sum(len(v) for v in dados.values())
     with open("index.html", "w", encoding="utf-8") as f:

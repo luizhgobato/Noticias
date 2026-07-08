@@ -130,11 +130,12 @@ EXCLUIR = [
     "mini indice", "mini dolar", "loteria federal", "videogame", "playstation",
     "xbox", "nintendo", "esports", "e-sports", "jogos olimpicos", "cassino",
     "apostas esportivas", "efeito vozinha", "viralizou", "viral no",
+    "meteorito", "estilo de vida",
 ]
 
-CATEGORIAS_EXCLUIR = {"esporte", "pop", "casual", "mundo", "carreira", "marketing"}
+CATEGORIAS_EXCLUIR = {"esporte", "esportes", "pop", "casual", "mundo", "carreira", "marketing"}
 
-URLS_EXCLUIR = ("/eu-e/", "/patrocinado/")
+URLS_EXCLUIR = ("/eu-e/", "/patrocinado/", "/esportes/", "/entretenimento/")
 
 TITULOS_LIXO = {"correcao", "cartas de leitores", "errata"}
 

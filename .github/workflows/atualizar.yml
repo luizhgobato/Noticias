@@ -2,9 +2,11 @@ name: Atualizar notícias
 
 on:
   schedule:
-    - cron: '0 11 * * *'   # 08:00 Brasília
-    - cron: '30 15 * * *'  # 12:30 Brasília
-    - cron: '0 21 * * *'   # 18:00 Brasília
+    - cron: '0 9 * * *'    # 06:00 Brasília
+    - cron: '0 12 * * *'   # 09:00 Brasília
+    - cron: '0 15 * * *'   # 12:00 Brasília
+    - cron: '0 18 * * *'   # 15:00 Brasília
+    - cron: '0 22 * * *'   # 19:00 Brasília
   workflow_dispatch:
 
 permissions:
@@ -30,6 +32,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html carteira_historico.json
+          git add index.html fr.html carteira_historico.json
           git commit -m "Atualiza notícias $(date -u +'%Y-%m-%d %H:%M UTC')" || echo "Sem mudanças"
           git push

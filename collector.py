@@ -9,7 +9,7 @@ import re
 import html
 import unicodedata
 from datetime import datetime, timedelta, timezone
-from urllib.parse import quote as _url_quote
+from urllib.parse import quote as _url_quote, urlencode as _urlencode
 from difflib import SequenceMatcher
 
 import requests
@@ -34,7 +34,7 @@ VISIVEIS_PADRAO = 7
 LIMIAR_DEDUP = 0.72
 TOP_POR_FONTE = 5  # top N de cada fonte sempre incluídos, ignorando janela de 24h
 
-SECOES = ["Macro Brasil", "Ações BR", "Internacional", "Empresas EUA", "Política", "IA", "Cripto"]
+SECOES = ["Ações BR", "Macro Brasil", "Internacional", "Empresas EUA", "Política", "IA", "Cripto"]
 SECOES_TODAS = ["Carteira", "Fatos Relevantes"] + SECOES
 
 # ações da carteira e seus nomes para o Yahoo Finance RSS
@@ -77,6 +77,10 @@ KW = {
         "broadcom", "morgan stanley", "bank of america", "citigroup", "visa",
         "mastercard", "coca-cola", "nike", "general motors", "exxon", "chevron",
         "big tech*", "wall street journal",
+        "nvidia", "elon musk", "x corp", "arm holdings", "paypal", "airbnb",
+        "shopify", "snowflake", "crowdstrike", "servicenow", "palo alto",
+        "blackrock", "vanguard", "wells fargo", "micron", "tsmc",
+        "lucid motors", "rivian", "lyft", "stripe", "coinbase",
     ],
     "Macro Brasil": [
         "selic", "copom", "banco central", "ipca*", "igp-m", "inflacao", "pib",
@@ -397,7 +401,7 @@ def render(por_secao) -> str:
                     f'{img_tag}</div>')
             cards.append(
                 f'<div class="item{extra_cls}" data-id="{html.escape(it["link"])}">{capa}<div class="corpo">'
-                f'<a href="{html.escape(it["link"])}" target="_blank" rel="noopener">'
+                f'<a href="{html.escape(it["link"])}">'
                 f'{html.escape(it["titulo"])}</a>'
                 f'<div class="meta"><b>{it["fonte"]}</b> · {hora}'
                 f'<span class="tag" style="background:var({CORES[s]});color:#fff">{s}</span>'
@@ -616,10 +620,16 @@ def coletar_fatos_relevantes(janela_dias: int = 30) -> list:
             if dt < limite or link in vistos:
                 continue
             vistos.add(link)
-            viewer = f"https://docs.google.com/viewer?url={_url_quote(link, safe='')}"
+            titulo_clean = html.unescape(desc)
+            fr_params = _urlencode({
+                "titulo": titulo_clean,
+                "fonte": f"{nome} ({ticker})",
+                "dt": dt.strftime("%d/%m/%Y"),
+                "pdf": link,
+            })
             itens.append({
-                "titulo": html.unescape(desc),
-                "link": viewer,
+                "titulo": titulo_clean,
+                "link": f"fr.html?{fr_params}",
                 "fonte": f"{nome} ({ticker})",
                 "dt": dt,
                 "secao": "Fatos Relevantes",
@@ -632,6 +642,68 @@ def coletar_fatos_relevantes(janela_dias: int = 30) -> list:
     return itens[:MAX_POR_SECAO]
 
 
+FR_HTML = """\
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fato Relevante</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f5f8;display:flex;flex-direction:column;height:100vh}
+header{background:#fff;border-bottom:1px solid #dde1ea;padding:12px 16px;display:flex;align-items:flex-start;gap:12px;flex-shrink:0}
+.back{color:#2563eb;text-decoration:none;font-size:.9rem;white-space:nowrap;padding-top:2px}
+.meta{flex:1;min-width:0}
+.meta h1{font-size:.97rem;font-weight:600;color:#1a1f2e;line-height:1.35;margin-bottom:4px}
+.meta .sub{font-size:.78rem;color:#6b7280}
+.tag{display:inline-block;background:#e8f0fe;color:#1a56db;border-radius:4px;padding:1px 6px;font-size:.72rem;font-weight:600;margin-right:6px}
+.btn-pdf{flex-shrink:0;background:#1a56db;color:#fff;border:none;border-radius:8px;padding:7px 13px;font-size:.8rem;cursor:pointer;text-decoration:none;white-space:nowrap;align-self:center}
+.viewer-wrap{flex:1;position:relative;overflow:hidden}
+iframe{width:100%;height:100%;border:none}
+.no-viewer{display:none;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:12px;color:#6b7280;font-size:.9rem;text-align:center;padding:24px}
+.no-viewer a{background:#1a56db;color:#fff;border-radius:8px;padding:10px 20px;text-decoration:none;font-size:.9rem}
+</style>
+</head>
+<body>
+<header>
+  <a class="back" href="index.html">&#8592; Voltar</a>
+  <div class="meta">
+    <h1 id="titulo"></h1>
+    <div class="sub"><span id="fonte"></span> &middot; <span id="dt"></span></div>
+  </div>
+  <a class="btn-pdf" id="pdf-link" href="#" target="_blank">PDF &#8599;</a>
+</header>
+<div class="viewer-wrap">
+  <iframe id="viewer" allowfullscreen title="Documento"></iframe>
+  <div class="no-viewer" id="no-viewer">
+    <p>Não foi possível exibir o documento no navegador.</p>
+    <a id="pdf-fallback" href="#">Abrir PDF diretamente</a>
+  </div>
+</div>
+<script>
+(function(){
+  var p=new URLSearchParams(location.search);
+  document.getElementById('titulo').textContent=p.get('titulo')||'Fato Relevante';
+  document.getElementById('fonte').textContent=p.get('fonte')||'';
+  document.getElementById('dt').textContent=p.get('dt')||'';
+  var pdf=p.get('pdf')||'';
+  document.getElementById('pdf-link').href=pdf;
+  document.getElementById('pdf-fallback').href=pdf;
+  var iframe=document.getElementById('viewer');
+  iframe.src='https://docs.google.com/viewer?url='+encodeURIComponent(pdf)+'&embedded=true';
+  // se o viewer falhar em 8s, mostrar fallback
+  var timer=setTimeout(function(){
+    document.getElementById('no-viewer').style.display='flex';
+    iframe.style.display='none';
+  },8000);
+  iframe.onload=function(){ clearTimeout(timer); };
+})();
+</script>
+</body>
+</html>"""
+
+
 if __name__ == "__main__":
     dados = coletar()
     atualizar_carteira_com_historico(dados)
@@ -640,4 +712,6 @@ if __name__ == "__main__":
     total = sum(len(v) for v in dados.values())
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(render(dados))
+    with open("fr.html", "w", encoding="utf-8") as f:
+        f.write(FR_HTML)
     print(f"[FEITO] index.html gerado com {total} notícias")

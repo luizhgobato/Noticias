@@ -26,6 +26,7 @@ FEEDS = [
     ("InvestNews",      "https://investnews.com.br/feed/",                                   "geral"),
     ("Bloomberg Línea", "https://www.bloomberglinea.com.br/arc/outboundfeeds/rss/?outputType=xml", "geral"),
     ("Brazil Journal",  "https://braziljournal.com/feed/",                                   "geral"),
+    ("Valor Investe",   "https://pox.globo.com/rss/valorinveste/",                           "geral"),
     ("Exame",           "https://exame.com/feed/",                                           "estrito"),
 ]
 

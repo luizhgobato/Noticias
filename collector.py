@@ -27,9 +27,10 @@ FEEDS = [
 ]
 
 JANELA_HORAS = 24
-MAX_POR_SECAO = 25
+MAX_POR_SECAO = 35
 VISIVEIS_PADRAO = 7
 LIMIAR_DEDUP = 0.72
+TOP_POR_FONTE = 5  # top N de cada fonte sempre incluídos, ignorando janela de 24h
 
 SECOES = ["Macro Brasil", "Ações BR", "Internacional", "Empresas EUA", "Política", "IA", "Cripto"]
 SECOES_TODAS = ["Carteira"] + SECOES
@@ -143,7 +144,7 @@ def classificar(titulo: str, resumo: str, modo: str):
         if kw in txt:
             return None
 
-    if CARTEIRA_RE.search(normalizar(titulo)):
+    if CARTEIRA_RE.search(normalizar(titulo)) or CARTEIRA_RE.search(normalizar(resumo)):
         return "Carteira"
 
     scores = {s: len(KW_RE[s].findall(txt)) for s in SECOES}
@@ -247,32 +248,35 @@ def coletar():
             print(f"[AVISO] falha em {nome}: {e}")
             continue
 
-        for e in feed.entries:
+        aceitos = desc_url = desc_lixo = desc_cat = desc_dt = desc_sec = 0
+        for idx, e in enumerate(feed.entries):
             titulo = html.unescape(getattr(e, "title", "")).strip()
             link = getattr(e, "link", "")
             if not titulo or not link:
                 continue
             if any(p in link for p in URLS_EXCLUIR):
-                continue
+                desc_url += 1; continue
             if normalizar(titulo) in TITULOS_LIXO:
-                continue
+                desc_lixo += 1; continue
 
             cats = {normalizar(t.get("term", "")) for t in getattr(e, "tags", [])}
             if cats & CATEGORIAS_EXCLUIR:
-                continue
+                desc_cat += 1; continue
 
             tm = getattr(e, "published_parsed", None) or getattr(e, "updated_parsed", None)
             if not tm:
-                continue
+                desc_dt += 1; continue
             dt = datetime(*tm[:6], tzinfo=timezone.utc)
-            if dt < limite or dt > agora + timedelta(hours=1):
-                continue
+            dt_valido = limite <= dt <= agora + timedelta(hours=1)
+            if not dt_valido and idx >= TOP_POR_FONTE:
+                desc_dt += 1; continue  # top 5 de cada fonte passam mesmo fora da janela
 
             resumo = re.sub(r"<[^>]+>", " ", getattr(e, "summary", ""))[:400]
             secao = classificar(titulo, resumo, modo)
             if secao is None:
-                continue
+                desc_sec += 1; continue
 
+            aceitos += 1
             itens.append({
                 "titulo": titulo,
                 "link": link,
@@ -282,7 +286,8 @@ def coletar():
                 "img": extrair_imagem(e),
                 "tnorm": normalizar(titulo),
             })
-        print(f"[OK] {nome}: {len(feed.entries)} entradas no feed")
+        print(f"[OK] {nome}: {len(feed.entries)} no feed → {aceitos} aceitos "
+              f"(dt:{desc_dt} cat:{desc_cat} sec:{desc_sec} url:{desc_url})")
 
     itens.sort(key=lambda i: i["dt"], reverse=True)
     finais, vistos = [], []

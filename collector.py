@@ -633,6 +633,7 @@ def coletar_fatos_relevantes(janela_dias: int = 30) -> list:
                 "titulo": titulo_clean,
                 "link": f"fr.html?{fr_params}",
                 "pdf_url": link,
+                "tipo": tipo,
                 "fonte": f"{nome} ({ticker})",
                 "dt": dt,
                 "secao": "Fatos Relevantes",
@@ -646,7 +647,7 @@ def coletar_fatos_relevantes(janela_dias: int = 30) -> list:
 
 
 def gerar_resumos_fr(itens_fr: list) -> dict:
-    """Baixa cada PDF de FR, extrai texto e resume com Claude. Cacheia em fr_summaries.json."""
+    """Gera interpretações dos FRs via Claude (só pelo título/contexto). Cacheia em fr_summaries.json."""
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
     if not api_key:
         print("[AVISO] ANTHROPIC_API_KEY não definida — resumos FR pulados")
@@ -654,9 +655,8 @@ def gerar_resumos_fr(itens_fr: list) -> dict:
 
     try:
         import anthropic as _anthropic
-        from pdfminer.high_level import extract_text as _pdf_text
-    except ImportError as e:
-        print(f"[AVISO] Dependência ausente para resumos FR: {e}")
+    except ImportError:
+        print("[AVISO] anthropic não instalado")
         return {}
 
     cache_file = "fr_summaries.json"
@@ -673,50 +673,30 @@ def gerar_resumos_fr(itens_fr: list) -> dict:
         pdf_url = item.get("pdf_url", "")
         if not pdf_url or pdf_url in cache:
             continue
-
-        # Download PDF
-        try:
-            resp = requests.get(pdf_url, headers=UA, timeout=30)
-            resp.raise_for_status()
-            pdf_bytes = resp.content
-        except Exception as e:
-            print(f"[AVISO] Download PDF {item['titulo'][:40]}: {e}")
-            cache[pdf_url] = {"resumo": "Não foi possível baixar o documento.", "dt": item["dt"].strftime("%Y-%m-%d")}
-            continue
-
-        # Extrai texto do PDF
-        try:
-            texto = _pdf_text(io.BytesIO(pdf_bytes)).strip()[:6000]
-        except Exception:
-            texto = ""
-
-        if len(texto) < 80:
-            cache[pdf_url] = {"resumo": "Documento em formato de imagem — texto não extraível automaticamente.", "dt": item["dt"].strftime("%Y-%m-%d")}
-            continue
-
-        # Resumo via Claude
+        tipo_label = "Fato Relevante" if item.get("tipo") == "FR" else "Comunicado ao Mercado"
         try:
             msg = client.messages.create(
                 model="claude-haiku-4-5-20251001",
-                max_tokens=700,
+                max_tokens=500,
                 messages=[{"role": "user", "content": (
-                    f"Você é um analista financeiro que explica documentos regulatórios brasileiros "
-                    f"de forma clara para investidores pessoa física.\n\n"
+                    f"Você é um analista financeiro que explica comunicados de empresas brasileiras "
+                    f"de forma simples e direta para investidores pessoa física.\n\n"
                     f"Empresa: {item['fonte']}\n"
-                    f"Título: {item['titulo']}\n\n"
-                    f"Texto do documento:\n{texto}\n\n"
-                    f"Escreva um resumo em 3 parágrafos curtos em português simples:\n"
-                    f"1. O que aconteceu (o fato em si)\n"
+                    f"Tipo: {tipo_label}\n"
+                    f"Data: {item['dt'].strftime('%d/%m/%Y')}\n"
+                    f"Título do documento: {item['titulo']}\n\n"
+                    f"Com base no título e no que você sabe sobre esta empresa e este tipo de evento, "
+                    f"explique em português simples e acessível:\n"
+                    f"1. O que aconteceu\n"
                     f"2. O que isso significa para a empresa\n"
-                    f"3. O que o investidor precisa saber\n\n"
-                    f"Seja direto, evite jargão. Se o documento for sobre algo técnico-contábil, "
-                    f"explique o impacto prático."
+                    f"3. O que o investidor deve observar\n\n"
+                    f"Máximo 3 parágrafos curtos. Seja direto, sem jargão."
                 )}]
             )
             resumo = msg.content[0].text.strip()
         except Exception as e:
-            print(f"[AVISO] Claude API FR: {e}")
-            resumo = "Resumo automático indisponível no momento."
+            print(f"[AVISO] Claude API FR '{item['titulo'][:40]}': {e}")
+            resumo = "Interpretação indisponível no momento."
 
         cache[pdf_url] = {"resumo": resumo, "dt": item["dt"].strftime("%Y-%m-%d")}
         novos += 1
@@ -724,7 +704,7 @@ def gerar_resumos_fr(itens_fr: list) -> dict:
 
     with open(cache_file, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
-    print(f"[OK] fr_summaries.json: {len(cache)} total, {novos} novos gerados")
+    print(f"[OK] fr_summaries.json: {len(cache)} total, {novos} novos")
     return cache
 
 

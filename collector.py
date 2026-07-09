@@ -654,35 +654,32 @@ FR_HTML = """\
 <title>Fato Relevante</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f5f8;min-height:100vh}
-header{background:#fff;border-bottom:1px solid #dde1ea;padding:12px 16px;display:flex;align-items:flex-start;gap:12px}
-.back{color:#2563eb;text-decoration:none;font-size:.9rem;white-space:nowrap;padding-top:3px}
+html,body{height:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f5f8;display:flex;flex-direction:column}
+header{background:#fff;border-bottom:1px solid #dde1ea;padding:10px 14px;display:flex;align-items:flex-start;gap:10px;flex-shrink:0}
+.back{color:#2563eb;text-decoration:none;font-size:.88rem;white-space:nowrap;padding-top:2px}
 .meta{flex:1;min-width:0}
-.meta h1{font-size:.97rem;font-weight:600;color:#1a1f2e;line-height:1.35;margin-bottom:4px}
-.meta .sub{font-size:.78rem;color:#6b7280}
-.content{max-width:720px;margin:24px auto;padding:0 16px}
-.card{background:#fff;border-radius:12px;border:1px solid #dde1ea;padding:20px;margin-bottom:16px}
-.label{font-size:.75rem;font-weight:700;color:#0e7a7a;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
-.titulo-doc{font-size:1rem;font-weight:600;color:#1a1f2e;line-height:1.4;margin-bottom:12px}
-.info{font-size:.85rem;color:#4b5563;margin-bottom:4px}
-.pdf-link{display:inline-block;margin-top:16px;background:#1a56db;color:#fff;border-radius:8px;padding:10px 18px;font-size:.88rem;text-decoration:none;font-weight:500}
+.meta h1{font-size:.9rem;font-weight:600;color:#1a1f2e;line-height:1.3;margin-bottom:3px}
+.meta .sub{font-size:.73rem;color:#6b7280}
+.viewer{flex:1;display:flex;flex-direction:column;min-height:0}
+iframe{flex:1;width:100%;border:none;display:block}
+.fallback{text-align:center;padding:32px 16px;color:#6b7280;font-size:.85rem;display:none}
+.fallback a{color:#1a56db;font-weight:500}
 </style>
 </head>
 <body>
 <header>
   <a class="back" href="index.html">&#8592; Voltar</a>
   <div class="meta">
-    <h1 id="titulo-header"></h1>
+    <h1 id="titulo"></h1>
     <div class="sub"><span id="fonte"></span> &middot; <span id="dt"></span></div>
   </div>
 </header>
-<div class="content">
-  <div class="card">
-    <div class="label" id="tipo-label">Documento CVM</div>
-    <div class="titulo-doc" id="titulo-doc"></div>
-    <div class="info"><strong>Empresa:</strong> <span id="fonte2"></span></div>
-    <div class="info"><strong>Data:</strong> <span id="dt2"></span></div>
-    <a class="pdf-link" id="pdf-link" href="#" target="_blank">Abrir documento PDF &#8599;</a>
+<div class="viewer">
+  <iframe id="frame" allowfullscreen></iframe>
+  <div class="fallback" id="fallback">
+    Não foi possível exibir o documento aqui.<br><br>
+    <a id="fallback-link" href="#">Clique para abrir o PDF diretamente</a>
   </div>
 </div>
 <script>
@@ -692,14 +689,18 @@ header{background:#fff;border-bottom:1px solid #dde1ea;padding:12px 16px;display
   var fonte=p.get('fonte')||'';
   var dt=p.get('dt')||'';
   var pdf=p.get('pdf')||'';
-  document.getElementById('titulo-header').textContent=titulo;
-  document.getElementById('titulo-doc').textContent=titulo;
+  document.getElementById('titulo').textContent=titulo;
   document.getElementById('fonte').textContent=fonte;
-  document.getElementById('fonte2').textContent=fonte;
   document.getElementById('dt').textContent=dt;
-  document.getElementById('dt2').textContent=dt;
-  document.getElementById('pdf-link').href=pdf;
   document.title=titulo;
+  document.getElementById('fallback-link').href=pdf;
+  var frame=document.getElementById('frame');
+  var viewer='https://docs.google.com/viewer?url='+encodeURIComponent(pdf)+'&embedded=true';
+  frame.src=viewer;
+  frame.onerror=function(){
+    frame.style.display='none';
+    document.getElementById('fallback').style.display='block';
+  };
 })();
 </script>
 </body>

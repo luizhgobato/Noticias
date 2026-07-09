@@ -4,7 +4,9 @@ Consolidador de Notícias Financeiras
 Coleta feeds RSS, deduplica, classifica por tema e gera index.html.
 Roda 3x/dia via GitHub Actions.
 """
+import io
 import json
+import os
 import re
 import html
 import unicodedata
@@ -257,7 +259,7 @@ def preencher_imagens(por_secao, max_busca=30):
     n = 0
     for itens in por_secao.values():
         for it in itens:
-            if it.get("img") or n >= max_busca:
+            if it.get("img") or n >= max_busca or it.get("secao") == "Fatos Relevantes":
                 continue
             n += 1
             try:
@@ -630,6 +632,7 @@ def coletar_fatos_relevantes(janela_dias: int = 30) -> list:
             itens.append({
                 "titulo": titulo_clean,
                 "link": f"fr.html?{fr_params}",
+                "pdf_url": link,
                 "fonte": f"{nome} ({ticker})",
                 "dt": dt,
                 "secao": "Fatos Relevantes",
@@ -642,6 +645,89 @@ def coletar_fatos_relevantes(janela_dias: int = 30) -> list:
     return itens[:MAX_POR_SECAO]
 
 
+def gerar_resumos_fr(itens_fr: list) -> dict:
+    """Baixa cada PDF de FR, extrai texto e resume com Claude. Cacheia em fr_summaries.json."""
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not api_key:
+        print("[AVISO] ANTHROPIC_API_KEY não definida — resumos FR pulados")
+        return {}
+
+    try:
+        import anthropic as _anthropic
+        from pdfminer.high_level import extract_text as _pdf_text
+    except ImportError as e:
+        print(f"[AVISO] Dependência ausente para resumos FR: {e}")
+        return {}
+
+    cache_file = "fr_summaries.json"
+    try:
+        with open(cache_file, encoding="utf-8") as f:
+            cache = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        cache = {}
+
+    client = _anthropic.Anthropic(api_key=api_key)
+    novos = 0
+
+    for item in itens_fr:
+        pdf_url = item.get("pdf_url", "")
+        if not pdf_url or pdf_url in cache:
+            continue
+
+        # Download PDF
+        try:
+            resp = requests.get(pdf_url, headers=UA, timeout=30)
+            resp.raise_for_status()
+            pdf_bytes = resp.content
+        except Exception as e:
+            print(f"[AVISO] Download PDF {item['titulo'][:40]}: {e}")
+            cache[pdf_url] = {"resumo": "Não foi possível baixar o documento.", "dt": item["dt"].strftime("%Y-%m-%d")}
+            continue
+
+        # Extrai texto do PDF
+        try:
+            texto = _pdf_text(io.BytesIO(pdf_bytes)).strip()[:6000]
+        except Exception:
+            texto = ""
+
+        if len(texto) < 80:
+            cache[pdf_url] = {"resumo": "Documento em formato de imagem — texto não extraível automaticamente.", "dt": item["dt"].strftime("%Y-%m-%d")}
+            continue
+
+        # Resumo via Claude
+        try:
+            msg = client.messages.create(
+                model="claude-haiku-4-5-20251001",
+                max_tokens=700,
+                messages=[{"role": "user", "content": (
+                    f"Você é um analista financeiro que explica documentos regulatórios brasileiros "
+                    f"de forma clara para investidores pessoa física.\n\n"
+                    f"Empresa: {item['fonte']}\n"
+                    f"Título: {item['titulo']}\n\n"
+                    f"Texto do documento:\n{texto}\n\n"
+                    f"Escreva um resumo em 3 parágrafos curtos em português simples:\n"
+                    f"1. O que aconteceu (o fato em si)\n"
+                    f"2. O que isso significa para a empresa\n"
+                    f"3. O que o investidor precisa saber\n\n"
+                    f"Seja direto, evite jargão. Se o documento for sobre algo técnico-contábil, "
+                    f"explique o impacto prático."
+                )}]
+            )
+            resumo = msg.content[0].text.strip()
+        except Exception as e:
+            print(f"[AVISO] Claude API FR: {e}")
+            resumo = "Resumo automático indisponível no momento."
+
+        cache[pdf_url] = {"resumo": resumo, "dt": item["dt"].strftime("%Y-%m-%d")}
+        novos += 1
+        print(f"[OK] Resumo FR: {item['titulo'][:50]}")
+
+    with open(cache_file, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+    print(f"[OK] fr_summaries.json: {len(cache)} total, {novos} novos gerados")
+    return cache
+
+
 FR_HTML = """\
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -651,18 +737,21 @@ FR_HTML = """\
 <title>Fato Relevante</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f5f8;display:flex;flex-direction:column;height:100vh}
-header{background:#fff;border-bottom:1px solid #dde1ea;padding:12px 16px;display:flex;align-items:flex-start;gap:12px;flex-shrink:0}
-.back{color:#2563eb;text-decoration:none;font-size:.9rem;white-space:nowrap;padding-top:2px}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f5f8;min-height:100vh}
+header{background:#fff;border-bottom:1px solid #dde1ea;padding:12px 16px;display:flex;align-items:flex-start;gap:12px}
+.back{color:#2563eb;text-decoration:none;font-size:.9rem;white-space:nowrap;padding-top:3px}
 .meta{flex:1;min-width:0}
 .meta h1{font-size:.97rem;font-weight:600;color:#1a1f2e;line-height:1.35;margin-bottom:4px}
 .meta .sub{font-size:.78rem;color:#6b7280}
-.tag{display:inline-block;background:#e8f0fe;color:#1a56db;border-radius:4px;padding:1px 6px;font-size:.72rem;font-weight:600;margin-right:6px}
-.btn-pdf{flex-shrink:0;background:#1a56db;color:#fff;border:none;border-radius:8px;padding:7px 13px;font-size:.8rem;cursor:pointer;text-decoration:none;white-space:nowrap;align-self:center}
-.viewer-wrap{flex:1;position:relative;overflow:hidden}
-iframe{width:100%;height:100%;border:none}
-.no-viewer{display:none;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:12px;color:#6b7280;font-size:.9rem;text-align:center;padding:24px}
-.no-viewer a{background:#1a56db;color:#fff;border-radius:8px;padding:10px 20px;text-decoration:none;font-size:.9rem}
+.btn-pdf{flex-shrink:0;background:#1a56db;color:#fff;border-radius:8px;padding:7px 13px;font-size:.8rem;text-decoration:none;white-space:nowrap;align-self:center}
+.content{max-width:720px;margin:0 auto;padding:20px 16px}
+.resumo-box{background:#fff;border-radius:12px;border:1px solid #dde1ea;padding:20px;margin-bottom:16px}
+.resumo-box h2{font-size:.82rem;font-weight:600;color:#1a56db;text-transform:uppercase;letter-spacing:.04em;margin-bottom:12px}
+.resumo-text{font-size:.93rem;color:#2d3748;line-height:1.65;white-space:pre-wrap}
+.resumo-loading{color:#6b7280;font-size:.88rem;font-style:italic}
+.pdf-section{background:#fff;border-radius:12px;border:1px solid #dde1ea;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.pdf-section span{font-size:.85rem;color:#4b5563}
+.pdf-btn{background:#f1f5f9;color:#1a56db;border-radius:8px;padding:8px 14px;font-size:.82rem;text-decoration:none;font-weight:500}
 </style>
 </head>
 <body>
@@ -674,30 +763,47 @@ iframe{width:100%;height:100%;border:none}
   </div>
   <a class="btn-pdf" id="pdf-link" href="#" target="_blank">PDF &#8599;</a>
 </header>
-<div class="viewer-wrap">
-  <iframe id="viewer" allowfullscreen title="Documento"></iframe>
-  <div class="no-viewer" id="no-viewer">
-    <p>Não foi possível exibir o documento no navegador.</p>
-    <a id="pdf-fallback" href="#">Abrir PDF diretamente</a>
+<div class="content">
+  <div class="resumo-box">
+    <h2>&#129302; Resumo do Documento</h2>
+    <div class="resumo-text resumo-loading" id="resumo">Carregando resumo...</div>
+  </div>
+  <div class="pdf-section">
+    <span>Documento oficial protocolado na CVM</span>
+    <a class="pdf-btn" id="pdf-link2" href="#" target="_blank">Ver PDF completo &#8599;</a>
   </div>
 </div>
 <script>
 (function(){
   var p=new URLSearchParams(location.search);
-  document.getElementById('titulo').textContent=p.get('titulo')||'Fato Relevante';
-  document.getElementById('fonte').textContent=p.get('fonte')||'';
-  document.getElementById('dt').textContent=p.get('dt')||'';
+  var titulo=p.get('titulo')||'Fato Relevante';
+  var fonte=p.get('fonte')||'';
+  var dt=p.get('dt')||'';
   var pdf=p.get('pdf')||'';
+  document.getElementById('titulo').textContent=titulo;
+  document.getElementById('fonte').textContent=fonte;
+  document.getElementById('dt').textContent=dt;
   document.getElementById('pdf-link').href=pdf;
-  document.getElementById('pdf-fallback').href=pdf;
-  var iframe=document.getElementById('viewer');
-  iframe.src='https://docs.google.com/viewer?url='+encodeURIComponent(pdf)+'&embedded=true';
-  // se o viewer falhar em 8s, mostrar fallback
-  var timer=setTimeout(function(){
-    document.getElementById('no-viewer').style.display='flex';
-    iframe.style.display='none';
-  },8000);
-  iframe.onload=function(){ clearTimeout(timer); };
+  document.getElementById('pdf-link2').href=pdf;
+  document.title=titulo;
+
+  var el=document.getElementById('resumo');
+  fetch('fr_summaries.json')
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      var entry=data[pdf];
+      if(entry && entry.resumo){
+        el.textContent=entry.resumo;
+        el.classList.remove('resumo-loading');
+      } else {
+        el.textContent='Resumo ainda não disponível para este documento.';
+        el.classList.remove('resumo-loading');
+      }
+    })
+    .catch(function(){
+      el.textContent='Resumo não disponível.';
+      el.classList.remove('resumo-loading');
+    });
 })();
 </script>
 </body>
@@ -712,6 +818,7 @@ if __name__ == "__main__":
     total = sum(len(v) for v in dados.values())
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(render(dados))
+    gerar_resumos_fr(dados["Fatos Relevantes"])
     with open("fr.html", "w", encoding="utf-8") as f:
         f.write(FR_HTML)
     print(f"[FEITO] index.html gerado com {total} notícias")

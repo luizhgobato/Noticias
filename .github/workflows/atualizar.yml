@@ -23,15 +23,17 @@ jobs:
           python-version: '3.12'
 
       - name: Instalar dependências
-        run: pip install feedparser requests
+        run: pip install feedparser requests pdfminer.six anthropic
 
       - name: Coletar notícias e gerar página
         run: python collector.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Publicar
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html fr.html carteira_historico.json
+          git add index.html fr.html fr_summaries.json carteira_historico.json
           git commit -m "Atualiza notícias $(date -u +'%Y-%m-%d %H:%M UTC')" || echo "Sem mudanças"
           git push

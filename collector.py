@@ -20,6 +20,8 @@ import feedparser
 # "internacional" = tudo vai p/ Internacional (exceto carteira/exclusões)
 FEEDS = [
     ("InfoMoney",       "https://www.infomoney.com.br/feed/",                                "geral"),
+    ("InfoMoney",       "https://www.infomoney.com.br/politica/feed/",                       "politica"),
+    ("InfoMoney",       "https://www.infomoney.com.br/mundo/feed/",                          "internacional"),
     ("Money Times",     "https://www.moneytimes.com.br/internacional/feed/",                 "internacional"),
     ("Money Times",     "https://www.moneytimes.com.br/feed/",                               "geral"),
     ("InvestNews",      "https://investnews.com.br/feed/",                                   "geral"),
@@ -27,9 +29,12 @@ FEEDS = [
     ("Brazil Journal",  "https://braziljournal.com/feed/",                                   "geral"),
     ("Valor Investe",   "https://pox.globo.com/rss/valorinveste/",                           "geral"),
     ("Exame",           "https://exame.com/feed/",                                           "estrito"),
+    ("Olhar Digital",   "https://olhardigital.com.br/feed/",                                 "estrito"),
 ]
 
 JANELA_HORAS = 24
+JANELA_MAX_HORAS = 72    # p/ completar seções com poucas notícias
+MIN_POR_SECAO = 7
 MAX_POR_SECAO = 35
 VISIVEIS_PADRAO = 7
 LIMIAR_DEDUP = 0.72
@@ -185,6 +190,9 @@ def classificar(titulo: str, resumo: str, modo: str):
     if re.search(r"\bIA\b", f"{titulo} {resumo}"):
         scores["IA"] += 1
 
+    if modo == "politica":
+        return "Política"
+
     if modo == "internacional":
         # feed 100% internacional: só IA/Cripto/Empresas EUA escapam
         sub = {s: scores[s] for s in ("IA", "Cripto", "Empresas EUA")}
@@ -253,7 +261,7 @@ OG_RE1 = re.compile(r'property=["\']og:image["\'][^>]*?content=["\']([^"\']+)', 
 OG_RE2 = re.compile(r'content=["\']([^"\']+)["\'][^>]*?property=["\']og:image["\']', re.I)
 
 
-def preencher_imagens(por_secao, max_busca=30):
+def preencher_imagens(por_secao, max_busca=45):
     """Busca og:image na página da matéria para itens sem imagem no feed."""
     n = 0
     for itens in por_secao.values():
@@ -272,7 +280,7 @@ def preencher_imagens(por_secao, max_busca=30):
 
 def coletar():
     agora = datetime.now(timezone.utc)
-    limite = agora - timedelta(hours=JANELA_HORAS)
+    limite = agora - timedelta(hours=JANELA_MAX_HORAS)
     itens = []
 
     for nome, url, modo in FEEDS:
@@ -333,7 +341,15 @@ def coletar():
         vistos.append(it["tnorm"])
         finais.append(it)
 
-    por_secao = {s: [i for i in finais if i["secao"] == s][:MAX_POR_SECAO] for s in SECOES_TODAS}
+    corte24 = agora - timedelta(hours=JANELA_HORAS)
+    por_secao = {}
+    for s in SECOES_TODAS:
+        do_tema = [i for i in finais if i["secao"] == s]
+        recentes = [i for i in do_tema if i["dt"] >= corte24]
+        if len(recentes) < MIN_POR_SECAO:
+            antigas = [i for i in do_tema if i["dt"] < corte24]
+            recentes = recentes + antigas[:MIN_POR_SECAO - len(recentes)]
+        por_secao[s] = recentes[:MAX_POR_SECAO]
     return por_secao
 
 
@@ -446,7 +462,7 @@ def render(por_secao) -> str:
 <body>
 <header>
 <h1>&#128202; Notícias do Mercado</h1>
-<div class="atualizado">Atualizado em {agora_br.strftime("%d/%m/%Y às %H:%M")} (Brasília) · últimas {JANELA_HORAS}h</div>
+<div class="atualizado">Atualizado em {agora_br.strftime("%d/%m/%Y às %H:%M")} (Brasília)</div>
 <nav>{nav}</nav>
 </header>
 <main>{"".join(corpo)}</main>

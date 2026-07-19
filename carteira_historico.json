@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/danca-das-cadeiras-bofa-avalia-quais-acoes-devem-entrar-e-sair-na-1a-previa-do-ibovespa-apsa/": {
-  "titulo": "Dança das cadeiras: BofA avalia quais ações devem entrar e sair na 1ª prévia do Ibovespa",
-  "fonte": "Money Times",
-  "dt": "2026-07-12T11:58:00+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/ibovespai-ganha-sinal-de-alta-e-pode-buscar-179-mil-pontos-no-curto-prazo-diz-itau-bba-lils/": {
   "titulo": "Ibovespa ganha sinal de alta e pode buscar 179 mil pontos no curto prazo, diz Itaú BBA",
   "fonte": "Money Times",
@@ -51,6 +45,12 @@
   "titulo": "Itaú BBA encerra cobertura de CVC (CVCB3)",
   "fonte": "Money Times",
   "dt": "2026-07-17T18:43:27+00:00",
+  "img": ""
+ },
+ "https://exame.com/exame-in/para-os-cmos-o-legado-pos-copa-desenha-um-cenario-de-patrocinio-complexo-e-pulverizado/": {
+  "titulo": "Para os CMOs, o legado pós-Copa desenha um cenário de patrocínio complexo e pulverizado",
+  "fonte": "Exame",
+  "dt": "2026-07-19T08:06:30+00:00",
   "img": ""
  }
 }

@@ -10,7 +10,7 @@ import re
 import html
 import unicodedata
 from datetime import datetime, timedelta, timezone
-from urllib.parse import quote as _url_quote, urlencode as _urlencode
+from urllib.parse import quote as _url_quote, urlencode as _urlencode, urlparse, parse_qs, urlunparse
 from difflib import SequenceMatcher
 
 import requests
@@ -19,9 +19,17 @@ import feedparser
 # modo: "geral" = sem tema vai p/ Macro; "estrito" = sem tema descarta;
 # "internacional" = tudo vai p/ Internacional (exceto carteira/exclusões)
 FEEDS = [
+    # ── Grandes veículos brasileiros ──────────────────────────────────────────
     ("InfoMoney",       "https://www.infomoney.com.br/feed/",                                "geral"),
     ("InfoMoney",       "https://www.infomoney.com.br/politica/feed/",                       "politica"),
     ("InfoMoney",       "https://www.infomoney.com.br/mundo/feed/",                          "internacional"),
+    ("Valor Econômico", "https://valor.globo.com/arc/outboundfeeds/rss/?outputType=xml",     "geral"),
+    ("CNN Brasil",      "https://www.cnnbrasil.com.br/economia/feed/",                       "geral"),
+    ("Estadão",         "https://economia.estadao.com.br/rss/ultimas.xml",                   "geral"),
+    ("G1 Economia",     "https://g1.globo.com/dynamo/economia/rss2.xml",                     "geral"),
+    ("UOL Economia",    "https://rss.uol.com.br/feed/economia.xml",                          "geral"),
+    ("Agência Brasil",  "https://agenciabrasil.ebc.com.br/rss/economia/feed.xml",            "geral"),
+    # ── Especializados ────────────────────────────────────────────────────────
     ("Money Times",     "https://www.moneytimes.com.br/internacional/feed/",                 "internacional"),
     ("Money Times",     "https://www.moneytimes.com.br/feed/",                               "geral"),
     ("InvestNews",      "https://investnews.com.br/feed/",                                   "geral"),
@@ -30,6 +38,8 @@ FEEDS = [
     ("Valor Investe",   "https://pox.globo.com/rss/valorinveste/",                           "geral"),
     ("Exame",           "https://exame.com/feed/",                                           "estrito"),
     ("Olhar Digital",   "https://olhardigital.com.br/feed/",                                 "estrito"),
+    # ── Internacional ─────────────────────────────────────────────────────────
+    ("Reuters Business","https://feeds.reuters.com/reuters/businessNews",                    "internacional"),
 ]
 
 JANELA_HORAS = 24
@@ -37,8 +47,8 @@ JANELA_MAX_HORAS = 72    # p/ completar seções com poucas notícias
 MIN_POR_SECAO = 7
 MAX_POR_SECAO = 35
 VISIVEIS_PADRAO = 7
-LIMIAR_DEDUP = 0.72
-TOP_POR_FONTE = 5  # top N de cada fonte sempre incluídos, ignorando janela de 24h
+LIMIAR_DEDUP = 0.65
+TOP_POR_FONTE = 8  # top N de cada fonte sempre incluídos, ignorando janela de 24h
 
 SECOES = ["Ações BR", "Macro Brasil", "Internacional", "Empresas EUA", "Política", "IA", "Cripto"]
 SECOES_TODAS = ["Carteira", "Fatos Relevantes"] + SECOES
@@ -156,6 +166,20 @@ TICKER_RE = re.compile(r"\b[A-Z]{4}\d{1,2}\b")
 UA = {"User-Agent": "Mozilla/5.0 (compatible; ConsolidadorNoticias/1.0)"}
 
 
+_UTM = {"utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term",
+        "fbclid", "gclid", "_ga", "mc_cid", "mc_eid", "yclid", "ref"}
+
+
+def clean_url(url: str) -> str:
+    """Remove parâmetros de rastreamento — garante dedup estável entre execuções."""
+    try:
+        p = urlparse(url)
+        qs = {k: v for k, v in parse_qs(p.query).items() if k.lower() not in _UTM}
+        return urlunparse(p._replace(query=_urlencode(qs, doseq=True)))
+    except Exception:
+        return url
+
+
 def normalizar(texto: str) -> str:
     """minúsculas, sem acentos"""
     nfkd = unicodedata.normalize("NFKD", texto or "")
@@ -229,7 +253,7 @@ def duplicada(titulo_norm: str, vistos: list) -> bool:
         vt = _tokens(v)
         if toks and vt:
             contencao = len(toks & vt) / min(len(toks), len(vt))
-            if contencao >= 0.7:
+            if contencao >= 0.6:
                 return True
     return False
 
@@ -323,7 +347,7 @@ def coletar():
             aceitos += 1
             itens.append({
                 "titulo": titulo,
-                "link": link,
+                "link": clean_url(link),
                 "fonte": nome,
                 "dt": dt,
                 "secao": secao,
@@ -476,55 +500,89 @@ def render(por_secao) -> str:
 SCRIPT = """
 <script>
 (function(){
-  var KEY='noticiasDescartadas', HINT='dicaSwipeVista';
-  var desc={};
+  var KEY='noticiasDescartadas', KEY_VISTO='noticiasVistas', HINT='dicaSwipeVista';
+  var desc={}, visto={};
   try{desc=JSON.parse(localStorage.getItem(KEY))||{};}catch(e){}
-  var agora=Date.now(), mudou=false;
-  for(var k in desc){ if(agora-desc[k]>3*864e5){ delete desc[k]; mudou=true; } }
-  function salvar(){ try{localStorage.setItem(KEY,JSON.stringify(desc));}catch(e){} }
-  if(mudou) salvar();
+  try{visto=JSON.parse(localStorage.getItem(KEY_VISTO))||{};}catch(e){}
 
-  function atualizar(){
-    document.querySelectorAll('section').forEach(function(sec){
-      var n=sec.querySelectorAll('.item:not(.oculto)').length;
-      var b=sec.querySelector('h2 .n');
-      var sfx=sec.id==='Carteira'?' · 7 dias':sec.id==='Fatos-Relevantes'?' · 30 dias':'';
-      if(b) b.textContent=n+sfx;
-      if(n===0 && sec.id!=='Carteira' && sec.id!=='Fatos-Relevantes') sec.style.display='none';
-    });
-  }
+  var agora=Date.now(), mudouD=false, mudouV=false;
+  // TTL: descartadas 3 dias, vistas 3 horas
+  for(var k in desc){ if(agora-desc[k]>3*864e5){ delete desc[k]; mudouD=true; } }
+  for(var k in visto){ if(agora-visto[k]>3*3600e3){ delete visto[k]; mudouV=true; } }
 
-  window.refreshSec=function(btn){
-    var sec=btn.closest('section');
-    var todos=Array.from(sec.querySelectorAll('.item'));
-    var vis=todos.filter(function(el){return !el.classList.contains('oculto');});
-    var lastIdx=vis.length ? todos.indexOf(vis[vis.length-1]) : -1;
-    vis.forEach(function(el){el.classList.add('oculto');});
-    var prox=todos.slice(lastIdx+1, lastIdx+8);
-    if(!prox.length){
-      location.href=location.pathname+'?r='+Date.now();
-      return;
-    }
-    prox.forEach(function(el){el.classList.remove('oculto');});
-    var b=sec.querySelector('.n');
-    var sfx=sec.id==='Carteira'?' · 7 dias':sec.id==='Fatos-Relevantes'?' · 30 dias':'';
-    if(b) b.textContent=prox.length+sfx;
-  };
+  function salvarDesc(){ try{localStorage.setItem(KEY,JSON.stringify(desc));}catch(e){} }
+  function salvarVisto(){ try{localStorage.setItem(KEY_VISTO,JSON.stringify(visto));}catch(e){} }
+  if(mudouD) salvarDesc();
+  if(mudouV) salvarVisto();
 
+  // 1. Remove itens descartados via swipe
   document.querySelectorAll('.item[data-id]').forEach(function(el){
     if(desc[el.getAttribute('data-id')]) el.remove();
   });
+
+  // 2. Ocultar itens já vistos (grace period de 5 min para reload imediato)
+  var GRACE=5*60*1000;
+  document.querySelectorAll('.item[data-id]').forEach(function(el){
+    var id=el.getAttribute('data-id');
+    if(visto[id] && (agora-visto[id])>GRACE) el.classList.add('oculto');
+  });
+
+  function sfxSec(id){ return id==='Carteira'?' · 7 dias':id==='Fatos-Relevantes'?' · 30 dias':''; }
+
+  function atualizar(){
+    document.querySelectorAll('section').forEach(function(sec){
+      var todos=sec.querySelectorAll('.item');
+      var n=sec.querySelectorAll('.item:not(.oculto)').length;
+      var b=sec.querySelector('h2 .n');
+      if(todos.length===0 && sec.id!=='Carteira' && sec.id!=='Fatos-Relevantes'){
+        sec.style.display='none'; return;
+      }
+      if(b){
+        if(n===0){
+          var h=todos.length;
+          b.textContent=(h ? h+' ant.' : '0');
+        } else {
+          b.textContent=n+sfxSec(sec.id);
+        }
+      }
+    });
+  }
+
+  // Botão ↻ por seção: revela próximos itens ocultos (não cicla os visíveis)
+  window.refreshSec=function(btn){
+    var sec=btn.closest('section');
+    var todos=Array.from(sec.querySelectorAll('.item'));
+    var ocul=todos.filter(function(el){return el.classList.contains('oculto');});
+    if(!ocul.length){
+      btn.textContent='...';
+      location.href=location.pathname+'?r='+Date.now();
+      return;
+    }
+    var prox=ocul.slice(0,8);
+    prox.forEach(function(el){el.classList.remove('oculto');});
+    atualizar();
+    prox[0].scrollIntoView({behavior:'smooth',block:'nearest'});
+  };
+
   atualizar();
 
   if(!localStorage.getItem(HINT) && document.querySelector('.item')){
     var d=document.createElement('div');
-    d.className='dica'; d.textContent='Deslize a notícia para a esquerda para descartá-la';
+    d.className='dica'; d.textContent='← deslize para descartar · ↻ por seção mostra mais notícias';
     var main=document.querySelector('main'); main.insertBefore(d,main.firstChild);
     try{localStorage.setItem(HINT,'1');}catch(e){}
   }
 
+  // 3. Após 6s marca itens visíveis como "vistos"
+  setTimeout(function(){
+    document.querySelectorAll('.item[data-id]:not(.oculto)').forEach(function(el){
+      visto[el.getAttribute('data-id')]=agora;
+    });
+    salvarVisto();
+  },6000);
+
   function descartar(el){
-    desc[el.getAttribute('data-id')]=Date.now(); salvar();
+    desc[el.getAttribute('data-id')]=Date.now(); salvarDesc();
     el.classList.add('saindo');
     el.style.transform='translateX(-110%)'; el.style.opacity='0';
     setTimeout(function(){

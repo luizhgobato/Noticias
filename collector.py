@@ -43,12 +43,15 @@ FEEDS = [
 ]
 
 JANELA_HORAS = 24
-JANELA_MAX_HORAS = 72    # p/ completar seções com poucas notícias
+JANELA_MAX_HORAS = 36    # p/ completar seções com poucas notícias
 MIN_POR_SECAO = 7
 MAX_POR_SECAO = 35
 VISIVEIS_PADRAO = 7
 LIMIAR_DEDUP = 0.65
-TOP_POR_FONTE = 8  # top N de cada fonte sempre incluídos, ignorando janela de 24h
+TOP_POR_FONTE = 3  # top N de cada fonte passam sem checar data (reduzido para evitar artigos velhos)
+
+PUBL_ARQ = "publicados_historico.json"
+PUBL_DIAS = 5   # bloqueia re-exibição de URLs já publicadas por 5 dias
 
 SECOES = ["Ações BR", "Macro Brasil", "Internacional", "Empresas EUA", "Política", "IA", "Cripto"]
 SECOES_TODAS = ["Carteira", "Fatos Relevantes"] + SECOES
@@ -302,7 +305,7 @@ def preencher_imagens(por_secao, max_busca=45):
                 pass
 
 
-def coletar():
+def coletar(publicados: dict | None = None):
     agora = datetime.now(timezone.utc)
     limite = agora - timedelta(hours=JANELA_MAX_HORAS)
     itens = []
@@ -360,6 +363,8 @@ def coletar():
     itens.sort(key=lambda i: i["dt"], reverse=True)
     finais, vistos = [], []
     for it in itens:
+        if publicados and it["link"] in publicados:
+            continue  # já foi exibido recentemente
         if duplicada(it["tnorm"], vistos):
             continue
         vistos.append(it["tnorm"])
@@ -628,6 +633,25 @@ SCRIPT = """
 </script>"""
 
 
+def carregar_publicados() -> dict:
+    """Carrega URLs já publicadas (com timestamp). Expira após PUBL_DIAS dias."""
+    try:
+        with open(PUBL_ARQ, encoding="utf-8") as f:
+            d = json.load(f)
+    except Exception:
+        d = {}
+    limite = (datetime.now(timezone.utc) - timedelta(days=PUBL_DIAS)).isoformat()
+    return {k: v for k, v in d.items() if v >= limite}
+
+
+def salvar_publicados(publicados: dict, novos_links: list):
+    agora = datetime.now(timezone.utc).isoformat()
+    for link in novos_links:
+        publicados.setdefault(link, agora)
+    with open(PUBL_ARQ, "w", encoding="utf-8") as f:
+        json.dump(publicados, f, ensure_ascii=False)
+
+
 HIST_ARQ = "carteira_historico.json"
 HIST_DIAS = 7
 CARTEIRA_MAX = 10
@@ -782,7 +806,8 @@ iframe{flex:1;width:100%;border:none;display:block}
 
 
 if __name__ == "__main__":
-    dados = coletar()
+    publicados = carregar_publicados()
+    dados = coletar(publicados)
     atualizar_carteira_com_historico(dados)
     dados["Fatos Relevantes"] = coletar_fatos_relevantes()[:MAX_POR_SECAO]
     preencher_imagens(dados)
@@ -791,4 +816,6 @@ if __name__ == "__main__":
         f.write(render(dados))
     with open("fr.html", "w", encoding="utf-8") as f:
         f.write(FR_HTML)
-    print(f"[FEITO] index.html gerado com {total} notícias")
+    novos_links = [it["link"] for itens in dados.values() for it in itens]
+    salvar_publicados(publicados, novos_links)
+    print(f"[FEITO] index.html gerado com {total} notícias | {len(publicados)} URLs no histórico")

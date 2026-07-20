@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/ibovespai-ganha-sinal-de-alta-e-pode-buscar-179-mil-pontos-no-curto-prazo-diz-itau-bba-lils/": {
-  "titulo": "Ibovespa ganha sinal de alta e pode buscar 179 mil pontos no curto prazo, diz Itaú BBA",
-  "fonte": "Money Times",
-  "dt": "2026-07-13T18:31:01+00:00",
-  "img": ""
- },
  "https://valorinveste.globo.com/mercados/renda-variavel/noticia/2026/07/14/quatro-acoes-de-bancos-para-ter-na-temporada-de-balancos-segundo-o-itau-bba.ghtml": {
   "titulo": "Quatro ações de bancos para ter na temporada de balanços, segundo o Itaú BBA",
   "fonte": "Valor Investe",
@@ -51,6 +45,12 @@
   "titulo": "Para os CMOs, o legado pós-Copa desenha um cenário de patrocínio complexo e pulverizado",
   "fonte": "Exame",
   "dt": "2026-07-19T08:06:30+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/itau-bba-ve-construtora-barata-e-com-potencial-de-alta-superior-preco-alvo-igdl/": {
+  "titulo": "Itaú BBA vê construtora ‘barata’ e com potencial de alta superior a 70%",
+  "fonte": "Money Times",
+  "dt": "2026-07-20T17:29:08+00:00",
   "img": ""
  }
 }

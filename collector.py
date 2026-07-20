@@ -21,25 +21,19 @@ import feedparser
 FEEDS = [
     # ── Grandes veículos brasileiros ──────────────────────────────────────────
     ("InfoMoney",       "https://www.infomoney.com.br/feed/",                                "geral"),
-    ("InfoMoney",       "https://www.infomoney.com.br/politica/feed/",                       "politica"),
-    ("InfoMoney",       "https://www.infomoney.com.br/mundo/feed/",                          "internacional"),
-    ("Valor Econômico", "https://valor.globo.com/arc/outboundfeeds/rss/?outputType=xml",     "geral"),
-    ("CNN Brasil",      "https://www.cnnbrasil.com.br/economia/feed/",                       "geral"),
-    ("Estadão",         "https://economia.estadao.com.br/rss/ultimas.xml",                   "geral"),
+    ("CNN Brasil",      "https://www.cnnbrasil.com.br/feed/",                                "estrito"),
     ("G1 Economia",     "https://g1.globo.com/dynamo/economia/rss2.xml",                     "geral"),
-    ("UOL Economia",    "https://rss.uol.com.br/feed/economia.xml",                          "geral"),
+    ("Folha Mercado",   "https://feeds.folha.uol.com.br/mercado/rss091.xml",                 "geral"),
     ("Agência Brasil",  "https://agenciabrasil.ebc.com.br/rss/economia/feed.xml",            "geral"),
     # ── Especializados ────────────────────────────────────────────────────────
-    ("Money Times",     "https://www.moneytimes.com.br/internacional/feed/",                 "internacional"),
     ("Money Times",     "https://www.moneytimes.com.br/feed/",                               "geral"),
+    ("Money Times",     "https://www.moneytimes.com.br/internacional/feed/",                 "internacional"),
     ("InvestNews",      "https://investnews.com.br/feed/",                                   "geral"),
     ("Bloomberg Línea", "https://www.bloomberglinea.com.br/arc/outboundfeeds/rss/?outputType=xml", "geral"),
     ("Brazil Journal",  "https://braziljournal.com/feed/",                                   "geral"),
     ("Valor Investe",   "https://pox.globo.com/rss/valorinveste/",                           "geral"),
     ("Exame",           "https://exame.com/feed/",                                           "estrito"),
     ("Olhar Digital",   "https://olhardigital.com.br/feed/",                                 "estrito"),
-    # ── Internacional ─────────────────────────────────────────────────────────
-    ("Reuters Business","https://feeds.reuters.com/reuters/businessNews",                    "internacional"),
 ]
 
 JANELA_HORAS = 24
@@ -495,7 +489,7 @@ def render(por_secao) -> str:
 <nav>{nav}</nav>
 </header>
 <main>{"".join(corpo)}</main>
-<footer>InfoMoney · Money Times · InvestNews · Bloomberg Línea · Brazil Journal · Exame</footer>
+<footer>InfoMoney · CNN Brasil · G1 · Folha · Agência Brasil · Money Times · InvestNews · Bloomberg Línea · Brazil Journal · Valor Investe · Exame · Olhar Digital</footer>
 <button class="recarregar" onclick="location.href=location.pathname+'?r='+Date.now()" aria-label="Buscar novas notícias">&#8635;</button>
 {SCRIPT}
 </body>

@@ -1,10 +1,4 @@
 {
- "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/07/14/vale-tera-disputa-acirrada-por-vagas-no-conselho.ghtml": {
-  "titulo": "Vale terá disputa acirrada por vagas no conselho",
-  "fonte": "Valor Investe",
-  "dt": "2026-07-14T12:30:20+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/Vq0RwNsHp7IzHIXqdhVLtSs1CVc=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2021/v/u/w9I1oLTcmhQLTceflqhw/vale-minerio-e1572042619705.jpg"
- },
  "https://www.moneytimes.com.br/mec-tenta-ensinar-professor-a-ensinar-matematica-em-escolas-publicas-veja-como-funcionara-gaep/": {
   "titulo": "MEC abre curso para capacitar professor a ensinar matemática em escolas públicas",
   "fonte": "Money Times",
@@ -70,5 +64,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-07-21T11:08:38+00:00",
   "img": "https://s2-valorinveste.glbimg.com/tYvZBXgw5S33m7NMEtWvpW0rUVA=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/b/G/wzEOQnTXGu5wnmQ9DVgQ/whatsapp-image-2025-02-17-at-16.06.05.jpeg"
+ },
+ "https://www.moneytimes.com.br/bradesco-bbdc4-banco-do-brasil-bbas3-e-santander-sanb11-em-alerta-por-que-os-tubaroes-estao-cautelosos/": {
+  "titulo": "Bradesco (BBDC4), Banco do Brasil (BBAS3) e Santander (SANB11) em alerta: Por que os ‘tubarões’ estão cautelosos",
+  "fonte": "Money Times",
+  "dt": "2026-07-21T14:40:24+00:00",
+  "img": ""
  }
 }

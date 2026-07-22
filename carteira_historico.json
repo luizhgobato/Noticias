@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/ibovespa-15-7-26-apsa/": {
-  "titulo": "Ibovespa recua com Itaú (ITUB4) e expectativa de tarifaço dos EUA; dólar sobe a R$ 5,07",
-  "fonte": "Money Times",
-  "dt": "2026-07-15T20:30:35+00:00",
-  "img": ""
- },
  "https://exame.com/mercado-imobiliario/jhsf-chega-a-r-12-bi-sob-gestao-e-quase-50-de-participacao-do-cidade-jardim/": {
   "titulo": "JHSF chega a R$ 12 bi sob gestão e quase 50% de participação do Cidade Jardim",
   "fonte": "Exame",
@@ -88,5 +82,17 @@
   "fonte": "Agência Brasil",
   "dt": "2026-07-22T18:32:00+00:00",
   "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbas3-nao-quais-serao-os-impactos-de-mp-bilionaria-do-governo-rnda/": {
+  "titulo": "Banco do Brasil (BBAS3) não sabe dizer quais serão os impactos de MP bilionária do Governo",
+  "fonte": "Money Times",
+  "dt": "2026-07-22T21:51:49+00:00",
+  "img": ""
+ },
+ "https://www.cnnbrasil.com.br/agro/banco-do-brasil-inicia-processos-para-renegociacao-de-dividas-rurais/": {
+  "titulo": "Banco do Brasil inicia processos para renegociação de dívidas rurais",
+  "fonte": "CNN Brasil",
+  "dt": "2026-07-22T21:41:14+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportAgribusinessNews/tagreuters.com2022binary_LYNXMPEIBB0K5-FILEDIMAGE.jpg?w=200"
  }
 }

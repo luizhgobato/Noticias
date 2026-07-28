@@ -42,7 +42,7 @@ MIN_POR_SECAO = 7
 MAX_POR_SECAO = 35
 VISIVEIS_PADRAO = 7
 LIMIAR_DEDUP = 0.65
-TOP_POR_FONTE = 3  # top N de cada fonte passam sem checar data (reduzido para evitar artigos velhos)
+TOP_POR_FONTE = 0  # desativado: nenhuma notícia entra fora da janela de datas
 
 PUBL_ARQ = "publicados_historico.json"
 PUBL_DIAS = 5   # bloqueia re-exibição de URLs já publicadas por 5 dias
@@ -355,10 +355,11 @@ def coletar(publicados: dict | None = None):
               f"(dt:{desc_dt} cat:{desc_cat} sec:{desc_sec} url:{desc_url})")
 
     itens.sort(key=lambda i: i["dt"], reverse=True)
+    corte_repub = agora - timedelta(hours=JANELA_HORAS)
     finais, vistos = [], []
     for it in itens:
-        if publicados and it["link"] in publicados:
-            continue  # já foi exibido recentemente
+        if publicados and it["link"] in publicados and it["dt"] < corte_repub:
+            continue  # antiga e já exibida antes: não recicla
         if duplicada(it["tnorm"], vistos):
             continue
         vistos.append(it["tnorm"])

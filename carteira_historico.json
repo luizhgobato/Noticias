@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/bradesco-bbdc4-banco-do-brasil-bbas3-e-santander-sanb11-em-alerta-por-que-os-tubaroes-estao-cautelosos/": {
-  "titulo": "Bradesco (BBDC4), Banco do Brasil (BBAS3) e Santander (SANB11) em alerta: Por que os ‘tubarões’ estão cautelosos",
-  "fonte": "Money Times",
-  "dt": "2026-07-21T14:40:24+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/em-estrada-com-muita-neblina-voce-diminui-a-velocidade-entenda-o-recado-do-itau-para-os-investidores/": {
   "titulo": "“Em estrada com muita neblina, você diminui a velocidade”: entenda o recado do Itaú para os investidores",
   "fonte": "Money Times",
@@ -123,6 +117,12 @@
   "titulo": "Com nova plataforma proprietária de IA, CTO do Itaú estima escala inédita no uso de agentes",
   "fonte": "Exame",
   "dt": "2026-07-28T09:07:30+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/5-empresas-de-energia-antes-do-balanco-itau-bba-revela-quem-deve-superar-expectativas-ceci/": {
+  "titulo": "Axia Energia (AXIA3), Auren (AURE3) ou Copel (CPLE3)? Veja o que esperar dos balanços do 2T26",
+  "fonte": "Money Times",
+  "dt": "2026-07-28T14:56:35+00:00",
   "img": ""
  }
 }

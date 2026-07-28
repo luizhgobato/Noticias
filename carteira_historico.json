@@ -1,10 +1,4 @@
 {
- "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/07/21/banco-do-brasil-bbas3-dispara-com-perspectiva-de-melhora-na-inadimplencia-apos-medida-provisoria.ghtml": {
-  "titulo": "Banco do Brasil (BBAS3) dispara com perspectiva de melhora na inadimplência após medida provisória",
-  "fonte": "Valor Investe",
-  "dt": "2026-07-21T19:34:24+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/5nPs4MTtkDV2CMz3nh7sNNlu180=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2022/v/p/vRkF6LTBafBRnwA7B3KQ/gettyimages-1366824713.jpg"
- },
  "https://www.infomoney.com.br/mercados/itau-bba-projeta-ibovespa-a-185-mil-pontos-e-destaca-4-teses-para-acoes-veja-ativos/": {
   "titulo": "Itaú BBA projeta Ibovespa a 185 mil pontos e destaca 4 teses para ações; veja ativos",
   "fonte": "InfoMoney",
@@ -136,5 +130,11 @@
   "fonte": "InfoMoney",
   "dt": "2026-07-28T17:08:56+00:00",
   "img": "https://www.infomoney.com.br/wp-content/uploads/2026/07/seguros-insurance-foto-de-versipedia-pixabay.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
+ },
+ "https://www.moneytimes.com.br/irb-irbr3-pode-mais-que-dobrar-lucro-ate-o-fim-da-decada-e-2027-deve-marcar-virada-diz-btg-vtra/": {
+  "titulo": "IRB (IRBR3) pode mais que dobrar lucro até o fim da década e 2027 deve marcar virada, diz BTG",
+  "fonte": "Money Times",
+  "dt": "2026-07-28T20:01:01+00:00",
+  "img": ""
  }
 }

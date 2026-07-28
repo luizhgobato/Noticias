@@ -1,16 +1,4 @@
 {
- "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/07/21/cvm-abre-processo-para-apurar-apoio-da-previ-na-vale.ghtml": {
-  "titulo": "CVM abre processo para apurar apoio da Previ na Vale",
-  "fonte": "Valor Investe",
-  "dt": "2026-07-21T11:37:59+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/HfNAhzz25n71inOQqnnq41h3jk8=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/y/z/encuWBTae7OdhDxKHZPg/gettyimages-187428476.jpg"
- },
- "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/07/21/vale-vale3-nubank-roxo34-embraer-embj3-brava-brav3-e-mais-veja-os-destaques-das-empresas.ghtml": {
-  "titulo": "Vale (VALE3), Nubank (ROXO34), Embraer (EMBJ3), Brava (BRAV3) e mais: Veja os destaques das empresas",
-  "fonte": "Valor Investe",
-  "dt": "2026-07-21T11:08:38+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/tYvZBXgw5S33m7NMEtWvpW0rUVA=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/b/G/wzEOQnTXGu5wnmQ9DVgQ/whatsapp-image-2025-02-17-at-16.06.05.jpeg"
- },
  "https://www.moneytimes.com.br/bradesco-bbdc4-banco-do-brasil-bbas3-e-santander-sanb11-em-alerta-por-que-os-tubaroes-estao-cautelosos/": {
   "titulo": "Bradesco (BBDC4), Banco do Brasil (BBAS3) e Santander (SANB11) em alerta: Por que os ‘tubarões’ estão cautelosos",
   "fonte": "Money Times",
@@ -123,6 +111,18 @@
   "titulo": "Conselheiro da Vale nega vazamento de informações e diz que gestão 'trata transparência como ameaça'",
   "fonte": "Folha Mercado",
   "dt": "2026-07-28T00:46:00+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/produtos/renda-fixa/noticia/2026/07/28/bradesco-reformula-renda-fixa-e-lidera-ranking-da-anbima-apos-quase-10-anos.ghtml": {
+  "titulo": "Bradesco reformula renda fixa e lidera ranking da Anbima após quase 10 anos",
+  "fonte": "Valor Investe",
+  "dt": "2026-07-28T11:53:31+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/PWLSMiKDyG-rkNfqQNGuKCwEkEE=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2023/N/0/BzBOseQe66rz1d97Vkcg/230615fachadas14.jpg"
+ },
+ "https://exame.com/exame-in/com-nova-plataforma-proprietaria-de-ia-cto-do-itau-estima-escala-inedita-no-uso-de-agentes/": {
+  "titulo": "Com nova plataforma proprietária de IA, CTO do Itaú estima escala inédita no uso de agentes",
+  "fonte": "Exame",
+  "dt": "2026-07-28T09:07:30+00:00",
   "img": ""
  }
 }

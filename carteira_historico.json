@@ -1,10 +1,4 @@
 {
- "https://agenciabrasil.ebc.com.br/economia/noticia/2026-07/bb-simplifica-abertura-de-contas-eleitorais-por-candidatos-em-2026": {
-  "titulo": "BB simplifica abertura de contas eleitorais por candidatos em 2026",
-  "fonte": "Agência Brasil",
-  "dt": "2026-07-22T18:32:00+00:00",
-  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
- },
  "https://www.moneytimes.com.br/banco-do-brasil-bbas3-nao-quais-serao-os-impactos-de-mp-bilionaria-do-governo-rnda/": {
   "titulo": "Banco do Brasil (BBAS3) não sabe dizer quais serão os impactos de MP bilionária do Governo",
   "fonte": "Money Times",
@@ -130,5 +124,17 @@
   "fonte": "Money Times",
   "dt": "2026-07-28T20:01:01+00:00",
   "img": ""
+ },
+ "https://www.moneytimes.com.br/casas-bahia-bhia3-itau-bba-retoma-cobertura-com-ganhos-no-micro-mas-dores-no-macro-hora-de-comprar-lmrs/": {
+  "titulo": "Casas Bahia (BHIA3): Itaú BBA retoma cobertura com ganhos no micro, mas “dores” no macro; hora de comprar?",
+  "fonte": "Money Times",
+  "dt": "2026-07-29T18:47:57+00:00",
+  "img": ""
+ },
+ "https://braziljournal.com/casas-bahia-itau-aplaude-turnaround-mas-macro-joga-contra/": {
+  "titulo": "Casas Bahia: Itaú aplaude turnaround, mas macro joga contra",
+  "fonte": "Brazil Journal",
+  "dt": "2026-07-29T18:40:20+00:00",
+  "img": "https://braziljournal.com/wp-content/uploads/2023/03/BOOPO-RENATO-FRANKLIN-239x300.jpg?x65557"
  }
 }

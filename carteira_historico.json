@@ -1,16 +1,4 @@
 {
- "https://www.moneytimes.com.br/banco-do-brasil-bbas3-nao-quais-serao-os-impactos-de-mp-bilionaria-do-governo-rnda/": {
-  "titulo": "Banco do Brasil (BBAS3) não sabe dizer quais serão os impactos de MP bilionária do Governo",
-  "fonte": "Money Times",
-  "dt": "2026-07-22T21:51:49+00:00",
-  "img": ""
- },
- "https://www.cnnbrasil.com.br/agro/banco-do-brasil-inicia-processos-para-renegociacao-de-dividas-rurais/": {
-  "titulo": "Banco do Brasil inicia processos para renegociação de dívidas rurais",
-  "fonte": "CNN Brasil",
-  "dt": "2026-07-22T21:41:14+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportAgribusinessNews/tagreuters.com2022binary_LYNXMPEIBB0K5-FILEDIMAGE.jpg?w=200"
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/07/maiores-bancos-privados-querem-que-caixa-e-bb-concedam-garantia-para-emprestimo-ao-brb.shtml": {
   "titulo": "Maiores bancos privados querem que Caixa e BB concedam garantia para empréstimo ao BRB",
   "fonte": "Folha Mercado",
@@ -136,5 +124,11 @@
   "fonte": "Brazil Journal",
   "dt": "2026-07-29T18:40:20+00:00",
   "img": "https://braziljournal.com/wp-content/uploads/2023/03/BOOPO-RENATO-FRANKLIN-239x300.jpg?x65557"
+ },
+ "https://exame.com/future-of-money/open-standard-o-que-se-sabe-sobre-a-iniciativa-de-stablecoin-que-derrubou-as-acoes-da-circle/": {
+  "titulo": "Open Standard: o que se sabe sobre a iniciativa de stablecoin que derrubou as ações da Circle?",
+  "fonte": "Exame",
+  "dt": "2026-07-29T17:57:52+00:00",
+  "img": ""
  }
 }

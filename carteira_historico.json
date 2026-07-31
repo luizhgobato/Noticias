@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/dividendos-allos-alos3-atualiza-valor-apos-mudanca-em-acoes-em-tesouraria-igdl/": {
-  "titulo": "Dividendos: Allos (ALOS3) atualiza valor após mudança de ações em tesouraria",
-  "fonte": "Money Times",
-  "dt": "2026-07-24T10:33:59+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/mercados/weg-o-que-fazer-com-a-acao-apos-a-tele-do-2t-veja-a-visao-do-itau-bba-e-do-goldman/": {
   "titulo": "WEG: o que fazer com a ação após a tele do 2T? Veja a visão do Itaú BBA e do Goldman",
   "fonte": "InfoMoney",
@@ -130,5 +124,23 @@
   "fonte": "InfoMoney",
   "dt": "2026-07-30T19:00:00+00:00",
   "img": "https://www.infomoney.com.br/wp-content/uploads/2025/06/434069315.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
+ },
+ "https://www.cnnbrasil.com.br/agro/irani-papel-tem-queda-de-724-no-lucro-liquido-do-segundo-trimestre/": {
+  "titulo": "Irani Papel tem queda de 72,4% no lucro líquido do segundo trimestre",
+  "fonte": "CNN Brasil",
+  "dt": "2026-07-31T11:40:01+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/08/1.png?w=200"
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/07/31/vale-vale3-santander-sanb11-ecorodovias-ecor3-irani-rani3-e-mais-veja-os-destaques-das-empresas.ghtml": {
+  "titulo": "Vale (VALE3), Santander (SANB11), Ecorodovias (ECOR3), Irani (RANI3) e mais: Veja os destaques das empresas",
+  "fonte": "Valor Investe",
+  "dt": "2026-07-31T11:14:17+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/tYvZBXgw5S33m7NMEtWvpW0rUVA=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/b/G/wzEOQnTXGu5wnmQ9DVgQ/whatsapp-image-2025-02-17-at-16.06.05.jpeg"
+ },
+ "https://valorinveste.globo.com/produtos/fundos-imobiliarios/noticia/2026/07/31/mercado-troca-fundos-de-fundos-imobiliarios-pelos-multiestrategia-faz-sentido.ghtml": {
+  "titulo": "Mercado troca fundos de fundos imobiliários pelos multiestratégia. Faz sentido?",
+  "fonte": "Valor Investe",
+  "dt": "2026-07-31T09:00:08+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/_JIoprfYlACmX9pDruTgtOqGtCw=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2022/W/i/aN8YogRgm2hrUBqRdiDw/gettyimages-638001422.jpg"
  }
 }

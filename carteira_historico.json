@@ -1,16 +1,4 @@
 {
- "https://www.cnnbrasil.com.br/economia/negocios/banco-do-brasil-ja-negociou-r-104-bilhoes-via-desenrola-2-0/": {
-  "titulo": "Banco do Brasil já negociou R$ 10,4 bilhões via Desenrola 2.0",
-  "fonte": "CNN Brasil",
-  "dt": "2026-07-25T07:32:27+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/10/WhatsApp-Image-2025-10-02-at-16.02.04.jpeg?w=200"
- },
- "https://www.cnnbrasil.com.br/economia/negocios/bancos-privados-veem-baixo-potencial-e-ficam-fora-do-desenrola-adimplentes/": {
-  "titulo": "Bancos privados veem baixo potencial e ficam fora do Desenrola Adimplentes",
-  "fonte": "CNN Brasil",
-  "dt": "2026-07-25T06:32:39+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXMPEL9M0IP-BASEIMAGE.jpg?w=200"
- },
  "https://www.moneytimes.com.br/dividendos-da-semana-24-7-26-apsa/": {
   "titulo": "Bradesco (BBDC3;BBDC4), IRB (IRBR3) e mais duas empresas pagam dividendos nesta semana; veja o calendário",
   "fonte": "Money Times",
@@ -160,5 +148,11 @@
   "fonte": "CNN Brasil",
   "dt": "2026-08-01T02:32:20+00:00",
   "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/careca-INSS-CPMI-5.jpg?w=200"
+ },
+ "https://www.moneytimes.com.br/de-banco-do-brasil-bbas3-a-suzano-suzb3-os-papeis-baratos-de-buffett-de-londrina-vontade-zero-de-ficar-com-caixa-rnda/": {
+  "titulo": "De Banco do Brasil (BBAS3) a Suzano (SUZB3): Os papéis que estão baratos na bolsa, na visão do ‘Buffett de Londrina’",
+  "fonte": "Money Times",
+  "dt": "2026-08-01T11:00:00+00:00",
+  "img": ""
  }
 }

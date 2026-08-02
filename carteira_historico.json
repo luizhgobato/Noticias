@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/dividendos-da-semana-24-7-26-apsa/": {
-  "titulo": "Bradesco (BBDC3;BBDC4), IRB (IRBR3) e mais duas empresas pagam dividendos nesta semana; veja o calendário",
-  "fonte": "Money Times",
-  "dt": "2026-07-26T16:00:00+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/mercados/morgan-stanley-rebaixa-bb-seguridade-caixa-seguridade-e-porto-seguro-desempenho-acoes/": {
   "titulo": "Morgan Stanley rebaixa BB Seguridade, Caixa Seguridade e Porto Seguro; ações caem",
   "fonte": "InfoMoney",
@@ -178,5 +172,11 @@
   "fonte": "CNN Brasil",
   "dt": "2026-08-01T19:18:13+00:00",
   "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/06/ana-hickmann-1.jpg?w=200"
+ },
+ "https://www.moneytimes.com.br/dividendos-da-semana-31-7-26-apsa/": {
+  "titulo": "Santander (SANB11), Itaú (ITUB4) e mais 6 empresas pagam dividendos nesta semana; veja o calendário",
+  "fonte": "Money Times",
+  "dt": "2026-08-02T16:00:00+00:00",
+  "img": ""
  }
 }

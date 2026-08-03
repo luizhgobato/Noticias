@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/bbse3-e-ccxe3-chegam-a-despencar-7-com-revisao-de-analistas-para-acoes-e-dividendos-hora-de-se-preocupar-rnda/": {
-  "titulo": "BBSE3 e CCXE3 chegam a despencar 7% com revisão de analistas para ações e dividendos; hora de se preocupar?",
-  "fonte": "Money Times",
-  "dt": "2026-07-27T21:01:25+00:00",
-  "img": ""
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/07/conselheiro-da-vale-nega-vazamento-de-informacoes-e-diz-que-gestao-trata-transparencia-como-ameaca.shtml": {
   "titulo": "Conselheiro da Vale nega vazamento de informações e diz que gestão 'trata transparência como ameaça'",
   "fonte": "Folha Mercado",
@@ -213,6 +207,24 @@
   "titulo": "BTG troca Ambev e Allos por Gerdau e Copasa na carteira de ações de agosto",
   "fonte": "Exame",
   "dt": "2026-08-03T15:41:02+00:00",
+  "img": ""
+ },
+ "https://www.infomoney.com.br/mercados/bb-seguridade-bbse3-pagara-r-385-bilhoes-em-dividendos-ou-r-198-por-acao/": {
+  "titulo": "BB Seguridade (BBSE3) pagará R$ 3,85 bilhões em dividendos, ou R$ 1,98 por ação",
+  "fonte": "InfoMoney",
+  "dt": "2026-08-03T21:43:42+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/07/17746.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
+ },
+ "https://www.infomoney.com.br/mercados/bb-seguridade-bbse3-resultados-segundo-trimestre-2026/": {
+  "titulo": "BB Seguridade (BBSE3) tem lucro líquido de R$ 2,15 bi no 2° tri, queda anual de 3,9%",
+  "fonte": "InfoMoney",
+  "dt": "2026-08-03T21:42:39+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2022/08/637719640558739446.jpg?fit=300%2C194&amp;quality=70&amp;strip=all"
+ },
+ "https://www.moneytimes.com.br/bb-seguridade-bbse3-lucro-recua-no-2t26-mas-fica-pouco-acima-da-expectativa-veja-numeros-rnda/": {
+  "titulo": "BB Seguridade (BBSE3): Lucro recua no 2T26, mas fica pouco acima da expectativa; veja números",
+  "fonte": "Money Times",
+  "dt": "2026-08-03T21:20:29+00:00",
   "img": ""
  }
 }

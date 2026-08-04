@@ -1,16 +1,4 @@
 {
- "https://www.moneytimes.com.br/3tentos-tten3-derrete-e-recua-mais-de-12-nesta-terca-28-o-que-esta-por-tras-da-queda-pads/": {
-  "titulo": "3tentos (TTEN3) derrete mais de 12% nesta terça (28); o que está por trás da queda?",
-  "fonte": "Money Times",
-  "dt": "2026-07-28T16:00:21+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/itau-bba-ve-2t26-com-crescimento-puxado-por-commodities-petroleo-deve-liderar-temporada/": {
-  "titulo": "Itaú BBA vê 2T26 com crescimento puxado por commodities; petróleo deve liderar temporada",
-  "fonte": "Money Times",
-  "dt": "2026-07-28T15:42:05+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/mercados/bbse3-cxse3-e-mais-por-que-seguradoras-da-bolsa-brasileira-estao-sendo-rebaixadas/": {
   "titulo": "BBSE3, CXSE3 e mais: por que seguradoras da Bolsa brasileira estão sendo rebaixadas?",
   "fonte": "InfoMoney",
@@ -250,5 +238,29 @@
   "fonte": "InfoMoney",
   "dt": "2026-08-04T14:58:30+00:00",
   "img": "https://www.infomoney.com.br/wp-content/uploads/2026/05/bb-seguridade.jpg?fit=300%2C193&amp;quality=70&amp;strip=all"
+ },
+ "https://www.moneytimes.com.br/bb-seguridade-bbse3-ve-pouco-impacto-por-el-nino-este-ano-mas-aponta-risco-para-2027-igdl/": {
+  "titulo": "BB Seguridade (BBSE3) vê pouco impacto por El Niño este ano, mas aponta risco para 2027",
+  "fonte": "Money Times",
+  "dt": "2026-08-04T16:19:10+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/bb-seguridade-bbse3-lucro-fica-acima-do-esperado-mas-sentimento-de-cautela-permanece-o-que-fazer-com-a-acao-lmrs/": {
+  "titulo": "BB Seguridade (BBSE3): Lucro fica acima do esperado, mas sentimento de cautela permanece; o que fazer com a ação?",
+  "fonte": "Money Times",
+  "dt": "2026-08-04T15:43:25+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/menos-otimismo-investidores-institucionais-reduzem-expectativa-para-o-ibovespa-em-2026-segundo-pesquisa-do-itau-bba-apsa/": {
+  "titulo": "Menos otimismo? Investidores institucionais reduzem expectativa para o Ibovespa em 2026, segundo pesquisa do Itaú BBA",
+  "fonte": "Money Times",
+  "dt": "2026-08-04T15:33:21+00:00",
+  "img": ""
+ },
+ "https://exame.com/esg/premio-do-principe-william-earthshot-prize-lanca-hub-climatico-no-brasil/": {
+  "titulo": "Prêmio do príncipe William, Earthshot Prize lança hub climático no Brasil",
+  "fonte": "Exame",
+  "dt": "2026-08-04T12:27:41+00:00",
+  "img": ""
  }
 }

@@ -1,16 +1,4 @@
 {
- "https://valorinveste.globo.com/produtos/renda-fixa/noticia/2026/07/28/bradesco-reformula-renda-fixa-e-lidera-ranking-da-anbima-apos-quase-10-anos.ghtml": {
-  "titulo": "Bradesco reformula renda fixa e lidera ranking da Anbima após quase 10 anos",
-  "fonte": "Valor Investe",
-  "dt": "2026-07-28T11:53:31+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/PWLSMiKDyG-rkNfqQNGuKCwEkEE=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2023/N/0/BzBOseQe66rz1d97Vkcg/230615fachadas14.jpg"
- },
- "https://exame.com/exame-in/com-nova-plataforma-proprietaria-de-ia-cto-do-itau-estima-escala-inedita-no-uso-de-agentes/": {
-  "titulo": "Com nova plataforma proprietária de IA, CTO do Itaú estima escala inédita no uso de agentes",
-  "fonte": "Exame",
-  "dt": "2026-07-28T09:07:30+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/5-empresas-de-energia-antes-do-balanco-itau-bba-revela-quem-deve-superar-expectativas-ceci/": {
   "titulo": "Axia Energia (AXIA3), Auren (AURE3) ou Copel (CPLE3)? Veja o que esperar dos balanços do 2T26",
   "fonte": "Money Times",
@@ -238,5 +226,29 @@
   "fonte": "CNN Brasil",
   "dt": "2026-08-03T22:09:45+00:00",
   "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/03/pexels-daniel-dan-47825192-7542641.webp?w=200"
+ },
+ "https://www.moneytimes.com.br/potencial-de-valorizacao-de-ate-172-bb-troca-todas-as-acoes-da-carteira-para-agosto-veja-quem-entra-e-quem-sai-jcav/": {
+  "titulo": "Potencial de valorização de até 17,2%: Entenda por que o BB trocou todas as ações da carteira de agosto",
+  "fonte": "Money Times",
+  "dt": "2026-08-04T12:55:13+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/itau-itub4-bb-seguridade-bbse3-bradsaude-saud3-e-outros-destaques-desta-terca-4-ceci/": {
+  "titulo": "Itaú (ITUB4), BB Seguridade (BBSE3), Bradsaúde (SAUD3) e outros destaques desta terça (4)",
+  "fonte": "Money Times",
+  "dt": "2026-08-04T12:50:36+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/08/04/isa-energia-isae4-bb-seguridade-bbse3-pague-menos-pgmn3-marcopolo-pomo4-e-mais-veja-os-destaques-das-empresas.ghtml": {
+  "titulo": "ISA Energia (ISAE4), BB Seguridade (BBSE3), Pague Menos (PGMN3), Marcopolo (POMO4) e mais: Veja os destaques das empresas",
+  "fonte": "Valor Investe",
+  "dt": "2026-08-04T11:15:39+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/P3PlG1SKfsBYz1VW8Ucjm0jKXfE=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/r/Z/FazYrMSOeEIxHij3Vgtw/isa-energia.original.webp"
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/bolsas-e-indices/noticia/2026/08/04/atencao-do-investidor-se-volta-para-copom-e-balancos-de-itau-e-spacex.ghtml": {
+  "titulo": "Atenção do investidor se volta para Copom e balanços de Itaú e SpaceX",
+  "fonte": "Valor Investe",
+  "dt": "2026-08-04T10:43:06+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/YVBnOHoVMB4s9EhqCYCc1CRu2U0=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2024/N/9/XBYqL5RJWcZAA9QAJ7OA/spacex.jpg"
  }
 }

@@ -1,10 +1,4 @@
 {
- "https://www.infomoney.com.br/mercados/bbse3-cxse3-e-mais-por-que-seguradoras-da-bolsa-brasileira-estao-sendo-rebaixadas/": {
-  "titulo": "BBSE3, CXSE3 e mais: por que seguradoras da Bolsa brasileira estão sendo rebaixadas?",
-  "fonte": "InfoMoney",
-  "dt": "2026-07-28T17:08:56+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/07/seguros-insurance-foto-de-versipedia-pixabay.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
- },
  "https://www.moneytimes.com.br/irb-irbr3-pode-mais-que-dobrar-lucro-ate-o-fim-da-decada-e-2027-deve-marcar-virada-diz-btg-vtra/": {
   "titulo": "IRB (IRBR3) pode mais que dobrar lucro até o fim da década e 2027 deve marcar virada, diz BTG",
   "fonte": "Money Times",
@@ -261,6 +255,12 @@
   "titulo": "Prêmio do príncipe William, Earthshot Prize lança hub climático no Brasil",
   "fonte": "Exame",
   "dt": "2026-08-04T12:27:41+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/bb-seguridade-bbse3-perde-o-status-de-acao-defensiva-economista-faz-alerta-e-comenta-itau-itub4e-isa-energia-isae4-ceci/": {
+  "titulo": "BB Seguridade (BBSE3) perde o status de ação defensiva? Economista faz alerta e comenta expectativas sobre Itaú (ITUB4)",
+  "fonte": "Money Times",
+  "dt": "2026-08-04T17:18:25+00:00",
   "img": ""
  }
 }

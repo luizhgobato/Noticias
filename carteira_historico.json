@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/5-empresas-de-energia-antes-do-balanco-itau-bba-revela-quem-deve-superar-expectativas-ceci/": {
-  "titulo": "Axia Energia (AXIA3), Auren (AURE3) ou Copel (CPLE3)? Veja o que esperar dos balanços do 2T26",
-  "fonte": "Money Times",
-  "dt": "2026-07-28T14:56:35+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/3tentos-tten3-derrete-e-recua-mais-de-12-nesta-terca-28-o-que-esta-por-tras-da-queda-pads/": {
   "titulo": "3tentos (TTEN3) derrete mais de 12% nesta terça (28); o que está por trás da queda?",
   "fonte": "Money Times",
@@ -250,5 +244,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-08-04T10:43:06+00:00",
   "img": "https://s2-valorinveste.glbimg.com/YVBnOHoVMB4s9EhqCYCc1CRu2U0=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2024/N/9/XBYqL5RJWcZAA9QAJ7OA/spacex.jpg"
+ },
+ "https://www.infomoney.com.br/mercados/bb-seguridade-analistas-veem-resultado-em-linha-mas-alertam-para-desafios-a-frente/": {
+  "titulo": "BB Seguridade: analistas veem resultado em linha, mas alertam para desafios à frente",
+  "fonte": "InfoMoney",
+  "dt": "2026-08-04T14:58:30+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/05/bb-seguridade.jpg?fit=300%2C193&amp;quality=70&amp;strip=all"
  }
 }

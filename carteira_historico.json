@@ -1,10 +1,4 @@
 {
- "https://www.cnnbrasil.com.br/economia/macroeconomia/itau-reduz-previsao-de-crescimento-do-pib-2026-de-21-para-19-e-de-2027-de-17-para-15/": {
-  "titulo": "Itaú reduz previsão de aumento do PIB devido à deterioração de indicadores",
-  "fonte": "CNN Brasil",
-  "dt": "2026-07-31T16:29:07+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/05/businessmen-analyzing-bar-charts-their-workplace.jpg?w=200"
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/blogs/que-imposto-e-esse/2026/07/receita-gera-primeiro-cnpj-em-formato-alfanumerico-para-filial-do-bb.shtml": {
   "titulo": "Receita gera primeiro CNPJ em formato alfanumérico para filial do BB",
   "fonte": "Folha Mercado",
@@ -376,5 +370,11 @@
   "fonte": "Money Times",
   "dt": "2026-08-07T14:40:31+00:00",
   "img": ""
+ },
+ "https://www.infomoney.com.br/mercados/o-alerta-dos-dados-do-bradesco-no-2t-para-a-carteira-agro-do-banco-do-brasil/": {
+  "titulo": "O alerta dos dados do Bradesco no 2T para a carteira agro do Banco do Brasil",
+  "fonte": "InfoMoney",
+  "dt": "2026-08-07T17:00:00+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2024/04/Trator-JD_.png?fit=300%2C225&amp;quality=70&amp;strip=all"
  }
 }

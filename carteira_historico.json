@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/itau-bba-retoma-cobertura-de-dasa-dasa3-o-que-mudou-apsa/": {
-  "titulo": "Itaú BBA retoma cobertura de Dasa (DASA3); o que mudou?",
-  "fonte": "Money Times",
-  "dt": "2026-07-31T14:54:37+00:00",
-  "img": ""
- },
  "https://www.cnnbrasil.com.br/economia/macroeconomia/itau-reduz-previsao-de-crescimento-do-pib-2026-de-21-para-19-e-de-2027-de-17-para-15/": {
   "titulo": "Itaú reduz previsão de aumento do PIB devido à deterioração de indicadores",
   "fonte": "CNN Brasil",
@@ -375,6 +369,12 @@
   "titulo": "Análise: Como o Itaú (ITUB4) mantém lucros sólidos e paga bons dividendos em tempos difíceis",
   "fonte": "Money Times",
   "dt": "2026-08-07T13:33:48+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/allos-alos3-entrega-balanco-acima-do-esperado-no-2t26-dizem-analistas-bancos-veem-dividendos-de-ate-13-para-acao-igdl/": {
+  "titulo": "Allos (ALOS3) entrega balanço ‘acima do esperado’ no 2T26, dizem analistas; bancos veem dividendos de até 13% para ação",
+  "fonte": "Money Times",
+  "dt": "2026-08-07T14:40:31+00:00",
   "img": ""
  }
 }

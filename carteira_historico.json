@@ -1,16 +1,4 @@
 {
- "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/07/30/intelbras-intb3-dispara-apos-balanco-do-2o-tri-superar-expectativas-e-reforcar-aposta-de-analistas.ghtml": {
-  "titulo": "Intelbras (INTB3) dispara após balanço do 2º tri superar expectativas e reforçar aposta de analistas",
-  "fonte": "Valor Investe",
-  "dt": "2026-07-30T19:23:30+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/KXMlEQN_6K7f7sJ94QA9pD-jsrE=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2021/9/q/nGkBWCSb6OaX3CvO3Xog/intelbras-20filial-20nordeste.jpg"
- },
- "https://www.infomoney.com.br/mercados/suzano-klabin-irani-como-serao-os-balancos-do-2t-para-o-setor-de-papel-e-celulose/": {
-  "titulo": "Suzano, Klabin, Irani: como serão os balanços do 2T para o setor de papel e celulose?",
-  "fonte": "InfoMoney",
-  "dt": "2026-07-30T19:00:00+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/06/434069315.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
- },
  "https://www.cnnbrasil.com.br/agro/irani-papel-tem-queda-de-724-no-lucro-liquido-do-segundo-trimestre/": {
   "titulo": "Irani Papel tem queda de 72,4% no lucro líquido do segundo trimestre",
   "fonte": "CNN Brasil",
@@ -364,5 +352,11 @@
   "fonte": "G1 Economia",
   "dt": "2026-08-06T13:41:41+00:00",
   "img": "https://s2-g1.glbimg.com/DuUj5gJwZideiZm3tXpAkBoF6jU=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/d/D/fgvUzaQf2tfwqJxCfryg/milton-maluhy-filho-divulgacao-2.jpg"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/08/01/6556-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post466695": {
+  "titulo": "Ações do Banco do Brasil caem mais de 3% com expectativa por balanço do 2º trimestre",
+  "fonte": "Folha Mercado",
+  "dt": "2026-08-06T18:58:00+00:00",
+  "img": ""
  }
 }

@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/de-banco-do-brasil-bbas3-a-suzano-suzb3-os-papeis-baratos-de-buffett-de-londrina-vontade-zero-de-ficar-com-caixa-rnda/": {
-  "titulo": "De Banco do Brasil (BBAS3) a Suzano (SUZB3): Os papéis que estão baratos na bolsa, na visão do ‘Buffett de Londrina’",
-  "fonte": "Money Times",
-  "dt": "2026-08-01T11:00:00+00:00",
-  "img": ""
- },
  "https://g1.globo.com/empreendedorismo/noticia/2026/08/01/receita-federal-emite-o-primeiro-cnpj-alfanumerico-do-brasil-entenda-o-que-muda.ghtml": {
   "titulo": "Receita Federal emite o primeiro CNPJ alfanumérico do Brasil; entenda o que muda",
   "fonte": "G1 Economia",
@@ -387,6 +381,18 @@
   "titulo": "Vacas sagradas? Petrobras (PETR4), Banco do Brasil (BBAS3) e Caixa ficaram de fora de privatizações, diz Caiado",
   "fonte": "Money Times",
   "dt": "2026-08-07T20:13:35+00:00",
+  "img": ""
+ },
+ "https://www.cnnbrasil.com.br/economia/mercado/questao-operacional-da-petrobras-e-muito-solida-diz-itau-bba/": {
+  "titulo": "Questão operacional da Petrobras é muito sólida, diz Itaú BBA",
+  "fonte": "CNN Brasil",
+  "dt": "2026-08-08T11:15:17+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/07/FPSO-Cidade-Angra-do-Reis_Credito_Andre-Motta-de-Souza_Agencia-Petrobras.jpg?w=200"
+ },
+ "https://exame.com/invest/onde-investir/quanto-eu-teria-hoje-se-tivesse-investido-r-10-mil-em-acoes-do-banco-do-brasil-ha-5-anos/": {
+  "titulo": "Quanto eu teria hoje se tivesse investido R$ 10 mil em ações do Banco do Brasil há 5 anos?",
+  "fonte": "Exame",
+  "dt": "2026-08-08T08:00:32+00:00",
   "img": ""
  }
 }

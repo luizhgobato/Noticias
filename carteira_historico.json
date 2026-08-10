@@ -1,10 +1,4 @@
 {
- "https://investnews.com.br/investimentos/agenda-de-dividendos-de-agosto-petrobras-itau-itausa-e-bradesco-pagam-proventos/": {
-  "titulo": "Agenda de dividendos de agosto: Petrobras, Itaú, Itaúsa e Bradesco pagam proventos",
-  "fonte": "InvestNews",
-  "dt": "2026-08-03T16:04:48+00:00",
-  "img": ""
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/itau-vende-operacao-de-varejo-na-colombia-e-no-panama-por-r-25-bilhoes.shtml": {
   "titulo": "Itaú vende operação de varejo na Colômbia e no Panamá por R$ 2,5 bilhões",
   "fonte": "Folha Mercado",
@@ -363,6 +357,12 @@
   "titulo": "Prio (PRIO3) agora é compra, diz Itaú BBA; veja potencial",
   "fonte": "Money Times",
   "dt": "2026-08-10T15:39:45+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/marcopolo-pomo4-o-que-fez-o-itau-bba-cortar-o-preco-alvo-e-manter-compra-para-o-papel-igdl/": {
+  "titulo": "Marcopolo (POMO4): O que fez o Itaú BBA cortar o preço-alvo e manter compra para o papel?",
+  "fonte": "Money Times",
+  "dt": "2026-08-10T16:19:47+00:00",
   "img": ""
  }
 }

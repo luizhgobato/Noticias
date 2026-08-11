@@ -1,22 +1,4 @@
 {
- "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/08/04/itau-itub4-tem-lucro-de-r-124-bilhoes-no-2o-tri-alta-8percent-valor-vem-abaixo-das-projecoes.ghtml": {
-  "titulo": "Itaú (ITUB4) tem lucro de R$ 12,4 bilhões no 2º tri, alta 8%; valor vem abaixo das projeções",
-  "fonte": "Valor Investe",
-  "dt": "2026-08-04T21:56:02+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/btbhPlqI83fDGHOpnwqJo4B3_IY=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/m/n/Aw5KsXQkyuHuhM396yLw/itau-sm2-1.jpg"
- },
- "https://braziljournal.com/itau-faz-roe-de-243-e-mantem-asset-quality-mercado-ignora-revisao-do-guidance/": {
-  "titulo": "Itaú faz ROE de 24,3% e mantém asset quality; mercado ignora revisão do guidance",
-  "fonte": "Brazil Journal",
-  "dt": "2026-08-04T23:35:59+00:00",
-  "img": "https://braziljournal.com/wp-content/uploads/2022/06/11272-30972f73-7b13-8ee5-f2fa-a21b8a1c29b9-274x300.jpg?x65557"
- },
- "https://www.cnnbrasil.com.br/economia/negocios/itau-unibanco-tem-lucro-de-r-124-bilhoes-no-2o-trimestre/": {
-  "titulo": "Itaú Unibanco tem lucro de R$ 12,4 bilhões no 2º trimestre",
-  "fonte": "CNN Brasil",
-  "dt": "2026-08-04T22:51:53+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportTechnologyNews/tagreuters.com2026binary_LYNXMPEM4A14I-BASEIMAGE.jpg?w=200"
- },
  "https://www.infomoney.com.br/mercados/itau-itub4-balanco-2t26-segue-com-roe-dificil-de-replicar-mas-corta-guidance-servicos-desempenho-acoes/": {
   "titulo": "Itaú segue com ROE difícil de replicar, mas corta guidance: o que indica para ações?",
   "fonte": "InfoMoney",
@@ -285,6 +267,12 @@
   "titulo": "Banco do Brasil (BBSA3): Resultado pior que o esperado? Ação desaba e chega a mínima do ano; o que pode sair do 2T26",
   "fonte": "Money Times",
   "dt": "2026-08-11T18:22:22+00:00",
+  "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/viniciustorres/2026/08/gente-de-peso-nas-empresas-comeca-a-falar-de-recessao-que-economistas-ainda-nao-veem.shtml": {
+  "titulo": "Gente de peso nas empresas começa a falar de recessão que economistas ainda não veem",
+  "fonte": "Folha Mercado",
+  "dt": "2026-08-11T23:30:00+00:00",
   "img": ""
  }
 }

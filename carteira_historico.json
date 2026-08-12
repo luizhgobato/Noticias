@@ -5,12 +5,6 @@
   "dt": "2026-08-05T17:58:15+00:00",
   "img": ""
  },
- "https://www.bloomberglinea.com.br/negocios/inadimplencia-sobe-no-sistema-financeiro-mas-nao-atinge-carteiras-do-itau-diz-ceo/": {
-  "titulo": "Inadimplência sobe no sistema financeiro, mas não atinge carteiras do Itaú, diz CEO",
-  "fonte": "Bloomberg Línea",
-  "dt": "2026-08-05T16:05:24+00:00",
-  "img": "https://www.bloomberglinea.com/resizer/v2/PA4VBJ3EUFAT5ONGAFR26H63NA.jpg?auth=70f60d70a7fbc69160f77ce416b70c1146314c1ba69e9ad99d8bbea5ed71b679&smart=true&width=1200&height=675"
- },
  "https://exame.com/invest/mercados/ibovespa-tem-leve-queda-com-petrobras-antes-do-copom-dolar-fecha-estavel/": {
   "titulo": "Ibovespa tem leve queda com Petrobras antes do Copom; dólar fecha estável",
   "fonte": "Exame",
@@ -225,6 +219,12 @@
   "titulo": "CPI dos EUA, serviços no Brasil e balanços: o que move os mercados",
   "fonte": "Exame",
   "dt": "2026-08-12T05:30:47+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/recessao-a-frente-os-alertas-de-ceo-de-controlado-do-itau-itub4-para-a-economia-ambiente-pouco-propicio-rnda/": {
+  "titulo": "Recessão à frente? Os alertas de CEO de controladora do Itaú (ITUB4) para a economia; ‘ambiente pouco propício’",
+  "fonte": "Money Times",
+  "dt": "2026-08-12T16:37:45+00:00",
   "img": ""
  }
 }

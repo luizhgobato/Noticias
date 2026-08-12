@@ -65,12 +65,6 @@
   "dt": "2026-08-05T16:05:24+00:00",
   "img": "https://www.bloomberglinea.com/resizer/v2/PA4VBJ3EUFAT5ONGAFR26H63NA.jpg?auth=70f60d70a7fbc69160f77ce416b70c1146314c1ba69e9ad99d8bbea5ed71b679&smart=true&width=1200&height=675"
  },
- "https://www.bloomberglinea.com.br/negocios/itau-lucra-r-124-bi-no-2-tri-e-revisa-guidance-de-receitas-de-servicos-e-seguros/": {
-  "titulo": "Itaú lucra R$ 12,4 bi no 2º tri e revisa guidance de receitas de serviços e seguros",
-  "fonte": "Bloomberg Línea",
-  "dt": "2026-08-05T01:55:23+00:00",
-  "img": "https://www.bloomberglinea.com/resizer/v2/J7UF27QFMRA5JF4ZEZYIEYOW7I.jpg?auth=78b96e78b1c9bfc212709d3dd5f92f1c31652c3c335505a96c761a8cc50b9d90&smart=true&width=1200&height=675"
- },
  "https://exame.com/invest/mercados/ibovespa-tem-leve-queda-com-petrobras-antes-do-copom-dolar-fecha-estavel/": {
   "titulo": "Ibovespa tem leve queda com Petrobras antes do Copom; dólar fecha estável",
   "fonte": "Exame",
@@ -274,5 +268,11 @@
   "fonte": "Folha Mercado",
   "dt": "2026-08-11T23:30:00+00:00",
   "img": ""
+ },
+ "https://www.infomoney.com.br/mercados/banco-bv-tem-lucro-liquido-de-r491-mi-no-2o-tri/": {
+  "titulo": "Banco BV tem lucro líquido de R$ 491 mi no 2º tri",
+  "fonte": "InfoMoney",
+  "dt": "2026-08-12T01:01:55+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2022/03/banco-bv-1024x576-1.webp?fit=300%2C169&amp;quality=70&amp;strip=all"
  }
 }

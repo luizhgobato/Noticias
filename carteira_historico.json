@@ -1,10 +1,4 @@
 {
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/08/01/6556-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post466695": {
-  "titulo": "Ações do Banco do Brasil caem mais de 3% com expectativa por balanço do 2º trimestre",
-  "fonte": "Folha Mercado",
-  "dt": "2026-08-06T18:58:00+00:00",
-  "img": ""
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/banco-do-brasil-pede-ao-stf-para-nao-ir-a-audiencia-sobre-emprestimo-ao-brb.shtml": {
   "titulo": "Banco do Brasil pede ao STF para não ir a audiência sobre empréstimo ao BRB",
   "fonte": "Folha Mercado",
@@ -246,7 +240,7 @@
   "img": ""
  },
  "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/08/12/banco-do-brasil-bbsa3-tem-lucro-de-r-39-bi-no-2o-trimestre-alta-de-33percent.ghtml": {
-  "titulo": "Banco do Brasil (BBSA3) tem lucro de R$ 3,9 bi no 2º trimestre, alta de 3,3%",
+  "titulo": "Banco do Brasil (BBAS3) tem lucro de R$ 3,9 bi no 2º trimestre, alta de 3,3%",
   "fonte": "Valor Investe",
   "dt": "2026-08-12T22:00:19+00:00",
   "img": "https://s2-valorinveste.glbimg.com/lINpgKf8T70eKJIqqu2EigpbV7c=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2023/O/h/ZPvtmvSLSyvxXbOxisSg/banco-do-brasil-mcamgo-abr-280620211818-4.jpg"
@@ -328,5 +322,17 @@
   "fonte": "Exame",
   "dt": "2026-08-13T14:14:31+00:00",
   "img": ""
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbas3-para-safra-o-resultado-pouco-contribui-para-confianca-de-recuperacao-dos-lucros-lils/": {
+  "titulo": "Banco do Brasil (BBAS3): Safra diz que balanço pouco contribui para confiança na recuperação dos lucros",
+  "fonte": "Money Times",
+  "dt": "2026-08-13T19:14:59+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/08/13/apesar-de-lucro-acima-do-esperado-inadimplencia-preocupa-e-acoes-do-banco-do-brasil-bbas3-caem.ghtml": {
+  "titulo": "Apesar de lucro acima do esperado, inadimplência preocupa e ações do Banco do Brasil (BBAS3) caem",
+  "fonte": "Valor Investe",
+  "dt": "2026-08-13T19:14:34+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/zXvkMlu6ZZf4TY5xWcsulJlogy0=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2021/7/6/uG4L2rQcKp0ZUMNLStIQ/gettyimages-656545203.jpg"
  }
 }

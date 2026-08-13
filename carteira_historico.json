@@ -1,10 +1,4 @@
 {
- "https://www.infomoney.com.br/advisor/k3-traz-lideres-do-itau-e-safra-e-agrega-r-3-bi-em-custodia-movimento-disruptivo/": {
-  "titulo": "K3 traz líderes do Itaú e Safra e agrega R$ 3 bi em custódia; “movimento disruptivo”",
-  "fonte": "InfoMoney",
-  "dt": "2026-08-06T15:00:00+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-05-at-15.39.09-2.jpeg?fit=300%2C188&amp;quality=70&amp;strip=all"
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/08/01/6556-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post466695": {
   "titulo": "Ações do Banco do Brasil caem mais de 3% com expectativa por balanço do 2º trimestre",
   "fonte": "Folha Mercado",
@@ -279,6 +273,36 @@
   "titulo": "Após ação no STF, Fazenda dá aval a crédito de R$ 5,4 bi para obras em SP",
   "fonte": "CNN Brasil",
   "dt": "2026-08-13T13:27:03+00:00",
+  "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/banco-do-brasil-tem-ate-r-100-bilhoes-em-atraso-do-agro-para-ser-renegociado-com-nova-mp.shtml": {
+  "titulo": "Banco do Brasil tem até R$ 100 bilhões em atraso do agro para ser renegociado com nova MP",
+  "fonte": "Folha Mercado",
+  "dt": "2026-08-13T15:48:00+00:00",
+  "img": ""
+ },
+ "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-13082026/": {
+  "titulo": "Ibovespa Hoje Ao Vivo: Bolsa cai com pressão de BBAS3, HAPV3 e VALE3",
+  "fonte": "InfoMoney",
+  "dt": "2026-08-13T15:21:56+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/07/Ibovespa-ao-vivo-18.png?fit=300%2C200&amp;quality=70&amp;strip=all"
+ },
+ "https://www.moneytimes.com.br/mesmo-com-lucro-melhor-que-o-esperado-acoes-do-banco-do-brasil-bbas3-recuam-lils/": {
+  "titulo": "Banco do Brasil (BBSA3): Ação aumenta perdas com ‘surpresas negativas’; veja o que mercado não gostou",
+  "fonte": "Money Times",
+  "dt": "2026-08-13T14:58:53+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/slc-agricola-slce3-guidance-do-algodao-melhora-enquanto-alavancagem-ofusca-resultado-do-2t26-o-que-dizem-os-analistas-pads/": {
+  "titulo": "SLC Agrícola (SLCE3): Guidance do algodão melhora, enquanto alavancagem ofusca resultado do 2T26; o que dizem os analistas?",
+  "fonte": "Money Times",
+  "dt": "2026-08-13T14:36:06+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbas3-vale-vale3-braskem-brkm5-e-outros-destaques-desta-quinta-13-ceci/": {
+  "titulo": "Banco do Brasil (BBAS3), Vale (VALE3), Braskem (BRKM5) e outros destaques desta quinta (13)",
+  "fonte": "Money Times",
+  "dt": "2026-08-13T14:34:56+00:00",
   "img": ""
  }
 }

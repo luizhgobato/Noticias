@@ -330,9 +330,21 @@
   "img": ""
  },
  "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/08/13/apesar-de-lucro-acima-do-esperado-inadimplencia-preocupa-e-acoes-do-banco-do-brasil-bbas3-caem.ghtml": {
-  "titulo": "Apesar de lucro acima do esperado, inadimplência preocupa e ações do Banco do Brasil (BBAS3) caem",
+  "titulo": "Apesar de lucro acima do esperado, inadimplência preocupa e ações do Banco do Brasil (BBAS3) caem 4%",
   "fonte": "Valor Investe",
   "dt": "2026-08-13T19:14:34+00:00",
   "img": "https://s2-valorinveste.glbimg.com/zXvkMlu6ZZf4TY5xWcsulJlogy0=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2021/7/6/uG4L2rQcKp0ZUMNLStIQ/gettyimages-656545203.jpg"
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbas3-ve-melhora-no-agro-com-mp-mas-provisoes-podem-ficar-no-teto-e-lucro-no-piso-do-guidance-pads/": {
+  "titulo": "Banco do Brasil (BBAS3) vê melhora no agro com MP, mas provisões podem ficar no teto e lucro no piso do guidance",
+  "fonte": "Money Times",
+  "dt": "2026-08-13T21:10:46+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/ibovespa-13-8-26-apsa/": {
+  "titulo": "Ibovespa perde carona em recorde de Wall Street e cai com Banco do Brasil (BBAS3); dólar sobe",
+  "fonte": "Money Times",
+  "dt": "2026-08-13T20:36:44+00:00",
+  "img": ""
  }
 }

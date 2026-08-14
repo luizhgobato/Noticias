@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/vacas-sagradas-petrobras-petr4-banco-do-brasil-bbas3-e-caixa-ficaram-de-fora-de-privatizacao-diz-caiado-rnda/": {
-  "titulo": "Vacas sagradas? Petrobras (PETR4), Banco do Brasil (BBAS3) e Caixa ficaram de fora de privatizações, diz Caiado",
-  "fonte": "Money Times",
-  "dt": "2026-08-07T20:13:35+00:00",
-  "img": ""
- },
  "https://www.cnnbrasil.com.br/economia/mercado/questao-operacional-da-petrobras-e-muito-solida-diz-itau-bba/": {
   "titulo": "Questão operacional da Petrobras é muito sólida, diz Itaú BBA",
   "fonte": "CNN Brasil",
@@ -309,6 +303,12 @@
   "titulo": "Como conseguir financiamento de carro elétrico no Banco do Brasil (BBSA3) pelo Move Brasil",
   "fonte": "Money Times",
   "dt": "2026-08-14T16:52:48+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/irb-irbr3-sobe-mais-de-8-e-btg-ve-caminho-para-lucro-de-r-1-bi-jcav/": {
+  "titulo": "IRB (IRBR3) sobe mais de 8% e BTG vê caminho para lucro de R$ 1 bilhão até o fim da década; entenda a aposta",
+  "fonte": "Money Times",
+  "dt": "2026-08-14T19:45:20+00:00",
   "img": ""
  }
 }

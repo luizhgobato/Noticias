@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/allos-alos3-entrega-balanco-acima-do-esperado-no-2t26-dizem-analistas-bancos-veem-dividendos-de-ate-13-para-acao-igdl/": {
-  "titulo": "Allos (ALOS3) entrega balanço ‘acima do esperado’ no 2T26, dizem analistas; bancos veem dividendos de até 13% para ação",
-  "fonte": "Money Times",
-  "dt": "2026-08-07T14:40:31+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/mercados/o-alerta-dos-dados-do-bradesco-no-2t-para-a-carteira-agro-do-banco-do-brasil/": {
   "titulo": "O alerta dos dados do Bradesco no 2T para a carteira agro do Banco do Brasil",
   "fonte": "InfoMoney",
@@ -322,5 +316,17 @@
   "fonte": "Money Times",
   "dt": "2026-08-14T13:32:46+00:00",
   "img": ""
+ },
+ "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/fazenda-libera-emprestimo-com-aval-da-uniao-de-r-129-bilhoes": {
+  "titulo": "Fazenda libera empréstimo com aval da União de R$ 12,9 bilhões",
+  "fonte": "Agência Brasil",
+  "dt": "2026-08-14T15:37:00+00:00",
+  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
+ },
+ "https://www.infomoney.com.br/mercados/irb-surpreende-resultado-2t26-e-acao-sobe-mas-olhos-se-voltam-para-gatilho-de-30-para-irbr3/": {
+  "titulo": "IRB surpreende e ação sobe – mas olhos se voltam para gatilho de 30% para IRBR3",
+  "fonte": "InfoMoney",
+  "dt": "2026-08-14T15:16:06+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2024/03/IRB-Re-Nova-sede-4.jpeg?fit=300%2C248&amp;quality=70&amp;strip=all"
  }
 }

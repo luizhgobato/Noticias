@@ -1,22 +1,4 @@
 {
- "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/08/07/petrobras-petr4-assai-asai3-allos-alos3-alpargatas-alpa4-e-mais-veja-os-destaques-das-empresas.ghtml": {
-  "titulo": "Petrobras (PETR4), Assaí (ASAI3), Allos (ALOS3), Alpargatas (ALPA4) e mais: Veja os destaques das empresas",
-  "fonte": "Valor Investe",
-  "dt": "2026-08-07T11:08:52+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/IGzBUPlOKtvNP8SnkrNXxl1o3MU=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/a/p/9UdTPgRMOiGssjvPR4oA/2026-03-06t004000z-757184003-rc2iwea0qcvi-rtrmadp-3-petrobras-results.jpg"
- },
- "https://www.cnnbrasil.com.br/agro/itau-bba-busca-captar-r-485-bilhoes-com-novo-fiagro/": {
-  "titulo": "Itaú BBA busca captar R$ 4,85 bilhões com novo Fiagro",
-  "fonte": "CNN Brasil",
-  "dt": "2026-08-07T10:30:04+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/03/ChatGPT-Image-9-de-mar.-de-2026-10_26_22.png?w=200"
- },
- "https://exame.com/mercado-imobiliario/mais-de-130-imoveis-do-itau-entram-em-leilao-com-descontos-de-ate-71/": {
-  "titulo": "Mais de 130 imóveis do Itaú entram em leilão com descontos de até 71%",
-  "fonte": "Exame",
-  "dt": "2026-08-07T08:12:51+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/quais-bdrs-comprar-em-agosto-veja-o-ranking-das-acoes-internacionais-mais-indicadas-pelos-analistas-ceci/": {
   "titulo": "Quais BDRs comprar em agosto? Veja o ranking das ações internacionais mais indicadas pelos analistas",
   "fonte": "Money Times",
@@ -339,6 +321,12 @@
   "titulo": "Ibovespa perde carona em recorde de Wall Street e cai com Banco do Brasil (BBAS3); dólar sobe",
   "fonte": "Money Times",
   "dt": "2026-08-13T20:36:44+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/fundo-imobiliario-compra-60-de-shopping-da-allos-por-r-331-milhoes-ifix-acumula-4a-queda-seguida-igdl/": {
+  "titulo": "Fundo imobiliário compra 60% de shopping da Allos (ALOS3) por R$ 331 milhões; IFIX tem 4ª baixa seguida",
+  "fonte": "Money Times",
+  "dt": "2026-08-14T11:32:05+00:00",
   "img": ""
  }
 }

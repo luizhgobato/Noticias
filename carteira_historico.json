@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/descubra-os-sinais-que-movimentam-marcopolo-pomo4-itau-itub4-e-mais-veja-recomendacoes-no-money-picks-jvka/": {
-  "titulo": "Temporada de balanços: Marcopolo (POMO4) fraca, Itaú (ITUB4) e Meta (META) se destacam; veja recomendações da semana no Money Picks",
-  "fonte": "Money Times",
-  "dt": "2026-08-10T11:00:00+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/a-nova-era-do-irb-be-expansao-internacional-e-dividendos-safra-calcula-potencial-de-alta/": {
   "titulo": "A ‘nova era’ do IRB (be): Expansão internacional e dividendos; Safra calcula potencial de alta",
   "fonte": "Money Times",
@@ -327,6 +321,12 @@
   "titulo": "Após centenário, marketing do Itaú foca em reapresentar portfólio impulsionado por IA",
   "fonte": "Exame",
   "dt": "2026-08-16T11:20:31+00:00",
+  "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/pispasep-e-pago-a-41-milhoes-de-trabalhadores-veja-calendario-e-quem-recebe.shtml": {
+  "titulo": "PIS/Pasep é pago a 4,1 milhões de trabalhadores; veja calendário e quem recebe",
+  "fonte": "Folha Mercado",
+  "dt": "2026-08-17T08:00:00+00:00",
   "img": ""
  }
 }

@@ -1,22 +1,4 @@
 {
- "https://www.moneytimes.com.br/a-nova-era-do-irb-be-expansao-internacional-e-dividendos-safra-calcula-potencial-de-alta/": {
-  "titulo": "A ‘nova era’ do IRB (be): Expansão internacional e dividendos; Safra calcula potencial de alta",
-  "fonte": "Money Times",
-  "dt": "2026-08-10T15:51:30+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/prio-prio3-agora-e-compra-diz-itau-bba-lils/": {
-  "titulo": "Prio (PRIO3) agora é compra, diz Itaú BBA; veja potencial",
-  "fonte": "Money Times",
-  "dt": "2026-08-10T15:39:45+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/marcopolo-pomo4-o-que-fez-o-itau-bba-cortar-o-preco-alvo-e-manter-compra-para-o-papel-igdl/": {
-  "titulo": "Marcopolo (POMO4): O que fez o Itaú BBA cortar o preço-alvo e manter compra para o papel?",
-  "fonte": "Money Times",
-  "dt": "2026-08-10T16:19:47+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/mercados/caixa-seguridade-tem-lucro-liquido-de-r-114-bi-no-2tri26-alta-de-95-ante-2tri25/": {
   "titulo": "Caixa Seguridade tem lucro líquido de R$ 1,14 bi no 2tri26, alta de 9,5% ante 2tri25",
   "fonte": "InfoMoney",
@@ -333,6 +315,12 @@
   "titulo": "Citi reduz previsão de lucro do BB (BBAS3) e coloca ação sob observação",
   "fonte": "Money Times",
   "dt": "2026-08-17T12:59:56+00:00",
+  "img": ""
+ },
+ "https://braziljournal.com/nubank-pode-lucrar-mais-que-o-itau-no-varejo-ja-este-ano-diz-jp-morgan/": {
+  "titulo": "Nubank pode lucrar mais que o Itaú no varejo já este ano, diz JP Morgan",
+  "fonte": "Brazil Journal",
+  "dt": "2026-08-17T16:47:02+00:00",
   "img": ""
  }
 }

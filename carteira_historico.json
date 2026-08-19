@@ -1,51 +1,9 @@
 {
- "https://www.moneytimes.com.br/banco-do-brasil-bbas3-pagara-r-5849-milhoes-em-juros-sobre-o-capital-proprio-veja-como-aproveitar-rnda/": {
-  "titulo": "Banco do Brasil (BBAS3) pagará R$ 584,9 milhões em juros sobre o capital próprio; veja como aproveitar",
-  "fonte": "Money Times",
-  "dt": "2026-08-12T21:48:31+00:00",
-  "img": ""
- },
- "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/08/12/banco-do-brasil-bbas3-vai-distribuir-mais-de-r-500-milhoes-em-jcp-veja-quem-recebe.ghtml": {
-  "titulo": "Banco do Brasil (BBAS3) vai distribuir mais de R$ 500 milhões em JCP; veja quem recebe",
-  "fonte": "Valor Investe",
-  "dt": "2026-08-12T21:37:53+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/6HXQoNK7vMkSrJn_L1w9d8Y5jE4=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/G/O/9Y48jwTAayBTQVxjz74A/banco-do-brasil.webp"
- },
- "https://www.moneytimes.com.br/banco-do-brasil-bbas3-lucro-sobe-33-chega-a-r-39-bilhoes-e-vem-melhor-que-esperado-no-2t26-rnda/": {
-  "titulo": "Banco do Brasil (BBAS3): Lucro sobe 3,3%, chega a R$ 3,9 bilhões e vem melhor que esperado no 2T26",
-  "fonte": "Money Times",
-  "dt": "2026-08-12T21:36:52+00:00",
-  "img": ""
- },
- "https://www.infomoney.com.br/mercados/banco-do-brasil-bbas3-resultados-segundo-trimestre-2026/": {
-  "titulo": "Banco do Brasil (BBAS3) tem lucro líquido de R$ 3,9 bi no 2T",
-  "fonte": "InfoMoney",
-  "dt": "2026-08-12T21:35:07+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/08/banco-do-brasil-sede-brasilia.jpg?fit=300%2C189&amp;quality=70&amp;strip=all"
- },
  "https://www.moneytimes.com.br/banco-do-brasil-bbsa3-o-pior-ja-passou-cfo-ve-mudanca-dando-frutos/": {
   "titulo": "Banco do Brasil (BBSA3): O pior já passou? CFO vê mudança dando frutos",
   "fonte": "Money Times",
   "dt": "2026-08-12T23:29:51+00:00",
   "img": ""
- },
- "https://www.cnnbrasil.com.br/economia/negocios/banco-do-brasil-tem-lucro-de-r-39-bi-no-2o-tri-avanco-de-33/": {
-  "titulo": "Banco do Brasil tem lucro de R$ 3,9 bi no 2º tri, avanço de 3,3%",
-  "fonte": "CNN Brasil",
-  "dt": "2026-08-12T22:41:41+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2026binary_LYNXMPEM380SP-BASEIMAGE.jpg?w=200"
- },
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/lucro-do-banco-do-brasil-tem-melhora-e-vem-acima-do-esperado-no-2o-tri.shtml": {
-  "titulo": "Lucro do Banco do Brasil vem acima do esperado, puxado por tesouraria e empréstimos a pessoas físicas",
-  "fonte": "Folha Mercado",
-  "dt": "2026-08-12T22:10:00+00:00",
-  "img": ""
- },
- "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/08/12/banco-do-brasil-bbsa3-tem-lucro-de-r-39-bi-no-2o-trimestre-alta-de-33percent.ghtml": {
-  "titulo": "Banco do Brasil (BBAS3) tem lucro de R$ 3,9 bi no 2º trimestre, alta de 3,3%",
-  "fonte": "Valor Investe",
-  "dt": "2026-08-12T22:00:19+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/lINpgKf8T70eKJIqqu2EigpbV7c=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2023/O/h/ZPvtmvSLSyvxXbOxisSg/banco-do-brasil-mcamgo-abr-280620211818-4.jpg"
  },
  "https://www.infomoney.com.br/mercados/banco-do-brasil-equatorial-cogna-vale-gpa-e-mais-acoes-para-acompanhar-hoje/": {
   "titulo": "Banco do Brasil, Equatorial, Cogna, Vale, GPA e mais ações para acompanhar hoje",
@@ -352,5 +310,11 @@
   "fonte": "Agência Brasil",
   "dt": "2026-08-19T20:33:00+00:00",
   "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
+ },
+ "https://www.cnnbrasil.com.br/agro/agroterenas-capta-r-160-milhoes-para-converter-pastagens-em-cana-de-acucar/": {
+  "titulo": "Agroterenas capta R$ 160 milhões para converter pastagens em cana-de-açúcar",
+  "fonte": "CNN Brasil",
+  "dt": "2026-08-19T21:18:37+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/08/agrovale.jpg?w=200"
  }
 }

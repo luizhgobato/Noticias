@@ -340,5 +340,17 @@
   "fonte": "Exame",
   "dt": "2026-08-19T12:05:51+00:00",
   "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/justica-condena-ex-cfo-do-itau-a-pagar-r-283-milhoes-ao-banco.shtml": {
+  "titulo": "Justiça condena ex-CFO do Itaú a pagar R$ 2,83 milhões ao banco",
+  "fonte": "Folha Mercado",
+  "dt": "2026-08-19T21:15:00+00:00",
+  "img": ""
+ },
+ "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/durigan-pretende-mediar-negociacao-do-rio-com-bndes-e-banco-do-brasil": {
+  "titulo": "Durigan pretende mediar negociação do Rio com BNDES e Banco do Brasil",
+  "fonte": "Agência Brasil",
+  "dt": "2026-08-19T20:33:00+00:00",
+  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
  }
 }

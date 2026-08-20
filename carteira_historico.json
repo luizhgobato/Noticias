@@ -5,12 +5,6 @@
   "dt": "2026-08-13T11:39:10+00:00",
   "img": "https://www.infomoney.com.br/wp-content/uploads/2026/03/EspacoB3_03.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
  },
- "https://www.bloomberglinea.com.br/mercados/a-mudanca-na-politica-economica-de-milei/": {
-  "titulo": "A mudança na política econômica de Milei",
-  "fonte": "Bloomberg Línea",
-  "dt": "2026-08-13T09:32:18+00:00",
-  "img": "https://www.bloomberglinea.com/resizer/v2/EILHPQND75EYLIXFGQ3WXEPBAM.jpg?auth=e778acb0afc23bd28fda6a13acfce41ee76ecd0a1603aef5f20de2b7e1da6179&smart=true&width=1200&height=675"
- },
  "https://www.moneytimes.com.br/minerva-beef3-2t26-vem-em-linha-mas-queima-de-caixa-e-china-preocupam/": {
   "titulo": "Minerva (BEEF3): 2T26 vem em linha, mas queima de caixa e China preocupam",
   "fonte": "Money Times",
@@ -328,5 +322,23 @@
   "fonte": "Money Times",
   "dt": "2026-08-19T23:18:54+00:00",
   "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/08/01/6556-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post466744": {
+  "titulo": "Banco do Brasil antecipa pagamento de R$ 196 milhões em JCP",
+  "fonte": "Folha Mercado",
+  "dt": "2026-08-20T10:57:00+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/bancoes-turbinam-provisoes-e-acumulam-r-47-bilhoes-contra-calotes-no-2t26-perigo-a-vista-para-bbas3-itub4-sanb11-e-bbdc4-rnda/": {
+  "titulo": "Bancões engordam ‘dinheiro do colchão’ e acumulam R$ 47 bi para enfrentar calotes; perigo à vista para BBAS3, ITUB4, SANB11 e BBDC4?",
+  "fonte": "Money Times",
+  "dt": "2026-08-20T10:30:00+00:00",
+  "img": ""
+ },
+ "https://www.bloomberglinea.com.br/mercados/o-impacto-da-ia-no-c-level/": {
+  "titulo": "O impacto da IA no C-Level",
+  "fonte": "Bloomberg Línea",
+  "dt": "2026-08-20T09:58:24+00:00",
+  "img": "https://www.bloomberglinea.com/resizer/v2/EILHPQND75EYLIXFGQ3WXEPBAM.jpg?auth=e778acb0afc23bd28fda6a13acfce41ee76ecd0a1603aef5f20de2b7e1da6179&smart=true&width=1200&height=675"
  }
 }

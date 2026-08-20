@@ -1,20 +1,8 @@
 {
- "https://www.infomoney.com.br/mercados/banco-do-brasil-equatorial-cogna-vale-gpa-e-mais-acoes-para-acompanhar-hoje/": {
-  "titulo": "Banco do Brasil, Equatorial, Cogna, Vale, GPA e mais ações para acompanhar hoje",
-  "fonte": "InfoMoney",
-  "dt": "2026-08-13T11:39:10+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/03/EspacoB3_03.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
- },
  "https://www.moneytimes.com.br/minerva-beef3-2t26-vem-em-linha-mas-queima-de-caixa-e-china-preocupam/": {
   "titulo": "Minerva (BEEF3): 2T26 vem em linha, mas queima de caixa e China preocupam",
   "fonte": "Money Times",
   "dt": "2026-08-13T14:08:39+00:00",
-  "img": ""
- },
- "https://www.cnnbrasil.com.br/infra/apos-acao-no-stf-fazenda-da-aval-a-credito-de-r-54-bi-para-obras-em-sp/": {
-  "titulo": "Após ação no STF, Fazenda dá aval a crédito de R$ 5,4 bi para obras em SP",
-  "fonte": "CNN Brasil",
-  "dt": "2026-08-13T13:27:03+00:00",
   "img": ""
  },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/banco-do-brasil-tem-ate-r-100-bilhoes-em-atraso-do-agro-para-ser-renegociado-com-nova-mp.shtml": {
@@ -340,5 +328,11 @@
   "fonte": "Bloomberg Línea",
   "dt": "2026-08-20T09:58:24+00:00",
   "img": "https://www.bloomberglinea.com/resizer/v2/EILHPQND75EYLIXFGQ3WXEPBAM.jpg?auth=e778acb0afc23bd28fda6a13acfce41ee76ecd0a1603aef5f20de2b7e1da6179&smart=true&width=1200&height=675"
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbas3-petroreconcavo-recv3-tim-tims3-e-outros-destaques-desta-quinta-20-ceci/": {
+  "titulo": "Banco do Brasil (BBAS3), PetroReconcavo (RECV3), TIM (TIMS3) e outros destaques desta quinta (20)",
+  "fonte": "Money Times",
+  "dt": "2026-08-20T12:59:51+00:00",
+  "img": ""
  }
 }

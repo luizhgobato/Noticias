@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/banco-do-brasil-bbsa3-o-pior-ja-passou-cfo-ve-mudanca-dando-frutos/": {
-  "titulo": "Banco do Brasil (BBSA3): O pior já passou? CFO vê mudança dando frutos",
-  "fonte": "Money Times",
-  "dt": "2026-08-12T23:29:51+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/mercados/banco-do-brasil-equatorial-cogna-vale-gpa-e-mais-acoes-para-acompanhar-hoje/": {
   "titulo": "Banco do Brasil, Equatorial, Cogna, Vale, GPA e mais ações para acompanhar hoje",
   "fonte": "InfoMoney",
@@ -316,5 +310,23 @@
   "fonte": "CNN Brasil",
   "dt": "2026-08-19T21:18:37+00:00",
   "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/08/agrovale.jpg?w=200"
+ },
+ "https://www.cnnbrasil.com.br/economia/money/negocios/banco-do-brasil-pagara-r-197-mi-em-juros-sobre-capital-em-setembro/": {
+  "titulo": "Banco do Brasil pagará R$ 197 mi em juros sobre capital em setembro",
+  "fonte": "CNN Brasil",
+  "dt": "2026-08-20T00:17:07+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/04/ja_5329.jpg?w=200"
+ },
+ "https://www.infomoney.com.br/mercados/banco-do-brasil-bbas3-anuncia-pagamento-de-mais-de-r-196-milhoes-em-jcp/": {
+  "titulo": "Banco do Brasil (BBAS3) anuncia pagamento de mais de R$ 196 milhões em JCP",
+  "fonte": "InfoMoney",
+  "dt": "2026-08-19T23:33:53+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/09/Captura-de-tela-2025-09-04-120225-e1778772425676.png?fit=300%2C175&amp;quality=70&amp;strip=all"
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbas3-antecipa-pagamento-de-jcps-veja-valores-rnda/": {
+  "titulo": "Vai pingar: Banco do Brasil (BBAS3) antecipa pagamento de JCPs; veja valores",
+  "fonte": "Money Times",
+  "dt": "2026-08-19T23:18:54+00:00",
+  "img": ""
  }
 }

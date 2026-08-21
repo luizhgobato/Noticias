@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/irb-irbr3-sobe-mais-de-8-e-btg-ve-caminho-para-lucro-de-r-1-bi-jcav/": {
-  "titulo": "IRB (IRBR3) sobe mais de 8% e BTG vê caminho para lucro de R$ 1 bilhão até o fim da década; entenda a aposta",
-  "fonte": "Money Times",
-  "dt": "2026-08-14T19:45:20+00:00",
-  "img": ""
- },
  "https://www.bloomberglinea.com.br/startups/rodadas-da-semana-ume-capta-r-500-mi-por-fidcs-para-avancar-em-plataforma-de-credito/": {
   "titulo": "Rodadas da semana: Ume capta R$ 500 mi por FIDCs para avançar em plataforma de crédito",
   "fonte": "Bloomberg Línea",
@@ -243,6 +237,18 @@
   "titulo": "Banco do Brasil anuncia parceria com iFood para ampliar financiamentos no Move Brasil",
   "fonte": "Folha Mercado",
   "dt": "2026-08-21T17:51:00+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/dividendos-allos-alos3-atualiza-valor-para-setembro-apos-mudanca-de-acoes-em-tesouraria/": {
+  "titulo": "Dividendos: Allos (ALOS3) atualiza valor para setembro após mudança de ações em tesouraria",
+  "fonte": "Money Times",
+  "dt": "2026-08-21T20:51:39+00:00",
+  "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/seis-em-cada-dez-jovens-aceitariam-salario-menor-por-trabalho-menos-estressante.shtml": {
+  "titulo": "Seis em cada dez jovens aceitariam salário menor por trabalho menos estressante",
+  "fonte": "Folha Mercado",
+  "dt": "2026-08-21T19:35:00+00:00",
   "img": ""
  }
 }

@@ -5,12 +5,6 @@
   "dt": "2026-08-14T15:37:00+00:00",
   "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
  },
- "https://www.infomoney.com.br/mercados/irb-surpreende-resultado-2t26-e-acao-sobe-mas-olhos-se-voltam-para-gatilho-de-30-para-irbr3/": {
-  "titulo": "IRB surpreende e ação sobe – mas olhos se voltam para gatilho de 30% para IRBR3",
-  "fonte": "InfoMoney",
-  "dt": "2026-08-14T15:16:06+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2024/03/IRB-Re-Nova-sede-4.jpeg?fit=300%2C248&amp;quality=70&amp;strip=all"
- },
  "https://www.moneytimes.com.br/como-conseguir-financiamento-carro-eletrico-banco-do-brasil-bbsa3-move-brasil-mlem/": {
   "titulo": "Como conseguir financiamento de carro elétrico no Banco do Brasil (BBSA3) pelo Move Brasil",
   "fonte": "Money Times",
@@ -238,5 +232,17 @@
   "fonte": "Money Times",
   "dt": "2026-08-20T12:59:51+00:00",
   "img": ""
+ },
+ "https://www.infomoney.com.br/brasil/banco-do-brasil-anuncia-parceria-com-ifood-para-ampliar-financiamentos-no-move-brasil/": {
+  "titulo": "Banco do Brasil anuncia parceria com iFood para ampliar financiamentos no Move Brasil",
+  "fonte": "InfoMoney",
+  "dt": "2026-08-21T15:15:37+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/03/ifood-entregadores-agencia-brasil.webp?fit=300%2C179&amp;quality=70&amp;strip=all"
+ },
+ "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/desigualdades-marcam-formalizacao-do-trabalho-entre-jovens-brasileiros": {
+  "titulo": "Desigualdades marcam formalização do trabalho entre jovens brasileiros",
+  "fonte": "Agência Brasil",
+  "dt": "2026-08-21T14:31:00+00:00",
+  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
  }
 }

@@ -1,10 +1,4 @@
 {
- "https://exame.com/exame-in/apos-centenario-marketing-do-itau-foca-em-reapresentar-portfolio-impulsionado-por-ia/": {
-  "titulo": "Após centenário, marketing do Itaú foca em reapresentar portfólio impulsionado por IA",
-  "fonte": "Exame",
-  "dt": "2026-08-16T11:20:31+00:00",
-  "img": ""
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/pispasep-e-pago-a-41-milhoes-de-trabalhadores-veja-calendario-e-quem-recebe.shtml": {
   "titulo": "PIS/Pasep é pago a 4,1 milhões de trabalhadores; veja calendário e quem recebe",
   "fonte": "Folha Mercado",
@@ -232,5 +226,11 @@
   "fonte": "Money Times",
   "dt": "2026-08-22T12:46:49+00:00",
   "img": ""
+ },
+ "https://www.cnnbrasil.com.br/economia/money/macroeconomia/pix-instabilidade-hoje-23-agosto-2026/": {
+  "titulo": "Pix caiu? Usuários relatam instabilidade em diferentes bancos",
+  "fonte": "CNN Brasil",
+  "dt": "2026-08-23T13:07:36+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/08/WhatsApp-Image-2026-08-23-at-09.51.10.jpeg?w=1024"
  }
 }

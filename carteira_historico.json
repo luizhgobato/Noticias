@@ -232,5 +232,11 @@
   "fonte": "Money Times",
   "dt": "2026-08-24T16:44:28+00:00",
   "img": ""
+ },
+ "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/banco-do-brasil-lanca-novo-aplicativo-com-foco-em-ia-e-personalizacao": {
+  "titulo": "Banco do Brasil lança novo aplicativo com foco em IA e personalização",
+  "fonte": "Agência Brasil",
+  "dt": "2026-08-24T19:01:00+00:00",
+  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
  }
 }

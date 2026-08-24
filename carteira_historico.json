@@ -1,10 +1,4 @@
 {
- "https://braziljournal.com/nubank-pode-lucrar-mais-que-o-itau-no-varejo-ja-este-ano-diz-jp-morgan/": {
-  "titulo": "Nubank pode lucrar mais que o Itaú no varejo já este ano, diz JP Morgan",
-  "fonte": "Brazil Journal",
-  "dt": "2026-08-17T16:47:02+00:00",
-  "img": "https://braziljournal.com/wp-content/uploads/2026/08/LUCRO-NUBANK-E-ITAU.png?x96440"
- },
  "https://www.infomoney.com.br/mercados/itau-unibanco-recebe-autorizacao-preliminar-para-ter-banco-multiplo-nos-eua/": {
   "titulo": "Itaú Unibanco recebe autorização preliminar para ter banco múltiplo nos EUA",
   "fonte": "InfoMoney",
@@ -231,6 +225,12 @@
   "titulo": "TCU suspende uso de dinheiro esquecido para garantir operações do Novo Desenrola",
   "fonte": "Folha Mercado",
   "dt": "2026-08-24T11:43:00+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/nasce-uma-gigante-da-educacao-itau-bba-enxerga-oportunidades-na-fusao-entre-yduqs-yduq3-e-afya-apsa/": {
+  "titulo": "Nasce uma gigante da educação? Itaú BBA enxerga oportunidades na fusão entre Yduqs (YDUQ3) e Afya",
+  "fonte": "Money Times",
+  "dt": "2026-08-24T16:44:28+00:00",
   "img": ""
  }
 }

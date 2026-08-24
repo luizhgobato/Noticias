@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/citi-reduz-previsao-de-lucro-do-bb-e-coloca-acao-sob-observacao-para-possiveis-catalisadores-negativos/": {
-  "titulo": "Citi reduz previsão de lucro do BB (BBAS3) e coloca ação sob observação",
-  "fonte": "Money Times",
-  "dt": "2026-08-17T12:59:56+00:00",
-  "img": ""
- },
  "https://braziljournal.com/nubank-pode-lucrar-mais-que-o-itau-no-varejo-ja-este-ano-diz-jp-morgan/": {
   "titulo": "Nubank pode lucrar mais que o Itaú no varejo já este ano, diz JP Morgan",
   "fonte": "Brazil Journal",
@@ -232,5 +226,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-08-24T11:08:29+00:00",
   "img": "https://s2-valorinveste.glbimg.com/HfgKXQYZB1sIa71z28IWEM9mg_k=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2022/D/n/wfEfIOTXu64PgpSsmoVw/transferir.png"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/tcu-suspende-uso-de-dinheiro-esquecido-para-garantir-operacoes-do-novo-desenrola.shtml": {
+  "titulo": "TCU suspende uso de dinheiro esquecido para garantir operações do Novo Desenrola",
+  "fonte": "Folha Mercado",
+  "dt": "2026-08-24T11:43:00+00:00",
+  "img": ""
  }
 }

@@ -1,10 +1,4 @@
 {
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/08/presidente-do-banco-do-brasil-e-sindicato-trocam-acusacoes-de-misoginia-e-ma-administracao.shtml": {
-  "titulo": "Presidente do Banco do Brasil e sindicato trocam acusações de misoginia e má administração",
-  "fonte": "Folha Mercado",
-  "dt": "2026-08-18T22:34:00+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/balancos-do-2t26-superam-expectativas-mas-itau-bba-pede-cautela-com-acoes-ceci/": {
   "titulo": "Nem tudo são flores: temporada do 2T26 supera expectativas, mas Itaú BBA recomenda cautela",
   "fonte": "Money Times",
@@ -202,5 +196,17 @@
   "fonte": "G1 Economia",
   "dt": "2026-08-25T20:09:33+00:00",
   "img": "https://s2-g1.glbimg.com/_9WUZAxYHI9rVkarrdmrFPd0iNM=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/J/U/FNSzOWSB6bfS4SWhrGPw/globo-canal-4-20260211-2000-frame-2551.avif"
+ },
+ "https://www.cnnbrasil.com.br/economia/money/negocios/ambev-entra-pela-1a-vez-no-top-10-de-acoes-mais-negociadas-de-2026-na-b3/": {
+  "titulo": "Ambev entra pela 1ª vez no Top 10 de ações mais negociadas de 2026 na B3",
+  "fonte": "CNN Brasil",
+  "dt": "2026-08-25T22:46:38+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/07/compressed-IMG_CNN_7.png?w=200"
+ },
+ "https://exame.com/future-of-money/itau-tokenizacao-de-garantias-e-o-principal-caso-que-vai-se-expandir-nos-proximos-dois-anos/": {
+  "titulo": "Itaú: tokenização de garantias é o principal caso que vai se expandir nos próximos dois anos",
+  "fonte": "Exame",
+  "dt": "2026-08-25T19:12:03+00:00",
+  "img": ""
  }
 }

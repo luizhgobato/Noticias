@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/cobre-nao-faz-milagre-goldman-corta-preco-alvo-da-vale-e-contraria-otimismo-de-btg-e-itau-bba/": {
-  "titulo": "Cobre não faz milagre: Goldman corta preço-alvo da Vale e contraria otimismo de BTG e Itaú BBA",
-  "fonte": "Money Times",
-  "dt": "2026-08-18T18:13:36+00:00",
-  "img": ""
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/08/presidente-do-banco-do-brasil-e-sindicato-trocam-acusacoes-de-misoginia-e-ma-administracao.shtml": {
   "titulo": "Presidente do Banco do Brasil e sindicato trocam acusações de misoginia e má administração",
   "fonte": "Folha Mercado",
@@ -184,5 +178,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-08-25T14:29:18+00:00",
   "img": "https://s2-valorinveste.glbimg.com/zN0idHjPU2Afzf7u-rb9pivBiU0=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2020/Z/x/Lzi9ABTBOU7LeDBhBlmg/ranking.jpg"
+ },
+ "https://exame.com/invest/mercados/justica-decreta-falencia-da-oi-pela-segunda-vez/": {
+  "titulo": "Justiça decreta falência da Oi pela segunda vez",
+  "fonte": "Exame",
+  "dt": "2026-08-25T14:33:40+00:00",
+  "img": ""
  }
 }

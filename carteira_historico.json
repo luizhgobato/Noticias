@@ -1,22 +1,4 @@
 {
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/justica-condena-ex-cfo-do-itau-a-pagar-r-283-milhoes-ao-banco.shtml": {
-  "titulo": "Justiça condena ex-CFO do Itaú a pagar R$ 2,83 milhões ao banco",
-  "fonte": "Folha Mercado",
-  "dt": "2026-08-19T21:15:00+00:00",
-  "img": ""
- },
- "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/durigan-pretende-mediar-negociacao-do-rio-com-bndes-e-banco-do-brasil": {
-  "titulo": "Durigan pretende mediar negociação do Rio com BNDES e Banco do Brasil",
-  "fonte": "Agência Brasil",
-  "dt": "2026-08-19T20:33:00+00:00",
-  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
- },
- "https://www.cnnbrasil.com.br/agro/agroterenas-capta-r-160-milhoes-para-converter-pastagens-em-cana-de-acucar/": {
-  "titulo": "Agroterenas capta R$ 160 milhões para converter pastagens em cana-de-açúcar",
-  "fonte": "CNN Brasil",
-  "dt": "2026-08-19T21:18:37+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/08/agrovale.jpg?w=200"
- },
  "https://www.cnnbrasil.com.br/economia/money/negocios/banco-do-brasil-pagara-r-197-mi-em-juros-sobre-capital-em-setembro/": {
   "titulo": "Banco do Brasil pagará R$ 197 mi em juros sobre capital em setembro",
   "fonte": "CNN Brasil",

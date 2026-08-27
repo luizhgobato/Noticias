@@ -1,16 +1,4 @@
 {
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/08/01/6556-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post466744": {
-  "titulo": "Banco do Brasil antecipa pagamento de R$ 196 milhões em JCP",
-  "fonte": "Folha Mercado",
-  "dt": "2026-08-20T10:57:00+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/banco-do-brasil-bbas3-petroreconcavo-recv3-tim-tims3-e-outros-destaques-desta-quinta-20-ceci/": {
-  "titulo": "Banco do Brasil (BBAS3), PetroReconcavo (RECV3), TIM (TIMS3) e outros destaques desta quinta (20)",
-  "fonte": "Money Times",
-  "dt": "2026-08-20T12:59:51+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/brasil/banco-do-brasil-anuncia-parceria-com-ifood-para-ampliar-financiamentos-no-move-brasil/": {
   "titulo": "Banco do Brasil anuncia parceria com iFood para ampliar financiamentos no Move Brasil",
   "fonte": "InfoMoney",
@@ -190,5 +178,17 @@
   "fonte": "Valor Investe",
   "dt": "2026-08-27T09:40:16+00:00",
   "img": "https://s2-valorinveste.glbimg.com/odmvkv3j-tDDq7_Yky5ez4IjC04=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/z/3/j58cw0QNamQHU8srBmuQ/imagemcolunistafabiocoelho.jpg"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/bb-diz-a-justica-que-nao-debitou-r-422-mi-da-casas-bahia-e-acusa-empresa-de-ma-fe.shtml": {
+  "titulo": "BB diz à Justiça que não debitou R$ 422 mi da Casas Bahia e acusa empresa de má-fé",
+  "fonte": "Folha Mercado",
+  "dt": "2026-08-27T19:09:00+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/08/27/banco-ou-cerveja-quais-sao-as-marcas-brasileiras-mais-valiosas-de-2026.ghtml": {
+  "titulo": "Banco ou cerveja: quais são as marcas brasileiras mais valiosas de 2026?",
+  "fonte": "Valor Investe",
+  "dt": "2026-08-27T18:44:47+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/pZwDE6BwynDPiIDdfOVPv3ZRCWo=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/Q/e/NGnmjATIqh9j3TawGpAQ/gettyimages-184611089.jpg"
  }
 }

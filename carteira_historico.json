@@ -1,40 +1,4 @@
 {
- "https://www.infomoney.com.br/brasil/banco-do-brasil-anuncia-parceria-com-ifood-para-ampliar-financiamentos-no-move-brasil/": {
-  "titulo": "Banco do Brasil anuncia parceria com iFood para ampliar financiamentos no Move Brasil",
-  "fonte": "InfoMoney",
-  "dt": "2026-08-21T15:15:37+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/03/ifood-entregadores-agencia-brasil.webp?fit=300%2C179&amp;quality=70&amp;strip=all"
- },
- "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/desigualdades-marcam-formalizacao-do-trabalho-entre-jovens-brasileiros": {
-  "titulo": "Desigualdades marcam formalização do trabalho entre jovens brasileiros",
-  "fonte": "Agência Brasil",
-  "dt": "2026-08-21T14:31:00+00:00",
-  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
- },
- "https://www.moneytimes.com.br/nubank-nu-ainda-tem-espaco-para-crescer-bba-ve-potencial-de-alta-de-41-para-a-acao-lmrs/": {
-  "titulo": "Nubank (NU) ainda tem espaço para crescer? Por que o BBA vê potencial de alta de 41% para a ação",
-  "fonte": "Money Times",
-  "dt": "2026-08-21T18:08:13+00:00",
-  "img": ""
- },
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/banco-do-brasil-anuncia-parceria-com-ifood-para-ampliar-financiamentos-no-move-brasil.shtml": {
-  "titulo": "Banco do Brasil anuncia parceria com iFood para ampliar financiamentos no Move Brasil",
-  "fonte": "Folha Mercado",
-  "dt": "2026-08-21T17:51:00+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/dividendos-allos-alos3-atualiza-valor-para-setembro-apos-mudanca-de-acoes-em-tesouraria/": {
-  "titulo": "Dividendos: Allos (ALOS3) atualiza valor para setembro após mudança de ações em tesouraria",
-  "fonte": "Money Times",
-  "dt": "2026-08-21T20:51:39+00:00",
-  "img": ""
- },
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/seis-em-cada-dez-jovens-aceitariam-salario-menor-por-trabalho-menos-estressante.shtml": {
-  "titulo": "Seis em cada dez jovens aceitariam salário menor por trabalho menos estressante",
-  "fonte": "Folha Mercado",
-  "dt": "2026-08-21T19:35:00+00:00",
-  "img": ""
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/lula-cobra-maior-agilidade-de-bb-e-caixa-na-liberacao-de-credito-a-motoristas-de-app-e-taxi.shtml": {
   "titulo": "Lula cobra maior agilidade de BB e Caixa na liberação de crédito a motoristas de app e táxi",
   "fonte": "Folha Mercado",
@@ -190,5 +154,17 @@
   "fonte": "Valor Investe",
   "dt": "2026-08-27T18:44:47+00:00",
   "img": "https://s2-valorinveste.glbimg.com/pZwDE6BwynDPiIDdfOVPv3ZRCWo=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/Q/e/NGnmjATIqh9j3TawGpAQ/gettyimages-184611089.jpg"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/casas-bahia-desiste-de-pedidos-contra-bb-e-diz-buscar-consenso-apos-acusacao-de-ma-fe.shtml": {
+  "titulo": "Casas Bahia desiste de pedidos contra BB e diz buscar consenso após acusação de ma-fé",
+  "fonte": "Folha Mercado",
+  "dt": "2026-08-28T18:07:00+00:00",
+  "img": ""
+ },
+ "https://g1.globo.com/economia/noticia/2026/08/28/dolar-ibovespa.ghtml": {
+  "titulo": "Ibovespa sobe pela 8ª vez seguida e acumula alta de 2,7% na semana, apesar de fala do chefe do Fed",
+  "fonte": "G1 Economia",
+  "dt": "2026-08-28T12:00:05+00:00",
+  "img": "https://s2-g1.glbimg.com/KbOg1q3fzRMd5YV3G82VDQOh1V0=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/D/u/bIbO92QKm2Mwko6Uw45w/2025-08-13t150516z-1527003558-rc2e6gazlupi-rtrmadp-3-zelle-new-york.jpg"
  }
 }

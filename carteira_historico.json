@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/jcp-do-banco-do-brasil-bbas3-e-disparada-do-bitcoin-btc-veja-as-materias-mais-lidas-da-semana-no-money-times-rens/": {
-  "titulo": "JCP do Banco do Brasil (BBAS3) e disparada do bitcoin (BTC): Veja as matérias mais lidas da semana no Money Times",
-  "fonte": "Money Times",
-  "dt": "2026-08-22T12:46:49+00:00",
-  "img": ""
- },
  "https://www.cnnbrasil.com.br/economia/money/macroeconomia/pix-instabilidade-hoje-23-agosto-2026/": {
   "titulo": "Pix caiu? Usuários relatam instabilidade em diferentes bancos",
   "fonte": "CNN Brasil",
@@ -160,5 +154,17 @@
   "fonte": "G1 Economia",
   "dt": "2026-08-28T12:00:05+00:00",
   "img": "https://s2-g1.glbimg.com/KbOg1q3fzRMd5YV3G82VDQOh1V0=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/D/u/bIbO92QKm2Mwko6Uw45w/2025-08-13t150516z-1527003558-rc2e6gazlupi-rtrmadp-3-zelle-new-york.jpg"
+ },
+ "https://www.moneytimes.com.br/tchau-itau-itub4-10-acoes-com-retornos-de-ate-13-para-investir-em-setembro-segundo-agora-lmrs/": {
+  "titulo": "Tchau, Itaú (ITUB4): 10 ações com retornos de até 13% para investir em setembro, segundo Ágora",
+  "fonte": "Money Times",
+  "dt": "2026-08-29T14:50:00+00:00",
+  "img": ""
+ },
+ "https://exame.com/negocios/este-ex-garimpeiro-criou-um-imperio-de-supermercados-de-r-356-bilhoes-no-nordeste-do-brasil/": {
+  "titulo": "Este ex-garimpeiro criou um império de supermercados de R$ 35,6 bilhões no nordeste do Brasil",
+  "fonte": "Exame",
+  "dt": "2026-08-29T12:00:00+00:00",
+  "img": ""
  }
 }

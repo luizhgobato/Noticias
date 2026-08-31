@@ -1,10 +1,4 @@
 {
- "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/banco-do-brasil-lanca-novo-aplicativo-com-foco-em-ia-e-personalizacao": {
-  "titulo": "Banco do Brasil lança novo aplicativo com foco em IA e personalização",
-  "fonte": "Agência Brasil",
-  "dt": "2026-08-24T19:01:00+00:00",
-  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
- },
  "https://www.bloomberglinea.com.br/negocios/consumo-fraco-pressiona-shoppings-mas-allos-resiste-com-dividendos-diz-bofa/": {
   "titulo": "Consumo fraco pressiona shoppings, mas Allos resiste com dividendos, diz BofA",
   "fonte": "Bloomberg Línea",
@@ -141,6 +135,12 @@
   "titulo": "Este ex-garimpeiro criou um império de supermercados de R$ 35,6 bilhões no nordeste do Brasil",
   "fonte": "Exame",
   "dt": "2026-08-29T12:00:00+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/como-a-xp-pode-se-aproveitar-das-eleicoes-para-lucrar-segundo-itau-bba/": {
+  "titulo": "Como a XP pode se aproveitar das eleições para lucrar, segundo Itaú BBA",
+  "fonte": "Money Times",
+  "dt": "2026-08-31T17:52:33+00:00",
   "img": ""
  }
 }

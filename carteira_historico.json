@@ -1,10 +1,4 @@
 {
- "https://www.cnnbrasil.com.br/economia/money/negocios/ambev-entra-pela-1a-vez-no-top-10-de-acoes-mais-negociadas-de-2026-na-b3/": {
-  "titulo": "Ambev entra pela 1ª vez no Top 10 de ações mais negociadas de 2026 na B3",
-  "fonte": "CNN Brasil",
-  "dt": "2026-08-25T22:46:38+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/07/compressed-IMG_CNN_7.png?w=200"
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/casas-bahia-pede-a-justica-que-bb-devolva-r-422-mi-e-tenta-estancar-saida-de-mais-recursos.shtml": {
   "titulo": "Casas Bahia pede à Justiça que BB devolva R$ 422 mi e tenta estancar saída de mais recursos",
   "fonte": "Folha Mercado",
@@ -129,6 +123,12 @@
   "titulo": "BB Investimentos troca metade das ações de carteira de dividendos; retornos chegam até  13,1%",
   "fonte": "Money Times",
   "dt": "2026-09-01T18:37:51+00:00",
+  "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/leandro-vilain-vai-substituir-isaac-sidney-na-presidencia-da-febraban.shtml": {
+  "titulo": "Febraban anuncia Leandro Vilain no lugar de Isaac Sidney na presidência",
+  "fonte": "Folha Mercado",
+  "dt": "2026-08-31T21:42:00+00:00",
   "img": ""
  }
 }

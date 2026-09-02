@@ -1,16 +1,4 @@
 {
- "https://www.moneytimes.com.br/brasilagro-agro3-itau-bba-espera-4t26-fraco-e-volta-atencoes-para-nova-safra-pads/": {
-  "titulo": "BrasilAgro (AGRO3): Itaú BBA espera 4T26 fraco e volta atenções para nova safra",
-  "fonte": "Money Times",
-  "dt": "2026-08-26T16:02:05+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/banco-do-brasil-bbas3-comeca-a-renegociar-dividas-rurais-via-mp-1-376-pads/": {
-  "titulo": "Banco do Brasil (BBAS3) começa a renegociar dívidas rurais via MP 1.376",
-  "fonte": "Money Times",
-  "dt": "2026-08-26T16:41:16+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/bb-bbas3-sai-suzano-suzb3-entra-veja-quais-acoes-o-morgan-stanley-escala-para-passar-pela-piora-de-brasil-apsa/": {
   "titulo": "BB (BBAS3) sai, Suzano (SUZB3) entra: Morgan Stanley escala ações para passar por piora de Brasil",
   "fonte": "Money Times",
@@ -106,5 +94,35 @@
   "fonte": "Folha Mercado",
   "dt": "2026-08-31T21:42:00+00:00",
   "img": ""
+ },
+ "https://www.infomoney.com.br/mercados/com-peso-de-canetas-emagrecedoras-itau-bba-reve-estimativas-para-farmacias/": {
+  "titulo": "Com peso de canetas emagrecedoras, Itaú BBA revê estimativas para farmácias",
+  "fonte": "InfoMoney",
+  "dt": "2026-09-02T16:52:43+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/05/rd-saude.jpg?fit=300%2C191&amp;quality=70&amp;strip=all"
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbas3-e-mais-5-nomes-para-ter-na-carteira-de-dividendos-e-buscar-ate-r-045-por-acao-segundo-a-planner-lmrs/": {
+  "titulo": "Banco do Brasil (BBAS3) e mais: 5 nomes para ter na carteira de dividendos e buscar até R$ 0,45 por ação, segundo a Planner",
+  "fonte": "Money Times",
+  "dt": "2026-09-02T16:22:37+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbsa3-trade-eleitoral-contamina-e-acao-salta-ate-7-com-gringos-enchendo-o-carrinho-rnda/": {
+  "titulo": "Banco do Brasil (BBSA3): Trade eleitoral contamina e ação salta até 7% com gringos ‘enchendo o carrinho’",
+  "fonte": "Money Times",
+  "dt": "2026-09-02T16:20:23+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbsa3-xp-revisa-preco-alvo-e-dividendos-e-diz-o-que-fazer-com-papel-agora-rnda/": {
+  "titulo": "Banco do Brasil (BBSA3): XP revisa preço-alvo e dividendos e diz o que fazer com papel agora",
+  "fonte": "Money Times",
+  "dt": "2026-09-02T15:57:52+00:00",
+  "img": ""
+ },
+ "https://www.cnnbrasil.com.br/economia/money/negocios/magazine-luiza-e-mercado-livre-fecham-acordo-para-vendas-no-marketplace/": {
+  "titulo": "Magazine Luiza e Mercado Livre fecham acordo para vendas no marketplace",
+  "fonte": "CNN Brasil",
+  "dt": "2026-09-02T15:14:01+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/11136_26988E67574BE204-2.jpg?w=200"
  }
 }

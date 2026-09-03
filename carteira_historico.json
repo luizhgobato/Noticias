@@ -1,10 +1,4 @@
 {
- "https://valorinveste.globo.com/blogs/fabio-coelho/coluna/irb-seis-anos-depois.ghtml": {
-  "titulo": "IRB, seis anos depois",
-  "fonte": "Valor Investe",
-  "dt": "2026-08-27T09:40:16+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/odmvkv3j-tDDq7_Yky5ez4IjC04=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/z/3/j58cw0QNamQHU8srBmuQ/imagemcolunistafabiocoelho.jpg"
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/bb-diz-a-justica-que-nao-debitou-r-422-mi-da-casas-bahia-e-acusa-empresa-de-ma-fe.shtml": {
   "titulo": "BB diz à Justiça que não debitou R$ 422 mi da Casas Bahia e acusa empresa de má-fé",
   "fonte": "Folha Mercado",
@@ -141,6 +135,18 @@
   "titulo": "Bradesco (BBDC), Vale (VALE), Itaú (ITUB4) e mais: BofA indica papéis para comprar agora",
   "fonte": "Money Times",
   "dt": "2026-09-02T22:24:09+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/sai-itausa-itsa4-entra-itau-itub4-veja-as-mudancas-da-carteira-mensal-da-planner-para-setembro-mlem/": {
+  "titulo": "Sai Itaúsa (ITSA4), entra Itaú (ITUB4): veja as mudanças da carteira mensal da Planner para setembro",
+  "fonte": "Money Times",
+  "dt": "2026-09-03T14:38:36+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/3tentos-tten3-itau-bba-corta-preco-alvo-mas-ve-reves-temporario-e-acao-barata/": {
+  "titulo": "3tentos (TTEN3): Itaú BBA corta preço-alvo, mas vê revés temporário e ação barata",
+  "fonte": "Money Times",
+  "dt": "2026-09-03T14:08:41+00:00",
   "img": ""
  }
 }

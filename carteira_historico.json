@@ -1,16 +1,4 @@
 {
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/bb-diz-a-justica-que-nao-debitou-r-422-mi-da-casas-bahia-e-acusa-empresa-de-ma-fe.shtml": {
-  "titulo": "BB diz à Justiça que não debitou R$ 422 mi da Casas Bahia e acusa empresa de má-fé",
-  "fonte": "Folha Mercado",
-  "dt": "2026-08-27T19:09:00+00:00",
-  "img": ""
- },
- "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/08/27/banco-ou-cerveja-quais-sao-as-marcas-brasileiras-mais-valiosas-de-2026.ghtml": {
-  "titulo": "Banco ou cerveja: quais são as marcas brasileiras mais valiosas de 2026?",
-  "fonte": "Valor Investe",
-  "dt": "2026-08-27T18:44:47+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/pZwDE6BwynDPiIDdfOVPv3ZRCWo=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/Q/e/NGnmjATIqh9j3TawGpAQ/gettyimages-184611089.jpg"
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/casas-bahia-desiste-de-pedidos-contra-bb-e-diz-buscar-consenso-apos-acusacao-de-ma-fe.shtml": {
   "titulo": "Casas Bahia desiste de pedidos contra BB e diz buscar consenso após acusação de ma-fé",
   "fonte": "Folha Mercado",
@@ -154,5 +142,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-09-03T12:05:11+00:00",
   "img": "https://s2-valorinveste.glbimg.com/yF2IKO69d699NCcfhfoE0tdQpZ4=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/a/G/9rJqvBR66icotExRbQ6A/gettyimages-2244828790.jpg"
+ },
+ "https://www.moneytimes.com.br/safra-faz-mudancas-na-carteira-de-acoes-para-setembro-confira-quem-entrou-e-quem-saiu-lils/": {
+  "titulo": "Safra faz mudanças na carteira de ações para setembro; confira quem entrou e quem saiu",
+  "fonte": "Money Times",
+  "dt": "2026-09-03T19:05:40+00:00",
+  "img": ""
  }
 }

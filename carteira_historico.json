@@ -5,12 +5,6 @@
   "dt": "2026-08-28T18:07:00+00:00",
   "img": ""
  },
- "https://g1.globo.com/economia/noticia/2026/08/28/dolar-ibovespa.ghtml": {
-  "titulo": "Ibovespa sobe pela 8ª vez seguida e acumula alta de 2,7% na semana, apesar de fala do chefe do Fed",
-  "fonte": "G1 Economia",
-  "dt": "2026-08-28T12:00:05+00:00",
-  "img": "https://s2-g1.glbimg.com/KbOg1q3fzRMd5YV3G82VDQOh1V0=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/D/u/bIbO92QKm2Mwko6Uw45w/2025-08-13t150516z-1527003558-rc2e6gazlupi-rtrmadp-3-zelle-new-york.jpg"
- },
  "https://www.moneytimes.com.br/tchau-itau-itub4-10-acoes-com-retornos-de-ate-13-para-investir-em-setembro-segundo-agora-lmrs/": {
   "titulo": "Tchau, Itaú (ITUB4): 10 ações com retornos de até 13% para investir em setembro, segundo Ágora",
   "fonte": "Money Times",
@@ -154,5 +148,23 @@
   "fonte": "Money Times",
   "dt": "2026-09-03T20:52:31+00:00",
   "img": ""
+ },
+ "https://www.moneytimes.com.br/irb-irbr3-vitoria-no-senado-coloca-aumento-de-proventos-no-radar-acoes-sobem-lmrs/": {
+  "titulo": "IRB (IRBR3): Vitória no Senado coloca aumento de proventos no radar; ações sobem",
+  "fonte": "Money Times",
+  "dt": "2026-09-04T14:29:45+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/as-10-empresas-que-mais-pagaram-dividendos-no-2t26-e-mantiveram-desembolsos-acima-de-r-100-milhoes-em-todos-os-trimestres/": {
+  "titulo": "As 10 empresas que mais pagaram dividendos no 2T26 e mantiveram desembolsos acima de R$ 100 milhões em todos os trimestres",
+  "fonte": "Money Times",
+  "dt": "2026-09-04T14:27:38+00:00",
+  "img": "https://www.moneytimes.com.br/uploads/2026/09/image.png"
+ },
+ "https://www.infomoney.com.br/mercados/irb-irbr3-sobe-4-com-aprovacao-de-corte-de-impostos-para-resseguradoras/": {
+  "titulo": "IRB (IRBR3) sobe 4% com aprovação de corte de impostos para resseguradoras",
+  "fonte": "InfoMoney",
+  "dt": "2026-09-04T13:33:37+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2024/04/IRB-Re-Nova-sede-3.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
  }
 }

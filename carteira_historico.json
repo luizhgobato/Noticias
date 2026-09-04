@@ -1,10 +1,4 @@
 {
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/08/casas-bahia-desiste-de-pedidos-contra-bb-e-diz-buscar-consenso-apos-acusacao-de-ma-fe.shtml": {
-  "titulo": "Casas Bahia desiste de pedidos contra BB e diz buscar consenso após acusação de ma-fé",
-  "fonte": "Folha Mercado",
-  "dt": "2026-08-28T18:07:00+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/tchau-itau-itub4-10-acoes-com-retornos-de-ate-13-para-investir-em-setembro-segundo-agora-lmrs/": {
   "titulo": "Tchau, Itaú (ITUB4): 10 ações com retornos de até 13% para investir em setembro, segundo Ágora",
   "fonte": "Money Times",
@@ -171,6 +165,18 @@
   "titulo": "De olho no ‘trade eleitoral’, BB (BBAS3) entra nas recomendações de setembro da Ativa; veja mudanças",
   "fonte": "Money Times",
   "dt": "2026-09-04T15:29:46+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/daycoval-mantem-carteira-recomendada-de-longo-prazo-para-setembro-veja-as-10-acoes-recomendadas-mlem/": {
+  "titulo": "Daycoval mantém carteira recomendada de longo prazo para setembro; veja as 10 ações recomendadas",
+  "fonte": "Money Times",
+  "dt": "2026-09-04T18:48:10+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/10-acoes-para-investir-em-setembro-segundo-banco-daycoval-mlem/": {
+  "titulo": "10 ações para investir em setembro, segundo banco Daycoval",
+  "fonte": "Money Times",
+  "dt": "2026-09-04T18:05:24+00:00",
   "img": ""
  }
 }

@@ -1,22 +1,4 @@
 {
- "https://www.moneytimes.com.br/sai-itausa-itsa4-entra-itau-itub4-veja-as-mudancas-da-carteira-mensal-da-planner-para-setembro-mlem/": {
-  "titulo": "Sai Itaúsa (ITSA4), entra Itaú (ITUB4): veja as mudanças da carteira mensal da Planner para setembro",
-  "fonte": "Money Times",
-  "dt": "2026-09-03T14:38:36+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/3tentos-tten3-itau-bba-corta-preco-alvo-mas-ve-reves-temporario-e-acao-barata/": {
-  "titulo": "3tentos (TTEN3): Itaú BBA corta preço-alvo, mas vê revés temporário e ação barata",
-  "fonte": "Money Times",
-  "dt": "2026-09-03T14:08:41+00:00",
-  "img": ""
- },
- "https://valorinveste.globo.com/mercados/renda-variavel/bolsas-e-indices/noticia/2026/09/03/ibovespa-e-dolar-hoje-3-de-setembro-de-2026.ghtml": {
-  "titulo": "Ibovespa perde força com queda de Vale (VALE3) e Petrobras (PETR4); dólar recua",
-  "fonte": "Valor Investe",
-  "dt": "2026-09-03T12:05:11+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/yF2IKO69d699NCcfhfoE0tdQpZ4=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/a/G/9rJqvBR66icotExRbQ6A/gettyimages-2244828790.jpg"
- },
  "https://www.moneytimes.com.br/safra-faz-mudancas-na-carteira-de-acoes-para-setembro-confira-quem-entrou-e-quem-saiu-lils/": {
   "titulo": "Safra faz mudanças na carteira de ações para setembro; confira quem entrou e quem saiu",
   "fonte": "Money Times",
@@ -166,5 +148,23 @@
   "fonte": "Folha Mercado",
   "dt": "2026-09-09T02:30:00+00:00",
   "img": ""
+ },
+ "https://www.moneytimes.com.br/citi-rebaixa-bb-seguridade-bbse3-para-venda-e-alerta-para-queda-de-ate-55-jcav/": {
+  "titulo": "Citi rebaixa BB Seguridade (BBSE3) para venda e alerta para queda de até 55%",
+  "fonte": "Money Times",
+  "dt": "2026-09-10T14:29:53+00:00",
+  "img": ""
+ },
+ "https://g1.globo.com/pr/parana/economia/noticia/2026/09/10/especialistas-e-empresarios-defendem-reforma-tributaria-em-carta-manifesto-a-candidatos-a-presidencia-da-republica.ghtml": {
+  "titulo": "Especialistas e empresários defendem reforma tributária em carta-manifesto a candidatos à Presidência da República",
+  "fonte": "G1 Economia",
+  "dt": "2026-09-10T12:13:47+00:00",
+  "img": "https://s2-g1.glbimg.com/FXOfuwtNW2fZvbZJPvh9cmaz-Qw=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/8/4/qTJVcPQNq49loxtKfRqw/montagem-horizontal-1280x720px-7-.jpg"
+ },
+ "https://g1.globo.com/trabalho-e-carreira/noticia/2026/09/10/caixa-entra-em-greve-nacional-e-banco-do-brasil-tem-paralisacao-parcial-a-partir-desta-quinta-feira.ghtml": {
+  "titulo": "Caixa entra em greve nacional e Banco do Brasil tem paralisação parcial a partir desta quinta-feira",
+  "fonte": "G1 Economia",
+  "dt": "2026-09-10T11:37:08+00:00",
+  "img": "https://s2-g1.glbimg.com/CyurT0r9cZlIZmVXTsurKBivQqg=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/d/4/8Oax2aTYSc6aChDPPvhQ/greve.jpg"
  }
 }

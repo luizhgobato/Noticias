@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/safra-faz-mudancas-na-carteira-de-acoes-para-setembro-confira-quem-entrou-e-quem-saiu-lils/": {
-  "titulo": "Safra faz mudanças na carteira de ações para setembro; confira quem entrou e quem saiu",
-  "fonte": "Money Times",
-  "dt": "2026-09-03T19:05:40+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/dividendos-11-acoes-para-ter-na-carteira-em-setembro-segundo-safra-lils/": {
   "titulo": "Dividendos: Carteira do Safra dispara e deixa Ibovespa comendo poeira; veja portfólio para setembro",
   "fonte": "Money Times",
@@ -166,5 +160,11 @@
   "fonte": "G1 Economia",
   "dt": "2026-09-10T11:37:08+00:00",
   "img": "https://s2-g1.glbimg.com/CyurT0r9cZlIZmVXTsurKBivQqg=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/d/4/8Oax2aTYSc6aChDPPvhQ/greve.jpg"
+ },
+ "https://agenciabrasil.ebc.com.br/economia/noticia/2026-09/caixa-entra-em-greve-nacional-bb-tem-paralisacao-parcial": {
+  "titulo": "Caixa entra em greve nacional; BB tem paralisação parcial",
+  "fonte": "Agência Brasil",
+  "dt": "2026-09-10T18:19:00+00:00",
+  "img": "https://agenciabrasil.ebc.com.br/ebc.png?id=1702032&amp;o=rss"
  }
 }

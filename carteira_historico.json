@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/de-olho-no-trade-eleitoral-bb-bbas3-entra-nas-recomendacoes-de-setembro-da-ativa-apsa/": {
-  "titulo": "De olho no ‘trade eleitoral’, BB (BBAS3) entra nas recomendações de setembro da Ativa; veja mudanças",
-  "fonte": "Money Times",
-  "dt": "2026-09-04T15:29:46+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/daycoval-mantem-carteira-recomendada-de-longo-prazo-para-setembro-veja-as-10-acoes-recomendadas-mlem/": {
   "titulo": "Daycoval mantém carteira recomendada de longo prazo para setembro; veja as 10 ações recomendadas",
   "fonte": "Money Times",
@@ -166,5 +160,23 @@
   "fonte": "CNN Brasil",
   "dt": "2026-09-11T13:53:18+00:00",
   "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportAgribusinessNews/tagreuters.com2026binary_LYNXMPEM302SK-BASEIMAGE.jpg?w=200"
+ },
+ "https://www.moneytimes.com.br/etanol-de-milho-deve-mais-que-dobrar-ate-2030-mas-um-fator-bilionario-pode-limitar-expansao-aponta-itau-bba-pads/": {
+  "titulo": "Etanol de milho deve mais que dobrar até 2030, mas um fator bilionário pode limitar expansão, aponta Itaú BBA",
+  "fonte": "Money Times",
+  "dt": "2026-09-11T16:19:43+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/totvs-tots3-itau-bba-mantem-recomendacao-e-ve-alta-de-42-com-ia-no-radar-lmrs/": {
+  "titulo": "Totvs (TOTS3): Itaú BBA mantém recomendação e vê alta de 42% com IA no radar",
+  "fonte": "Money Times",
+  "dt": "2026-09-11T16:16:15+00:00",
+  "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/09/saneamento-deve-ter-pico-de-investimentos-em-2027-diz-estudo.shtml": {
+  "titulo": "Saneamento deve ter pico de investimentos em 2027, diz estudo",
+  "fonte": "Folha Mercado",
+  "dt": "2026-09-11T15:17:00+00:00",
+  "img": ""
  }
 }

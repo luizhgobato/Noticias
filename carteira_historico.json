@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/revisao-de-dividendos-do-banco-do-brasil-bbsa3-fii-de-saida-da-b3-e-acoes-com-potencial-de-ate-65-jcav/": {
-  "titulo": "Revisão de dividendos do Banco do Brasil (BBSA3), FII de saída da B3 e ações com potencial de até 65%",
-  "fonte": "Money Times",
-  "dt": "2026-09-05T12:27:21+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/ipca-952-ou-120-do-cdi-veja-os-titulos-de-credito-privado-escolhidos-pelo-itau-bba-jcav/": {
   "titulo": "IPCA + 9,52% ou 120% do CDI? Veja os títulos de crédito privado escolhidos pelo Itaú BBA",
   "fonte": "Money Times",
@@ -178,5 +172,11 @@
   "fonte": "G1 Economia",
   "dt": "2026-09-11T19:12:34+00:00",
   "img": "https://s2-g1.glbimg.com/CyurT0r9cZlIZmVXTsurKBivQqg=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/d/4/8Oax2aTYSc6aChDPPvhQ/greve.jpg"
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbas3-em-foco-as-acoes-para-lucrar-com-dividendos-e-a-greve-na-caixa-pads/": {
+  "titulo": "Banco do Brasil (BBAS3) em foco, as ações para lucrar com dividendos e a greve na Caixa",
+  "fonte": "Money Times",
+  "dt": "2026-09-12T13:25:00+00:00",
+  "img": ""
  }
 }

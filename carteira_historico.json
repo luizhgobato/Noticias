@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/dividendos-rico-cita-riscos-e-tira-vale-vale3-e-itau-itub4-da-carteira-veja-quem-entrou/": {
-  "titulo": "Dividendos: Rico cita riscos e tira Vale (VALE3) e Itaú (ITUB4) da carteira; veja quem entrou",
-  "fonte": "Money Times",
-  "dt": "2026-09-07T17:02:06+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/com-piora-de-cenario-santander-chuta-bradesco-bbdc4-de-carteira-e-coloca-outra-bancao-veja-qual/": {
   "titulo": "Com piora de cenário, Santander chuta Bradesco (BBDC4) de carteira e coloca outra bancão; veja qual",
   "fonte": "Money Times",
@@ -141,6 +135,24 @@
   "titulo": "Banco do Brasil (BBAS3) em foco, as ações para lucrar com dividendos e a greve na Caixa",
   "fonte": "Money Times",
   "dt": "2026-09-12T13:25:00+00:00",
+  "img": ""
+ },
+ "https://www.infomoney.com.br/mercados/bofa-ve-selic-a-1125-em-2027-e-aponta-acoes-que-podem-ganhar-com-cortes/": {
+  "titulo": "BofA vê Selic a 11,25% em 2027 e aponta ações que podem ganhar com cortes",
+  "fonte": "InfoMoney",
+  "dt": "2026-09-14T17:30:49+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2023/11/Equatorial.jpeg?fit=300%2C200&amp;quality=70&amp;strip=all"
+ },
+ "https://exame.com/negocios/bravo-business-awards-anuncia-homenageados-de-2026/": {
+  "titulo": "BRAVO Business Awards anuncia homenageados de 2026",
+  "fonte": "Exame",
+  "dt": "2026-09-14T14:19:33+00:00",
+  "img": ""
+ },
+ "https://exame.com/mercado-imobiliario/valentina-caran-assume-desafio-de-zerar-vacancia-de-edificio-vizinho-ao-itau/": {
+  "titulo": "Valentina Caran assume desafio de zerar vacância de edifício vizinho ao Itaú",
+  "fonte": "Exame",
+  "dt": "2026-09-14T14:10:02+00:00",
   "img": ""
  }
 }

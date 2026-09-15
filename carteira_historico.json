@@ -1,16 +1,4 @@
 {
- "https://braziljournal.com/irb-novas-regras-estimulam-mercado-de-seguros-e-resseguros/": {
-  "titulo": "IRB: novas regras estimulam mercado de seguros e resseguros",
-  "fonte": "Brazil Journal",
-  "dt": "2026-09-08T20:33:37+00:00",
-  "img": "https://braziljournal.com/wp-content/uploads/2026/01/01-30-Marcos-Falcao-ok-238x300.jpg?x28827"
- },
- "https://www.moneytimes.com.br/banco-do-brasil-bbas3-informa-valor-de-remuneracao-complementar-aos-acionistas-confira-apsa/": {
-  "titulo": "Banco do Brasil (BBAS3) informa valor de remuneração complementar aos acionistas; confira",
-  "fonte": "Money Times",
-  "dt": "2026-09-08T21:43:53+00:00",
-  "img": ""
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/09/banco-argentino-controlado-pelo-bb-compra-negocio-de-varejo-do-rival-bind.shtml": {
   "titulo": "Banco argentino controlado pelo BB compra negócio de varejo do rival Bind",
   "fonte": "Folha Mercado",
@@ -135,6 +123,24 @@
   "titulo": "Economista do Itaú aponta primeiro ativo a se valorizar se eleição destravar o fiscal",
   "fonte": "Exame",
   "dt": "2026-09-15T15:27:57+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/allos-alos3-aprova-r-438-milhoes-em-dividendos-veja-quem-recebe-pads/": {
+  "titulo": "Allos (ALOS3) aprova R$ 438 milhões em dividendos; veja quem recebe",
+  "fonte": "Money Times",
+  "dt": "2026-09-15T21:43:23+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/brasil-tem-carta-na-manga-para-atrair-investidor-falta-fazer-a-licao-de-casa-avaliam-economistas-do-bradesco-e-itau-jcav/": {
+  "titulo": "Brasil ganha espaço lá fora; o que falta para atrair ainda mais dinheiro estrangeiro?",
+  "fonte": "Money Times",
+  "dt": "2026-09-15T20:37:18+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/selic-abaixo-de-10-economista-chefe-do-bradesco-bbdc4-revela-quando-juros-podem-voltar-a-um-digito/": {
+  "titulo": "Selic abaixo de 10%? Economista-chefe do Bradesco (BBDC4) revela quando juros podem voltar a um dígito",
+  "fonte": "Money Times",
+  "dt": "2026-09-15T20:31:42+00:00",
   "img": ""
  }
 }

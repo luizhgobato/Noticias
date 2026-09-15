@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/bdrs-tres-companhias-internacionais-se-destacam-em-ranking-com-43-indicacoes-saiba-quais/": {
-  "titulo": "BDRs: três companhias internacionais se destacam em ranking com 43 indicações; saiba quais",
-  "fonte": "Money Times",
-  "dt": "2026-09-08T18:00:22+00:00",
-  "img": ""
- },
  "https://braziljournal.com/irb-novas-regras-estimulam-mercado-de-seguros-e-resseguros/": {
   "titulo": "IRB: novas regras estimulam mercado de seguros e resseguros",
   "fonte": "Brazil Journal",
@@ -135,6 +129,12 @@
   "titulo": "Valentina Caran assume desafio de zerar vacância de edifício vizinho ao Itaú",
   "fonte": "Exame",
   "dt": "2026-09-14T14:10:02+00:00",
+  "img": ""
+ },
+ "https://exame.com/invest/mercados/economista-do-itau-aponta-primeiro-ativo-a-se-valorizar-se-eleicao-destravar-o-fiscal/": {
+  "titulo": "Economista do Itaú aponta primeiro ativo a se valorizar se eleição destravar o fiscal",
+  "fonte": "Exame",
+  "dt": "2026-09-15T15:27:57+00:00",
   "img": ""
  }
 }

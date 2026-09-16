@@ -1,10 +1,4 @@
 {
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/09/banco-argentino-controlado-pelo-bb-compra-negocio-de-varejo-do-rival-bind.shtml": {
-  "titulo": "Banco argentino controlado pelo BB compra negócio de varejo do rival Bind",
-  "fonte": "Folha Mercado",
-  "dt": "2026-09-09T02:30:00+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/citi-rebaixa-bb-seguridade-bbse3-para-venda-e-alerta-para-queda-de-ate-55-jcav/": {
   "titulo": "Citi rebaixa BB Seguridade (BBSE3) para venda e alerta para queda de até 55%",
   "fonte": "Money Times",
@@ -148,5 +142,11 @@
   "fonte": "Brazil Journal",
   "dt": "2026-09-15T22:02:59+00:00",
   "img": ""
+ },
+ "https://g1.globo.com/trabalho-e-carreira/noticia/2026/09/16/caixa-e-funcionarios-voltam-a-negociar-nesta-quarta-greve-segue-sem-prazo-para-acabar.ghtml": {
+  "titulo": "Caixa e funcionários voltam a negociar nesta quarta; greve segue sem prazo para acabar",
+  "fonte": "G1 Economia",
+  "dt": "2026-09-16T03:00:00+00:00",
+  "img": "https://s2-g1.glbimg.com/Lwd0FBvrnUvqGvuYMyPw2zSxnBQ=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/t/s/UdgZ6YThmZYcG0jxAfGg/greve-bancarios-pb.jpg"
  }
 }

@@ -5,12 +5,6 @@
   "dt": "2026-09-10T22:27:30+00:00",
   "img": ""
  },
- "https://www.cnnbrasil.com.br/economia/money/negocios/petrobras-reverte-informacao-sobre-preco-da-gasolina-e-preocupa-mercado/": {
-  "titulo": "Petrobras reverte informação sobre preço da gasolina e preocupa mercado",
-  "fonte": "CNN Brasil",
-  "dt": "2026-09-10T21:15:27+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/10/Correios-e1760645276485.jpg?w=200"
- },
  "https://www.moneytimes.com.br/brasilagro-agro3-itau-bba-corta-preco-alvo-mesmo-com-melhora-para-commodities-e-vendas-de-fazendas-entenda-pads/": {
   "titulo": "BrasilAgro (AGRO3): Itaú BBA corta preço-alvo mesmo com melhora para commodities e vendas de fazendas; entenda",
   "fonte": "Money Times",
@@ -178,5 +172,17 @@
   "fonte": "Money Times",
   "dt": "2026-09-17T15:37:03+00:00",
   "img": ""
+ },
+ "https://www.moneytimes.com.br/irani-rani3-aprova-incentivo-de-ate-51-milhoes-de-acoes-a-diretores-e-atualiza-recompra-pads/": {
+  "titulo": "Irani (RANI3) aprova incentivo de até 5,1 milhões de ações a diretores e atualiza recompra",
+  "fonte": "Money Times",
+  "dt": "2026-09-17T20:21:55+00:00",
+  "img": ""
+ },
+ "https://www.cnnbrasil.com.br/agro/algodao-ganha-espaco-para-recuperacao-com-oferta-ajustada-aponta-itau-bba/": {
+  "titulo": "Algodão ganha espaço para recuperação com oferta ajustada, aponta Itaú BBA",
+  "fonte": "CNN Brasil",
+  "dt": "2026-09-17T19:45:02+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportAgribusinessNews/tagreuters.com2025binary_LYNXMPEL60216-BASEIMAGE.jpg?w=200"
  }
 }

@@ -1,16 +1,4 @@
 {
- "https://www.moneytimes.com.br/brasilagro-agro3-itau-bba-corta-preco-alvo-mesmo-com-melhora-para-commodities-e-vendas-de-fazendas-entenda-pads/": {
-  "titulo": "BrasilAgro (AGRO3): Itaú BBA corta preço-alvo mesmo com melhora para commodities e vendas de fazendas; entenda",
-  "fonte": "Money Times",
-  "dt": "2026-09-11T14:18:11+00:00",
-  "img": ""
- },
- "https://www.cnnbrasil.com.br/agro/etanol-de-milho-pode-demandar-ate-r-143-bilhoes-em-florestas-em-mt/": {
-  "titulo": "Etanol de milho pode demandar até R$ 14,3 bilhões em florestas em MT",
-  "fonte": "CNN Brasil",
-  "dt": "2026-09-11T13:53:18+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportAgribusinessNews/tagreuters.com2026binary_LYNXMPEM302SK-BASEIMAGE.jpg?w=200"
- },
  "https://www.moneytimes.com.br/etanol-de-milho-deve-mais-que-dobrar-ate-2030-mas-um-fator-bilionario-pode-limitar-expansao-aponta-itau-bba-pads/": {
   "titulo": "Etanol de milho deve mais que dobrar até 2030, mas um fator bilionário pode limitar expansão, aponta Itaú BBA",
   "fonte": "Money Times",
@@ -183,6 +171,12 @@
   "titulo": "Itaú fecha contrato de R$ 1,17 bi por aluguel de escritórios de alto padrão da Eztec em SP",
   "fonte": "Folha Mercado",
   "dt": "2026-09-18T02:03:00+00:00",
+  "img": ""
+ },
+ "https://exame.com/mercado-imobiliario/itau-aluga-predio-inteiro-da-eztec-por-r-117-bi-e-reforca-aposta-na-chucri-zaidan/": {
+  "titulo": "Itaú aluga prédio inteiro da Eztec por R$ 1,17 bi e reforça aposta na Chucri Zaidan",
+  "fonte": "Exame",
+  "dt": "2026-09-18T10:01:55+00:00",
   "img": ""
  }
 }

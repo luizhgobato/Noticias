@@ -1,10 +1,4 @@
 {
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/09/banco-do-brasil-fecha-acordo-paga-plr-e-poe-fim-a-paralisacao-caixa-ainda-mantem-greve.shtml": {
-  "titulo": "Banco do Brasil fecha acordo, paga PLR e põe fim à paralisação; Caixa ainda mantém greve",
-  "fonte": "Folha Mercado",
-  "dt": "2026-09-11T17:15:00+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/oranjebtc-obtc3-anuncia-data-de-estreia-do-primeiro-etf-de-bitcoin-treasuries-na-b3-itau-bba-sera-distribuir-do-ativo-mlem/": {
   "titulo": "OranjeBTC (OBTC3) anuncia data de estreia do primeiro ETF de ‘Bitcoin Treasuries’ na B3; Itaú BBA será distribuir do ativo",
   "fonte": "Money Times",
@@ -172,5 +166,11 @@
   "fonte": "Money Times",
   "dt": "2026-09-18T14:52:34+00:00",
   "img": ""
+ },
+ "https://www.infomoney.com.br/mercados/bbas3-por-que-o-4t26-sera-o-primeiro-grande-teste-para-o-banco-do-brasil/": {
+  "titulo": "BBAS3: Por que o 4T26 será o primeiro grande teste para o Banco do Brasil?",
+  "fonte": "InfoMoney",
+  "dt": "2026-09-18T17:15:00+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/08/banco-do-brasil-sede-brasilia.jpg?fit=300%2C189&amp;quality=70&amp;strip=all"
  }
 }

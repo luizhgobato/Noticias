@@ -1,10 +1,4 @@
 {
- "https://www.infomoney.com.br/mercados/bofa-ve-selic-a-1125-em-2027-e-aponta-acoes-que-podem-ganhar-com-cortes/": {
-  "titulo": "BofA vê Selic a 11,25% em 2027 e aponta ações que podem ganhar com cortes",
-  "fonte": "InfoMoney",
-  "dt": "2026-09-14T17:30:49+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2023/11/Equatorial.jpeg?fit=300%2C200&amp;quality=70&amp;strip=all"
- },
  "https://exame.com/invest/mercados/economista-do-itau-aponta-primeiro-ativo-a-se-valorizar-se-eleicao-destravar-o-fiscal/": {
   "titulo": "Economista do Itaú aponta primeiro ativo a se valorizar se eleição destravar o fiscal",
   "fonte": "Exame",
@@ -166,5 +160,11 @@
   "fonte": "Exame",
   "dt": "2026-09-21T13:26:12+00:00",
   "img": ""
+ },
+ "https://www.infomoney.com.br/mercados/tarifas-sell-america-explica-maior-parte-da-queda-do-dolar-desde-2025-aponta-itau/": {
+  "titulo": "Tarifas? “Sell America” explica maior parte da queda do dólar desde 2025, aponta Itaú",
+  "fonte": "InfoMoney",
+  "dt": "2026-09-21T18:00:00+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/03/2026-03-20T223032Z_1_LYNXMPEM2J18C_RTROPTP_3_AUSTRALIA-RBA-USD.jpg?fit=300%2C202&amp;quality=70&amp;strip=all"
  }
 }

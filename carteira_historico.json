@@ -1,22 +1,4 @@
 {
- "https://www.moneytimes.com.br/allos-alos3-aprova-r-438-milhoes-em-dividendos-veja-quem-recebe-pads/": {
-  "titulo": "Allos (ALOS3) aprova R$ 438 milhões em dividendos; veja quem recebe",
-  "fonte": "Money Times",
-  "dt": "2026-09-15T21:43:23+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/brasil-tem-carta-na-manga-para-atrair-investidor-falta-fazer-a-licao-de-casa-avaliam-economistas-do-bradesco-e-itau-jcav/": {
-  "titulo": "Brasil ganha espaço lá fora; o que falta para atrair ainda mais dinheiro estrangeiro?",
-  "fonte": "Money Times",
-  "dt": "2026-09-15T20:37:18+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/selic-abaixo-de-10-economista-chefe-do-bradesco-bbdc4-revela-quando-juros-podem-voltar-a-um-digito/": {
-  "titulo": "Selic abaixo de 10%? Economista-chefe do Bradesco (BBDC4) revela quando juros podem voltar a um dígito",
-  "fonte": "Money Times",
-  "dt": "2026-09-15T20:31:42+00:00",
-  "img": ""
- },
  "https://braziljournal.com/cenario-base-do-mercado-e-de-ajuste-fiscal-pos-eleicao-de-novo/": {
   "titulo": "Cenário-base do mercado é de ajuste fiscal pós-eleição. De novo?",
   "fonte": "Brazil Journal",
@@ -202,5 +184,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-09-22T12:08:21+00:00",
   "img": "https://s2-valorinveste.glbimg.com/AYHu55bCzvM0C1qUhIfDb0L1mos=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2023/4/A/xIKH0sQoi9fxcqja17JQ/gettyimages-99966933.jpg"
+ },
+ "https://www.cnnbrasil.com.br/economia/money/negocios/itau-ventures-firma-parceria-com-a-norte-americana-simile-para-ia/": {
+  "titulo": "Itaú Ventures firma parceria com a norte-americana Simile para IA",
+  "fonte": "CNN Brasil",
+  "dt": "2026-09-22T20:17:21+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/07/2022-01-06T173220Z_1_LYNXMPEI050PZ_RTROPTP_4_BOLSAEUROPA-FECHA.webp?w=200"
  }
 }

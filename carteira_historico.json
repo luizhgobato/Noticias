@@ -1,16 +1,4 @@
 {
- "https://www.infomoney.com.br/mercados/jpmorgan-reduz-previsao-de-lucro-para-banco-do-brasil-e-corta-preco-alvo-da-acao/": {
-  "titulo": "JPMorgan reduz previsão de lucro para Banco do Brasil e corta preço-alvo da ação",
-  "fonte": "InfoMoney",
-  "dt": "2026-09-16T16:40:28+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/08/2026-08-10T143744Z_1_LYNXMPEM79113_RTROPTP_4_BRAZIL-ECONOMY.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
- },
- "https://www.moneytimes.com.br/itau-bate-o-martelo-e-diz-prefira-bradesco-bbdc4-a-nubank-roxo34-entenda-mudanca/": {
-  "titulo": "Itaú bate o martelo e diz: Prefira Bradesco (BBDC4) a Nubank (ROXO34); entenda mudança",
-  "fonte": "Money Times",
-  "dt": "2026-09-16T16:00:40+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/banco-do-brasil-bbsa3-jpmorgan-nao-ve-solucao-no-curto-prazo-e-cita-ate-bb-seguridade-bbse3-hora-de-vender/": {
   "titulo": "Banco do Brasil (BBSA3): JPMorgan não vê solução no curto prazo e cita até BB Seguridade (BBSE3); hora de vender?",
   "fonte": "Money Times",
@@ -166,5 +154,17 @@
   "fonte": "CNN Brasil",
   "dt": "2026-09-22T20:17:21+00:00",
   "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/07/2022-01-06T173220Z_1_LYNXMPEI050PZ_RTROPTP_4_BOLSAEUROPA-FECHA.webp?w=200"
+ },
+ "https://www.infomoney.com.br/economia/juros-altos-concorrencia-china-industria-itau/": {
+  "titulo": "Itaú: juro alto faz economia operar em duas velocidades; compare os setores",
+  "fonte": "InfoMoney",
+  "dt": "2026-09-23T17:40:00+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2024/04/Avaliando-detalhe-de-dados-economia-pexels.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
+ },
+ "https://www.moneytimes.com.br/itau-itub4-tem-a-formula-perfeita/": {
+  "titulo": "Itaú (ITUB4) tem a ‘fórmula perfeita’?",
+  "fonte": "Money Times",
+  "dt": "2026-09-23T14:57:55+00:00",
+  "img": ""
  }
 }

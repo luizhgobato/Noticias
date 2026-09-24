@@ -1,10 +1,4 @@
 {
- "https://www.infomoney.com.br/mercados/petrobras-petr4-alta-de-r-1-no-diesel-e-suficiente-analistas-veem-defasagem-persistente/": {
-  "titulo": "Petrobras: alta de R$ 1 no diesel é suficiente? Analistas veem defasagem persistente",
-  "fonte": "InfoMoney",
-  "dt": "2026-09-17T17:00:00+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/08/FPSO-P-67_Credito_Andre-Motta-de-Souza_Agencia-Petrobras.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
- },
  "https://www.moneytimes.com.br/irani-rani3-aprova-incentivo-de-ate-51-milhoes-de-acoes-a-diretores-e-atualiza-recompra-pads/": {
   "titulo": "Irani (RANI3) aprova incentivo de até 5,1 milhões de ações a diretores e atualiza recompra",
   "fonte": "Money Times",
@@ -148,5 +142,11 @@
   "fonte": "InvestNews",
   "dt": "2026-09-23T18:10:05+00:00",
   "img": ""
+ },
+ "https://www.infomoney.com.br/mercados/governo-discute-concessoes-que-vencem-ate-2032-quais-eletricas-da-b3-podem-ganhar/": {
+  "titulo": "Governo discute concessões que vencem até 2032: quais elétricas da B3 podem ganhar?",
+  "fonte": "InfoMoney",
+  "dt": "2026-09-24T16:35:30+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2019/06/copel-10-fabrica.jpg?fit=300%2C201&amp;quality=70&amp;strip=all"
  }
 }

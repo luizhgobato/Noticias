@@ -1,10 +1,4 @@
 {
- "https://www.cnnbrasil.com.br/economia/money/macroeconomia/itau-fecha-maior-locacao-de-escritorios-ja-vista-e-aluga-2-predios-para-trabalho-presencial/": {
-  "titulo": "Itaú fecha locação de escritórios e aluga prédios para trabalho presencial",
-  "fonte": "CNN Brasil",
-  "dt": "2026-09-18T23:30:28+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2026binary_LYNXMPEM4R0WR-BASEIMAGE-e1784913573957.jpg?w=200"
- },
  "https://www.moneytimes.com.br/6-acoes-para-ficar-de-olho-com-a-queda-dos-juros-em-2027-segundo-o-itau-bba-ceci/": {
   "titulo": "6 ações para ficar de olho com a queda dos juros em 2027, segundo o Itaú BBA",
   "fonte": "Money Times",
@@ -106,5 +100,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-09-25T09:00:01+00:00",
   "img": "https://s2-valorinveste.glbimg.com/5Zu2AOhNqr4wrsKFLuDPE4J_H0I=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2019/Z/B/zigP2VQt2NiCesPvZW7g/depositphotos-70977091-l-2015.jpg"
+ },
+ "https://www.moneytimes.com.br/so-uma-alta-pelo-fed-resolve-a-dor-de-cabeca-em-2026-para-o-itau-a-resposta-mudou-apsa/": {
+  "titulo": "Juros nos EUA: Só uma alta pelo Fed resolve a dor de cabeça em 2026? Para o Itaú, a resposta mudou",
+  "fonte": "Money Times",
+  "dt": "2026-09-25T16:43:34+00:00",
+  "img": ""
  }
 }

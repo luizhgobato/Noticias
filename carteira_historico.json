@@ -1,22 +1,4 @@
 {
- "https://exame.com/mercado-imobiliario/itau-aluga-predio-inteiro-da-eztec-por-r-117-bi-e-reforca-aposta-na-chucri-zaidan/": {
-  "titulo": "Itaú aluga prédio inteiro da Eztec por R$ 1,17 bi e reforça aposta na Chucri Zaidan",
-  "fonte": "Exame",
-  "dt": "2026-09-18T10:01:55+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/kepler-weber-kepl3-curto-prazo-segue-fraco-mas-deficit-de-armazenagem-sustenta-crescimento-no-longo-prazo-diz-itau-bba-pads/": {
-  "titulo": "Kepler Weber (KEPL3): curto prazo segue fraco, mas déficit de armazenagem sustenta crescimento no longo prazo, diz Itaú BBA",
-  "fonte": "Money Times",
-  "dt": "2026-09-18T14:59:19+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/eztec-eztc3-dispara-na-bolsa-apos-cheque-gordo-do-itau-itub4-analistas-estimam-dividendo-de-ate-25-para-o-papel-igdl/": {
-  "titulo": "Eztec (EZTC3) sobe forte na bolsa após ‘cheque gordo’ do Itaú (ITUB4); analistas estimam dividendo de até 25% para o papel",
-  "fonte": "Money Times",
-  "dt": "2026-09-18T14:52:34+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/mercados/bbas3-por-que-o-4t26-sera-o-primeiro-grande-teste-para-o-banco-do-brasil/": {
   "titulo": "BBAS3: Por que o 4T26 será o primeiro grande teste para o Banco do Brasil?",
   "fonte": "InfoMoney",
@@ -130,5 +112,11 @@
   "fonte": "InfoMoney",
   "dt": "2026-09-24T16:35:30+00:00",
   "img": "https://www.infomoney.com.br/wp-content/uploads/2019/06/copel-10-fabrica.jpg?fit=300%2C201&amp;quality=70&amp;strip=all"
+ },
+ "https://valorinveste.globo.com/objetivo/hora-de-investir/noticia/2026/09/25/adeus-poupanca-investimento-em-tesouro-direto-e-cdbs-dispara-entre-brasileiros-50.ghtml": {
+  "titulo": "Adeus, poupança? Investimento em Tesouro Direto e CDBs dispara entre brasileiros 50+",
+  "fonte": "Valor Investe",
+  "dt": "2026-09-25T09:00:01+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/5Zu2AOhNqr4wrsKFLuDPE4J_H0I=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2019/Z/B/zigP2VQt2NiCesPvZW7g/depositphotos-70977091-l-2015.jpg"
  }
 }

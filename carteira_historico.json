@@ -1,10 +1,4 @@
 {
- "https://www.cnnbrasil.com.br/economia/money/negocios/itau-ventures-firma-parceria-com-a-norte-americana-simile-para-ia/": {
-  "titulo": "Itaú Ventures firma parceria com a norte-americana Simile para IA",
-  "fonte": "CNN Brasil",
-  "dt": "2026-09-22T20:17:21+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/07/2022-01-06T173220Z_1_LYNXMPEI050PZ_RTROPTP_4_BOLSAEUROPA-FECHA.webp?w=200"
- },
  "https://www.infomoney.com.br/economia/juros-altos-concorrencia-china-industria-itau/": {
   "titulo": "Itaú: juro alto faz economia operar em duas velocidades; compare os setores",
   "fonte": "InfoMoney",
@@ -76,5 +70,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-09-29T09:10:00+00:00",
   "img": "https://s2-valorinveste.glbimg.com/BTpxqUOXRdcE37SbudmnHUwTnGY=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/B/B/ZP6b86S9iu0RchFSHaZA/461843047.jpg"
+ },
+ "https://www.infomoney.com.br/mercados/ibovespa-fecha-em-alta-de-046-apos-quatro-quedas-com-itau-e-bb-entre-suportes/": {
+  "titulo": "Ibovespa fecha em alta de 0,46% após quatro quedas com Itaú e BB entre suportes",
+  "fonte": "InfoMoney",
+  "dt": "2026-09-29T20:50:25+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2021/11/DSC_2881.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
  }
 }

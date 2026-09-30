@@ -1,16 +1,4 @@
 {
- "https://www.infomoney.com.br/economia/juros-altos-concorrencia-china-industria-itau/": {
-  "titulo": "Itaú: juro alto faz economia operar em duas velocidades; compare os setores",
-  "fonte": "InfoMoney",
-  "dt": "2026-09-23T17:40:00+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2024/04/Avaliando-detalhe-de-dados-economia-pexels.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
- },
- "https://investnews.com.br/negocios/itau-vivix-vidros-brennand/": {
-  "titulo": "Itaú vai virar sócio da Vivix, fabricante de vidros da família Brennand",
-  "fonte": "InvestNews",
-  "dt": "2026-09-23T18:10:05+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/mercados/governo-discute-concessoes-que-vencem-ate-2032-quais-eletricas-da-b3-podem-ganhar/": {
   "titulo": "Governo discute concessões que vencem até 2032: quais elétricas da B3 podem ganhar?",
   "fonte": "InfoMoney",
@@ -70,5 +58,11 @@
   "fonte": "InfoMoney",
   "dt": "2026-09-29T20:50:25+00:00",
   "img": "https://www.infomoney.com.br/wp-content/uploads/2021/11/DSC_2881.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
+ },
+ "https://www.moneytimes.com.br/comprar-ou-esperar-itau-bba-ve-alta-de-43-nesta-acao-mas-pede-cautela-por-conta-de-investigacao-jcav/": {
+  "titulo": "Comprar ou esperar? Itaú BBA vê alta de 43% nesta ação, mas pede cautela por conta de investigação",
+  "fonte": "Money Times",
+  "dt": "2026-09-30T17:10:46+00:00",
+  "img": ""
  }
 }

@@ -1,10 +1,4 @@
 {
- "https://www.infomoney.com.br/mercados/governo-discute-concessoes-que-vencem-ate-2032-quais-eletricas-da-b3-podem-ganhar/": {
-  "titulo": "Governo discute concessões que vencem até 2032: quais elétricas da B3 podem ganhar?",
-  "fonte": "InfoMoney",
-  "dt": "2026-09-24T16:35:30+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2019/06/copel-10-fabrica.jpg?fit=300%2C201&amp;quality=70&amp;strip=all"
- },
  "https://valorinveste.globo.com/objetivo/hora-de-investir/noticia/2026/09/25/adeus-poupanca-investimento-em-tesouro-direto-e-cdbs-dispara-entre-brasileiros-50.ghtml": {
   "titulo": "Adeus, poupança? Investimento em Tesouro Direto e CDBs dispara entre brasileiros 50+",
   "fonte": "Valor Investe",
@@ -93,6 +87,18 @@
   "titulo": "Bradesco, HSBC, Itaú e Santander vão operar R$ 50 bi em crédito para projetos de inovação sustentável",
   "fonte": "Folha Mercado",
   "dt": "2026-09-30T20:21:00+00:00",
+  "img": ""
+ },
+ "https://braziljournal.com/a-mulher-brava-que-faz-campanha-por-um-capitalismo-popular/": {
+  "titulo": "A “mulher brava” que faz campanha por um capitalismo popular",
+  "fonte": "Brazil Journal",
+  "dt": "2026-10-01T15:48:38+00:00",
+  "img": "https://braziljournal.com/wp-content/uploads/2025/09/09-19-Daniella-Marques-ok-238x300.jpg?x73067"
+ },
+ "https://investnews.com.br/investimentos/agenda-de-dividendos-de-outubro-itau-bradesco-e-itausa-pagam-proventos/": {
+  "titulo": "Agenda de dividendos de outubro: Itaú, Bradesco e Itaúsa pagam proventos",
+  "fonte": "InvestNews",
+  "dt": "2026-10-01T08:10:00+00:00",
   "img": ""
  }
 }

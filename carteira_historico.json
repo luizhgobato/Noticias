@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/so-uma-alta-pelo-fed-resolve-a-dor-de-cabeca-em-2026-para-o-itau-a-resposta-mudou-apsa/": {
-  "titulo": "Juros nos EUA: Só uma alta pelo Fed resolve a dor de cabeça em 2026? Para o Itaú, a resposta mudou",
-  "fonte": "Money Times",
-  "dt": "2026-09-25T16:43:34+00:00",
-  "img": ""
- },
  "https://www.bloomberglinea.com.br/startups/rodadas-da-semana-fever-capta-us-250-milhoes-e-itau-aposta-em-startup-de-ia-dos-eua/": {
   "titulo": "Rodadas da semana: Fever capta US$ 250 milhões, e Itaú aposta em startup de IA dos EUA",
   "fonte": "Bloomberg Línea",
@@ -130,5 +124,17 @@
   "fonte": "Valor Investe",
   "dt": "2026-10-02T09:00:00+00:00",
   "img": "https://s2-valorinveste.glbimg.com/907_fYFl1LrA__JhVmSCA3OTWVA=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2021/G/K/JUL5xKSDma2lES67kcRg/rating.jpg"
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbsa3-pode-subir-100-ou-cair-45-apos-eleicao-dependendo-do-cenario-fiscal-diz-safra-rnda/": {
+  "titulo": "Banco do Brasil (BBSA3) pode subir cerca de 100% ou cair 45% após eleição, dependendo do cenário fiscal, diz Safra",
+  "fonte": "Money Times",
+  "dt": "2026-10-02T18:06:37+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/dividendos-de-ate-6-veja-a-nova-aposta-da-carteira-recomendada-do-itau-bba-em-outubro-ceci/": {
+  "titulo": "Dividendos de até 6%: veja a nova aposta da carteira recomendada do Itaú BBA em outubro",
+  "fonte": "Money Times",
+  "dt": "2026-10-02T18:02:02+00:00",
+  "img": ""
  }
 }

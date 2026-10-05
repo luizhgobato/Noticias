@@ -1,10 +1,4 @@
 {
- "https://valorinveste.globo.com/mercados/renda-variavel/bolsas-e-indices/noticia/2026/09/28/embraer-embj3-entra-no-top-10-das-acoes-mais-negociadas-da-b3-veja-ranking.ghtml": {
-  "titulo": "Embraer (EMBJ3) entra no top 10 das ações mais negociadas da B3; veja ranking",
-  "fonte": "Valor Investe",
-  "dt": "2026-09-28T15:31:55+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/WQRqnin9ilFKp4M1ZcOTV8SRoTM=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2023/q/Y/pNsmzFTieutecv8ywBuw/gettyimages-1162390126.jpg"
- },
  "https://investnews.com.br/negocios/equatorial-aporte-itau-distribuicao/": {
   "titulo": "Equatorial prepara novo aporte do Itaú em negócio de distribuição de energia",
   "fonte": "InvestNews",
@@ -136,5 +130,17 @@
   "fonte": "Money Times",
   "dt": "2026-10-02T21:20:03+00:00",
   "img": ""
+ },
+ "https://www.moneytimes.com.br/itau-bba-tira-visa-visa34-para-adicionar-fabricante-de-semicondutores-na-carteira-de-bdrs-para-outubro-mlem/": {
+  "titulo": "Itaú BBA tira Visa (VISA34) para adicionar fabricante de semicondutores na carteira de BDRs para outubro",
+  "fonte": "Money Times",
+  "dt": "2026-10-05T18:54:28+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/10/05/petrobras-e-banco-do-brasil-disparam-com-resultado-do-1o-turno-entenda-a-reacao-do-mercado.ghtml": {
+  "titulo": "Petrobras e Banco do Brasil disparam após 1º turno; entenda o rali das estatais na bolsa",
+  "fonte": "Valor Investe",
+  "dt": "2026-10-05T14:49:18+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/HRmD0rwKwGsK1EVplnk7zrddVZs=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/m/J/bLdqH8QYqjcZUfc1U0yQ/2025-08-16t174551z-119122991-rc2g8gany38p-rtrmadp-3-petrobras-raizen.jpg"
  }
 }

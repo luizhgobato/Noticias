@@ -1,10 +1,4 @@
 {
- "https://www.infomoney.com.br/mercados/ibovespa-fecha-em-alta-de-046-apos-quatro-quedas-com-itau-e-bb-entre-suportes/": {
-  "titulo": "Ibovespa fecha em alta de 0,46% após quatro quedas com Itaú e BB entre suportes",
-  "fonte": "InfoMoney",
-  "dt": "2026-09-29T20:50:25+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2021/11/DSC_2881.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
- },
  "https://www.moneytimes.com.br/comprar-ou-esperar-itau-bba-ve-alta-de-43-nesta-acao-mas-pede-cautela-por-conta-de-investigacao-jcav/": {
   "titulo": "Comprar ou esperar? Itaú BBA vê alta de 43% nesta ação, mas pede cautela por conta de investigação",
   "fonte": "Money Times",
@@ -214,5 +208,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-10-06T19:01:49+00:00",
   "img": "https://s2-valorinveste.glbimg.com/KGL0vE0gD4sPKF-uunITRB-oUu8=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2019/k/D/sy1rGWRuyjwrGM1YPuiA/gettyimages-928905412-2-.jpg"
+ },
+ "https://www.infomoney.com.br/mercados/bbas3-bbdc4-jpmorgan-rebaixa-banco-do-brasil-para-venda-e-eleva-bradesco-a-compra-apos-rali-acoes-reagem/": {
+  "titulo": "JPMorgan rebaixa BB para venda e eleva Bradesco; BBAS3 desaba 6% e BBDC4 sobe 4%",
+  "fonte": "InfoMoney",
+  "dt": "2026-10-06T20:43:11+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/05/Captura-de-tela-2025-05-16-083653.png?fit=300%2C199&amp;quality=70&amp;strip=all"
  }
 }

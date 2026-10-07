@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/comprar-ou-esperar-itau-bba-ve-alta-de-43-nesta-acao-mas-pede-cautela-por-conta-de-investigacao-jcav/": {
-  "titulo": "Comprar ou esperar? Itaú BBA vê alta de 43% nesta ação, mas pede cautela por conta de investigação",
-  "fonte": "Money Times",
-  "dt": "2026-09-30T17:10:46+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/mercados/irb-reducao-de-tarifas-deve-impulsionar-resultados-e-ganho-de-valor-pode-ir-a-30/": {
   "titulo": "IRB: redução de tarifas deve impulsionar resultados e ganho de valor pode ir a 30%",
   "fonte": "InfoMoney",
@@ -22,12 +16,6 @@
   "fonte": "Bloomberg Línea",
   "dt": "2026-09-30T18:29:06+00:00",
   "img": "https://www.bloomberglinea.com/resizer/v2/FD5GCWPL3ZCKXLLQ6MFRWHJVNM.JPG?auth=103d76aedf987fdfda15d6714ba03042cca139ffe9c91585f5ea0661e5b1fc2a&smart=true&width=1200&height=675"
- },
- "https://exame.com/negocios/irani-melhores-maiores-exame/": {
-  "titulo": "O que levou a Irani ao topo do Melhores e Maiores da EXAME",
-  "fonte": "Exame",
-  "dt": "2026-09-30T15:39:32+00:00",
-  "img": ""
  },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/economia-sustentavel/2026/09/bradesco-hsbc-itau-e-santander-vao-operar-r-50-bi-em-credito-para-projetos-de-inovacao-sustentavel.shtml": {
   "titulo": "Bradesco, HSBC, Itaú e Santander vão operar R$ 50 bi em crédito para projetos de inovação sustentável",
@@ -238,5 +226,23 @@
   "fonte": "CNN Brasil",
   "dt": "2026-10-06T22:46:26+00:00",
   "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/09/Design-sem-nome-12-1.jpg?w=200"
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbsa3-coloca-75-imoveis-a-venda-e-pretende-comercializar-ate-800-antes-do-fim-do-ano/": {
+  "titulo": "Banco do Brasil (BBSA3) coloca 75 imóveis à venda e pretende comercializar até 800 antes do fim do ano",
+  "fonte": "Money Times",
+  "dt": "2026-10-07T16:11:08+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/10/07/aes-de-varejo-tm-potencial-de-valorizao-de-40-pontos-percentuais-em-cenrio-de-alvio-nos-juros-diz-ita-bba.ghtml": {
+  "titulo": "Ações de varejo têm potencial de valorização de 40% em cenário de alívio nos juros, diz Itaú BBA",
+  "fonte": "Valor Investe",
+  "dt": "2026-10-07T13:18:55+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/5nrVXSIARWYvNVqQz74I_4H12GI=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2023/n/5/J6DfIARdee0fNEoUd4bw/23emp-110-market-b1-img01.jpg"
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/10/07/petrobras-petr4-prio-prio3-irb-irbr3-cyrela-cyre3-e-mais-veja-os-destaques-das-empresas.ghtml": {
+  "titulo": "Petrobras (PETR4), Prio (PRIO3), IRB (IRBR3), Cyrela (CYRE3) e mais: Veja os destaques das empresas",
+  "fonte": "Valor Investe",
+  "dt": "2026-10-07T11:16:19+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/oVSwdP7jQCbCChzDRd0KF6NsgDY=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2024/6/u/UAZ2ygTgCyJlCXSqD5gg/rev-infralog-060-petroleo-navio-plataforma-p-71.jpg"
  }
 }

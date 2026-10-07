@@ -1,10 +1,4 @@
 {
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/economia-sustentavel/2026/09/bradesco-hsbc-itau-e-santander-vao-operar-r-50-bi-em-credito-para-projetos-de-inovacao-sustentavel.shtml": {
-  "titulo": "Bradesco, HSBC, Itaú e Santander vão operar R$ 50 bi em crédito para projetos de inovação sustentável",
-  "fonte": "Folha Mercado",
-  "dt": "2026-09-30T20:21:00+00:00",
-  "img": ""
- },
  "https://braziljournal.com/a-mulher-brava-que-faz-campanha-por-um-capitalismo-popular/": {
   "titulo": "A “mulher brava” que faz campanha por um capitalismo popular",
   "fonte": "Brazil Journal",
@@ -226,5 +220,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-10-07T11:16:19+00:00",
   "img": "https://s2-valorinveste.glbimg.com/oVSwdP7jQCbCChzDRd0KF6NsgDY=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2024/6/u/UAZ2ygTgCyJlCXSqD5gg/rev-infralog-060-petroleo-navio-plataforma-p-71.jpg"
+ },
+ "https://www.moneytimes.com.br/outubro-das-eleicoes-petrobras-petr4-lidera-recomendacoes-de-16-casas-veja-as-outras-3-acoes-do-topo-pads/": {
+  "titulo": "Outubro das eleições: Petrobras (PETR4) lidera recomendação de 16 casas; veja as outras 3 ações mais indicadas",
+  "fonte": "Money Times",
+  "dt": "2026-10-07T20:12:02+00:00",
+  "img": ""
  }
 }

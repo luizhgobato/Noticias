@@ -1,22 +1,4 @@
 {
- "https://braziljournal.com/a-mulher-brava-que-faz-campanha-por-um-capitalismo-popular/": {
-  "titulo": "A “mulher brava” que faz campanha por um capitalismo popular",
-  "fonte": "Brazil Journal",
-  "dt": "2026-10-01T15:48:38+00:00",
-  "img": "https://braziljournal.com/wp-content/uploads/2025/09/09-19-Daniella-Marques-ok-238x300.jpg?x73067"
- },
- "https://investnews.com.br/investimentos/agenda-de-dividendos-de-outubro-itau-bradesco-e-itausa-pagam-proventos/": {
-  "titulo": "Agenda de dividendos de outubro: Itaú, Bradesco e Itaúsa pagam proventos",
-  "fonte": "InvestNews",
-  "dt": "2026-10-01T08:10:00+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/carteira-recomendada-10-acoes-para-atravessar-as-eleicoes-segundo-btg-pactual-e-quais-devem-performar-melhor-em-cada-cenario-lmrs/": {
-  "titulo": "10 ações para atravessar as eleições, segundo o BTG Pactual — e quais devem performar melhor em cada cenário",
-  "fonte": "Money Times",
-  "dt": "2026-10-01T17:28:20+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/cpfl-cpfe3-itau-bba-e-bradesco-bbi-elevam-preco-alvo-mas-so-um-recomenda-compra-mlem/": {
   "titulo": "CPFL (CPFE3): Itaú BBA e Bradesco BBI elevam preço-alvo, mas só um recomenda compra",
   "fonte": "Money Times",
@@ -231,6 +213,18 @@
   "titulo": "Bicicletas compartilhadas ganham espaço em SP, mas ciclistas enfrentam poluição e insegurança",
   "fonte": "Exame",
   "dt": "2026-10-07T17:00:32+00:00",
+  "img": ""
+ },
+ "https://g1.globo.com/economia/noticia/2026/10/08/representante-da-campanha-diz-que-governo-de-flavio-bolsonaro-nao-privatizaria-banco-do-brasil-caixa-e-petrobras.ghtml": {
+  "titulo": "Representante da campanha diz que governo de Flávio Bolsonaro não privatizaria Banco do Brasil, Caixa e Petrobras",
+  "fonte": "G1 Economia",
+  "dt": "2026-10-08T15:17:56+00:00",
+  "img": "https://s2-g1.glbimg.com/cSrjpuRAYeaAlVHcrVwJgMpKn6E=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/3/7/fnaWGSTEynbC8XPJE2Cw/2022-07-12t162201z-1-lynxmpei6b0qr-rtroptp-4-brazil-fuel.jpg"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/01/6562-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post467444": {
+  "titulo": "Cade aprova aumento de participação do Itaú na Equatorial Distribuição",
+  "fonte": "Folha Mercado",
+  "dt": "2026-10-08T12:05:00+00:00",
   "img": ""
  }
 }

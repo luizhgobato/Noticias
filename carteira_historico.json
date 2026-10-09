@@ -1,22 +1,4 @@
 {
- "https://www.moneytimes.com.br/banco-do-brasil-bbsa3-pode-subir-100-ou-cair-45-apos-eleicao-dependendo-do-cenario-fiscal-diz-safra-rnda/": {
-  "titulo": "Banco do Brasil (BBSA3) pode subir cerca de 100% ou cair 45% após eleição, dependendo do cenário fiscal, diz Safra",
-  "fonte": "Money Times",
-  "dt": "2026-10-02T18:06:37+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/dividendos-de-ate-6-veja-a-nova-aposta-da-carteira-recomendada-do-itau-bba-em-outubro-ceci/": {
-  "titulo": "Dividendos de até 6%: veja a nova aposta da carteira recomendada do Itaú BBA em outubro",
-  "fonte": "Money Times",
-  "dt": "2026-10-02T18:02:02+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/allos-alos3-e-multiplan-mult3-bb-mantem-compra-e-aumenta-precos-alvo-das-acoes-igdl/": {
-  "titulo": "Allos (ALOS3) e Multiplan (MULT3): BB mantém compra e aumenta preços-alvo das ações",
-  "fonte": "Money Times",
-  "dt": "2026-10-02T18:35:32+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/jbs-jbss32-ou-mbrf-mbrf3-itau-bba-escolhe-favorita-para-enfrentar-cenario-mais-desafiador-pads/": {
   "titulo": "JBS (JBSS32) ou MBRF (MBRF3)? Itaú BBA escolhe favorita para enfrentar cenário mais desafiador",
   "fonte": "Money Times",
@@ -195,6 +177,18 @@
   "titulo": "Cade aprova aumento de participação do Itaú na Equatorial Distribuição",
   "fonte": "Folha Mercado",
   "dt": "2026-10-08T12:05:00+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/flavio-bolsonaro-promete-manter-bolsa-familia-e-transformar-caixa-em-itau-da-favela-pads/": {
+  "titulo": "Flávio Bolsonaro promete manter Bolsa Família e transformar Caixa em ‘Itaú da favela’",
+  "fonte": "Money Times",
+  "dt": "2026-10-09T18:34:05+00:00",
+  "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/caixa-economica-vai-ser-o-itau-da-favela-o-bradesco-da-periferia-diz-flavio-bolsonaro.shtml": {
+  "titulo": "Caixa Econômica vai ser o Itaú da favela, o Bradesco da periferia, diz Flávio Bolsonaro",
+  "fonte": "Folha Mercado",
+  "dt": "2026-10-09T18:23:00+00:00",
   "img": ""
  }
 }

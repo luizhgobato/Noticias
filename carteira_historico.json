@@ -1,20 +1,8 @@
 {
- "https://www.moneytimes.com.br/banco-do-brasil-bbsa3-coloca-75-imoveis-a-venda-e-pretende-comercializar-ate-800-antes-do-fim-do-ano/": {
-  "titulo": "Banco do Brasil (BBSA3) coloca 75 imóveis à venda e pretende comercializar até 800 antes do fim do ano",
-  "fonte": "Money Times",
-  "dt": "2026-10-07T16:11:08+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/outubro-das-eleicoes-petrobras-petr4-lidera-recomendacoes-de-16-casas-veja-as-outras-3-acoes-do-topo-pads/": {
   "titulo": "Outubro das eleições: Petrobras (PETR4) lidera recomendação de 16 casas; veja as outras 3 ações mais indicadas",
   "fonte": "Money Times",
   "dt": "2026-10-07T20:12:02+00:00",
-  "img": ""
- },
- "https://exame.com/esg/bicicletas-compartilhadas-ganham-espaco-em-sp-mas-ciclistas-enfrentam-poluicao-e-inseguranca/": {
-  "titulo": "Bicicletas compartilhadas ganham espaço em SP, mas ciclistas enfrentam poluição e insegurança",
-  "fonte": "Exame",
-  "dt": "2026-10-07T17:00:32+00:00",
   "img": ""
  },
  "https://g1.globo.com/economia/noticia/2026/10/08/representante-da-campanha-diz-que-governo-de-flavio-bolsonaro-nao-privatizaria-banco-do-brasil-caixa-e-petrobras.ghtml": {
@@ -64,5 +52,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-10-14T14:07:11+00:00",
   "img": "https://s2-valorinveste.glbimg.com/TU5ir104-E5gK2ANqU3TmIfv9Qk=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/A/H/Spbwi9SPCdPDXxNbKWVg/bahiaaricanduva.jpg"
+ },
+ "https://www.infomoney.com.br/mercados/b3-passa-a-ter-12-empresas-com-valor-de-mercado-acima-de-r-100-bilhoes-veja-ranking/": {
+  "titulo": "B3 passa a ter 12 empresas com valor de mercado acima de R$ 100 bilhões; veja ranking",
+  "fonte": "InfoMoney",
+  "dt": "2026-10-14T17:00:00+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2024/06/Bolsa-pregao-def-1.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
  }
 }

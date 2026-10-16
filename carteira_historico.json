@@ -5,12 +5,6 @@
   "dt": "2026-10-09T18:34:05+00:00",
   "img": ""
  },
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/caixa-economica-vai-ser-o-itau-da-favela-o-bradesco-da-periferia-diz-flavio-bolsonaro.shtml": {
-  "titulo": "Caixa Econômica vai ser o Itaú da favela, o Bradesco da periferia, diz Flávio Bolsonaro",
-  "fonte": "Folha Mercado",
-  "dt": "2026-10-09T18:23:00+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/ibovespa-nas-alturas-com-ajuste-fiscal-banco-do-brasil-bbas3-em-queda-e-as-promessas-de-flavio-os-destaques-da-semana/": {
   "titulo": "Ibovespa nas alturas com ajuste fiscal, Banco do Brasil (BBAS3) em queda e as promessas de Flávio: os destaques da semana",
   "fonte": "Money Times",
@@ -88,5 +82,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-10-16T11:21:52+00:00",
   "img": "https://s2-valorinveste.glbimg.com/86t454ENrkJd0jj0sxeQfumxYdg=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2024/b/i/NBQGweT9S3fmDmPWJHng/191017casasbahia06.jpg"
+ },
+ "https://braziljournal.com/as-preferenciais-do-itau-na-eneva": {
+  "titulo": "As preferenciais do Itaú na Eneva",
+  "fonte": "Brazil Journal",
+  "dt": "2026-10-16T17:29:00+00:00",
+  "img": ""
  }
 }

@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/ibovespa-nas-alturas-com-ajuste-fiscal-banco-do-brasil-bbas3-em-queda-e-as-promessas-de-flavio-os-destaques-da-semana/": {
-  "titulo": "Ibovespa nas alturas com ajuste fiscal, Banco do Brasil (BBAS3) em queda e as promessas de Flávio: os destaques da semana",
-  "fonte": "Money Times",
-  "dt": "2026-10-11T14:03:49+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/minhas-financas/bancos-leiloam-566-imoveis-oportunidades-sao-boas-mas-e-preciso-ter-atencao/": {
   "titulo": "Bancos leiloam 566 imóveis – oportunidades são boas, mas é preciso ter atenção",
   "fonte": "InfoMoney",
@@ -94,5 +88,11 @@
   "fonte": "Money Times",
   "dt": "2026-10-16T21:52:16+00:00",
   "img": ""
+ },
+ "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/bb-recebe-ate-31-de-outubro-inscricoes-para-projetos-de-impacto-social": {
+  "titulo": "BB recebe até 31 de outubro inscrições para projetos de impacto social",
+  "fonte": "Agência Brasil",
+  "dt": "2026-10-18T13:15:00+00:00",
+  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
  }
 }

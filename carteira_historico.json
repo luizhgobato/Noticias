@@ -1,10 +1,4 @@
 {
- "https://www.infomoney.com.br/minhas-financas/bancos-leiloam-566-imoveis-oportunidades-sao-boas-mas-e-preciso-ter-atencao/": {
-  "titulo": "Bancos leiloam 566 imóveis – oportunidades são boas, mas é preciso ter atenção",
-  "fonte": "InfoMoney",
-  "dt": "2026-10-12T20:05:00+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/12/2148252129.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
- },
  "https://valorinveste.globo.com/produtos/servicos-financeiros/noticia/2026/10/14/picpay-mira-clientes-de-alta-renda-e-lanca-cartao-mastercard-world-legend-veja-beneficios.ghtml": {
   "titulo": "PicPay mira clientes de alta renda e lança cartão Epic World Legend Mastercard; veja benefícios",
   "fonte": "Valor Investe",
@@ -112,5 +106,11 @@
   "fonte": "Folha Mercado",
   "dt": "2026-10-19T17:53:00+00:00",
   "img": ""
+ },
+ "https://www.cnnbrasil.com.br/agro/combinacao-de-fertilizante-e-bioinsumo-reduz-intensidade-de-carbono-na-soja/": {
+  "titulo": "Combinação de fertilizante e bioinsumo reduz intensidade de carbono na soja",
+  "fonte": "CNN Brasil",
+  "dt": "2026-10-19T18:54:51+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/01/2022-01-25T154901Z_1_LYNXMPEI0O0R1_RTROPTP_4_BRAZIL-SOY-FWDSALES-1.jpg?w=200"
  }
 }

@@ -1,16 +1,4 @@
 {
- "https://valorinveste.globo.com/produtos/servicos-financeiros/noticia/2026/10/14/picpay-mira-clientes-de-alta-renda-e-lanca-cartao-mastercard-world-legend-veja-beneficios.ghtml": {
-  "titulo": "PicPay mira clientes de alta renda e lança cartão Epic World Legend Mastercard; veja benefícios",
-  "fonte": "Valor Investe",
-  "dt": "2026-10-14T14:26:30+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/evcYJLVUF0LGjVBzVh2YWgEkR-Y=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/e/F/BOymUmSJqydDJ9jgut8Q/cartao-epic-world-legend-do-picpay.jpg"
- },
- "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/10/14/casas-bahia-bhia3-tomba-entenda.ghtml": {
-  "titulo": "Casas Bahia (BHIA3) tomba mais de 20%, após contratação de nova linha de crédito",
-  "fonte": "Valor Investe",
-  "dt": "2026-10-14T14:07:11+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/TU5ir104-E5gK2ANqU3TmIfv9Qk=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/A/H/Spbwi9SPCdPDXxNbKWVg/bahiaaricanduva.jpg"
- },
  "https://www.infomoney.com.br/mercados/b3-passa-a-ter-12-empresas-com-valor-de-mercado-acima-de-r-100-bilhoes-veja-ranking/": {
   "titulo": "B3 passa a ter 12 empresas com valor de mercado acima de R$ 100 bilhões; veja ranking",
   "fonte": "InfoMoney",
@@ -136,5 +124,17 @@
   "fonte": "InfoMoney",
   "dt": "2026-10-20T21:34:51+00:00",
   "img": "https://www.infomoney.com.br/wp-content/uploads/2026/07/12640.jpg?fit=300%2C171&amp;quality=70&amp;strip=all"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/01/6562-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post467517": {
+  "titulo": "IRB(Re) tem lucro de R$9,4 mi em agosto com alta em sinistralidade",
+  "fonte": "Folha Mercado",
+  "dt": "2026-10-21T14:59:00+00:00",
+  "img": ""
+ },
+ "https://investnews.com.br/investimentos/calendario-de-balancos-do-3o-trimestre-saiba-quando-petrobras-vale-banco-do-brasil-divulgam-os-resultados/": {
+  "titulo": "Calendário de balanços do 3º trimestre: saiba quando Petrobras, Vale, Banco do Brasil divulgam os resultados",
+  "fonte": "InvestNews",
+  "dt": "2026-10-21T11:44:35+00:00",
+  "img": "https://public.flourish.studio/visualisation/30641752/thumbnail"
  }
 }

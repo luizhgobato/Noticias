@@ -17,12 +17,6 @@
   "dt": "2026-10-15T19:16:00+00:00",
   "img": "https://www.infomoney.com.br/wp-content/uploads/2023/04/Seguridades-e1752377148207.jpg?fit=300%2C243&amp;quality=70&amp;strip=all"
  },
- "https://exame.com/esg/entre-novos-negocios-e-protecao-financeira-itau-olha-para-a-longevidade-e-publico-50/": {
-  "titulo": "Entre novos negócios e proteção financeira, Itaú olha para a longevidade e público 50+",
-  "fonte": "Exame",
-  "dt": "2026-10-15T16:16:53+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/eneva-enev3-celebra-acordo-de-investimento-bilionario-com-itau-itub4-veja-a-cifra-apsa/": {
   "titulo": "Eneva (ENEV3) celebra acordo de investimento bilionário com Itaú (ITUB4); veja a cifra",
   "fonte": "Money Times",
@@ -153,6 +147,24 @@
   "titulo": "Techfin leva conta digital para dentro do ERP da TOTVS",
   "fonte": "Exame",
   "dt": "2026-10-22T11:00:47+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/demanda-alta-e-vacancia-baixa-6-fiis-de-galpoes-para-ter-na-carteira-segundo-o-itau-bba-igdl/": {
+  "titulo": "Demanda aquecida e vacância baixa: 6 FIIs de galpões para ter na carteira, segundo o Itaú BBA",
+  "fonte": "Money Times",
+  "dt": "2026-10-22T17:38:47+00:00",
+  "img": ""
+ },
+ "https://www.cnnbrasil.com.br/agro/renegociacao-de-dividas-rurais-avanca-e-soma-r-16-bi-em-operacoes-do-bb/": {
+  "titulo": "Renegociação de dívidas rurais avança e soma R$ 16 bi em operações do BB",
+  "fonte": "CNN Brasil",
+  "dt": "2026-10-22T16:43:27+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXMPELA20O8-BASEIMAGE.jpg?w=200"
+ },
+ "https://www.moneytimes.com.br/itub4-bbdc4-bbas3-cenario-para-os-bancoes-no-3t26-e-parecido-avalia-analista-mlem/": {
+  "titulo": "ITUB4, BBDC4, BBAS3: cenário para os ‘bancões’ no 3T26 é parecido, avalia analista da TCM Capital",
+  "fonte": "Money Times",
+  "dt": "2026-10-22T16:04:04+00:00",
   "img": ""
  }
 }

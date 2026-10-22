@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/itau-unibanco-fecha-acordo-para-comprar-35-da-gestora-prisma-capital/": {
-  "titulo": "Itaú Unibanco fecha acordo para comprar 35% da gestora Prisma Capital",
-  "fonte": "Money Times",
-  "dt": "2026-10-15T18:17:08+00:00",
-  "img": ""
- },
  "https://www.cnnbrasil.com.br/economia/money/negocios/itau-unibanco-fecha-acordo-para-comprar-35-da-prisma-capital/": {
   "titulo": "Itaú Unibanco fecha acordo para comprar 35% da Prisma Capital",
   "fonte": "CNN Brasil",
@@ -165,6 +159,18 @@
   "titulo": "ITUB4, BBDC4, BBAS3: cenário para os ‘bancões’ no 3T26 é parecido, avalia analista da TCM Capital",
   "fonte": "Money Times",
   "dt": "2026-10-22T16:04:04+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/mp-do-agro-banco-do-brasil-bbas3-ja-soma-r-16-bilhoes-e-preve-superar-r-20-bilhoes-pads/": {
+  "titulo": "MP do agro: Banco do Brasil (BBAS3) já soma R$ 16 bilhões e prevê superar R$ 20 bilhões",
+  "fonte": "Money Times",
+  "dt": "2026-10-22T18:10:10+00:00",
+  "img": ""
+ },
+ "https://exame.com/invest/mercados/doenca-de-newcastle-derruba-acoes-da-mbrf-dona-da-sadia-o-que-dizem-os-bancos/": {
+  "titulo": "Doença de Newcastle derruba ações da MBRF, dona da Sadia; o que dizem os bancos",
+  "fonte": "Exame",
+  "dt": "2026-10-22T15:53:56+00:00",
   "img": ""
  }
 }

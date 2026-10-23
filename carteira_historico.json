@@ -1,10 +1,4 @@
 {
- "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/10/16/casas-bahia-bhia3-eneva-enev3-itau-itub4-americanas-amer3-e-mais-veja-os-destaques-das-empresas.ghtml": {
-  "titulo": "Casas Bahia (BHIA3), Eneva (ENEV3), Itaú (ITUB4), Americanas (AMER3) e mais: Veja os destaques das empresas",
-  "fonte": "Valor Investe",
-  "dt": "2026-10-16T11:21:52+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/86t454ENrkJd0jj0sxeQfumxYdg=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2024/b/i/NBQGweT9S3fmDmPWJHng/191017casasbahia06.jpg"
- },
  "https://braziljournal.com/as-preferenciais-do-itau-na-eneva": {
   "titulo": "As preferenciais do Itaú na Eneva",
   "fonte": "Brazil Journal",
@@ -153,6 +147,24 @@
   "titulo": "Tribunal de Contas investiga repasse do governo do DF de R$ 120 mi da saúde para o BRB",
   "fonte": "Folha Mercado",
   "dt": "2026-10-23T02:00:00+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/produtos/imoveis/noticia/2026/10/23/itau-leiloa-hoje-mais-de-90-imoveis-com-lances-a-partir-de-r-335-mil-confira.ghtml": {
+  "titulo": "Itaú leiloa hoje mais de 90 imóveis com lances a partir de R$ 33,5 mil; confira",
+  "fonte": "Valor Investe",
+  "dt": "2026-10-23T15:00:00+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/f9wM0ZK544TDv52ZNvkY_hWtdj8=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/2/e/tAIodqS0u0selEs7mC1Q/yamu-jay-ai-generated-9231987.jpg"
+ },
+ "https://g1.globo.com/economia/agronegocios/noticia/2026/10/23/frango-pode-ficar-mais-barato-principalmente-no-sul-apos-caso-de-newcastle-em-sc-diz-itau.ghtml": {
+  "titulo": "Frango pode ficar mais barato, principalmente no Sul, após caso de Newcastle em SC, diz Itaú",
+  "fonte": "G1 Economia",
+  "dt": "2026-10-23T14:46:35+00:00",
+  "img": "https://s2-g1.glbimg.com/gVg5tQA2BvPAgmOW8ZkDwdtCmpc=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/b/B/PBC4swTjaD3jaAKX6ROA/claudio-schwarz-4qjlxk4myzu-unsplash.jpg"
+ },
+ "https://www.moneytimes.com.br/allos-alos3-anuncia-acordo-para-vender-participacoes-em-sete-shoppings-a-fundo-imobiliario-veja-quais-igdl/": {
+  "titulo": "Allos (ALOS3) anuncia acordo para vender participações em sete shoppings a fundo imobiliário; veja quais",
+  "fonte": "Money Times",
+  "dt": "2026-10-23T13:23:01+00:00",
   "img": ""
  }
 }

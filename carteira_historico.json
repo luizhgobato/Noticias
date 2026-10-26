@@ -1,16 +1,4 @@
 {
- "https://valorinveste.globo.com/objetivo/hora-de-investir/noticia/2026/10/19/adeus-dividendo-esquecido-na-conta-banco-do-brasil-cria-cofrinho-exclusivo-para-proventos.ghtml": {
-  "titulo": "Adeus, dividendo esquecido na conta: Banco do Brasil cria 'cofrinho' exclusivo para proventos",
-  "fonte": "Valor Investe",
-  "dt": "2026-10-19T16:49:57+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/N13neIEmycc2MXjEnr6vTFPmbbo=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/q/K/zyoQRHQlm7TobPBlzr7w/tap-6039919-1280.png"
- },
- "https://www.moneytimes.com.br/itau-bba-ve-movida-movi3-entre-as-melhores-apostas-para-um-cenario-de-selic-menor-e-eleva-preco-alvo-lils/": {
-  "titulo": "Itaú BBA vê Movida (MOVI3) entre as melhores apostas para um cenário de Selic menor e eleva preço-alvo em R$ 10",
-  "fonte": "Money Times",
-  "dt": "2026-10-19T14:31:57+00:00",
-  "img": ""
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/10/disputa-de-r-500-milhoes-envolvendo-a-totvs-atrai-fundo-de-investimento.shtml": {
   "titulo": "Disputa de R$ 500 milhões envolvendo a Totvs atrai fundo de investimento",
   "fonte": "Folha Mercado",
@@ -159,6 +147,24 @@
   "titulo": "Ações brasileiras em Nova York desabam até 19% na noite da reeleição de Lula",
   "fonte": "Exame",
   "dt": "2026-10-26T02:14:44+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/dividendo-de-10-e-potencial-de-valorizacao-o-que-a-parceria-da-allos-alos3-com-a-kinea-sinaliza-segundo-btg-igdl/": {
+  "titulo": "Dividendo de 10% e potencial de valorização: o que a parceria da Allos (ALOS3) com a Kinea sinaliza, segundo BTG",
+  "fonte": "Money Times",
+  "dt": "2026-10-26T17:00:00+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/10/26/petrobras-banco-do-brasil-eleicoes-lula-acoes-estatais.ghtml": {
+  "titulo": "Banco do Brasil (BBAS3) e Petrobras (PETR4) desabam após vitória de Lula",
+  "fonte": "Valor Investe",
+  "dt": "2026-10-26T13:48:43+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/HRmD0rwKwGsK1EVplnk7zrddVZs=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/m/J/bLdqH8QYqjcZUfc1U0yQ/2025-08-16t174551z-119122991-rc2g8gany38p-rtrmadp-3-petrobras-raizen.jpg"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/10/itau-anuncia-compra-da-neospace-startup-de-inteligencia-artificial-por-r-29-bilhoes.shtml": {
+  "titulo": "Itaú anuncia compra da NeoSpace, startup de inteligência artificial, por R$ 2,9 bilhões",
+  "fonte": "Folha Mercado",
+  "dt": "2026-10-26T12:02:00+00:00",
   "img": ""
  }
 }

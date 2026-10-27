@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/a-acao-que-sobe-com-o-trade-eleitoral-e-pode-ganhar-mais-47-segundo-o-itau-bba-lils/": {
-  "titulo": "A ação que sobe com o trade eleitoral e pode ganhar mais 47%, segundo o Itaú BBA",
-  "fonte": "Money Times",
-  "dt": "2026-10-20T17:53:39+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/mercados/argentina-risco-pais-renova-nivel-mais-alto-em-um-ano-e-reacende-duvida-sobre-ativos/": {
   "titulo": "Argentina: risco-país renova nível mais alto em um ano e reacende dúvida sobre ativos",
   "fonte": "InfoMoney",
@@ -159,6 +153,36 @@
   "titulo": "Itaú compra startup de IA NeoSpace por R$ 2,9 bilhões",
   "fonte": "InvestNews",
   "dt": "2026-10-26T11:44:33+00:00",
+  "img": ""
+ },
+ "https://www.infomoney.com.br/onde-investir/fii-xpml11-conclui-compra-de-fatia-de-shopping-da-allos-alos3-por-r-331-milhoes/": {
+  "titulo": "FII XPML11 conclui compra de fatia de shopping da Allos (ALOS3) por R$ 331 milhões",
+  "fonte": "InfoMoney",
+  "dt": "2026-10-27T18:11:01+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/10/Captura-de-Tela-2026-10-27-as-14.43.08.png?fit=300%2C150&amp;quality=70&amp;strip=all"
+ },
+ "https://www.infomoney.com.br/mercados/bbas3-banco-do-brasil-analise-tecnica-repique-queda/": {
+  "titulo": "BBAS3 despenca ao menor nível desde 2023: gráfico indica repique ou mais queda?",
+  "fonte": "InfoMoney",
+  "dt": "2026-10-27T17:59:47+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/10/Arranha-Ceu-Financeiro-e-Rally-de-Mercado.jpg?fit=300%2C169&amp;quality=70&amp;strip=all"
+ },
+ "https://www.moneytimes.com.br/sete-acoes-para-ficar-de-olho-apos-queda-da-bolsa-segundo-o-itau-bba/": {
+  "titulo": "Sete ações para ficar de olho após queda da Bolsa, segundo o Itaú BBA",
+  "fonte": "Money Times",
+  "dt": "2026-10-27T17:18:48+00:00",
+  "img": ""
+ },
+ "https://exame.com/economia/o-evento-que-reunira-500-executivos-em-miami-para-discutir-o-futuro-da-america-latina/": {
+  "titulo": "O evento que reunirá 500 executivos em Miami para discutir o futuro da América Latina",
+  "fonte": "Exame",
+  "dt": "2026-10-27T15:23:18+00:00",
+  "img": ""
+ },
+ "https://exame.com/negocios/eles-venderam-uma-startup-de-ia-de-tres-anos-por-r-29-bilhoes-ao-itau-e-nao-e-a-primeira-vez/": {
+  "titulo": "Eles venderam uma startup de IA de dois anos por R$ 2,9 bilhões ao Itaú. E não é a primeira vez",
+  "fonte": "Exame",
+  "dt": "2026-10-27T14:46:45+00:00",
   "img": ""
  }
 }

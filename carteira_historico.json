@@ -1,16 +1,4 @@
 {
- "https://investnews.com.br/negocios/brasil-suspende-exportacoes-de-frango-a-china-apos-doenca-em-fornecedor-da-mbrf/": {
-  "titulo": "China restringe importações de frango de Santa Catarina após foco de doença de Newcastle em granja",
-  "fonte": "InvestNews",
-  "dt": "2026-10-20T16:06:12+00:00",
-  "img": "https://www.youtube.com/embed/oFShTRTVNlg"
- },
- "https://www.moneytimes.com.br/bancos-abrem-temporada-do-3t26-com-credito-sob-pressao-o-que-esperar-de-bradesco-santander-itau-e-banco-do-brasil-miql/": {
-  "titulo": "Bancos abrem temporada do 3T26 com crédito sob pressão; o que esperar de Bradesco, Santander, Itaú e Banco do Brasil?",
-  "fonte": "Money Times",
-  "dt": "2026-10-20T15:42:03+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/a-acao-que-sobe-com-o-trade-eleitoral-e-pode-ganhar-mais-47-segundo-o-itau-bba-lils/": {
   "titulo": "A ação que sobe com o trade eleitoral e pode ganhar mais 47%, segundo o Itaú BBA",
   "fonte": "Money Times",
@@ -160,5 +148,17 @@
   "fonte": "InfoMoney",
   "dt": "2026-10-26T20:52:50+00:00",
   "img": "https://www.infomoney.com.br/wp-content/uploads/2026/05/Logos-bancos-bb-bradesco-santander-itau.png?fit=300%2C206&amp;quality=70&amp;strip=all"
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbas3-citi-manda-vender-e-ve-novo-tombo-pela-frente-apos-eleicoes/": {
+  "titulo": "Banco do Brasil (BBAS3): Citi manda vender e vê novo tombo pela frente após eleições; veja outras recomendações",
+  "fonte": "Money Times",
+  "dt": "2026-10-27T15:46:06+00:00",
+  "img": ""
+ },
+ "https://investnews.com.br/negocios/itau-compra-startup-de-ia-neospace-por-r-29-bilhoes/": {
+  "titulo": "Itaú compra startup de IA NeoSpace por R$ 2,9 bilhões",
+  "fonte": "InvestNews",
+  "dt": "2026-10-26T11:44:33+00:00",
+  "img": ""
  }
 }

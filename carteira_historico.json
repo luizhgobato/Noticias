@@ -1,16 +1,4 @@
 {
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/01/6562-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post467517": {
-  "titulo": "IRB(Re) tem lucro de R$9,4 mi em agosto com alta em sinistralidade",
-  "fonte": "Folha Mercado",
-  "dt": "2026-10-21T14:59:00+00:00",
-  "img": ""
- },
- "https://investnews.com.br/investimentos/calendario-de-balancos-do-3o-trimestre-saiba-quando-petrobras-vale-banco-do-brasil-divulgam-os-resultados/": {
-  "titulo": "Calendário de balanços do 3º trimestre: saiba quando Petrobras, Vale, Banco do Brasil divulgam os resultados",
-  "fonte": "InvestNews",
-  "dt": "2026-10-21T11:44:35+00:00",
-  "img": "https://public.flourish.studio/visualisation/30641752/thumbnail"
- },
  "https://www.cnnbrasil.com.br/economia/seu-bolso/meu-dinheiro/inss-justica-libera-r-29-bilhoes-para-atrasados-veja-como-consultar/": {
   "titulo": "INSS: Justiça libera R$ 2,9 bilhões para atrasados; veja como consultar",
   "fonte": "CNN Brasil",
@@ -190,5 +178,17 @@
   "fonte": "CNN Brasil",
   "dt": "2026-10-27T23:03:20+00:00",
   "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2026binary_LYNXMPEM3M0Y0-BASEIMAGE.jpg?w=200"
+ },
+ "https://www.moneytimes.com.br/santander-sanb11-cai-mais-de-4-apos-balanco-fraco-veja-o-que-dizem-itau-bba-btg-e-safra-miql/": {
+  "titulo": "Santander (SANB11) cai mais de 4% após balanço fraco; veja o que dizem Itaú BBA, BTG e Safra",
+  "fonte": "Money Times",
+  "dt": "2026-10-28T14:03:30+00:00",
+  "img": ""
+ },
+ "https://braziljournal.com/o-itau-quer-ser-um-chatgpt-financeiro-este-m-and-a-e-um-passo-importante": {
+  "titulo": "O Itaú quer ser um ChatGPT financeiro. Este M&A é um passo importante",
+  "fonte": "Brazil Journal",
+  "dt": "2026-10-28T09:50:00+00:00",
+  "img": "https://codex-braziljournal.codexcdn.net/assets/asw6dEQ8bC28IXaZ8.jpg"
  }
 }

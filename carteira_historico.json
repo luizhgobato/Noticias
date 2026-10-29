@@ -1,44 +1,14 @@
 {
- "https://www.moneytimes.com.br/banco-do-brasil-bbsa3-libera-r-31633-bilhoes-na-safra-2026-2027-ate-19-de-outubro-queda-de-44/": {
-  "titulo": "Banco do Brasil (BBSA3) libera R$ 31,633 bilhões na safra 2026/2027 até 19 de outubro, queda de 44%",
-  "fonte": "Money Times",
-  "dt": "2026-10-22T15:29:05+00:00",
-  "img": ""
- },
- "https://exame.com/invest/mercados/techfin-conta-digital-totvs/": {
-  "titulo": "Techfin leva conta digital para dentro do ERP da TOTVS",
-  "fonte": "Exame",
-  "dt": "2026-10-22T11:00:47+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/demanda-alta-e-vacancia-baixa-6-fiis-de-galpoes-para-ter-na-carteira-segundo-o-itau-bba-igdl/": {
   "titulo": "Demanda aquecida e vacância baixa: 6 FIIs de galpões para ter na carteira, segundo o Itaú BBA",
   "fonte": "Money Times",
   "dt": "2026-10-22T17:38:47+00:00",
   "img": ""
  },
- "https://www.cnnbrasil.com.br/agro/renegociacao-de-dividas-rurais-avanca-e-soma-r-16-bi-em-operacoes-do-bb/": {
-  "titulo": "Renegociação de dívidas rurais avança e soma R$ 16 bi em operações do BB",
-  "fonte": "CNN Brasil",
-  "dt": "2026-10-22T16:43:27+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXMPELA20O8-BASEIMAGE.jpg?w=200"
- },
- "https://www.moneytimes.com.br/itub4-bbdc4-bbas3-cenario-para-os-bancoes-no-3t26-e-parecido-avalia-analista-mlem/": {
-  "titulo": "ITUB4, BBDC4, BBAS3: cenário para os ‘bancões’ no 3T26 é parecido, avalia analista da TCM Capital",
-  "fonte": "Money Times",
-  "dt": "2026-10-22T16:04:04+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/mp-do-agro-banco-do-brasil-bbas3-ja-soma-r-16-bilhoes-e-preve-superar-r-20-bilhoes-pads/": {
   "titulo": "MP do agro: Banco do Brasil (BBAS3) já soma R$ 16 bilhões e prevê superar R$ 20 bilhões",
   "fonte": "Money Times",
   "dt": "2026-10-22T18:10:10+00:00",
-  "img": ""
- },
- "https://exame.com/invest/mercados/doenca-de-newcastle-derruba-acoes-da-mbrf-dona-da-sadia-o-que-dizem-os-bancos/": {
-  "titulo": "Doença de Newcastle derruba ações da MBRF, dona da Sadia; o que dizem os bancos",
-  "fonte": "Exame",
-  "dt": "2026-10-22T15:53:56+00:00",
   "img": ""
  },
  "https://www.cnnbrasil.com.br/agro/newcastle-pode-pressionar-preco-do-frango-no-brasil-em-2027-diz-itau-bba/": {
@@ -213,6 +183,30 @@
   "titulo": "Neoenergia (NEOE3) vende fatia remanescente na hidrelétrica Dardanelos e antecipa R$ 400 milhões em caixa",
   "fonte": "Money Times",
   "dt": "2026-10-28T21:35:08+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/apos-derrocada-ibovespa-itau-bba-atualiza-carteira-para-bolsa-escolhe-dez-acoes-para-investir-lils/": {
+  "titulo": "Após derrocada do Ibovespa, Itaú BBA atualiza carteira para a bolsa e escolhe 10 ações para investir",
+  "fonte": "Money Times",
+  "dt": "2026-10-29T16:32:31+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/tesouro-reserva-supera-r-8-bilhoes-em-captacao-banco-do-brasil-mlim/": {
+  "titulo": "Tesouro Reserva supera R$ 8 bilhões em captação em cinco meses, com aplicação ainda exclusiva no Banco do Brasil",
+  "fonte": "Money Times",
+  "dt": "2026-10-29T16:10:56+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/produtos/imoveis/noticia/2026/10/29/bancos-sobem-taxas-de-financiamento-imobiliario-apos-disparada-dos-juros-futuros.ghtml": {
+  "titulo": "Bancos sobem taxas de financiamento imobiliário após disparada dos juros futuros",
+  "fonte": "Valor Investe",
+  "dt": "2026-10-29T15:11:34+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/f9wM0ZK544TDv52ZNvkY_hWtdj8=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/2/e/tAIodqS0u0selEs7mC1Q/yamu-jay-ai-generated-9231987.jpg"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post467996": {
+  "titulo": "Vice-presidente de varejo do Banco do Brasil renuncia ao cargo",
+  "fonte": "Folha Mercado",
+  "dt": "2026-10-29T10:26:00+00:00",
   "img": ""
  }
 }

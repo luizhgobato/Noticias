@@ -1,22 +1,4 @@
 {
- "https://valorinveste.globo.com/produtos/imoveis/noticia/2026/10/23/itau-leiloa-hoje-mais-de-90-imoveis-com-lances-a-partir-de-r-335-mil-confira.ghtml": {
-  "titulo": "Itaú leiloa hoje mais de 90 imóveis com lances a partir de R$ 33,5 mil; confira",
-  "fonte": "Valor Investe",
-  "dt": "2026-10-23T15:00:00+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/f9wM0ZK544TDv52ZNvkY_hWtdj8=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/2/e/tAIodqS0u0selEs7mC1Q/yamu-jay-ai-generated-9231987.jpg"
- },
- "https://g1.globo.com/economia/agronegocios/noticia/2026/10/23/frango-pode-ficar-mais-barato-principalmente-no-sul-apos-caso-de-newcastle-em-sc-diz-itau.ghtml": {
-  "titulo": "Frango pode ficar mais barato, principalmente no Sul, após caso de Newcastle em SC, diz Itaú",
-  "fonte": "G1 Economia",
-  "dt": "2026-10-23T14:46:35+00:00",
-  "img": "https://s2-g1.glbimg.com/gVg5tQA2BvPAgmOW8ZkDwdtCmpc=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/b/B/PBC4swTjaD3jaAKX6ROA/claudio-schwarz-4qjlxk4myzu-unsplash.jpg"
- },
- "https://www.moneytimes.com.br/allos-alos3-anuncia-acordo-para-vender-participacoes-em-sete-shoppings-a-fundo-imobiliario-veja-quais-igdl/": {
-  "titulo": "Allos (ALOS3) anuncia acordo para vender participações em sete shoppings a fundo imobiliário; veja quais",
-  "fonte": "Money Times",
-  "dt": "2026-10-23T13:23:01+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/onde-investir/allos-also3-negocia-venda-de-participacoes-em-sete-shoppings-para-fii-da-kinea/": {
   "titulo": "ALLOS (ALSO3) negocia venda de participações em sete shoppings para FII da Kinea",
   "fonte": "InfoMoney",
@@ -198,9 +180,27 @@
   "img": ""
  },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/10/bancos-privados-aumentam-taxas-do-credito-da-casa-propria-em-resposta-a-alta-nos-juros-futuros.shtml": {
-  "titulo": "Bancos privados aumentam taxas do crédito da casa própria em resposta à alta nos juros futuros",
+  "titulo": "Taxa de crédito da casa própria sobe 1,91 p.p. no Bradesco e 0,96 p.p. no Itaú; entenda alta",
   "fonte": "Folha Mercado",
   "dt": "2026-10-30T02:00:00+00:00",
   "img": ""
+ },
+ "https://www.moneytimes.com.br/btg-bpac11-sofre-corte-de-recomendacao-e-preco-alvo-pelo-itau-bba-e-acao-sente/": {
+  "titulo": "BTG (BPAC11) sofre corte de recomendação e preço-alvo pelo Itaú BBA, e ação sente",
+  "fonte": "Money Times",
+  "dt": "2026-10-30T15:31:37+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/10/30/vale-vale3-csn-csna3-multiplan-mult3-irani-rani3-e-mais-veja-os-destaques-das-empresas.ghtml": {
+  "titulo": "Vale (VALE3), CSN (CSNA3), Multiplan (MULT3), Irani (RANI3) e mais: Veja os destaques das empresas",
+  "fonte": "Valor Investe",
+  "dt": "2026-10-30T11:15:53+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/gIhPP6Ox65FkcGgR2jGayySrnzA=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/G/A/E9cdpyQlKnOq101IaIdw/f00078659.jpg"
+ },
+ "https://g1.globo.com/economia/noticia/2026/10/30/financiamento-imobiliario-taxas.ghtml": {
+  "titulo": "Financiamento imobiliário mais caro? Bradesco, Itaú e Santander elevam taxas; Caixa não se manifesta",
+  "fonte": "G1 Economia",
+  "dt": "2026-10-30T08:00:00+00:00",
+  "img": "https://s2-g1.glbimg.com/FAefhXGfD_1dR2QYLR_LzFgbV1g=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/l/d/SxPEQ2TZy61pG3o9uZMA/fotojet-38-.jpg"
  }
 }

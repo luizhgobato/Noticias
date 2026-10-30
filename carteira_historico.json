@@ -1,10 +1,4 @@
 {
- "https://www.infomoney.com.br/onde-investir/allos-also3-negocia-venda-de-participacoes-em-sete-shoppings-para-fii-da-kinea/": {
-  "titulo": "ALLOS (ALSO3) negocia venda de participações em sete shoppings para FII da Kinea",
-  "fonte": "InfoMoney",
-  "dt": "2026-10-23T18:34:17+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2024/02/plazasul.jpg?fit=300%2C176&amp;quality=70&amp;strip=all"
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/flavio-bolsonaro-cogita-vincular-caixa-e-bb-a-ministerio-da-area-social-caso-eleito.shtml": {
   "titulo": "Flávio Bolsonaro cogita vincular Caixa e BB a ministério da área social caso eleito",
   "fonte": "Folha Mercado",
@@ -208,5 +202,11 @@
   "fonte": "Money Times",
   "dt": "2026-10-30T18:16:07+00:00",
   "img": ""
+ },
+ "https://www.cnnbrasil.com.br/economia/money/negocios/itau-lanca-forma-de-pagamento-para-checkout-de-comercio-eletronico/": {
+  "titulo": "Itaú lança forma de pagamento para checkout de comércio eletrônico",
+  "fonte": "CNN Brasil",
+  "dt": "2026-10-30T17:01:40+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/10/apartamento-mrv-construcao-planta.jpg?w=200"
  }
 }

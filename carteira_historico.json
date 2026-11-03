@@ -1,10 +1,4 @@
 {
- "https://www.infomoney.com.br/mercados/bbas3-agora-e-venda-bbdc4-neutro-e-itub4-preferido-citi-revisa-bancoes-apos-eleicao/": {
-  "titulo": "BBAS3 agora é venda, BBDC4 neutro e ITUB4 preferido: Citi revisa bancões após eleição",
-  "fonte": "InfoMoney",
-  "dt": "2026-10-27T19:08:25+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/03/1054770-df_img_4709.webp?fit=300%2C179&amp;quality=70&amp;strip=all"
- },
  "https://www.cnnbrasil.com.br/agro/itau-bba-agtechs-brasileiras-atraem-r-947-milhoes-no-1o-semestre/": {
   "titulo": "Itaú BBA: AgTechs brasileiras atraem R$ 94,7 milhões no 1º semestre",
   "fonte": "CNN Brasil",
@@ -186,7 +180,7 @@
   "img": "https://olhardigital.com.br/wp-content/uploads/2026/11/e-commerce-1024x616.jpg"
  },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/warren-anuncia-ex-xp-e-itau-como-novo-ceo.shtml": {
-  "titulo": "Warren anuncia ex-XP e Itaú como novo CEO",
+  "titulo": "Warren terá ex-XP e Itaú como novo CEO",
   "fonte": "Folha Mercado",
   "dt": "2026-11-03T18:01:00+00:00",
   "img": ""
@@ -219,6 +213,18 @@
   "titulo": "Agenda de dividendos de novembro: Petrobras, Itaú e Bradesco pagam proventos",
   "fonte": "InvestNews",
   "dt": "2026-11-03T11:38:03+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/10-acoes-com-potencial-de-alta-de-ate-83-para-se-posicionar-no-pos-eleicoes-segundo-btg-pactual-lmrs/": {
+  "titulo": "10 ações com potencial de alta de até 83% para se posicionar após as eleições, segundo o BTG Pactual",
+  "fonte": "Money Times",
+  "dt": "2026-11-03T19:38:01+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/itau-bba-aposta-em-fabrica-de-bilionarios-para-lucrar-apos-eleicao-de-lula/": {
+  "titulo": "Itaú BBA aposta em ‘fábrica de bilionários’ para lucrar após eleição de Lula",
+  "fonte": "Money Times",
+  "dt": "2026-11-03T18:32:17+00:00",
   "img": ""
  }
 }

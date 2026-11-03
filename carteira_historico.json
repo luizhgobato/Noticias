@@ -1,10 +1,4 @@
 {
- "https://www.cnnbrasil.com.br/agro/itau-bba-agtechs-brasileiras-atraem-r-947-milhoes-no-1o-semestre/": {
-  "titulo": "Itaú BBA: AgTechs brasileiras atraem R$ 94,7 milhões no 1º semestre",
-  "fonte": "CNN Brasil",
-  "dt": "2026-10-27T23:03:20+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2026binary_LYNXMPEM3M0Y0-BASEIMAGE.jpg?w=200"
- },
  "https://www.moneytimes.com.br/santander-sanb11-cai-mais-de-4-apos-balanco-fraco-veja-o-que-dizem-itau-bba-btg-e-safra-miql/": {
   "titulo": "Santander (SANB11) cai mais de 4% após balanço fraco; veja o que dizem Itaú BBA, BTG e Safra",
   "fonte": "Money Times",
@@ -268,5 +262,23 @@
   "fonte": "Exame",
   "dt": "2026-11-03T18:49:08+00:00",
   "img": ""
+ },
+ "https://www.infomoney.com.br/mercados/bb-seguridade-bbse3-resultados-terceiro-trimestre-2026/": {
+  "titulo": "BB Seguridade (BBSE3) tem lucro líquido gerencial de R$ 2,4 bi no 3T, queda de 5,1%",
+  "fonte": "InfoMoney",
+  "dt": "2026-11-03T22:47:21+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2022/08/637719640558739446.jpg?fit=300%2C194&amp;quality=70&amp;strip=all"
+ },
+ "https://www.bloomberglinea.com.br/negocios/lucro-do-itau-desacelera-no-3-trimestre-com-atrasos-das-pequenas-empresas-em-alta/": {
+  "titulo": "Lucro do Itaú desacelera no 3º trimestre, com atrasos das pequenas empresas em alta",
+  "fonte": "Bloomberg Línea",
+  "dt": "2026-11-03T22:25:34+00:00",
+  "img": "https://www.bloomberglinea.com/resizer/v2/ZV3MYSWPSZFNRGHPS7ZKNLH2V4.jpg?auth=4b63c0cf701b636e3134de975b5f30e504844c167838357ef05436f511603f76&smart=true&width=1200&height=675"
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/11/03/lucro-da-bb-seguridade-bbse3-cai-5percent-no-3o-trimestre-para-r-24-bilhoes.ghtml": {
+  "titulo": "Lucro da BB Seguridade (BBSE3) cai 5% no 3º trimestre, para R$ 2,4 bilhões",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-03T22:24:24+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/BkAZrcqDRq04HlH07cjmZI7vf9Y=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2019/R/I/DqBLAySrC62u9Wmk7sBA/gettyimages-694457486.jpg"
  }
 }

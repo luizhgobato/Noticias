@@ -1,40 +1,4 @@
 {
- "https://www.moneytimes.com.br/banco-do-brasil-bbas3-citi-manda-vender-e-ve-novo-tombo-pela-frente-apos-eleicoes/": {
-  "titulo": "Banco do Brasil (BBAS3): Citi manda vender e vê novo tombo pela frente após eleições; veja outras recomendações",
-  "fonte": "Money Times",
-  "dt": "2026-10-27T15:46:06+00:00",
-  "img": ""
- },
- "https://www.infomoney.com.br/onde-investir/fii-xpml11-conclui-compra-de-fatia-de-shopping-da-allos-alos3-por-r-331-milhoes/": {
-  "titulo": "FII XPML11 conclui compra de fatia de shopping da Allos (ALOS3) por R$ 331 milhões",
-  "fonte": "InfoMoney",
-  "dt": "2026-10-27T18:11:01+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/10/Captura-de-Tela-2026-10-27-as-14.43.08.png?fit=300%2C150&amp;quality=70&amp;strip=all"
- },
- "https://www.infomoney.com.br/mercados/bbas3-banco-do-brasil-analise-tecnica-repique-queda/": {
-  "titulo": "BBAS3 despenca ao menor nível desde 2023: gráfico indica repique ou mais queda?",
-  "fonte": "InfoMoney",
-  "dt": "2026-10-27T17:59:47+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/10/Arranha-Ceu-Financeiro-e-Rally-de-Mercado.jpg?fit=300%2C169&amp;quality=70&amp;strip=all"
- },
- "https://www.moneytimes.com.br/sete-acoes-para-ficar-de-olho-apos-queda-da-bolsa-segundo-o-itau-bba/": {
-  "titulo": "Sete ações para ficar de olho após queda da Bolsa, segundo o Itaú BBA",
-  "fonte": "Money Times",
-  "dt": "2026-10-27T17:18:48+00:00",
-  "img": ""
- },
- "https://exame.com/economia/o-evento-que-reunira-500-executivos-em-miami-para-discutir-o-futuro-da-america-latina/": {
-  "titulo": "O evento que reunirá 500 executivos em Miami para discutir o futuro da América Latina",
-  "fonte": "Exame",
-  "dt": "2026-10-27T15:23:18+00:00",
-  "img": ""
- },
- "https://exame.com/negocios/eles-venderam-uma-startup-de-ia-de-tres-anos-por-r-29-bilhoes-ao-itau-e-nao-e-a-primeira-vez/": {
-  "titulo": "Eles venderam uma startup de IA de dois anos por R$ 2,9 bilhões ao Itaú. E não é a primeira vez",
-  "fonte": "Exame",
-  "dt": "2026-10-27T14:46:45+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/mercados/bbas3-agora-e-venda-bbdc4-neutro-e-itub4-preferido-citi-revisa-bancoes-apos-eleicao/": {
   "titulo": "BBAS3 agora é venda, BBDC4 neutro e ITUB4 preferido: Citi revisa bancões após eleição",
   "fonte": "InfoMoney",
@@ -220,5 +184,41 @@
   "fonte": "Olhar Digital",
   "dt": "2026-11-01T18:03:06+00:00",
   "img": "https://olhardigital.com.br/wp-content/uploads/2026/11/e-commerce-1024x616.jpg"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/warren-anuncia-ex-xp-e-itau-como-novo-ceo.shtml": {
+  "titulo": "Warren anuncia ex-XP e Itaú como novo CEO",
+  "fonte": "Folha Mercado",
+  "dt": "2026-11-03T18:01:00+00:00",
+  "img": ""
+ },
+ "https://www.cnnbrasil.com.br/agro/plantio-da-soja-ganha-ritmo-mas-irregularidade-das-chuvas-preocupa/": {
+  "titulo": "Plantio da soja ganha ritmo, mas irregularidade das chuvas preocupa",
+  "fonte": "CNN Brasil",
+  "dt": "2026-11-03T17:43:58+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportAgribusinessNews/tagreuters.com2026binary_LYNXMPEM24180-BASEIMAGE.jpg?w=200"
+ },
+ "https://www.moneytimes.com.br/dividendos-148-bb-investimentos-escolhe-petrobras-petr4-axia-axia3-outras-oito-acoes-para-novembro-mlem/": {
+  "titulo": "Dividendos de 14,8%: BB Investimentos escolhe Petrobras (PETR4), Axia (AXIA3) e outras oito ações para novembro",
+  "fonte": "Money Times",
+  "dt": "2026-11-03T16:59:51+00:00",
+  "img": ""
+ },
+ "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/acessos-site-e-aplicativo-do-banco-do-brasil-sao-normalizados": {
+  "titulo": "Acessos a site e aplicativo do Banco do Brasil são normalizados",
+  "fonte": "Agência Brasil",
+  "dt": "2026-11-03T16:07:00+00:00",
+  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
+ },
+ "https://valorinveste.globo.com/produtos/servicos-financeiros/noticia/2026/11/03/banco-do-brasil-fora-do-ar-clientes-relatam-instabilidade-no-aplicativo-hoje.ghtml": {
+  "titulo": "Banco do Brasil fora do ar? Clientes relatam instabilidade no aplicativo",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-03T13:32:39+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/qfNtOCc5Ft45d23TBLSum_PTf6A=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2024/R/K/OPdnQiTuuQBI5tmPpoag/gettyimages-1464809509.jpg"
+ },
+ "https://investnews.com.br/investimentos/agenda-de-dividendos-de-novembro-petrobras-itau-e-bradesco-pagam-proventos/": {
+  "titulo": "Agenda de dividendos de novembro: Petrobras, Itaú e Bradesco pagam proventos",
+  "fonte": "InvestNews",
+  "dt": "2026-11-03T11:38:03+00:00",
+  "img": ""
  }
 }

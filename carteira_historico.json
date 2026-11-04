@@ -1,22 +1,4 @@
 {
- "https://www.moneytimes.com.br/santander-sanb11-cai-mais-de-4-apos-balanco-fraco-veja-o-que-dizem-itau-bba-btg-e-safra-miql/": {
-  "titulo": "Santander (SANB11) cai mais de 4% após balanço fraco; veja o que dizem Itaú BBA, BTG e Safra",
-  "fonte": "Money Times",
-  "dt": "2026-10-28T14:03:30+00:00",
-  "img": ""
- },
- "https://braziljournal.com/o-itau-quer-ser-um-chatgpt-financeiro-este-m-and-a-e-um-passo-importante": {
-  "titulo": "O Itaú quer ser um ChatGPT financeiro. Este M&A é um passo importante",
-  "fonte": "Brazil Journal",
-  "dt": "2026-10-28T09:50:00+00:00",
-  "img": "https://codex-braziljournal.codexcdn.net/assets/asw6dEQ8bC28IXaZ8.jpg"
- },
- "https://exame.com/future-of-money/cainvest-cria-ferramenta-que-monitora-pedidos-de-licenca-cripto-no-bc-veja-quem-protocolou/": {
-  "titulo": "Cainvest cria ferramenta que monitora pedidos de licença cripto no BC; veja quem protocolou",
-  "fonte": "Exame",
-  "dt": "2026-10-28T14:08:30+00:00",
-  "img": ""
- },
  "https://www.bloomberglinea.com.br/negocios/retomada-do-santander-brasil-deve-levar-mais-tempo-com-juro-elevado-dizem-analistas/": {
   "titulo": "Retomada do Santander Brasil deve levar mais tempo com juro elevado, dizem analistas",
   "fonte": "Bloomberg Línea",
@@ -298,5 +280,47 @@
   "fonte": "Brazil Journal",
   "dt": "2026-11-04T00:00:00+00:00",
   "img": "https://codex-braziljournal.codexcdn.net/assets/asKWcKn2k18D6tqn1.jpg"
+ },
+ "https://www.moneytimes.com.br/agora-troca-carteira-de-novembro-e-tira-btg-bpac11-e-allos-alos3-veja-quem-entra-no-lugar/": {
+  "titulo": "Ágora troca carteira de novembro e tira BTG (BPAC11) e Allos (ALOS3); veja quem entra no lugar",
+  "fonte": "Money Times",
+  "dt": "2026-11-04T17:35:31+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/pague-menos-pgmn3-smart-fit-smft3-itau-bba-atualiza-carteira-small-caps-novembro-mlem/": {
+  "titulo": "Tchau, Pague Menos (PGMN3), olá, Smart Fit (SMFT3): Itaú BBA atualiza carteira de small caps para novembro",
+  "fonte": "Money Times",
+  "dt": "2026-11-04T17:10:13+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/dividendos-daycoval-mantem-itau-itub4-caixa-seguridade-cxse3-e-mais-8-acoes-em-carteira-mlem/": {
+  "titulo": "Dividendos: Daycoval mantém Itaú (ITUB4), Caixa Seguridade (CXSE3) e mais 8 ações em carteira",
+  "fonte": "Money Times",
+  "dt": "2026-11-04T15:59:10+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/11/04/bb-seguridade-bbse3-cai-na-bolsa-o-que-ofuscou-o-lucro-de-r-24-bi.ghtml": {
+  "titulo": "BB Seguridade (BBSE3) cai na bolsa: o que ofuscou o lucro de R$ 2,4 bi⁠?",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-04T15:51:12+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/V6d7A77MGpkQ7hb3AinXlTwPwDM=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/c/j/M5NTXrQWGBBrzUfAgi1g/img-0164-1-.jpg"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/nao-adianta-baixar-juros-na-forca-bruta-diz-ceo-do-itau-sobre-discussao-fiscal.shtml": {
+  "titulo": "Não adianta baixar juros na força bruta, diz CEO do Itaú sobre discussão fiscal",
+  "fonte": "Folha Mercado",
+  "dt": "2026-11-04T13:53:00+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/11/04/itau-itub4-rd-saude-radl3-marcopolo-pomo4-bb-seguridade-bbse3-e-mais-veja-os-destaques-das-empresas.ghtml": {
+  "titulo": "Itaú (ITUB4), RD Saúde (RADL3), Marcopolo (POMO4), BB Seguridade (BBSE3) e mais: Veja os destaques das empresas",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-04T11:12:44+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/btbhPlqI83fDGHOpnwqJo4B3_IY=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/m/n/Aw5KsXQkyuHuhM396yLw/itau-sm2-1.jpg"
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/11/03/itau-itub4-tem-lucro-de-r-126-bilhoes-no-3o-trimestre-alta-de-6percent.ghtml": {
+  "titulo": "Itaú (ITUB4) tem lucro de R$ 12,6 bilhões no 3º trimestre, alta de 6%",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-03T22:04:33+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/btbhPlqI83fDGHOpnwqJo4B3_IY=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/m/n/Aw5KsXQkyuHuhM396yLw/itau-sm2-1.jpg"
  }
 }

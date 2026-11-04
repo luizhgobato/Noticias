@@ -1,16 +1,4 @@
 {
- "https://www.cnnbrasil.com.br/infra/neoenergia-vende-de-participacao-em-hidreletrica-a-fundos-da-itau-asset/": {
-  "titulo": "Neoenergia vende de participação em hidrelétrica a fundos da Itaú Asset",
-  "fonte": "CNN Brasil",
-  "dt": "2026-10-28T21:35:27+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportAgribusinessNews/tagreuters.com2022binary_LYNXMPEIB40XM-FILEDIMAGE.jpg?w=200"
- },
- "https://www.moneytimes.com.br/neoenergia-neoe3-vende-fatia-remanescente-na-hidreletrica-dardanelos-e-antecipa-r-400-milhoes-em-caixa/": {
-  "titulo": "Neoenergia (NEOE3) vende fatia remanescente na hidrelétrica Dardanelos e antecipa R$ 400 milhões em caixa",
-  "fonte": "Money Times",
-  "dt": "2026-10-28T21:35:08+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/apos-derrocada-ibovespa-itau-bba-atualiza-carteira-para-bolsa-escolhe-dez-acoes-para-investir-lils/": {
   "titulo": "Após derrocada do Ibovespa, Itaú BBA atualiza carteira para a bolsa e escolhe 10 ações para investir",
   "fonte": "Money Times",
@@ -315,6 +303,12 @@
   "titulo": "Itaú (ITUB4) sobe 3% na Bolsa após balanço do 3T26; analistas revelam se é hora de comprar a ação",
   "fonte": "Money Times",
   "dt": "2026-11-04T19:34:57+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/irani-rani3-pagara-r-14-milhoes-em-dividendos-veja-quem-tem-direito-pads/": {
+  "titulo": "Irani (RANI3) pagará dividendos; veja quem tem direito",
+  "fonte": "Money Times",
+  "dt": "2026-11-04T22:06:21+00:00",
   "img": ""
  }
 }

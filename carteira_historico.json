@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/irani-rani3-surpreende-xp-e-itau-bba-no-3t26-com-recorde-em-papelao-ondulado-pads/": {
-  "titulo": "Irani (RANI3) surpreende XP e Itaú BBA no 3T26 com recorde em papelão ondulado",
-  "fonte": "Money Times",
-  "dt": "2026-10-30T18:16:07+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/itau-itub4-lanca-ferramenta-itau-pay-e-compete-com-nubank-roxo34-no-mercado-de-pagamentos-no-varejo-confira-apsa/": {
   "titulo": "Itaú (ITUB4) lança Itaú Pay e compete com Nubank (ROXO34) no mercado de pagamentos de e-commerce; confira",
   "fonte": "Money Times",
@@ -304,5 +298,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-11-06T15:42:02+00:00",
   "img": "https://s2-valorinveste.glbimg.com/S2jeQ-hE6zxEpdUddJsjw6C9RHc=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/E/A/xqZSL5S6yMwcQKncAvqA/foto-cartao.jpg"
+ },
+ "https://exame.com/future-of-money/bc-divulga-lista-completa-das-134-empresas-que-pediram-licenca-para-operar-cripto-confira/": {
+  "titulo": "BC divulga lista das 134 empresas que pediram autorização para operar cripto; confira",
+  "fonte": "Exame",
+  "dt": "2026-11-06T15:29:08+00:00",
+  "img": ""
  }
 }

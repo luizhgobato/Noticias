@@ -1,22 +1,4 @@
 {
- "https://www.moneytimes.com.br/da-reacao-do-mercado-apos-vitoria-de-lula-a-recomendacao-de-venda-para-o-banco-do-brasil-confira-as-mais-lidas-da-semana-lmrs/": {
-  "titulo": "Da reação do mercado após vitória de Lula à recomendação de venda para o Banco do Brasil: confira as mais lidas da semana",
-  "fonte": "Money Times",
-  "dt": "2026-10-31T15:28:47+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/bb-seguridade-bbse3-e-mais-4-acoes-para-ter-na-carteira-de-curto-praz-segundo-a-terra-investimentos-lmrs/": {
-  "titulo": "BB Seguridade (BBSE3) e mais 4 ações para ter na carteira de curto prazo, segundo a Terra Investimentos",
-  "fonte": "Money Times",
-  "dt": "2026-10-31T14:52:23+00:00",
-  "img": ""
- },
- "https://www.bloomberglinea.com.br/startups/rodadas-da-semana-kalshi-capta-us-1-bilhao-e-chega-a-us-40-bi-de-valuation/": {
-  "titulo": "Rodadas da semana: Kalshi capta US$ 1 bilhão e chega a US$ 40 bi de valuation",
-  "fonte": "Bloomberg Línea",
-  "dt": "2026-10-31T09:36:05+00:00",
-  "img": "https://www.bloomberglinea.com/resizer/v2/PWUGSKQAIRBIFNJGX33N4O2LMU.jpg?auth=87ca694a1ef9c46e65d2c8040764b849662ee84ce7e6ee04e06005ca942f90dc&smart=true&width=1200&height=675"
- },
  "https://www.cnnbrasil.com.br/economia/money/macroeconomia/chilli-beans-pede-recuperacao-extrajudicial-para-renegociar-r-340-milhoes/": {
   "titulo": "Chilli Beans pede recuperação extrajudicial para renegociar R$ 340 milhões",
   "fonte": "CNN Brasil",
@@ -309,6 +291,30 @@
   "titulo": "Até o Itaú (ITUB4): UBS BB corta preço-alvo com piora do cenário",
   "fonte": "Money Times",
   "dt": "2026-11-06T22:36:30+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/entra-itau-itub4-e-axia-energia-axia3-5-acoes-para-bater-o-ibovespa-na-semana-lmrs/": {
+  "titulo": "Entra Itaú (ITUB4) e Axia Energia (AXIA3): 5 ações para bater o Ibovespa na semana, segundo a Terra Investimentos",
+  "fonte": "Money Times",
+  "dt": "2026-11-07T14:50:00+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/quer-dividendos-em-novembro-xp-revela-suas-11-acoes-favoritas-para-o-mes-jcav/": {
+  "titulo": "Quer dividendos em novembro? XP revela suas 11 ações favoritas para o mês",
+  "fonte": "Money Times",
+  "dt": "2026-11-07T14:10:05+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/lucro-dos-tres-maiores-bancos-soma-r-226-bi-no-3o-trimestre-alta-de-24-em-um-ano-jcav/": {
+  "titulo": "Lucro dos três maiores bancos soma R$ 22,6 bi no 3º trimestre, alta de 2,4% em um ano",
+  "fonte": "Money Times",
+  "dt": "2026-11-07T13:32:49+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/xp-tira-bancos-da-carteira-e-reforca-carteira-defensiva-para-novembro-confira-as-acoes-jcav/": {
+  "titulo": "XP tira bancos da carteira e reforça carteira ‘defensiva’ para novembro; confira as ações",
+  "fonte": "Money Times",
+  "dt": "2026-11-07T13:26:35+00:00",
   "img": ""
  }
 }

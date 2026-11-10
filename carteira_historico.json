@@ -1,16 +1,4 @@
 {
- "https://www.moneytimes.com.br/10-acoes-com-potencial-de-alta-de-ate-83-para-se-posicionar-no-pos-eleicoes-segundo-btg-pactual-lmrs/": {
-  "titulo": "10 ações com potencial de alta de até 83% para se posicionar após as eleições, segundo o BTG Pactual",
-  "fonte": "Money Times",
-  "dt": "2026-11-03T19:38:01+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/itau-bba-aposta-em-fabrica-de-bilionarios-para-lucrar-apos-eleicao-de-lula/": {
-  "titulo": "Itaú BBA aposta em ‘fábrica de bilionários’ para lucrar após eleição de Lula",
-  "fonte": "Money Times",
-  "dt": "2026-11-03T18:32:17+00:00",
-  "img": ""
- },
  "https://www.cnnbrasil.com.br/agro/itau-bba-financia-r-205-milhoes-para-pecuaria-sustentavel/": {
   "titulo": "Itaú BBA financia R$ 205 milhões para pecuária sustentável",
   "fonte": "CNN Brasil",
@@ -46,12 +34,6 @@
   "fonte": "InfoMoney",
   "dt": "2026-11-03T21:29:35+00:00",
   "img": "https://www.infomoney.com.br/wp-content/uploads/2025/05/Itau_Logo.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
- },
- "https://exame.com/invest/mercados/lucro-do-itau-bate-novo-recorde-e-chega-a-r-126-bilhoes-no-3o-trimestre/": {
-  "titulo": "Lucro do Itaú bate novo recorde e chega a R$ 12,6 bilhões no 3º trimestre",
-  "fonte": "Exame",
-  "dt": "2026-11-03T18:49:08+00:00",
-  "img": ""
  },
  "https://www.infomoney.com.br/mercados/bb-seguridade-bbse3-resultados-terceiro-trimestre-2026/": {
   "titulo": "BB Seguridade (BBSE3) tem lucro líquido gerencial de R$ 2,4 bi no 3T, queda de 5,1%",
@@ -304,5 +286,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-11-10T11:49:09+00:00",
   "img": "https://s2-valorinveste.glbimg.com/7mfCjBAGs2wXuS6pVGjbRlMIf_0=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/U/B/sTPhdoSrWsLAqXflkqpA/montagen-3-.png"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/itau-investe-r-12-bilhao-e-vira-socio-da-klabin-em-mais-um-empreendimento-florestal.shtml": {
+  "titulo": "Itaú investe R$ 1,2 bilhão e vira sócio da Klabin em empreendimento florestal",
+  "fonte": "Folha Mercado",
+  "dt": "2026-11-10T19:57:00+00:00",
+  "img": ""
  }
 }

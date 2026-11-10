@@ -1,40 +1,4 @@
 {
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/warren-anuncia-ex-xp-e-itau-como-novo-ceo.shtml": {
-  "titulo": "Warren terá ex-XP e Itaú como novo CEO",
-  "fonte": "Folha Mercado",
-  "dt": "2026-11-03T18:01:00+00:00",
-  "img": ""
- },
- "https://www.cnnbrasil.com.br/agro/plantio-da-soja-ganha-ritmo-mas-irregularidade-das-chuvas-preocupa/": {
-  "titulo": "Plantio da soja ganha ritmo, mas irregularidade das chuvas preocupa",
-  "fonte": "CNN Brasil",
-  "dt": "2026-11-03T17:43:58+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportAgribusinessNews/tagreuters.com2026binary_LYNXMPEM24180-BASEIMAGE.jpg?w=200"
- },
- "https://www.moneytimes.com.br/dividendos-148-bb-investimentos-escolhe-petrobras-petr4-axia-axia3-outras-oito-acoes-para-novembro-mlem/": {
-  "titulo": "Dividendos de 14,8%: BB Investimentos escolhe Petrobras (PETR4), Axia (AXIA3) e outras oito ações para novembro",
-  "fonte": "Money Times",
-  "dt": "2026-11-03T16:59:51+00:00",
-  "img": ""
- },
- "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/acessos-site-e-aplicativo-do-banco-do-brasil-sao-normalizados": {
-  "titulo": "Acessos a site e aplicativo do Banco do Brasil são normalizados",
-  "fonte": "Agência Brasil",
-  "dt": "2026-11-03T16:07:00+00:00",
-  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
- },
- "https://valorinveste.globo.com/produtos/servicos-financeiros/noticia/2026/11/03/banco-do-brasil-fora-do-ar-clientes-relatam-instabilidade-no-aplicativo-hoje.ghtml": {
-  "titulo": "Banco do Brasil fora do ar? Clientes relatam instabilidade no aplicativo",
-  "fonte": "Valor Investe",
-  "dt": "2026-11-03T13:32:39+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/qfNtOCc5Ft45d23TBLSum_PTf6A=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2024/R/K/OPdnQiTuuQBI5tmPpoag/gettyimages-1464809509.jpg"
- },
- "https://investnews.com.br/investimentos/agenda-de-dividendos-de-novembro-petrobras-itau-e-bradesco-pagam-proventos/": {
-  "titulo": "Agenda de dividendos de novembro: Petrobras, Itaú e Bradesco pagam proventos",
-  "fonte": "InvestNews",
-  "dt": "2026-11-03T11:38:03+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/10-acoes-com-potencial-de-alta-de-ate-83-para-se-posicionar-no-pos-eleicoes-segundo-btg-pactual-lmrs/": {
   "titulo": "10 ações com potencial de alta de até 83% para se posicionar após as eleições, segundo o BTG Pactual",
   "fonte": "Money Times",
@@ -328,5 +292,17 @@
   "fonte": "Money Times",
   "dt": "2026-11-09T22:53:40+00:00",
   "img": ""
+ },
+ "https://valorinveste.globo.com/produtos/servicos-financeiros/noticia/2026/11/10/banco-do-brasil-lanca-visa-infinite-private-com-ate-9-pontos-por-dolar.ghtml": {
+  "titulo": "BB lança cartão Visa Infinite Private com até 9 pontos por dólar",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-10T16:28:06+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/t9F-UoaXvz7YgVJfGB4hOmCGVZY=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/k/W/61qgefTb2FlhtEXAKTSw/novo-cartao-do-banco-do-brasil.png"
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/11/10/apos-lucro-recorde-caixa-seguridade-cxse3-pagara-r-1-bi-em-proventos.ghtml": {
+  "titulo": "Após lucro recorde, Caixa Seguridade (CXSE3) pagará R$ 1 bi em proventos",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-10T11:49:09+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/7mfCjBAGs2wXuS6pVGjbRlMIf_0=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/U/B/sTPhdoSrWsLAqXflkqpA/montagen-3-.png"
  }
 }

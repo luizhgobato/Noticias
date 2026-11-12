@@ -1,22 +1,4 @@
 {
- "https://www.moneytimes.com.br/ate-onde-vai-o-petroleo-itau-bba-eleva-projecao-para-o-brent-e-ve-guerra-sem-saida-rapida/": {
-  "titulo": "Até onde vai o petróleo? Itaú BBA eleva projeção para o Brent e vê guerra sem saída rápida",
-  "fonte": "Money Times",
-  "dt": "2026-11-05T16:28:47+00:00",
-  "img": ""
- },
- "https://exame.com/invest/mercados/safra-ve-risco-de-recessao-economica-em-2027-e-rebaixa-recomendacoes-para-bancos/": {
-  "titulo": "Safra vê risco de recessão econômica em 2027 e rebaixa recomendações para bancos",
-  "fonte": "Exame",
-  "dt": "2026-11-05T14:20:51+00:00",
-  "img": ""
- },
- "https://valorinveste.globo.com/produtos/imoveis/noticia/2026/11/05/selic-trava-a-1375percent-o-que-muda-para-quem-quer-financiar-imovel.ghtml": {
-  "titulo": "Selic trava a 13,75%: o que muda para quem quer financiar imóvel?",
-  "fonte": "Valor Investe",
-  "dt": "2026-11-05T09:00:01+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/V2HtvwzylAbvCNwLFXTngZv_BlU=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/M/u/OgE2FuQAOCuMHpz3zLnQ/oleksandrpidvalnyi-real-estate-6688945.jpg"
- },
  "https://www.cnnbrasil.com.br/pop/cinema/nova-mostra-de-cinema-em-sp-sera-dedicada-a-filmes-feitos-por-ia-entenda/": {
   "titulo": "Nova mostra de cinema em SP será dedicada a filmes feitos por IA; entenda",
   "fonte": "CNN Brasil",
@@ -27,12 +9,6 @@
   "titulo": "Alerta para dividendos: Itaú BBA tira Vale (VALE3) e Copel (CPLE3) da carteira; veja quem entrou",
   "fonte": "Money Times",
   "dt": "2026-11-05T19:22:56+00:00",
-  "img": ""
- },
- "https://exame.com/future-of-money/volume-de-compras-de-bitcoin-no-itau-subiram-3-vezes-depois-da-eleicao/": {
-  "titulo": "Volume de compras de bitcoin no Itaú cresceram 3 vezes depois da eleição",
-  "fonte": "Exame",
-  "dt": "2026-11-05T16:23:21+00:00",
   "img": ""
  },
  "https://www.infomoney.com.br/mercados/bofa-ve-itau-com-balanco-mais-forte-para-enfrentar-2027-bradesco-e-aposta-de-valor/": {
@@ -238,5 +214,95 @@
   "fonte": "Agência Brasil",
   "dt": "2026-11-12T01:20:00+00:00",
   "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
+ },
+ "https://www.infomoney.com.br/mercados/bb-seguridade-nao-esta-a-venda-por-sua-rentabilidade-e-importancia-diz-ceo-do-bb/": {
+  "titulo": "BB Seguridade não está à venda, por sua rentabilidade e importância, diz CEO do BB",
+  "fonte": "InfoMoney",
+  "dt": "2026-11-12T18:15:06+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/05/bb-seguridade.jpg?fit=300%2C193&amp;quality=70&amp;strip=all"
+ },
+ "https://investnews.com.br/investimentos/banco-do-brasil-derrete-na-bolsa/": {
+  "titulo": "Banco do Brasil derrete na bolsa e ação cai 10%. Para analistas, o pior ainda não passou",
+  "fonte": "InvestNews",
+  "dt": "2026-11-12T16:23:57+00:00",
+  "img": ""
+ },
+ "https://g1.globo.com/tecnologia/noticia/2026/11/12/caixa-ataque-dados-pix.ghtml": {
+  "titulo": "Ataque hacker expõe CPFs de 7,6 milhões de clientes da Caixa; veja quais dados vazaram",
+  "fonte": "G1 Economia",
+  "dt": "2026-11-12T16:20:29+00:00",
+  "img": "https://s2-g1.glbimg.com/cs2NcNkyla3Zolvk2B3Ypx-VDac=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/j/y/tGFQ0lT5ScwUUPm9IOAA/caixa-eletronico-2.jpg"
+ },
+ "https://g1.globo.com/economia/blog/ana-flor/post/2026/11/12/bb-inadimplencia-do-agronegocio-aumentou-com-expectativa-eleitoral-de-perdao-das-dividas-e-ajuda-a-explicar-queda-no-lucro.ghtml": {
+  "titulo": "BB: expectativa eleitoral do agronegócio por perdão de dívidas rurais ajuda a explicar tombo no resultado",
+  "fonte": "G1 Economia",
+  "dt": "2026-11-12T15:53:19+00:00",
+  "img": "https://s2-g1.glbimg.com/R4ggIHKWYztueiRDHfdHnd-61f4=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/y/H/lsZOTVQ469nfB0PF2iXA/montagem-horizontal-1280x720px-28-.jpg"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bb-tem-cenario-preocupante-a-frente-e-amplia-distancia-de-pares-privados-dizem-analistas.shtml": {
+  "titulo": "BB tem cenário preocupante à frente e amplia distância de pares privados, dizem analistas",
+  "fonte": "Folha Mercado",
+  "dt": "2026-11-12T15:38:00+00:00",
+  "img": ""
+ },
+ "https://braziljournal.com/a-espiral-de-destruicao-no-banco-do-brasil": {
+  "titulo": "A espiral de destruição no Banco do Brasil",
+  "fonte": "Brazil Journal",
+  "dt": "2026-11-12T15:34:00+00:00",
+  "img": "https://codex-braziljournal.codexcdn.net/assets/asDYwCVietWdCAzHz.jpg"
+ },
+ "https://g1.globo.com/economia/agronegocios/noticia/2026/11/12/banco-do-brasil-dividas-do-agro.ghtml": {
+  "titulo": "Banco do Brasil diz que parte do agro deu calote à espera de novas medidas de renegociação",
+  "fonte": "G1 Economia",
+  "dt": "2026-11-12T15:33:28+00:00",
+  "img": "https://s2-g1.glbimg.com/R4ggIHKWYztueiRDHfdHnd-61f4=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/y/H/lsZOTVQ469nfB0PF2iXA/montagem-horizontal-1280x720px-28-.jpg"
+ },
+ "https://g1.globo.com/economia/agronegocios/noticia/2026/11/12/banco-do-brasil-ibovespa.ghtml": {
+  "titulo": "'É o pior momento em quase 5 anos': por que as ações do Banco do Brasil derretem quase 10% na Bolsa",
+  "fonte": "G1 Economia",
+  "dt": "2026-11-12T15:05:45+00:00",
+  "img": "https://s2-g1.glbimg.com/R4ggIHKWYztueiRDHfdHnd-61f4=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/y/H/lsZOTVQ469nfB0PF2iXA/montagem-horizontal-1280x720px-28-.jpg"
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/noticia/2026/11/12/acoes-do-banco-do-brasil-tombam-apos-balanco-decepcionar.ghtml": {
+  "titulo": "Ações do Banco do Brasil (BBAS3) desabam após balanço decepcionar",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-12T14:58:09+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/VpnhX1BbzndVb4HEH65Re0qzA_U=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/L/R/R2S1UdTomcLTg3kKyr4A/bb.jpg"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-sobe-e-ibovespa-cai-com-foco-no-fiscal-acoes-do-bb-tem-queda-forte.shtml": {
+  "titulo": "Dólar sobe e Ibovespa cai em meio à insatisfação do mercado com pacote fiscal",
+  "fonte": "Folha Mercado",
+  "dt": "2026-11-12T14:24:00+00:00",
+  "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/caixa-seguridade-informa-vazamento-de-dados-de-76-milhoes-de-clientes.shtml": {
+  "titulo": "Caixa Seguridade sofre invasão e informa vazamento de dados de 7,6 milhões de clientes",
+  "fonte": "Folha Mercado",
+  "dt": "2026-11-12T13:34:00+00:00",
+  "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/parte-dos-produtores-nao-renegociou-esperando-solucao-melhor-do-congresso-diz-bb.shtml": {
+  "titulo": "Presidente do BB diz que banco atravessa pior crise da história no agronegócio; ações caem mais de 7%",
+  "fonte": "Folha Mercado",
+  "dt": "2026-11-12T13:32:00+00:00",
+  "img": ""
+ },
+ "https://g1.globo.com/economia/noticia/2026/11/12/dolar-ibovespa.ghtml": {
+  "titulo": "Ibovespa cai com tombo do Banco do Brasil; dólar sobe com inflação acima da meta e pacote de gastos no radar",
+  "fonte": "G1 Economia",
+  "dt": "2026-11-12T12:00:01+00:00",
+  "img": "https://s2-g1.glbimg.com/en-e3pXXYmmv5grpZimBQ0X1DaM=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/R/L/9pGXOhQjWMbLFeAbXt6w/2025-01-22t173936z-1-lynxnpel0l0qj-rtroptp-4-fluxo-cambial-semanal.jpg"
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/11/12/banco-do-brasil-bbas3-ultrapar-ugpa3-hapvida-hapv3-raizen-raiz55-e-mais-veja-os-destaques-das-empresas.ghtml": {
+  "titulo": "Banco do Brasil (BBAS3), Ultrapar (UGPA3), Hapvida (HAPV3), Raízen (RAIZ55) e mais: Veja os destaques das empresas",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-12T11:14:00+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/6HXQoNK7vMkSrJn_L1w9d8Y5jE4=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/G/O/9Y48jwTAayBTQVxjz74A/banco-do-brasil.webp"
+ },
+ "https://valorinveste.globo.com/produtos/credito/noticia/2026/11/12/alta-dos-juros-imobiliarios-pode-encarecer-parcela-em-ate-r-24-mil.ghtml": {
+  "titulo": "Alta dos juros imobiliários pode encarecer parcela em até R$ 2,4 mil",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-12T09:10:01+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/V5lgsTo8CamjgOUE_uyEfcPhmsU=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/X/V/wh9CJzQrSoxdbQoE1nXQ/9614144.jpg"
  }
 }

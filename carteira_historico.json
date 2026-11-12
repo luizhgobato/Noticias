@@ -204,7 +204,7 @@
   "img": ""
  },
  "https://g1.globo.com/tecnologia/noticia/2026/11/12/caixa-ataque-dados-pix.ghtml": {
-  "titulo": "Ataque hacker expõe CPFs de 7,6 milhões de clientes de subsidiária da Caixa Previdência; veja quais dados vazaram",
+  "titulo": "Ataque hacker expõe CPFs de 7,6 milhões de clientes de subsidiária da Caixa; veja quais dados vazaram",
   "fonte": "G1 Economia",
   "dt": "2026-11-12T16:20:29+00:00",
   "img": "https://s2-g1.glbimg.com/C8X5p8yaiNaUdUmWsmBYgbis-wg=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/G/U/gnUbBOQnGDd3WTg6m35A/snapgram.io-icceo349vdsa.jpg"
@@ -318,7 +318,7 @@
   "img": ""
  },
  "https://g1.globo.com/economia/agronegocios/noticia/2026/11/12/nota-aprosoja.ghtml": {
-  "titulo": "‘Produtor rural não é caloteiro’: setor de soja rebate Banco do Brasil sobre dívidas do agro",
+  "titulo": "Produtores de soja rebatem fala de presidente do Banco do Brasil sobre dívidas do agro; estatal nega ter culpado todo o setor",
   "fonte": "G1 Economia",
   "dt": "2026-11-12T20:40:36+00:00",
   "img": "https://s2-g1.glbimg.com/vKjQGJZTjQzx1fb8C6Ei_8UOwos=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/v/p/5gAojbS6CKAOxZBm1f3w/foto-e-montagem-vertical-18-.jpg"
@@ -334,5 +334,29 @@
   "fonte": "CNN Brasil",
   "dt": "2026-11-12T21:45:57+00:00",
   "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/06/ChatGPT-Image-24-de-jun.-de-2026-11_44_17.png?w=200"
+ },
+ "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/caixa-seguridade-informa-ataque-cibernetico-e-vazamento-de-dados": {
+  "titulo": "Caixa Seguridade informa ataque cibernético e vazamento de dados",
+  "fonte": "Agência Brasil",
+  "dt": "2026-11-12T23:06:00+00:00",
+  "img": "https://agenciabrasil.ebc.com.br/ebc.png?id=1708629&amp;o=rss"
+ },
+ "https://www.infomoney.com.br/mercados/grupo-mateus-gmat3-resultados-terceiro-trimestre-2026/": {
+  "titulo": "Grupo Mateus (GMAT3) tem lucro de R$ 322 mi no 3º tri, queda de 36%",
+  "fonte": "InfoMoney",
+  "dt": "2026-11-12T23:03:21+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/06/mix_mateus.jpeg?fit=300%2C200&amp;quality=70&amp;strip=all"
+ },
+ "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bb-aponta-recusa-de-parte-dos-produtores-em-renegociar-dividas-do-agro": {
+  "titulo": "BB aponta recusa de parte dos produtores em renegociar dívidas do agro",
+  "fonte": "Agência Brasil",
+  "dt": "2026-11-12T20:33:00+00:00",
+  "img": "https://agenciabrasil.ebc.com.br/ebc.png?id=1708599&amp;o=rss"
+ },
+ "https://exame.com/invest/mercados/banco-do-brasil-tem-maior-queda-diaria-em-18-meses-perde-r-8-bi-na-bolsa/": {
+  "titulo": "Banco do Brasil tem pior reação a um balanço em 18 meses perde R$ 8 bi na bolsa",
+  "fonte": "Exame",
+  "dt": "2026-11-12T19:32:35+00:00",
+  "img": ""
  }
 }

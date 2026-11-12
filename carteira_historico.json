@@ -1,10 +1,4 @@
 {
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/aumento-do-consumo-de-energia-de-itaipu-pelo-paraguai-deve-pressionar-precos-no-brasil-diz-itau-bba.shtml": {
-  "titulo": "Aumento do consumo de energia de Itaipu pelo Paraguai deve pressionar preços no Brasil, diz Itaú BBA",
-  "fonte": "Folha Mercado",
-  "dt": "2026-11-04T23:18:00+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/ate-onde-vai-o-petroleo-itau-bba-eleva-projecao-para-o-brent-e-ve-guerra-sem-saida-rapida/": {
   "titulo": "Até onde vai o petróleo? Itaú BBA eleva projeção para o Brent e vê guerra sem saída rápida",
   "fonte": "Money Times",
@@ -168,10 +162,10 @@
   "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
  },
  "https://g1.globo.com/economia/noticia/2026/11/11/banco-do-brasil-bb-resultados-3t26.ghtml": {
-  "titulo": "Banco do Brasil vê lucro desabar 67% em um trimestre com avanço da inadimplência",
+  "titulo": "Lucro do Banco do Brasil cai 66,5% no 3º trimestre, para R$ 1,27 bilhão",
   "fonte": "G1 Economia",
   "dt": "2026-11-11T23:03:11+00:00",
-  "img": ""
+  "img": "https://s2-g1.glbimg.com/R4ggIHKWYztueiRDHfdHnd-61f4=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/y/H/lsZOTVQ469nfB0PF2iXA/montagem-horizontal-1280x720px-28-.jpg"
  },
  "https://www.moneytimes.com.br/banco-do-brasil-bbas3-deixa-acionistas-sem-dividendos-no-trimestre-e-derruba-lucro-distribuido-para-minimo-obrigatorio/": {
   "titulo": "Banco do Brasil (BBAS3) deixa acionistas sem dividendos no trimestre e derruba lucro distribuído para mínimo obrigatório",
@@ -198,7 +192,7 @@
   "img": ""
  },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-tem-queda-de-65-no-lucro-com-inadimplencia-do-agronegocio.shtml": {
-  "titulo": "Banco do Brasil tem queda de 66,5% no lucro com inadimplência do agronegócio",
+  "titulo": "Banco do Brasil tem queda de 66,5% no lucro com perdas no agronegócio",
   "fonte": "Folha Mercado",
   "dt": "2026-11-11T22:31:00+00:00",
   "img": ""
@@ -207,6 +201,36 @@
   "titulo": "Banco do Brasil vê lucro cair 66% no 3º tri e corta pela metade a previsão para 2026",
   "fonte": "Exame",
   "dt": "2026-11-11T19:48:18+00:00",
+  "img": ""
+ },
+ "https://www.infomoney.com.br/mercados/bbas3-uma-parte-do-agro-nao-quer-pagar-o-banco-do-brasil-diz-cfo-apos-balanco/": {
+  "titulo": "BBAS3: “Uma parte do agro não quer pagar o Banco do Brasil”, diz CFO após balanço",
+  "fonte": "InfoMoney",
+  "dt": "2026-11-12T00:06:37+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/11/geov.png?fit=300%2C177&amp;quality=70&amp;strip=all"
+ },
+ "https://www.cnnbrasil.com.br/economia/money/negocios/banco-do-brasil-ceifa-previsao-de-lucro-para-2026-apos-tombo-no-3o-tri/": {
+  "titulo": "Banco do Brasil ceifa previsão de lucro para 2026 após tombo no 3º tri",
+  "fonte": "CNN Brasil",
+  "dt": "2026-11-11T23:17:46+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2026binary_LYNXMPEM1Q0OG-BASEIMAGE.jpg?w=200"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-anuncia-corte-de-dividendos-para-preservar-capital-apos-nova-queda-do-lucro.shtml": {
+  "titulo": "Banco do Brasil anuncia corte de dividendos para preservar capital após nova queda do lucro",
+  "fonte": "Folha Mercado",
+  "dt": "2026-11-11T23:16:00+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbas3-corta-projecao-de-lucro-pela-metade-e-acende-alerta-com-custo-do-credito-veja-o-que-aconteceu-miql/": {
+  "titulo": "Banco do Brasil (BBAS3) corta projeção de lucro pela metade e acende alerta com custo do crédito; veja o que aconteceu",
+  "fonte": "Money Times",
+  "dt": "2026-11-11T23:07:49+00:00",
+  "img": ""
+ },
+ "https://exame.com/invest/mercados/crise-no-agronegocio-faz-banco-do-brasil-reduzir-dividendos-apos-tombo-no-lucro/": {
+  "titulo": "Crise no agronegócio faz Banco do Brasil suspender dividendos intermediários após tombo no lucro",
+  "fonte": "Exame",
+  "dt": "2026-11-11T20:47:31+00:00",
   "img": ""
  }
 }

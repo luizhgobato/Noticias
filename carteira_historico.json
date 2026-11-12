@@ -1,22 +1,4 @@
 {
- "https://www.cnnbrasil.com.br/pop/cinema/nova-mostra-de-cinema-em-sp-sera-dedicada-a-filmes-feitos-por-ia-entenda/": {
-  "titulo": "Nova mostra de cinema em SP será dedicada a filmes feitos por IA; entenda",
-  "fonte": "CNN Brasil",
-  "dt": "2026-11-05T19:44:15+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/11/Yeon-Sang-ho.jpg?w=200"
- },
- "https://www.moneytimes.com.br/alerta-para-dividendos-itau-bba-tira-vale-vale3-e-copel-cple3-da-carteira-veja-quem-entrou/": {
-  "titulo": "Alerta para dividendos: Itaú BBA tira Vale (VALE3) e Copel (CPLE3) da carteira; veja quem entrou",
-  "fonte": "Money Times",
-  "dt": "2026-11-05T19:22:56+00:00",
-  "img": ""
- },
- "https://www.infomoney.com.br/mercados/bofa-ve-itau-com-balanco-mais-forte-para-enfrentar-2027-bradesco-e-aposta-de-valor/": {
-  "titulo": "BofA vê Itaú com balanço mais forte para enfrentar 2027; Bradesco é “aposta de valor”",
-  "fonte": "InfoMoney",
-  "dt": "2026-11-05T20:39:10+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/08/2026-08-17T222338Z_1_LYNXMPEM7G1IB_RTROPTP_4_BRAZIL-ECONOMY-BANKS.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
- },
  "https://www.infomoney.com.br/mercados/allos-alos3-resultados-terceiro-trimestre-2026/": {
   "titulo": "Allos (ALOS3) mais que dobra lucro para R$ 291 mi no 3º tri e supera estimativas",
   "fonte": "InfoMoney",
@@ -228,10 +210,10 @@
   "img": ""
  },
  "https://g1.globo.com/tecnologia/noticia/2026/11/12/caixa-ataque-dados-pix.ghtml": {
-  "titulo": "Ataque hacker expõe CPFs de 7,6 milhões de clientes da Caixa; veja quais dados vazaram",
+  "titulo": "Ataque hacker expõe CPFs de 7,6 milhões de clientes de subsidiária da Caixa Previdência; veja quais dados vazaram",
   "fonte": "G1 Economia",
   "dt": "2026-11-12T16:20:29+00:00",
-  "img": "https://s2-g1.glbimg.com/cs2NcNkyla3Zolvk2B3Ypx-VDac=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/j/y/tGFQ0lT5ScwUUPm9IOAA/caixa-eletronico-2.jpg"
+  "img": "https://s2-g1.glbimg.com/C8X5p8yaiNaUdUmWsmBYgbis-wg=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/G/U/gnUbBOQnGDd3WTg6m35A/snapgram.io-icceo349vdsa.jpg"
  },
  "https://g1.globo.com/economia/blog/ana-flor/post/2026/11/12/bb-inadimplencia-do-agronegocio-aumentou-com-expectativa-eleitoral-de-perdao-das-dividas-e-ajuda-a-explicar-queda-no-lucro.ghtml": {
   "titulo": "BB: expectativa eleitoral do agronegócio por perdão de dívidas rurais ajuda a explicar tombo no resultado",
@@ -258,7 +240,7 @@
   "img": "https://s2-g1.glbimg.com/R4ggIHKWYztueiRDHfdHnd-61f4=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/y/H/lsZOTVQ469nfB0PF2iXA/montagem-horizontal-1280x720px-28-.jpg"
  },
  "https://g1.globo.com/economia/agronegocios/noticia/2026/11/12/banco-do-brasil-ibovespa.ghtml": {
-  "titulo": "'É o pior momento em quase 5 anos': por que as ações do Banco do Brasil derretem quase 10% na Bolsa",
+  "titulo": "'Pior nível em quase 5 anos': por que as ações do Banco do Brasil derretem quase 10% na bolsa",
   "fonte": "G1 Economia",
   "dt": "2026-11-12T15:05:45+00:00",
   "img": "https://s2-g1.glbimg.com/R4ggIHKWYztueiRDHfdHnd-61f4=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/y/H/lsZOTVQ469nfB0PF2iXA/montagem-horizontal-1280x720px-28-.jpg"
@@ -282,7 +264,7 @@
   "img": ""
  },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/parte-dos-produtores-nao-renegociou-esperando-solucao-melhor-do-congresso-diz-bb.shtml": {
-  "titulo": "Presidente do BB diz que banco atravessa pior crise da história no agronegócio; ações caem mais de 7%",
+  "titulo": "Presidente do BB diz que banco atravessa pior crise da história no agronegócio; ações caem mais de 8%",
   "fonte": "Folha Mercado",
   "dt": "2026-11-12T13:32:00+00:00",
   "img": ""
@@ -304,5 +286,29 @@
   "fonte": "Valor Investe",
   "dt": "2026-11-12T09:10:01+00:00",
   "img": "https://s2-valorinveste.glbimg.com/V5lgsTo8CamjgOUE_uyEfcPhmsU=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/X/V/wh9CJzQrSoxdbQoE1nXQ/9614144.jpg"
+ },
+ "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bb-aponta-recusa-de-produtores-em-renegociar-dividas-do-agro": {
+  "titulo": "BB aponta recusa de produtores em renegociar dívidas do agro",
+  "fonte": "Agência Brasil",
+  "dt": "2026-11-12T20:33:00+00:00",
+  "img": "https://agenciabrasil.ebc.com.br/ebc.png?id=1708599&amp;o=rss"
+ },
+ "https://www.infomoney.com.br/mercados/pdd-dos-quatro-maiores-bancos-brasileiros-bate-recorde-historico-de-r-49-bilhoes/": {
+  "titulo": "PDD dos quatro maiores bancos brasileiros bate recorde histórico de R$ 49 bilhões",
+  "fonte": "InfoMoney",
+  "dt": "2026-11-12T19:37:56+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2019/06/bancos-privados.jpg?fit=300%2C201&amp;quality=70&amp;strip=all"
+ },
+ "https://www.moneytimes.com.br/analise-a-sina-do-banco-do-brasil-bbsa3-comecou-com-o-somos-melhores-que-o-itau-itub4-rnda/": {
+  "titulo": "Análise: a sina do Banco do Brasil (BBSA3) começou com o ‘somos melhores que o Itaú (ITUB4)’",
+  "fonte": "Money Times",
+  "dt": "2026-11-12T19:09:48+00:00",
+  "img": ""
+ },
+ "https://www.cnnbrasil.com.br/economia/money/negocios/banco-do-brasil-promete-medidas-para-recuperar-rentabilidade/": {
+  "titulo": "Banco do Brasil promete medidas para recuperar rentabilidade",
+  "fonte": "CNN Brasil",
+  "dt": "2026-11-12T18:32:26+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/Pablo-Cesario-presidente-executivo-da-Associacao-Brasileira-das-Companhias-Abertas-Abrasca.jpg?w=200"
  }
 }

@@ -240,13 +240,13 @@
   "img": "https://s2-g1.glbimg.com/R4ggIHKWYztueiRDHfdHnd-61f4=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/y/H/lsZOTVQ469nfB0PF2iXA/montagem-horizontal-1280x720px-28-.jpg"
  },
  "https://g1.globo.com/economia/agronegocios/noticia/2026/11/12/banco-do-brasil-ibovespa.ghtml": {
-  "titulo": "'Pior nível em quase 5 anos': por que as ações do Banco do Brasil derretem quase 10% na bolsa",
+  "titulo": "'Pior nível em quase 5 anos': por que as ações do Banco do Brasil derretem quase 9% na bolsa",
   "fonte": "G1 Economia",
   "dt": "2026-11-12T15:05:45+00:00",
   "img": "https://s2-g1.glbimg.com/R4ggIHKWYztueiRDHfdHnd-61f4=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/y/H/lsZOTVQ469nfB0PF2iXA/montagem-horizontal-1280x720px-28-.jpg"
  },
  "https://valorinveste.globo.com/mercados/renda-variavel/noticia/2026/11/12/acoes-do-banco-do-brasil-tombam-apos-balanco-decepcionar.ghtml": {
-  "titulo": "Ações do Banco do Brasil (BBAS3) desabam após balanço decepcionar",
+  "titulo": "Banco do Brasil (BBAS3) desaba mais de 8% e perde R$ 8 bilhões em valor de mercado",
   "fonte": "Valor Investe",
   "dt": "2026-11-12T14:58:09+00:00",
   "img": "https://s2-valorinveste.glbimg.com/VpnhX1BbzndVb4HEH65Re0qzA_U=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/L/R/R2S1UdTomcLTg3kKyr4A/bb.jpg"
@@ -310,5 +310,23 @@
   "fonte": "CNN Brasil",
   "dt": "2026-11-12T18:32:26+00:00",
   "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/Pablo-Cesario-presidente-executivo-da-Associacao-Brasileira-das-Companhias-Abertas-Abrasca.jpg?w=200"
+ },
+ "https://www.infomoney.com.br/mercados/bbas3-acoes-do-banco-do-brasil-desabam-10-com-resultado-abaixo-em-todas-as-frentes/": {
+  "titulo": "BBAS3: ação do BB desaba mais de 8% com balanço abaixo em todas as frentes",
+  "fonte": "InfoMoney",
+  "dt": "2026-11-12T21:35:11+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/05/Captura-de-tela-2025-05-16-083653.png?fit=300%2C199&amp;quality=70&amp;strip=all"
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bb-usou-credito-tributario-gerado-por-perdas-com-credito-para-evitar-prejuizo.shtml": {
+  "titulo": "BB usou crédito tributário gerado por perdas com crédito para evitar prejuízo",
+  "fonte": "Folha Mercado",
+  "dt": "2026-11-12T21:16:00+00:00",
+  "img": ""
+ },
+ "https://g1.globo.com/economia/agronegocios/noticia/2026/11/12/nota-aprosoja.ghtml": {
+  "titulo": "‘Produtor rural não é caloteiro’, diz setor de soja após declaração da presidente do Banco do Brasil",
+  "fonte": "G1 Economia",
+  "dt": "2026-11-12T20:40:36+00:00",
+  "img": "https://s2-g1.glbimg.com/vKjQGJZTjQzx1fb8C6Ei_8UOwos=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/v/p/5gAojbS6CKAOxZBm1f3w/foto-e-montagem-vertical-18-.jpg"
  }
 }

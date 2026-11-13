@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/safra-faz-alerta-e-rebaixa-bb-bbsa3-para-venda-bradesco-bbdc4-e-itau-itub4-pegam-carona-e-so-uma-acao-se-salva/": {
-  "titulo": "Safra faz alerta e rebaixa BB (BBSA3) para venda; Bradesco (BBDC4) e Itaú (ITUB4) pegam carona e só uma ação se salva",
-  "fonte": "Money Times",
-  "dt": "2026-11-06T20:03:02+00:00",
-  "img": ""
- },
  "https://valorinveste.globo.com/produtos/servicos-financeiros/noticia/2026/11/06/usuarios-de-pix-relatam-sistema-fora-do-ar-em-diversos-bancos.ghtml": {
   "titulo": "Usuários de Pix relatam sistema fora do ar em diversos bancos",
   "fonte": "Valor Investe",
@@ -412,5 +406,23 @@
   "fonte": "Folha Mercado",
   "dt": "2026-11-13T12:16:00+00:00",
   "img": ""
+ },
+ "https://www.moneytimes.com.br/aceita-bb-banco-do-brasil-bbas3-amplia-oferta-e-coloca-mais-400-imoveis-a-venda-ate-o-fim-de-novembro/": {
+  "titulo": "Aceita BB? Banco do Brasil (BBAS3) amplia oferta e coloca mais 400 imóveis à venda até o fim de novembro",
+  "fonte": "Money Times",
+  "dt": "2026-11-13T19:47:10+00:00",
+  "img": ""
+ },
+ "https://g1.globo.com/economia/agronegocios/noticia/2026/11/13/quem-sao-os-produtores-inadimplentes-do-banco-do-brasil-especialistas-explicam-a-crise-no-agro.ghtml": {
+  "titulo": "Quem são os produtores inadimplentes do Banco do Brasil? Especialistas explicam a crise no agro",
+  "fonte": "G1 Economia",
+  "dt": "2026-11-13T18:30:00+00:00",
+  "img": "https://s2-g1.glbimg.com/fLXgFAG3y0Oa_b_C7mI_HKK0RIc=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/c/A/nnxIBfTfOLzPlQnGfOMw/261113-grafico-inadimplencia-do-agro-por-linha-de-credito-no-banco-do-brasil.jpg"
+ },
+ "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/associacoes-do-agro-rebatem-bb-sobre-alta-da-inadimplencia": {
+  "titulo": "Associações do agro rebatem BB sobre alta da inadimplência",
+  "fonte": "Agência Brasil",
+  "dt": "2026-11-13T18:25:00+00:00",
+  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
  }
 }

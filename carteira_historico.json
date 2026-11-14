@@ -1,28 +1,4 @@
 {
- "https://www.moneytimes.com.br/entra-itau-itub4-e-axia-energia-axia3-5-acoes-para-bater-o-ibovespa-na-semana-lmrs/": {
-  "titulo": "Entra Itaú (ITUB4) e Axia Energia (AXIA3): 5 ações para bater o Ibovespa na semana, segundo a Terra Investimentos",
-  "fonte": "Money Times",
-  "dt": "2026-11-07T14:50:00+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/quer-dividendos-em-novembro-xp-revela-suas-11-acoes-favoritas-para-o-mes-jcav/": {
-  "titulo": "Quer dividendos em novembro? XP revela suas 11 ações favoritas para o mês",
-  "fonte": "Money Times",
-  "dt": "2026-11-07T14:10:05+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/lucro-dos-tres-maiores-bancos-soma-r-226-bi-no-3o-trimestre-alta-de-24-em-um-ano-jcav/": {
-  "titulo": "Lucro dos três maiores bancos soma R$ 22,6 bi no 3º trimestre, alta de 2,4% em um ano",
-  "fonte": "Money Times",
-  "dt": "2026-11-07T13:32:49+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/xp-tira-bancos-da-carteira-e-reforca-carteira-defensiva-para-novembro-confira-as-acoes-jcav/": {
-  "titulo": "XP tira bancos da carteira e reforça carteira ‘defensiva’ para novembro; confira as ações",
-  "fonte": "Money Times",
-  "dt": "2026-11-07T13:26:35+00:00",
-  "img": ""
- },
  "https://exame.com/invest/mercados/por-que-o-brasil-atrai-us-85-bi-de-estrangeiros-e-ainda-assim-deixa-dinheiro-na-mesa/": {
   "titulo": "Por que o Brasil atrai US$ 85 bi de estrangeiros e ainda assim deixa dinheiro na mesa",
   "fonte": "Exame",
@@ -412,5 +388,17 @@
   "fonte": "Agência Brasil",
   "dt": "2026-11-13T18:25:00+00:00",
   "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
+ },
+ "https://www.moneytimes.com.br/bb-seguridade-bbse3-itau-itub4-e-outras-tres-acoes-para-investir-no-curto-prazo-segundo-a-terra-investimentos-lmrs/": {
+  "titulo": "BB Seguridade (BBSE3), Itaú (ITUB4) e outras três ações para investir no curto prazo, segundo a Terra Investimentos",
+  "fonte": "Money Times",
+  "dt": "2026-11-14T14:50:00+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/dividas-rurais-renegociacao-avanca-em-meio-a-crise-de-credito-e-a-pressao-sobre-o-banco-do-brasil-pads/": {
+  "titulo": "Dívidas rurais: renegociação avança em meio à crise de crédito e à pressão sobre o Banco do Brasil",
+  "fonte": "Money Times",
+  "dt": "2026-11-14T13:00:00+00:00",
+  "img": ""
  }
 }

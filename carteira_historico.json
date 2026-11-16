@@ -1,10 +1,4 @@
 {
- "https://valorinveste.globo.com/produtos/imoveis/noticia/2026/11/09/itau-faz-leilao-de-124-imoveis-com-possibilidade-de-parcelamento-em-ate-78-meses.ghtml": {
-  "titulo": "Itaú faz leilão de 124 imóveis com possibilidade de parcelamento em até 78 meses",
-  "fonte": "Valor Investe",
-  "dt": "2026-11-09T04:10:36+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/FZJJg13u-McWGjnXOjifbEh8FQI=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2020/K/z/E9MmKlToqGClGzpBpvVQ/gettyimages-98014025.jpg"
- },
  "https://www.cnnbrasil.com.br/economia/money/inteligencia-artificial/itau-anuncia-ia-generativa-para-pequenos-negocios/": {
   "titulo": "Itaú anuncia IA generativa para pequenos negócios",
   "fonte": "CNN Brasil",
@@ -399,6 +393,12 @@
   "titulo": "Grupo Mateus vê varejo no Nordeste acelerar: 'Mercado dá sinais de melhora', diz CEO",
   "fonte": "Exame",
   "dt": "2026-11-15T09:00:35+00:00",
+  "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-quer-negociar-com-bc-regra-mais-flexivel-para-contabilizar-perdas-com-agro.shtml": {
+  "titulo": "Banco do Brasil quer negociar com BC regra mais flexível para contabilizar perdas com agro",
+  "fonte": "Folha Mercado",
+  "dt": "2026-11-16T07:00:00+00:00",
   "img": ""
  }
 }

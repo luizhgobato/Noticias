@@ -1,10 +1,4 @@
 {
- "https://www.cnnbrasil.com.br/economia/money/inteligencia-artificial/itau-anuncia-ia-generativa-para-pequenos-negocios/": {
-  "titulo": "Itaú anuncia IA generativa para pequenos negócios",
-  "fonte": "CNN Brasil",
-  "dt": "2026-11-09T18:11:23+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXMPELB70MU-BASEIMAGE.jpg?w=200"
- },
  "https://www.infomoney.com.br/mercados/caixa-seguridade-cxse3-resultados-terceiro-trimestre-2026-anuncio-dividendos/": {
   "titulo": "Caixa Seguridade lucra R$ 1,2 bi no 3T, alta de 3,7%; anuncia R$ 1,08 bi em dividendo",
   "fonte": "InfoMoney",
@@ -399,6 +393,24 @@
   "titulo": "Banco do Brasil quer negociar com BC regra mais flexível para contabilizar perdas com agro",
   "fonte": "Folha Mercado",
   "dt": "2026-11-16T07:00:00+00:00",
+  "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/ex-diretor-de-financas-do-itau-assume-area-de-gestao-de-riscos-da-avenue.shtml": {
+  "titulo": "Ex- diretor de finanças do Itaú assume área de gestão de riscos da Avenue",
+  "fonte": "Folha Mercado",
+  "dt": "2026-11-16T19:52:00+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/banco-do-brasil-bbas3-petrobras-petr4-e-vale-vale3-o-que-esta-por-tras-das-quedas-nesta-segunda-16-lmrs/": {
+  "titulo": "Banco do Brasil (BBAS3), Petrobras (PETR4) e Vale (VALE3): o que está por trás das quedas nesta segunda (16)?",
+  "fonte": "Money Times",
+  "dt": "2026-11-16T17:56:52+00:00",
+  "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/quase-277-mil-trabalhadores-nao-sacaram-abono-do-pis-prazo-vai-ate-dia-28-de-dezembro.shtml": {
+  "titulo": "Quase 277 mil trabalhadores não sacaram abono do PIS; prazo vai até dia 28 de dezembro",
+  "fonte": "Folha Mercado",
+  "dt": "2026-11-16T16:37:00+00:00",
   "img": ""
  }
 }

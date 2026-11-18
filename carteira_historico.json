@@ -41,12 +41,6 @@
   "dt": "2026-11-11T22:31:00+00:00",
   "img": ""
  },
- "https://exame.com/invest/mercados/banco-do-brasil-ve-lucro-cair-66-no-3o-tri-e-corta-pela-metade-a-previsao-para-2026/": {
-  "titulo": "Banco do Brasil vê lucro cair 66% no 3º tri e corta pela metade a previsão para 2026",
-  "fonte": "Exame",
-  "dt": "2026-11-11T19:48:18+00:00",
-  "img": ""
- },
  "https://www.infomoney.com.br/mercados/bbas3-uma-parte-do-agro-nao-quer-pagar-o-banco-do-brasil-diz-cfo-apos-balanco/": {
   "titulo": "BBAS3: “Uma parte do agro não quer pagar o Banco do Brasil”, diz CFO após balanço",
   "fonte": "InfoMoney",
@@ -69,12 +63,6 @@
   "titulo": "Banco do Brasil (BBAS3) corta projeção de lucro pela metade e acende alerta com custo do crédito; veja o que aconteceu",
   "fonte": "Money Times",
   "dt": "2026-11-11T23:07:49+00:00",
-  "img": ""
- },
- "https://exame.com/invest/mercados/crise-no-agronegocio-faz-banco-do-brasil-reduzir-dividendos-apos-tombo-no-lucro/": {
-  "titulo": "Crise no agronegócio faz Banco do Brasil suspender dividendos intermediários após tombo no lucro",
-  "fonte": "Exame",
-  "dt": "2026-11-11T20:47:31+00:00",
   "img": ""
  },
  "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/lucro-do-bb-cai-665-no-3o-trimestre-com-inadimplencia-do-agro": {
@@ -490,5 +478,17 @@
   "fonte": "Folha Mercado",
   "dt": "2026-11-18T09:00:00+00:00",
   "img": ""
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/11/18/banco-do-brasil-bbas3-informa-vazamentos-de-dados-de-clientes-mas-nega-invasao-a-seus-sistemas.ghtml": {
+  "titulo": "Banco do Brasil (BBAS3) informa vazamentos de dados de clientes, mas nega invasão a seus sistemas",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-18T20:46:54+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/6sZ1BHUGYxtw2hxVf-ah6CWo2Jc=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2021/0/4/mV13AcSC6NNIkHkrrBYw/hacker.jpg"
+ },
+ "https://g1.globo.com/tecnologia/noticia/2026/11/18/banco-do-brasil-dados.ghtml": {
+  "titulo": "Banco do Brasil alerta clientes sobre vazamento de dados pessoais; veja o que foi exposto",
+  "fonte": "G1 Economia",
+  "dt": "2026-11-18T19:30:01+00:00",
+  "img": "https://s2-g1.glbimg.com/OtzJd_W8aiGxMfru67Szx17k27w=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/S/h/3jafnBSJy4wmF0Boe3Mg/enem-11-.png"
  }
 }

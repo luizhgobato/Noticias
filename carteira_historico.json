@@ -1,10 +1,4 @@
 {
- "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bb-e-banco-alemao-farao-aporte-de-100-milhoes-de-euros-em-bioeconomia": {
-  "titulo": "BB e banco alemão farão aporte de 100 milhões de euros em bioeconomia",
-  "fonte": "Agência Brasil",
-  "dt": "2026-11-11T21:21:00+00:00",
-  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
- },
  "https://g1.globo.com/economia/noticia/2026/11/11/banco-do-brasil-bb-resultados-3t26.ghtml": {
   "titulo": "Lucro do Banco do Brasil cai 66,5% no 3º trimestre, para R$ 1,27 bilhão",
   "fonte": "G1 Economia",
@@ -490,5 +484,17 @@
   "fonte": "G1 Economia",
   "dt": "2026-11-18T19:30:01+00:00",
   "img": "https://s2-g1.glbimg.com/OtzJd_W8aiGxMfru67Szx17k27w=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/S/h/3jafnBSJy4wmF0Boe3Mg/enem-11-.png"
+ },
+ "https://www.cnnbrasil.com.br/agro/renegociacao-de-dividas-rurais-soma-r-28-bilhoes-aponta-bc/": {
+  "titulo": "Renegociação de dívidas rurais soma R$ 28 bilhões, aponta BC",
+  "fonte": "CNN Brasil",
+  "dt": "2026-11-18T21:46:03+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2026binary_LYNXNPEMA90VA-BASEIMAGE.jpg?w=200"
+ },
+ "https://www.moneytimes.com.br/atencao-clientes-do-banco-do-brasil-bb-identifica-acesso-indevido-a-dados-e-alerta-para-risco-de-novos-golpes-miql/": {
+  "titulo": "Atenção, clientes do Banco do Brasil: BB identifica vazamento de dados e alerta para risco de novos golpes",
+  "fonte": "Money Times",
+  "dt": "2026-11-18T21:13:41+00:00",
+  "img": ""
  }
 }

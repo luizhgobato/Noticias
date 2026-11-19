@@ -1,16 +1,4 @@
 {
- "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bb-aponta-recusa-de-produtores-em-renegociar-dividas-do-agro": {
-  "titulo": "BB aponta recusa de produtores em renegociar dívidas do agro",
-  "fonte": "Agência Brasil",
-  "dt": "2026-11-12T20:33:00+00:00",
-  "img": "https://agenciabrasil.ebc.com.br/ebc.png?id=1708599&amp;o=rss"
- },
- "https://www.infomoney.com.br/mercados/pdd-dos-quatro-maiores-bancos-brasileiros-bate-recorde-historico-de-r-49-bilhoes/": {
-  "titulo": "PDD dos quatro maiores bancos brasileiros bate recorde histórico de R$ 49 bilhões",
-  "fonte": "InfoMoney",
-  "dt": "2026-11-12T19:37:56+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2019/06/bancos-privados.jpg?fit=300%2C201&amp;quality=70&amp;strip=all"
- },
  "https://www.infomoney.com.br/mercados/bbas3-acoes-do-banco-do-brasil-desabam-10-com-resultado-abaixo-em-todas-as-frentes/": {
   "titulo": "BBAS3: ação do BB desaba mais de 8% com balanço abaixo em todas as frentes",
   "fonte": "InfoMoney",
@@ -22,12 +10,6 @@
   "fonte": "Folha Mercado",
   "dt": "2026-11-12T21:16:00+00:00",
   "img": ""
- },
- "https://g1.globo.com/economia/agronegocios/noticia/2026/11/12/nota-aprosoja.ghtml": {
-  "titulo": "Produtores de soja rebatem Banco do Brasil sobre dívidas do agro; estatal nega ter culpado todo o setor",
-  "fonte": "G1 Economia",
-  "dt": "2026-11-12T20:40:36+00:00",
-  "img": "https://s2-g1.glbimg.com/vKjQGJZTjQzx1fb8C6Ei_8UOwos=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/v/p/5gAojbS6CKAOxZBm1f3w/foto-e-montagem-vertical-18-.jpg"
  },
  "https://www.cnnbrasil.com.br/agro/tereza-cristina-e-farsul-criticam-banco-do-brasil-sobre-inadimplencia/": {
   "titulo": "Tereza Cristina e Farsul criticam Banco do Brasil sobre inadimplência",
@@ -52,18 +34,6 @@
   "fonte": "InfoMoney",
   "dt": "2026-11-12T23:03:21+00:00",
   "img": "https://www.infomoney.com.br/wp-content/uploads/2025/06/mix_mateus.jpeg?fit=300%2C200&amp;quality=70&amp;strip=all"
- },
- "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bb-aponta-recusa-de-parte-dos-produtores-em-renegociar-dividas-do-agro": {
-  "titulo": "BB aponta recusa de parte dos produtores em renegociar dívidas do agro",
-  "fonte": "Agência Brasil",
-  "dt": "2026-11-12T20:33:00+00:00",
-  "img": "https://agenciabrasil.ebc.com.br/ebc.png?id=1708599&amp;o=rss"
- },
- "https://exame.com/invest/mercados/banco-do-brasil-tem-maior-queda-diaria-em-18-meses-perde-r-8-bi-na-bolsa/": {
-  "titulo": "Banco do Brasil tem pior reação a um balanço em 18 meses perde R$ 8 bi na bolsa",
-  "fonte": "Exame",
-  "dt": "2026-11-12T19:32:35+00:00",
-  "img": ""
  },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/agro/2026/11/entidades-do-agro-criticam-declaracoes-da-direcao-do-banco-do-brasil-sobre-inadimplencia-do-setor.shtml": {
   "titulo": "Entidades do agro criticam declarações da direção do Banco do Brasil sobre inadimplência do setor",

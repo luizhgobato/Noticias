@@ -1,22 +1,4 @@
 {
- "https://www.infomoney.com.br/mercados/bbas3-uma-parte-do-agro-nao-quer-pagar-o-banco-do-brasil-diz-cfo-apos-balanco/": {
-  "titulo": "BBAS3: “Uma parte do agro não quer pagar o Banco do Brasil”, diz CFO após balanço",
-  "fonte": "InfoMoney",
-  "dt": "2026-11-12T00:06:37+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/11/geov.png?fit=300%2C177&amp;quality=70&amp;strip=all"
- },
- "https://www.cnnbrasil.com.br/economia/money/negocios/banco-do-brasil-ceifa-previsao-de-lucro-para-2026-apos-tombo-no-3o-tri/": {
-  "titulo": "Banco do Brasil ceifa previsão de lucro para 2026 após tombo no 3º tri",
-  "fonte": "CNN Brasil",
-  "dt": "2026-11-11T23:17:46+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2026binary_LYNXMPEM1Q0OG-BASEIMAGE.jpg?w=200"
- },
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-anuncia-corte-de-dividendos-para-preservar-capital-apos-nova-queda-do-lucro.shtml": {
-  "titulo": "Banco do Brasil anuncia corte de dividendos para preservar capital após nova queda do lucro",
-  "fonte": "Folha Mercado",
-  "dt": "2026-11-11T23:16:00+00:00",
-  "img": ""
- },
  "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/lucro-do-bb-cai-665-no-3o-trimestre-com-inadimplencia-do-agro": {
   "titulo": "Lucro do BB cai 66,5% no 3º trimestre com inadimplência do agro",
   "fonte": "Agência Brasil",
@@ -447,12 +429,18 @@
   "titulo": "Renegociação de dívidas rurais soma R$ 28 bilhões, aponta BC",
   "fonte": "CNN Brasil",
   "dt": "2026-11-18T21:46:03+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2026binary_LYNXNPEMA90VA-BASEIMAGE.jpg?w=200"
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/08/MBRF-Imagem-de-fachada-2.jpg?w=200"
  },
  "https://www.moneytimes.com.br/atencao-clientes-do-banco-do-brasil-bb-identifica-acesso-indevido-a-dados-e-alerta-para-risco-de-novos-golpes-miql/": {
   "titulo": "Atenção, clientes do Banco do Brasil: BB identifica vazamento de dados e alerta para risco de novos golpes",
   "fonte": "Money Times",
   "dt": "2026-11-18T21:13:41+00:00",
   "img": ""
+ },
+ "https://www.cnnbrasil.com.br/economia/money/tecnologia/banco-do-brasil-comunica-clientes-sobre-vazamento-de-dados/": {
+  "titulo": "Banco do Brasil comunica clientes sobre vazamento de dados",
+  "fonte": "CNN Brasil",
+  "dt": "2026-11-18T23:47:23+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2026binary_LYNXMPEM3C13Q-BASEIMAGE.jpg?w=200"
  }
 }

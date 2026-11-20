@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/aceita-bb-banco-do-brasil-bbas3-amplia-oferta-e-coloca-mais-400-imoveis-a-venda-ate-o-fim-de-novembro/": {
-  "titulo": "Aceita BB? Banco do Brasil (BBAS3) amplia oferta e coloca mais 400 imóveis à venda até o fim de novembro",
-  "fonte": "Money Times",
-  "dt": "2026-11-13T19:47:10+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/bb-seguridade-bbse3-itau-itub4-e-outras-tres-acoes-para-investir-no-curto-prazo-segundo-a-terra-investimentos-lmrs/": {
   "titulo": "BB Seguridade (BBSE3), Itaú (ITUB4) e outras três ações para investir no curto prazo, segundo a Terra Investimentos",
   "fonte": "Money Times",
@@ -214,5 +208,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-11-20T16:05:04+00:00",
   "img": "https://s2-valorinveste.glbimg.com/dGGYTXkoWJHstykBrHvZAuXVxUs=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2020/Q/P/WgxTjATpCFjzwBc32bsQ/itau.jpg"
+ },
+ "https://www.moneytimes.com.br/small-caps-safra-coloca-na-carteira-banco-que-pode-disparar-80-e-chegar-a-r-100-na-carteira-confira/": {
+  "titulo": "Small caps: Safra coloca na carteira banco que pode disparar 80% e chegar a R$ 100; confira o portfólio",
+  "fonte": "Money Times",
+  "dt": "2026-11-20T19:37:45+00:00",
+  "img": ""
  }
 }

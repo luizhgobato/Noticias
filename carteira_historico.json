@@ -1,38 +1,8 @@
 {
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/ex-diretor-de-financas-do-itau-assume-area-de-gestao-de-riscos-da-avenue.shtml": {
-  "titulo": "Ex- diretor de finanças do Itaú assume área de gestão de riscos da Avenue",
-  "fonte": "Folha Mercado",
-  "dt": "2026-11-16T19:52:00+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/banco-do-brasil-bbas3-petrobras-petr4-e-vale-vale3-o-que-esta-por-tras-das-quedas-nesta-segunda-16-lmrs/": {
-  "titulo": "Banco do Brasil (BBAS3), Petrobras (PETR4) e Vale (VALE3): o que está por trás das quedas nesta segunda (16)?",
-  "fonte": "Money Times",
-  "dt": "2026-11-16T17:56:52+00:00",
-  "img": ""
- },
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/quase-277-mil-trabalhadores-nao-sacaram-abono-do-pis-prazo-vai-ate-dia-28-de-dezembro.shtml": {
-  "titulo": "Quase 277 mil trabalhadores não sacaram abono do PIS; prazo vai até dia 28 de dezembro",
-  "fonte": "Folha Mercado",
-  "dt": "2026-11-16T16:37:00+00:00",
-  "img": ""
- },
  "https://www.moneytimes.com.br/seu-saldo-e-negativo-em-r-11-bi-bb-bbsa3-ve-valor-de-mercado-derreter-e-acao-recuar-para-2023-o-que-pode-destravar-acao-rnda/": {
   "titulo": "Seu saldo é negativo em R$ 11 bi: BB (BBSA3) vê valor de mercado derreter e ação recuar para 2023; o que pode destravar ação?",
   "fonte": "Money Times",
   "dt": "2026-11-16T22:25:06+00:00",
-  "img": ""
- },
- "https://www.infomoney.com.br/mercados/bbas3-governo-avalia-mudanca-no-comando-do-banco-do-brasil-apos-queda-nos-lucros/": {
-  "titulo": "BBAS3: Governo avalia mudança no comando do Banco do Brasil após queda nos lucros",
-  "fonte": "InfoMoney",
-  "dt": "2026-11-16T22:16:22+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/11/Captura-de-tela-2026-11-16-191133.png?fit=300%2C198&amp;quality=70&amp;strip=all"
- },
- "https://exame.com/esferabrasil/agencia-nacional-de-transportes-aquaviarios-cria-plataforma-digital-para-leiloes-e-ppps/": {
-  "titulo": "Agência Nacional de Transportes Aquaviários cria plataforma digital para leilões e PPPs",
-  "fonte": "Exame",
-  "dt": "2026-11-16T21:21:52+00:00",
   "img": ""
  },
  "https://www.moneytimes.com.br/pior-margem-em-10-anos-mas-sem-crise-de-caixa-itau-bba-ve-usinas-pressionadas-em-2026-27-pads/": {
@@ -208,5 +178,17 @@
   "fonte": "Money Times",
   "dt": "2026-11-21T13:11:48+00:00",
   "img": ""
+ },
+ "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/custo-de-capital-e-o-principal-desafio-para-crescimento-do-brasil-diz-ceo-do-itau.shtml": {
+  "titulo": "Custo de capital é o principal desafio para crescimento do Brasil, diz CEO do Itaú",
+  "fonte": "Folha Mercado",
+  "dt": "2026-11-23T19:56:00+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/mercados/noticia/2026/11/23/brasil-estara-em-situacao-melhor-em-dois-ou-tres-anos-diz-roberto-setubal-do-itau.ghtml": {
+  "titulo": "Brasil estará em situação melhor em dois ou três anos, diz Roberto Setubal, do Itaú",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-23T17:25:22+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/6p9EP48lLQpyb4aCC4d3_P_BgoY=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/y/S/pK616jSwC7vzH0rdPzwg/roberto-setubal.avif"
  }
 }

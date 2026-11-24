@@ -1,34 +1,4 @@
 {
- "https://www.moneytimes.com.br/pior-margem-em-10-anos-mas-sem-crise-de-caixa-itau-bba-ve-usinas-pressionadas-em-2026-27-pads/": {
-  "titulo": "Pior margem em 10 anos, mas sem crise de caixa: Itaú BBA vê usinas pressionadas em 2026/27",
-  "fonte": "Money Times",
-  "dt": "2026-11-17T19:19:35+00:00",
-  "img": ""
- },
- "https://www.moneytimes.com.br/itau-bba-eleva-tim-tims3-para-compra-e-cita-tres-fatores-que-tornam-a-acao-dificil-de-ignorar-lmrs/": {
-  "titulo": "Itaú BBA eleva TIM (TIMS3) para compra e cita três fatores que tornam a ação difícil de ignorar",
-  "fonte": "Money Times",
-  "dt": "2026-11-17T17:31:52+00:00",
-  "img": ""
- },
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/se-nada-for-feito-risco-e-divida-estar-acima-de-100-do-pib-em-4-anos-diz-ceo-do-itau.shtml": {
-  "titulo": "Se nada for feito, risco é dívida estar acima de 100% do PIB em 4 anos, diz CEO do Itaú",
-  "fonte": "Folha Mercado",
-  "dt": "2026-11-17T13:47:00+00:00",
-  "img": ""
- },
- "https://investnews.com.br/negocios/governo-avalia-mudanca-no-comando-do-banco-do-brasil/": {
-  "titulo": "Governo avalia mudança no comando do Banco do Brasil",
-  "fonte": "InvestNews",
-  "dt": "2026-11-17T12:03:17+00:00",
-  "img": ""
- },
- "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/mais-de-276-mil-trabalhadores-ainda-nao-sacaram-o-abono-salarial-2026": {
-  "titulo": "Mais de 276 mil trabalhadores ainda não sacaram o abono salarial 2026",
-  "fonte": "Agência Brasil",
-  "dt": "2026-11-17T11:12:00+00:00",
-  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
- },
  "https://www.cnnbrasil.com.br/economia/money/negocios/black-friday-compare-cashback-e-pontos-do-inter-nubank-c6-e-itau/": {
   "titulo": "Black Friday: compare cashback e pontos do Inter, Nubank, C6 e Itaú",
   "fonte": "CNN Brasil",
@@ -190,5 +160,17 @@
   "fonte": "Valor Investe",
   "dt": "2026-11-24T09:00:00+00:00",
   "img": "https://s2-valorinveste.glbimg.com/0jyb51wdkDa_Ds029D-26oItjuY=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/6/w/9PBe1BRBKasyTpOSVLuw/ai-generated-9231988-1280.jpg"
+ },
+ "https://www.cnnbrasil.com.br/infra/safira-pede-recuperacao-judicial-com-r-559-milhoes-em-dividas/": {
+  "titulo": "Safira pede recuperação judicial com R$ 559 milhões em dívidas",
+  "fonte": "CNN Brasil",
+  "dt": "2026-11-24T19:45:30+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/11/24/itau-itub4-e-bv-promovem-cortes-e-engrossam-onda-de-demissoes-no-setor-financeiro.ghtml": {
+  "titulo": "Itaú (ITUB4) e BV promovem cortes e engrossam onda de demissões no setor financeiro",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-24T19:39:03+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/-DTgiJ-irXFKXUkIl4vrHAiSaYM=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2021/C/j/Gtw0MWSpOP9YUiQBXzvw/gettyimages-98060759.jpg"
  }
 }

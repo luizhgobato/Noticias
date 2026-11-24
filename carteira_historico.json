@@ -1,16 +1,4 @@
 {
- "https://www.cnnbrasil.com.br/economia/money/negocios/black-friday-compare-cashback-e-pontos-do-inter-nubank-c6-e-itau/": {
-  "titulo": "Black Friday: compare cashback e pontos do Inter, Nubank, C6 e Itaú",
-  "fonte": "CNN Brasil",
-  "dt": "2026-11-17T21:00:43+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/09/aplicativo-banco-inter_d6f804.png?w=200"
- },
- "https://www.moneytimes.com.br/banco-do-brasil-bbas3-nega-emprestimos-a-fazendas-fantasmas-e-cpfs-inexistentes/": {
-  "titulo": "Banco do Brasil (BBAS3) nega que tenha dado empréstimos a ‘fazendas fantasmas’ e CPFs inexistentes",
-  "fonte": "Money Times",
-  "dt": "2026-11-17T22:36:01+00:00",
-  "img": ""
- },
  "https://www.cnnbrasil.com.br/agro/mercado-dobra-participacao-no-setor-sucroenergetico-aponta-itau-bba/": {
   "titulo": "Mercado dobra participação no setor sucroenergético, aponta Itaú BBA",
   "fonte": "CNN Brasil",
@@ -172,5 +160,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-11-24T19:39:03+00:00",
   "img": "https://s2-valorinveste.glbimg.com/-DTgiJ-irXFKXUkIl4vrHAiSaYM=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2021/C/j/Gtw0MWSpOP9YUiQBXzvw/gettyimages-98060759.jpg"
+ },
+ "https://www.infomoney.com.br/business/itau-entra-no-mcmv-e-avanca-sobre-mercado-dominado-pela-caixa/": {
+  "titulo": "Itaú entra no MCMV e avança sobre mercado dominado pela Caixa",
+  "fonte": "InfoMoney",
+  "dt": "2026-11-24T22:51:03+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/04/53804115232_02913618b5_o.jpg?fit=300%2C179&amp;quality=70&amp;strip=all"
  }
 }

@@ -1,45 +1,9 @@
 {
- "https://www.moneytimes.com.br/grupo-do-tocantins-entra-com-pedido-de-protecao-bilionario-contra-credores-e-atinge-bb-bbas3-e-mais-bancos-veja-lista/": {
-  "titulo": "Grupo do Tocantins do agro entra com pedido de proteção bilionário contra credores e atinge BB (BBAS3) e mais bancos; veja lista",
-  "fonte": "Money Times",
-  "dt": "2026-11-18T18:48:48+00:00",
-  "img": ""
- },
- "https://www.cnnbrasil.com.br/agro/newcastle-deve-pressionar-exportacoes-de-frango-de-sc-preve-itau-bba/": {
-  "titulo": "Newcastle deve pressionar exportações de frango de SC, prevê Itaú BBA",
-  "fonte": "CNN Brasil",
-  "dt": "2026-11-18T17:09:49+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportAgribusinessNews/tagreuters.com2026binary_LYNXNPEM9R2BK-BASEIMAGE.jpg?w=200"
- },
- "https://www.cnnbrasil.com.br/agro/oferta-restrita-deve-manter-boi-gordo-valorizado-projeta-itau-bba/": {
-  "titulo": "Oferta restrita deve manter boi gordo valorizado, projeta Itaú BBA",
-  "fonte": "CNN Brasil",
-  "dt": "2026-11-18T17:00:55+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/03/boi-pecuaria-bovinocultura-credito-Wenderson-Araujo-CNA-61.jpg?w=200"
- },
- "https://www.cnnbrasil.com.br/agro/precos-da-soja-dependem-do-clima-no-brasil-e-de-compras-da-china/": {
-  "titulo": "Preços da soja dependem do clima no Brasil e de compras da China",
-  "fonte": "CNN Brasil",
-  "dt": "2026-11-18T16:58:19+00:00",
-  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/03/ChatGPT-Image-26-de-mar.-de-2026-09_39_47.png?w=200"
- },
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/previ-acumula-perda-bilionaria-com-queda-das-acoes-do-banco-do-brasil.shtml": {
-  "titulo": "Previ acumula perda bilionária com queda das ações do Banco do Brasil",
-  "fonte": "Folha Mercado",
-  "dt": "2026-11-18T14:00:00+00:00",
-  "img": ""
- },
  "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/11/18/banco-do-brasil-bbas3-informa-vazamentos-de-dados-de-clientes-mas-nega-invasao-a-seus-sistemas.ghtml": {
   "titulo": "Banco do Brasil (BBAS3) informa vazamentos de dados de clientes, mas nega invasão a seus sistemas",
   "fonte": "Valor Investe",
   "dt": "2026-11-18T20:46:54+00:00",
   "img": "https://s2-valorinveste.glbimg.com/6sZ1BHUGYxtw2hxVf-ah6CWo2Jc=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2021/0/4/mV13AcSC6NNIkHkrrBYw/hacker.jpg"
- },
- "https://g1.globo.com/tecnologia/noticia/2026/11/18/banco-do-brasil-dados.ghtml": {
-  "titulo": "Banco do Brasil alerta clientes sobre vazamento de dados pessoais; veja o que foi exposto",
-  "fonte": "G1 Economia",
-  "dt": "2026-11-18T19:30:01+00:00",
-  "img": "https://s2-g1.glbimg.com/OtzJd_W8aiGxMfru67Szx17k27w=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/S/h/3jafnBSJy4wmF0Boe3Mg/enem-11-.png"
  },
  "https://www.cnnbrasil.com.br/agro/renegociacao-de-dividas-rurais-soma-r-28-bilhoes-aponta-bc/": {
   "titulo": "Renegociação de dívidas rurais soma R$ 28 bilhões, aponta BC",
@@ -154,5 +118,23 @@
   "fonte": "Money Times",
   "dt": "2026-11-25T08:38:46+00:00",
   "img": ""
+ },
+ "https://valorinveste.globo.com/objetivo/de-olho-no-mercado/noticia/2026/11/25/cvm-multa-trio-em-r-15-milhao-por-fraude-contra-clientes-do-bb-investimentos.ghtml": {
+  "titulo": "CVM multa trio em R$ 1,5 milhão por fraude contra clientes do BB Investimentos",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-25T20:15:51+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/0s0LG3OQ2vzqlbNyDFs6k12rvag=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2020/d/K/OYHYZETT6P7k1mZQAECg/gettyimages-1253833494.jpg"
+ },
+ "https://www.moneytimes.com.br/irb-irbr3-o-que-fez-o-btg-elevar-o-preco-alvo-da-acao-e-enxergar-potencial-de-alta-de-54-lmrs/": {
+  "titulo": "IRB (IRBR3): o que fez o BTG elevar o preço-alvo da ação e enxergar potencial de alta de 54%?",
+  "fonte": "Money Times",
+  "dt": "2026-11-25T19:09:15+00:00",
+  "img": ""
+ },
+ "https://www.cnnbrasil.com.br/agro/comissao-de-agricultura-convida-durigan-e-presidente-do-bb-para-depoimentos/": {
+  "titulo": "Comissão de Agricultura convida Durigan e presidente do BB para depoimentos",
+  "fonte": "CNN Brasil",
+  "dt": "2026-11-25T17:40:41+00:00",
+  "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/06/divulgacao.jpg?w=200"
  }
 }

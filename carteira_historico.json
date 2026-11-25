@@ -29,12 +29,6 @@
   "dt": "2026-11-18T14:00:00+00:00",
   "img": ""
  },
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/pre-black-friday-tem-recuo-de-vendas-no-brasil-mostra-itau.shtml": {
-  "titulo": "Pré-Black Friday tem recuo de vendas no Brasil, mostra Itaú",
-  "fonte": "Folha Mercado",
-  "dt": "2026-11-18T09:00:00+00:00",
-  "img": ""
- },
  "https://valorinveste.globo.com/mercados/renda-variavel/empresas/noticia/2026/11/18/banco-do-brasil-bbas3-informa-vazamentos-de-dados-de-clientes-mas-nega-invasao-a-seus-sistemas.ghtml": {
   "titulo": "Banco do Brasil (BBAS3) informa vazamentos de dados de clientes, mas nega invasão a seus sistemas",
   "fonte": "Valor Investe",
@@ -153,6 +147,12 @@
   "titulo": "Banco do Brasil (BBAS3) nega decisão sobre IPOs de empresas do grupo após questionamento da CVM",
   "fonte": "Money Times",
   "dt": "2026-11-24T23:09:08+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/itau-itub4-entra-no-minha-casa-minha-vida-e-avanca-sobre-mercado-dominado-pela-caixa-fets/": {
+  "titulo": "Itaú (ITUB4) entra no Minha Casa, Minha Vida e avança sobre mercado dominado pela Caixa",
+  "fonte": "Money Times",
+  "dt": "2026-11-25T08:38:46+00:00",
   "img": ""
  }
 }

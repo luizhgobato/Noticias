@@ -1,16 +1,4 @@
 {
- "https://valorinveste.globo.com/produtos/servicos-financeiros/noticia/2026/11/19/bb-cartao-altus-world-legend-mastercard-com-ate-7-pontos-por-dolar.ghtml": {
-  "titulo": "BB lança cartão Altus World Legend Mastercard com até 7 pontos por dólar",
-  "fonte": "Valor Investe",
-  "dt": "2026-11-19T18:56:48+00:00",
-  "img": "https://s2-valorinveste.glbimg.com/fLbpX7ciuHc5AJR6dzhRXu5Kerg=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/5/i/f49qDWROaXUzRHJTcObg/sem-nome-1600-x-1080-px-.png"
- },
- "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-notifica-clientes-sobre-vazamentos-de-dados-veja-cuidados.shtml": {
-  "titulo": "Banco do Brasil notifica clientes sobre vazamentos de dados; veja cuidados",
-  "fonte": "Folha Mercado",
-  "dt": "2026-11-19T13:07:00+00:00",
-  "img": ""
- },
  "https://valorinveste.globo.com/produtos/imoveis/noticia/2026/11/20/itau-vai-financiar-imoveis-pelo-minha-casa-minha-vida-veja-regras.ghtml": {
   "titulo": "Itaú vai financiar imóveis pelo Minha Casa Minha Vida; veja regras",
   "fonte": "Valor Investe",
@@ -112,5 +100,29 @@
   "fonte": "InfoMoney",
   "dt": "2026-11-26T08:00:00+00:00",
   "img": "https://www.infomoney.com.br/wp-content/uploads/2026/11/Captura-de-tela-2026-11-25-191501.png?fit=300%2C201&amp;quality=70&amp;strip=all"
+ },
+ "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bb-e-google-bloqueiam-mais-de-77-mil-chamadas-fraudulentas": {
+  "titulo": "BB e Google bloqueiam mais de 77 mil chamadas fraudulentas",
+  "fonte": "Agência Brasil",
+  "dt": "2026-11-26T19:45:00+00:00",
+  "img": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg"
+ },
+ "https://www.moneytimes.com.br/alta-do-banco-do-brasil-bbas3-e-fogo-de-palha-gestora-ve-uma-foto-ruim-de-uma-realidade-pior-ainda-rnda/": {
+  "titulo": "Alta do Banco do Brasil (BBAS3) é ‘fogo de palha’? Gestora vê uma foto ruim de uma realidade pior ainda",
+  "fonte": "Money Times",
+  "dt": "2026-11-26T19:42:55+00:00",
+  "img": ""
+ },
+ "https://www.moneytimes.com.br/mais-concorrencia-para-a-caixa-apos-itau-santander-brasil-avalia-entrar-para-o-minha-casa-minha-vida-miql/": {
+  "titulo": "Depois do Itaú, Santander Brasil (SANB11) confirma planos para entrar no Minha Casa, Minha Vida",
+  "fonte": "Money Times",
+  "dt": "2026-11-26T19:31:37+00:00",
+  "img": ""
+ },
+ "https://valorinveste.globo.com/produtos/imoveis/noticia/2026/11/26/banco-do-brasil-leiloa-mais-de-200-imoveis-sem-valor-minimo-para-lances.ghtml": {
+  "titulo": "Banco do Brasil leiloa mais de 200 imóveis sem valor mínimo para lances",
+  "fonte": "Valor Investe",
+  "dt": "2026-11-26T09:40:00+00:00",
+  "img": "https://s2-valorinveste.glbimg.com/0jyb51wdkDa_Ds029D-26oItjuY=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/6/w/9PBe1BRBKasyTpOSVLuw/ai-generated-9231988-1280.jpg"
  }
 }

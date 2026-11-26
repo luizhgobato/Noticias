@@ -1,10 +1,4 @@
 {
- "https://www.infomoney.com.br/onde-investir/dividendos-em-2027-quem-esta-mais-protegido-apos-os-cortes-do-3o-trimestre/": {
-  "titulo": "Dividendos em 2027: quem está mais protegido após os cortes do 3º trimestre?",
-  "fonte": "InfoMoney",
-  "dt": "2026-11-19T08:00:00+00:00",
-  "img": "https://www.infomoney.com.br/wp-content/uploads/2025/06/EspacoB3_05.jpg?fit=300%2C200&amp;quality=70&amp;strip=all"
- },
  "https://valorinveste.globo.com/produtos/servicos-financeiros/noticia/2026/11/19/bb-cartao-altus-world-legend-mastercard-com-ate-7-pontos-por-dolar.ghtml": {
   "titulo": "BB lança cartão Altus World Legend Mastercard com até 7 pontos por dólar",
   "fonte": "Valor Investe",
@@ -112,5 +106,11 @@
   "fonte": "CNN Brasil",
   "dt": "2026-11-25T17:40:41+00:00",
   "img": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/06/divulgacao.jpg?w=200"
+ },
+ "https://www.infomoney.com.br/mercados/brasil-ve-queda-de-alocacao-entre-emergentes-e-mexico-ganha-espaco-vale-lidera-saida/": {
+  "titulo": "Brasil vê queda de alocação de investidores e México ganha espaço; Vale lidera saídas",
+  "fonte": "InfoMoney",
+  "dt": "2026-11-26T08:00:00+00:00",
+  "img": "https://www.infomoney.com.br/wp-content/uploads/2026/11/Captura-de-tela-2026-11-25-191501.png?fit=300%2C201&amp;quality=70&amp;strip=all"
  }
 }

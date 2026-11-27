@@ -1,10 +1,4 @@
 {
- "https://www.moneytimes.com.br/vale-itau-petrobras-bradesco-como-fecharam-os-adrs-em-dia-de-bolsa-fechada/": {
-  "titulo": "Vale, Itaú, Petrobras, Bradesco: como fecharam os ADRs durante o feriado da bolsa",
-  "fonte": "Money Times",
-  "dt": "2026-11-20T21:38:04+00:00",
-  "img": ""
- },
  "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/equipe-economica-vai-levar-a-lula-nomes-para-substituir-presidente-do-banco-do-brasil.shtml": {
   "titulo": "Equipe econômica vai levar a Lula nomes para substituir presidente do Banco do Brasil",
   "fonte": "Folha Mercado",
@@ -154,5 +148,11 @@
   "fonte": "Valor Investe",
   "dt": "2026-11-27T11:05:27+00:00",
   "img": "https://s2-valorinveste.glbimg.com/0jyb51wdkDa_Ds029D-26oItjuY=/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2025/6/w/9PBe1BRBKasyTpOSVLuw/ai-generated-9231988-1280.jpg"
+ },
+ "https://g1.globo.com/guia/guia-de-compras/black-friday-uso-do-pix-cresce-29percent-nas-primeiras-horas-do-dia-em-relacao-a-2025-aponta-levantamento.ghtml": {
+  "titulo": "Black Friday: uso do PIX cresce 29% nas primeiras horas do dia em relação a 2025, aponta levantamento",
+  "fonte": "G1 Economia",
+  "dt": "2026-11-27T14:57:26+00:00",
+  "img": "https://s2-g1.glbimg.com/lANilD_BAG0gEfXdruqFMuWIgAE=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/B/N/FJfY8DRdAflDnlYjueaA/globo-canal-4-20261125-2000-frame-97229.jpeg"
  }
 }
